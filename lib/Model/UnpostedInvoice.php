@@ -34,7 +34,9 @@ use \ArrayAccess;
 /**
  * UnpostedInvoice Class Doc Comment
  *
- * @category    Class */
+ * @category    Class
+ */
+
 /**
  * @package     Spinen\ConnectWise\Clients\Finance
  * @author      Swagger Codegen team
@@ -45,59 +47,59 @@ class UnpostedInvoice implements ArrayAccess
     const DISCRIMINATOR = null;
 
     /**
-      * The original name of the model.
-      * @var string
-      */
+     * The original name of the model.
+     * @var string
+     */
     protected static $swaggerModelName = 'UnpostedInvoice';
 
     /**
-      * Array of property to type mappings. Used for (de)serialization
-      * @var string[]
-      */
+     * Array of property to type mappings. Used for (de)serialization
+     * @var string[]
+     */
     protected static $swaggerTypes = [
-        'id' => 'int',
-        'billing_log_id' => 'int',
-        'location_id' => 'int',
-        'department_id' => 'int',
-        'company' => '\Spinen\ConnectWise\Clients\Finance\Model\CompanyReference',
-        'account_number' => 'string',
-        'bill_to_company' => '\Spinen\ConnectWise\Clients\Finance\Model\CompanyReference',
-        'bill_to_site' => '\Spinen\ConnectWise\Clients\Finance\Model\SiteReference',
-        'ship_to_company' => '\Spinen\ConnectWise\Clients\Finance\Model\CompanyReference',
-        'ship_to_site' => '\Spinen\ConnectWise\Clients\Finance\Model\SiteReference',
-        'invoice_number' => 'string',
-        'invoice_date' => '\DateTime',
-        'invoice_type' => 'string',
-        'description' => 'string',
-        'billing_terms' => '\Spinen\ConnectWise\Clients\Finance\Model\BillingTermsReference',
-        'due_days' => 'string',
-        'due_date' => '\DateTime',
-        'currency' => '\Spinen\ConnectWise\Clients\Finance\Model\CurrencyReference',
-        'sub_total' => 'double',
-        'total' => 'double',
+        'id'                   => 'int',
+        'billing_log_id'       => 'int',
+        'location_id'          => 'int',
+        'department_id'        => 'int',
+        'company'              => '\Spinen\ConnectWise\Clients\Finance\Model\CompanyReference',
+        'account_number'       => 'string',
+        'bill_to_company'      => '\Spinen\ConnectWise\Clients\Finance\Model\CompanyReference',
+        'bill_to_site'         => '\Spinen\ConnectWise\Clients\Finance\Model\SiteReference',
+        'ship_to_company'      => '\Spinen\ConnectWise\Clients\Finance\Model\CompanyReference',
+        'ship_to_site'         => '\Spinen\ConnectWise\Clients\Finance\Model\SiteReference',
+        'invoice_number'       => 'string',
+        'invoice_date'         => '\DateTime',
+        'invoice_type'         => 'string',
+        'description'          => 'string',
+        'billing_terms'        => '\Spinen\ConnectWise\Clients\Finance\Model\BillingTermsReference',
+        'due_days'             => 'string',
+        'due_date'             => '\DateTime',
+        'currency'             => '\Spinen\ConnectWise\Clients\Finance\Model\CurrencyReference',
+        'sub_total'            => 'double',
+        'total'                => 'double',
         'invoice_taxable_flag' => 'bool',
-        'tax_code' => '\Spinen\ConnectWise\Clients\Finance\Model\TaxCodeReference',
-        'avalara_tax_flag' => 'bool',
-        'item_taxable_flag' => 'bool',
-        'sales_tax_amount' => 'double',
-        'state_tax_flag' => 'bool',
-        'state_tax_xref' => 'string',
-        'state_tax_amount' => 'double',
-        'county_tax_flag' => 'bool',
-        'county_tax_xref' => 'string',
-        'county_tax_amount' => 'double',
-        'city_tax_flag' => 'bool',
-        'city_tax_xref' => 'string',
-        'city_tax_amount' => 'double',
-        'country_tax_flag' => 'bool',
-        'country_tax_xref' => 'string',
-        'country_tax_amount' => 'double',
-        'composite_tax_flag' => 'bool',
-        'composite_tax_xref' => 'string',
+        'tax_code'             => '\Spinen\ConnectWise\Clients\Finance\Model\TaxCodeReference',
+        'avalara_tax_flag'     => 'bool',
+        'item_taxable_flag'    => 'bool',
+        'sales_tax_amount'     => 'double',
+        'state_tax_flag'       => 'bool',
+        'state_tax_xref'       => 'string',
+        'state_tax_amount'     => 'double',
+        'county_tax_flag'      => 'bool',
+        'county_tax_xref'      => 'string',
+        'county_tax_amount'    => 'double',
+        'city_tax_flag'        => 'bool',
+        'city_tax_xref'        => 'string',
+        'city_tax_amount'      => 'double',
+        'country_tax_flag'     => 'bool',
+        'country_tax_xref'     => 'string',
+        'country_tax_amount'   => 'double',
+        'composite_tax_flag'   => 'bool',
+        'composite_tax_xref'   => 'string',
         'composite_tax_amount' => 'double',
-        'created_by' => 'string',
-        'date_closed' => '\DateTime',
-        '_info' => '\Spinen\ConnectWise\Clients\Finance\Model\Metadata'
+        'created_by'           => 'string',
+        'date_closed'          => '\DateTime',
+        '_info'                => '\Spinen\ConnectWise\Clients\Finance\Model\Metadata'
     ];
 
     public static function swaggerTypes()
@@ -110,49 +112,49 @@ class UnpostedInvoice implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'id' => 'id',
-        'billing_log_id' => 'billingLogId',
-        'location_id' => 'locationId',
-        'department_id' => 'departmentId',
-        'company' => 'company',
-        'account_number' => 'accountNumber',
-        'bill_to_company' => 'billToCompany',
-        'bill_to_site' => 'billToSite',
-        'ship_to_company' => 'shipToCompany',
-        'ship_to_site' => 'shipToSite',
-        'invoice_number' => 'invoiceNumber',
-        'invoice_date' => 'invoiceDate',
-        'invoice_type' => 'invoiceType',
-        'description' => 'description',
-        'billing_terms' => 'billingTerms',
-        'due_days' => 'dueDays',
-        'due_date' => 'dueDate',
-        'currency' => 'currency',
-        'sub_total' => 'subTotal',
-        'total' => 'total',
+        'id'                   => 'id',
+        'billing_log_id'       => 'billingLogId',
+        'location_id'          => 'locationId',
+        'department_id'        => 'departmentId',
+        'company'              => 'company',
+        'account_number'       => 'accountNumber',
+        'bill_to_company'      => 'billToCompany',
+        'bill_to_site'         => 'billToSite',
+        'ship_to_company'      => 'shipToCompany',
+        'ship_to_site'         => 'shipToSite',
+        'invoice_number'       => 'invoiceNumber',
+        'invoice_date'         => 'invoiceDate',
+        'invoice_type'         => 'invoiceType',
+        'description'          => 'description',
+        'billing_terms'        => 'billingTerms',
+        'due_days'             => 'dueDays',
+        'due_date'             => 'dueDate',
+        'currency'             => 'currency',
+        'sub_total'            => 'subTotal',
+        'total'                => 'total',
         'invoice_taxable_flag' => 'invoiceTaxableFlag',
-        'tax_code' => 'taxCode',
-        'avalara_tax_flag' => 'avalaraTaxFlag',
-        'item_taxable_flag' => 'itemTaxableFlag',
-        'sales_tax_amount' => 'salesTaxAmount',
-        'state_tax_flag' => 'stateTaxFlag',
-        'state_tax_xref' => 'stateTaxXref',
-        'state_tax_amount' => 'stateTaxAmount',
-        'county_tax_flag' => 'countyTaxFlag',
-        'county_tax_xref' => 'countyTaxXref',
-        'county_tax_amount' => 'countyTaxAmount',
-        'city_tax_flag' => 'cityTaxFlag',
-        'city_tax_xref' => 'cityTaxXref',
-        'city_tax_amount' => 'cityTaxAmount',
-        'country_tax_flag' => 'countryTaxFlag',
-        'country_tax_xref' => 'countryTaxXref',
-        'country_tax_amount' => 'countryTaxAmount',
-        'composite_tax_flag' => 'compositeTaxFlag',
-        'composite_tax_xref' => 'compositeTaxXref',
+        'tax_code'             => 'taxCode',
+        'avalara_tax_flag'     => 'avalaraTaxFlag',
+        'item_taxable_flag'    => 'itemTaxableFlag',
+        'sales_tax_amount'     => 'salesTaxAmount',
+        'state_tax_flag'       => 'stateTaxFlag',
+        'state_tax_xref'       => 'stateTaxXref',
+        'state_tax_amount'     => 'stateTaxAmount',
+        'county_tax_flag'      => 'countyTaxFlag',
+        'county_tax_xref'      => 'countyTaxXref',
+        'county_tax_amount'    => 'countyTaxAmount',
+        'city_tax_flag'        => 'cityTaxFlag',
+        'city_tax_xref'        => 'cityTaxXref',
+        'city_tax_amount'      => 'cityTaxAmount',
+        'country_tax_flag'     => 'countryTaxFlag',
+        'country_tax_xref'     => 'countryTaxXref',
+        'country_tax_amount'   => 'countryTaxAmount',
+        'composite_tax_flag'   => 'compositeTaxFlag',
+        'composite_tax_xref'   => 'compositeTaxXref',
         'composite_tax_amount' => 'compositeTaxAmount',
-        'created_by' => 'createdBy',
-        'date_closed' => 'dateClosed',
-        '_info' => '_info'
+        'created_by'           => 'createdBy',
+        'date_closed'          => 'dateClosed',
+        '_info'                => '_info'
     ];
 
 
@@ -161,49 +163,49 @@ class UnpostedInvoice implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'id' => 'setId',
-        'billing_log_id' => 'setBillingLogId',
-        'location_id' => 'setLocationId',
-        'department_id' => 'setDepartmentId',
-        'company' => 'setCompany',
-        'account_number' => 'setAccountNumber',
-        'bill_to_company' => 'setBillToCompany',
-        'bill_to_site' => 'setBillToSite',
-        'ship_to_company' => 'setShipToCompany',
-        'ship_to_site' => 'setShipToSite',
-        'invoice_number' => 'setInvoiceNumber',
-        'invoice_date' => 'setInvoiceDate',
-        'invoice_type' => 'setInvoiceType',
-        'description' => 'setDescription',
-        'billing_terms' => 'setBillingTerms',
-        'due_days' => 'setDueDays',
-        'due_date' => 'setDueDate',
-        'currency' => 'setCurrency',
-        'sub_total' => 'setSubTotal',
-        'total' => 'setTotal',
+        'id'                   => 'setId',
+        'billing_log_id'       => 'setBillingLogId',
+        'location_id'          => 'setLocationId',
+        'department_id'        => 'setDepartmentId',
+        'company'              => 'setCompany',
+        'account_number'       => 'setAccountNumber',
+        'bill_to_company'      => 'setBillToCompany',
+        'bill_to_site'         => 'setBillToSite',
+        'ship_to_company'      => 'setShipToCompany',
+        'ship_to_site'         => 'setShipToSite',
+        'invoice_number'       => 'setInvoiceNumber',
+        'invoice_date'         => 'setInvoiceDate',
+        'invoice_type'         => 'setInvoiceType',
+        'description'          => 'setDescription',
+        'billing_terms'        => 'setBillingTerms',
+        'due_days'             => 'setDueDays',
+        'due_date'             => 'setDueDate',
+        'currency'             => 'setCurrency',
+        'sub_total'            => 'setSubTotal',
+        'total'                => 'setTotal',
         'invoice_taxable_flag' => 'setInvoiceTaxableFlag',
-        'tax_code' => 'setTaxCode',
-        'avalara_tax_flag' => 'setAvalaraTaxFlag',
-        'item_taxable_flag' => 'setItemTaxableFlag',
-        'sales_tax_amount' => 'setSalesTaxAmount',
-        'state_tax_flag' => 'setStateTaxFlag',
-        'state_tax_xref' => 'setStateTaxXref',
-        'state_tax_amount' => 'setStateTaxAmount',
-        'county_tax_flag' => 'setCountyTaxFlag',
-        'county_tax_xref' => 'setCountyTaxXref',
-        'county_tax_amount' => 'setCountyTaxAmount',
-        'city_tax_flag' => 'setCityTaxFlag',
-        'city_tax_xref' => 'setCityTaxXref',
-        'city_tax_amount' => 'setCityTaxAmount',
-        'country_tax_flag' => 'setCountryTaxFlag',
-        'country_tax_xref' => 'setCountryTaxXref',
-        'country_tax_amount' => 'setCountryTaxAmount',
-        'composite_tax_flag' => 'setCompositeTaxFlag',
-        'composite_tax_xref' => 'setCompositeTaxXref',
+        'tax_code'             => 'setTaxCode',
+        'avalara_tax_flag'     => 'setAvalaraTaxFlag',
+        'item_taxable_flag'    => 'setItemTaxableFlag',
+        'sales_tax_amount'     => 'setSalesTaxAmount',
+        'state_tax_flag'       => 'setStateTaxFlag',
+        'state_tax_xref'       => 'setStateTaxXref',
+        'state_tax_amount'     => 'setStateTaxAmount',
+        'county_tax_flag'      => 'setCountyTaxFlag',
+        'county_tax_xref'      => 'setCountyTaxXref',
+        'county_tax_amount'    => 'setCountyTaxAmount',
+        'city_tax_flag'        => 'setCityTaxFlag',
+        'city_tax_xref'        => 'setCityTaxXref',
+        'city_tax_amount'      => 'setCityTaxAmount',
+        'country_tax_flag'     => 'setCountryTaxFlag',
+        'country_tax_xref'     => 'setCountryTaxXref',
+        'country_tax_amount'   => 'setCountryTaxAmount',
+        'composite_tax_flag'   => 'setCompositeTaxFlag',
+        'composite_tax_xref'   => 'setCompositeTaxXref',
         'composite_tax_amount' => 'setCompositeTaxAmount',
-        'created_by' => 'setCreatedBy',
-        'date_closed' => 'setDateClosed',
-        '_info' => 'setInfo'
+        'created_by'           => 'setCreatedBy',
+        'date_closed'          => 'setDateClosed',
+        '_info'                => 'setInfo'
     ];
 
 
@@ -212,49 +214,49 @@ class UnpostedInvoice implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'id' => 'getId',
-        'billing_log_id' => 'getBillingLogId',
-        'location_id' => 'getLocationId',
-        'department_id' => 'getDepartmentId',
-        'company' => 'getCompany',
-        'account_number' => 'getAccountNumber',
-        'bill_to_company' => 'getBillToCompany',
-        'bill_to_site' => 'getBillToSite',
-        'ship_to_company' => 'getShipToCompany',
-        'ship_to_site' => 'getShipToSite',
-        'invoice_number' => 'getInvoiceNumber',
-        'invoice_date' => 'getInvoiceDate',
-        'invoice_type' => 'getInvoiceType',
-        'description' => 'getDescription',
-        'billing_terms' => 'getBillingTerms',
-        'due_days' => 'getDueDays',
-        'due_date' => 'getDueDate',
-        'currency' => 'getCurrency',
-        'sub_total' => 'getSubTotal',
-        'total' => 'getTotal',
+        'id'                   => 'getId',
+        'billing_log_id'       => 'getBillingLogId',
+        'location_id'          => 'getLocationId',
+        'department_id'        => 'getDepartmentId',
+        'company'              => 'getCompany',
+        'account_number'       => 'getAccountNumber',
+        'bill_to_company'      => 'getBillToCompany',
+        'bill_to_site'         => 'getBillToSite',
+        'ship_to_company'      => 'getShipToCompany',
+        'ship_to_site'         => 'getShipToSite',
+        'invoice_number'       => 'getInvoiceNumber',
+        'invoice_date'         => 'getInvoiceDate',
+        'invoice_type'         => 'getInvoiceType',
+        'description'          => 'getDescription',
+        'billing_terms'        => 'getBillingTerms',
+        'due_days'             => 'getDueDays',
+        'due_date'             => 'getDueDate',
+        'currency'             => 'getCurrency',
+        'sub_total'            => 'getSubTotal',
+        'total'                => 'getTotal',
         'invoice_taxable_flag' => 'getInvoiceTaxableFlag',
-        'tax_code' => 'getTaxCode',
-        'avalara_tax_flag' => 'getAvalaraTaxFlag',
-        'item_taxable_flag' => 'getItemTaxableFlag',
-        'sales_tax_amount' => 'getSalesTaxAmount',
-        'state_tax_flag' => 'getStateTaxFlag',
-        'state_tax_xref' => 'getStateTaxXref',
-        'state_tax_amount' => 'getStateTaxAmount',
-        'county_tax_flag' => 'getCountyTaxFlag',
-        'county_tax_xref' => 'getCountyTaxXref',
-        'county_tax_amount' => 'getCountyTaxAmount',
-        'city_tax_flag' => 'getCityTaxFlag',
-        'city_tax_xref' => 'getCityTaxXref',
-        'city_tax_amount' => 'getCityTaxAmount',
-        'country_tax_flag' => 'getCountryTaxFlag',
-        'country_tax_xref' => 'getCountryTaxXref',
-        'country_tax_amount' => 'getCountryTaxAmount',
-        'composite_tax_flag' => 'getCompositeTaxFlag',
-        'composite_tax_xref' => 'getCompositeTaxXref',
+        'tax_code'             => 'getTaxCode',
+        'avalara_tax_flag'     => 'getAvalaraTaxFlag',
+        'item_taxable_flag'    => 'getItemTaxableFlag',
+        'sales_tax_amount'     => 'getSalesTaxAmount',
+        'state_tax_flag'       => 'getStateTaxFlag',
+        'state_tax_xref'       => 'getStateTaxXref',
+        'state_tax_amount'     => 'getStateTaxAmount',
+        'county_tax_flag'      => 'getCountyTaxFlag',
+        'county_tax_xref'      => 'getCountyTaxXref',
+        'county_tax_amount'    => 'getCountyTaxAmount',
+        'city_tax_flag'        => 'getCityTaxFlag',
+        'city_tax_xref'        => 'getCityTaxXref',
+        'city_tax_amount'      => 'getCityTaxAmount',
+        'country_tax_flag'     => 'getCountryTaxFlag',
+        'country_tax_xref'     => 'getCountryTaxXref',
+        'country_tax_amount'   => 'getCountryTaxAmount',
+        'composite_tax_flag'   => 'getCompositeTaxFlag',
+        'composite_tax_xref'   => 'getCompositeTaxXref',
         'composite_tax_amount' => 'getCompositeTaxAmount',
-        'created_by' => 'getCreatedBy',
-        'date_closed' => 'getDateClosed',
-        '_info' => 'getInfo'
+        'created_by'           => 'getCreatedBy',
+        'date_closed'          => 'getDateClosed',
+        '_info'                => 'getInfo'
     ];
 
     public static function attributeMap()
@@ -278,9 +280,8 @@ class UnpostedInvoice implements ArrayAccess
     const INVOICE_TYPE_MISCELLANEOUS = 'Miscellaneous';
     const INVOICE_TYPE_PROGRESS = 'Progress';
     const INVOICE_TYPE_STANDARD = 'Standard';
-    
 
-    
+
     /**
      * Gets allowable values of the enum
      * @return string[]
@@ -296,7 +297,7 @@ class UnpostedInvoice implements ArrayAccess
             self::INVOICE_TYPE_STANDARD,
         ];
     }
-    
+
 
     /**
      * Associative array for storing property values
@@ -306,7 +307,7 @@ class UnpostedInvoice implements ArrayAccess
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param  mixed[]  $data  Associated array of property values initializing the model
      */
     public function __construct(array $data = null)
     {
@@ -398,7 +399,7 @@ class UnpostedInvoice implements ArrayAccess
 
     /**
      * Sets id
-     * @param int $id
+     * @param  int  $id
      * @return $this
      */
     public function setId($id)
@@ -419,7 +420,7 @@ class UnpostedInvoice implements ArrayAccess
 
     /**
      * Sets billing_log_id
-     * @param int $billing_log_id
+     * @param  int  $billing_log_id
      * @return $this
      */
     public function setBillingLogId($billing_log_id)
@@ -440,7 +441,7 @@ class UnpostedInvoice implements ArrayAccess
 
     /**
      * Sets location_id
-     * @param int $location_id
+     * @param  int  $location_id
      * @return $this
      */
     public function setLocationId($location_id)
@@ -461,7 +462,7 @@ class UnpostedInvoice implements ArrayAccess
 
     /**
      * Sets department_id
-     * @param int $department_id
+     * @param  int  $department_id
      * @return $this
      */
     public function setDepartmentId($department_id)
@@ -482,7 +483,7 @@ class UnpostedInvoice implements ArrayAccess
 
     /**
      * Sets company
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\CompanyReference $company
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\CompanyReference  $company
      * @return $this
      */
     public function setCompany($company)
@@ -503,7 +504,7 @@ class UnpostedInvoice implements ArrayAccess
 
     /**
      * Sets account_number
-     * @param string $account_number
+     * @param  string  $account_number
      * @return $this
      */
     public function setAccountNumber($account_number)
@@ -524,7 +525,7 @@ class UnpostedInvoice implements ArrayAccess
 
     /**
      * Sets bill_to_company
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\CompanyReference $bill_to_company
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\CompanyReference  $bill_to_company
      * @return $this
      */
     public function setBillToCompany($bill_to_company)
@@ -545,7 +546,7 @@ class UnpostedInvoice implements ArrayAccess
 
     /**
      * Sets bill_to_site
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\SiteReference $bill_to_site
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\SiteReference  $bill_to_site
      * @return $this
      */
     public function setBillToSite($bill_to_site)
@@ -566,7 +567,7 @@ class UnpostedInvoice implements ArrayAccess
 
     /**
      * Sets ship_to_company
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\CompanyReference $ship_to_company
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\CompanyReference  $ship_to_company
      * @return $this
      */
     public function setShipToCompany($ship_to_company)
@@ -587,7 +588,7 @@ class UnpostedInvoice implements ArrayAccess
 
     /**
      * Sets ship_to_site
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\SiteReference $ship_to_site
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\SiteReference  $ship_to_site
      * @return $this
      */
     public function setShipToSite($ship_to_site)
@@ -608,7 +609,7 @@ class UnpostedInvoice implements ArrayAccess
 
     /**
      * Sets invoice_number
-     * @param string $invoice_number
+     * @param  string  $invoice_number
      * @return $this
      */
     public function setInvoiceNumber($invoice_number)
@@ -629,7 +630,7 @@ class UnpostedInvoice implements ArrayAccess
 
     /**
      * Sets invoice_date
-     * @param \DateTime $invoice_date
+     * @param  \DateTime  $invoice_date
      * @return $this
      */
     public function setInvoiceDate($invoice_date)
@@ -650,7 +651,7 @@ class UnpostedInvoice implements ArrayAccess
 
     /**
      * Sets invoice_type
-     * @param string $invoice_type
+     * @param  string  $invoice_type
      * @return $this
      */
     public function setInvoiceType($invoice_type)
@@ -675,7 +676,7 @@ class UnpostedInvoice implements ArrayAccess
 
     /**
      * Sets description
-     * @param string $description
+     * @param  string  $description
      * @return $this
      */
     public function setDescription($description)
@@ -696,7 +697,7 @@ class UnpostedInvoice implements ArrayAccess
 
     /**
      * Sets billing_terms
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\BillingTermsReference $billing_terms
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\BillingTermsReference  $billing_terms
      * @return $this
      */
     public function setBillingTerms($billing_terms)
@@ -717,7 +718,7 @@ class UnpostedInvoice implements ArrayAccess
 
     /**
      * Sets due_days
-     * @param string $due_days
+     * @param  string  $due_days
      * @return $this
      */
     public function setDueDays($due_days)
@@ -738,7 +739,7 @@ class UnpostedInvoice implements ArrayAccess
 
     /**
      * Sets due_date
-     * @param \DateTime $due_date
+     * @param  \DateTime  $due_date
      * @return $this
      */
     public function setDueDate($due_date)
@@ -759,7 +760,7 @@ class UnpostedInvoice implements ArrayAccess
 
     /**
      * Sets currency
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\CurrencyReference $currency
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\CurrencyReference  $currency
      * @return $this
      */
     public function setCurrency($currency)
@@ -780,7 +781,7 @@ class UnpostedInvoice implements ArrayAccess
 
     /**
      * Sets sub_total
-     * @param double $sub_total
+     * @param  double  $sub_total
      * @return $this
      */
     public function setSubTotal($sub_total)
@@ -801,7 +802,7 @@ class UnpostedInvoice implements ArrayAccess
 
     /**
      * Sets total
-     * @param double $total
+     * @param  double  $total
      * @return $this
      */
     public function setTotal($total)
@@ -822,7 +823,7 @@ class UnpostedInvoice implements ArrayAccess
 
     /**
      * Sets invoice_taxable_flag
-     * @param bool $invoice_taxable_flag
+     * @param  bool  $invoice_taxable_flag
      * @return $this
      */
     public function setInvoiceTaxableFlag($invoice_taxable_flag)
@@ -843,7 +844,7 @@ class UnpostedInvoice implements ArrayAccess
 
     /**
      * Sets tax_code
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\TaxCodeReference $tax_code
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\TaxCodeReference  $tax_code
      * @return $this
      */
     public function setTaxCode($tax_code)
@@ -864,7 +865,7 @@ class UnpostedInvoice implements ArrayAccess
 
     /**
      * Sets avalara_tax_flag
-     * @param bool $avalara_tax_flag Used to determine if Avalara tax is enabled.
+     * @param  bool  $avalara_tax_flag  Used to determine if Avalara tax is enabled.
      * @return $this
      */
     public function setAvalaraTaxFlag($avalara_tax_flag)
@@ -885,7 +886,7 @@ class UnpostedInvoice implements ArrayAccess
 
     /**
      * Sets item_taxable_flag
-     * @param bool $item_taxable_flag
+     * @param  bool  $item_taxable_flag
      * @return $this
      */
     public function setItemTaxableFlag($item_taxable_flag)
@@ -906,7 +907,7 @@ class UnpostedInvoice implements ArrayAccess
 
     /**
      * Sets sales_tax_amount
-     * @param double $sales_tax_amount
+     * @param  double  $sales_tax_amount
      * @return $this
      */
     public function setSalesTaxAmount($sales_tax_amount)
@@ -927,7 +928,7 @@ class UnpostedInvoice implements ArrayAccess
 
     /**
      * Sets state_tax_flag
-     * @param bool $state_tax_flag Set to true if transaction is taxable at the state level.
+     * @param  bool  $state_tax_flag  Set to true if transaction is taxable at the state level.
      * @return $this
      */
     public function setStateTaxFlag($state_tax_flag)
@@ -948,7 +949,7 @@ class UnpostedInvoice implements ArrayAccess
 
     /**
      * Sets state_tax_xref
-     * @param string $state_tax_xref
+     * @param  string  $state_tax_xref
      * @return $this
      */
     public function setStateTaxXref($state_tax_xref)
@@ -969,7 +970,7 @@ class UnpostedInvoice implements ArrayAccess
 
     /**
      * Sets state_tax_amount
-     * @param double $state_tax_amount
+     * @param  double  $state_tax_amount
      * @return $this
      */
     public function setStateTaxAmount($state_tax_amount)
@@ -990,7 +991,7 @@ class UnpostedInvoice implements ArrayAccess
 
     /**
      * Sets county_tax_flag
-     * @param bool $county_tax_flag Set to true if transaction is taxable at the county level.
+     * @param  bool  $county_tax_flag  Set to true if transaction is taxable at the county level.
      * @return $this
      */
     public function setCountyTaxFlag($county_tax_flag)
@@ -1011,7 +1012,7 @@ class UnpostedInvoice implements ArrayAccess
 
     /**
      * Sets county_tax_xref
-     * @param string $county_tax_xref
+     * @param  string  $county_tax_xref
      * @return $this
      */
     public function setCountyTaxXref($county_tax_xref)
@@ -1032,7 +1033,7 @@ class UnpostedInvoice implements ArrayAccess
 
     /**
      * Sets county_tax_amount
-     * @param double $county_tax_amount
+     * @param  double  $county_tax_amount
      * @return $this
      */
     public function setCountyTaxAmount($county_tax_amount)
@@ -1053,7 +1054,7 @@ class UnpostedInvoice implements ArrayAccess
 
     /**
      * Sets city_tax_flag
-     * @param bool $city_tax_flag Set to true if transaction is taxable at the city level.
+     * @param  bool  $city_tax_flag  Set to true if transaction is taxable at the city level.
      * @return $this
      */
     public function setCityTaxFlag($city_tax_flag)
@@ -1074,7 +1075,7 @@ class UnpostedInvoice implements ArrayAccess
 
     /**
      * Sets city_tax_xref
-     * @param string $city_tax_xref
+     * @param  string  $city_tax_xref
      * @return $this
      */
     public function setCityTaxXref($city_tax_xref)
@@ -1095,7 +1096,7 @@ class UnpostedInvoice implements ArrayAccess
 
     /**
      * Sets city_tax_amount
-     * @param double $city_tax_amount
+     * @param  double  $city_tax_amount
      * @return $this
      */
     public function setCityTaxAmount($city_tax_amount)
@@ -1116,7 +1117,7 @@ class UnpostedInvoice implements ArrayAccess
 
     /**
      * Sets country_tax_flag
-     * @param bool $country_tax_flag Set to true if transaction is taxable at the country level.
+     * @param  bool  $country_tax_flag  Set to true if transaction is taxable at the country level.
      * @return $this
      */
     public function setCountryTaxFlag($country_tax_flag)
@@ -1137,7 +1138,7 @@ class UnpostedInvoice implements ArrayAccess
 
     /**
      * Sets country_tax_xref
-     * @param string $country_tax_xref
+     * @param  string  $country_tax_xref
      * @return $this
      */
     public function setCountryTaxXref($country_tax_xref)
@@ -1158,7 +1159,7 @@ class UnpostedInvoice implements ArrayAccess
 
     /**
      * Sets country_tax_amount
-     * @param double $country_tax_amount
+     * @param  double  $country_tax_amount
      * @return $this
      */
     public function setCountryTaxAmount($country_tax_amount)
@@ -1179,7 +1180,7 @@ class UnpostedInvoice implements ArrayAccess
 
     /**
      * Sets composite_tax_flag
-     * @param bool $composite_tax_flag Set to true if transaction is taxable at the composite level.
+     * @param  bool  $composite_tax_flag  Set to true if transaction is taxable at the composite level.
      * @return $this
      */
     public function setCompositeTaxFlag($composite_tax_flag)
@@ -1200,7 +1201,7 @@ class UnpostedInvoice implements ArrayAccess
 
     /**
      * Sets composite_tax_xref
-     * @param string $composite_tax_xref
+     * @param  string  $composite_tax_xref
      * @return $this
      */
     public function setCompositeTaxXref($composite_tax_xref)
@@ -1221,7 +1222,7 @@ class UnpostedInvoice implements ArrayAccess
 
     /**
      * Sets composite_tax_amount
-     * @param double $composite_tax_amount
+     * @param  double  $composite_tax_amount
      * @return $this
      */
     public function setCompositeTaxAmount($composite_tax_amount)
@@ -1242,7 +1243,7 @@ class UnpostedInvoice implements ArrayAccess
 
     /**
      * Sets created_by
-     * @param string $created_by
+     * @param  string  $created_by
      * @return $this
      */
     public function setCreatedBy($created_by)
@@ -1263,7 +1264,7 @@ class UnpostedInvoice implements ArrayAccess
 
     /**
      * Sets date_closed
-     * @param \DateTime $date_closed
+     * @param  \DateTime  $date_closed
      * @return $this
      */
     public function setDateClosed($date_closed)
@@ -1284,7 +1285,7 @@ class UnpostedInvoice implements ArrayAccess
 
     /**
      * Sets _info
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\Metadata $_info Metadata of the entity
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\Metadata  $_info  Metadata of the entity
      * @return $this
      */
     public function setInfo($_info)
@@ -1293,9 +1294,10 @@ class UnpostedInvoice implements ArrayAccess
 
         return $this;
     }
+
     /**
      * Returns true if offset exists. False otherwise.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return boolean
      */
     public function offsetExists($offset)
@@ -1305,7 +1307,7 @@ class UnpostedInvoice implements ArrayAccess
 
     /**
      * Gets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return mixed
      */
     public function offsetGet($offset)
@@ -1315,8 +1317,8 @@ class UnpostedInvoice implements ArrayAccess
 
     /**
      * Sets value based on offset.
-     * @param  integer $offset Offset
-     * @param  mixed   $value  Value to be set
+     * @param  integer  $offset  Offset
+     * @param  mixed  $value  Value to be set
      * @return void
      */
     public function offsetSet($offset, $value)
@@ -1330,7 +1332,7 @@ class UnpostedInvoice implements ArrayAccess
 
     /**
      * Unsets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return void
      */
     public function offsetUnset($offset)
@@ -1345,7 +1347,8 @@ class UnpostedInvoice implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this),
+                JSON_PRETTY_PRINT);
         }
 
         return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this));

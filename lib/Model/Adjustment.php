@@ -34,7 +34,9 @@ use \ArrayAccess;
 /**
  * Adjustment Class Doc Comment
  *
- * @category    Class */
+ * @category    Class
+ */
+
 /**
  * @package     Spinen\ConnectWise\Clients\Finance
  * @author      Swagger Codegen team
@@ -45,22 +47,22 @@ class Adjustment implements ArrayAccess
     const DISCRIMINATOR = null;
 
     /**
-      * The original name of the model.
-      * @var string
-      */
+     * The original name of the model.
+     * @var string
+     */
     protected static $swaggerModelName = 'Adjustment';
 
     /**
-      * Array of property to type mappings. Used for (de)serialization
-      * @var string[]
-      */
+     * Array of property to type mappings. Used for (de)serialization
+     * @var string[]
+     */
     protected static $swaggerTypes = [
-        'id' => 'int',
-        'amount' => 'double',
-        'description' => 'string',
+        'id'             => 'int',
+        'amount'         => 'double',
+        'description'    => 'string',
         'effective_date' => '\DateTime',
-        'agreement_id' => 'int',
-        '_info' => '\Spinen\ConnectWise\Clients\Finance\Model\Metadata'
+        'agreement_id'   => 'int',
+        '_info'          => '\Spinen\ConnectWise\Clients\Finance\Model\Metadata'
     ];
 
     public static function swaggerTypes()
@@ -73,12 +75,12 @@ class Adjustment implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'id' => 'id',
-        'amount' => 'amount',
-        'description' => 'description',
+        'id'             => 'id',
+        'amount'         => 'amount',
+        'description'    => 'description',
         'effective_date' => 'effectiveDate',
-        'agreement_id' => 'agreementId',
-        '_info' => '_info'
+        'agreement_id'   => 'agreementId',
+        '_info'          => '_info'
     ];
 
 
@@ -87,12 +89,12 @@ class Adjustment implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'id' => 'setId',
-        'amount' => 'setAmount',
-        'description' => 'setDescription',
+        'id'             => 'setId',
+        'amount'         => 'setAmount',
+        'description'    => 'setDescription',
         'effective_date' => 'setEffectiveDate',
-        'agreement_id' => 'setAgreementId',
-        '_info' => 'setInfo'
+        'agreement_id'   => 'setAgreementId',
+        '_info'          => 'setInfo'
     ];
 
 
@@ -101,12 +103,12 @@ class Adjustment implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'id' => 'getId',
-        'amount' => 'getAmount',
-        'description' => 'getDescription',
+        'id'             => 'getId',
+        'amount'         => 'getAmount',
+        'description'    => 'getDescription',
         'effective_date' => 'getEffectiveDate',
-        'agreement_id' => 'getAgreementId',
-        '_info' => 'getInfo'
+        'agreement_id'   => 'getAgreementId',
+        '_info'          => 'getInfo'
     ];
 
     public static function attributeMap()
@@ -124,9 +126,6 @@ class Adjustment implements ArrayAccess
         return self::$getters;
     }
 
-    
-
-    
 
     /**
      * Associative array for storing property values
@@ -136,7 +135,7 @@ class Adjustment implements ArrayAccess
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param  mixed[]  $data  Associated array of property values initializing the model
      */
     public function __construct(array $data = null)
     {
@@ -189,7 +188,7 @@ class Adjustment implements ArrayAccess
 
     /**
      * Sets id
-     * @param int $id
+     * @param  int  $id
      * @return $this
      */
     public function setId($id)
@@ -210,7 +209,7 @@ class Adjustment implements ArrayAccess
 
     /**
      * Sets amount
-     * @param double $amount
+     * @param  double  $amount
      * @return $this
      */
     public function setAmount($amount)
@@ -231,7 +230,7 @@ class Adjustment implements ArrayAccess
 
     /**
      * Sets description
-     * @param string $description
+     * @param  string  $description
      * @return $this
      */
     public function setDescription($description)
@@ -256,7 +255,7 @@ class Adjustment implements ArrayAccess
 
     /**
      * Sets effective_date
-     * @param \DateTime $effective_date
+     * @param  \DateTime  $effective_date
      * @return $this
      */
     public function setEffectiveDate($effective_date)
@@ -277,7 +276,7 @@ class Adjustment implements ArrayAccess
 
     /**
      * Sets agreement_id
-     * @param int $agreement_id
+     * @param  int  $agreement_id
      * @return $this
      */
     public function setAgreementId($agreement_id)
@@ -298,7 +297,7 @@ class Adjustment implements ArrayAccess
 
     /**
      * Sets _info
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\Metadata $_info Metadata of the entity
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\Metadata  $_info  Metadata of the entity
      * @return $this
      */
     public function setInfo($_info)
@@ -307,9 +306,10 @@ class Adjustment implements ArrayAccess
 
         return $this;
     }
+
     /**
      * Returns true if offset exists. False otherwise.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return boolean
      */
     public function offsetExists($offset)
@@ -319,7 +319,7 @@ class Adjustment implements ArrayAccess
 
     /**
      * Gets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return mixed
      */
     public function offsetGet($offset)
@@ -329,8 +329,8 @@ class Adjustment implements ArrayAccess
 
     /**
      * Sets value based on offset.
-     * @param  integer $offset Offset
-     * @param  mixed   $value  Value to be set
+     * @param  integer  $offset  Offset
+     * @param  mixed  $value  Value to be set
      * @return void
      */
     public function offsetSet($offset, $value)
@@ -344,7 +344,7 @@ class Adjustment implements ArrayAccess
 
     /**
      * Unsets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return void
      */
     public function offsetUnset($offset)
@@ -359,7 +359,8 @@ class Adjustment implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this),
+                JSON_PRETTY_PRINT);
         }
 
         return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this));

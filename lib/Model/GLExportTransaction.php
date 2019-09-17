@@ -34,7 +34,9 @@ use \ArrayAccess;
 /**
  * GLExportTransaction Class Doc Comment
  *
- * @category    Class */
+ * @category    Class
+ */
+
 /**
  * @package     Spinen\ConnectWise\Clients\Finance
  * @author      Swagger Codegen team
@@ -45,75 +47,75 @@ class GLExportTransaction implements ArrayAccess
     const DISCRIMINATOR = null;
 
     /**
-      * The original name of the model.
-      * @var string
-      */
+     * The original name of the model.
+     * @var string
+     */
     protected static $swaggerModelName = 'GLExportTransaction';
 
     /**
-      * Array of property to type mappings. Used for (de)serialization
-      * @var string[]
-      */
+     * Array of property to type mappings. Used for (de)serialization
+     * @var string[]
+     */
     protected static $swaggerTypes = [
-        'id' => 'int',
-        'gl_class' => 'string',
-        'gl_type_id' => 'string',
-        'document_date' => '\DateTime',
-        'document_number' => 'string',
-        'document_type' => 'string',
-        'memo' => 'string',
-        'description' => 'string',
-        'attention' => 'string',
-        'sales_territory' => 'string',
-        'company' => '\Spinen\ConnectWise\Clients\Finance\Model\CompanyReference',
-        'company_type' => '\Spinen\ConnectWise\Clients\Finance\Model\CompanyTypeReference',
-        'company_account_number' => 'string',
-        'site' => '\Spinen\ConnectWise\Clients\Finance\Model\SiteReference',
-        'billing_terms' => '\Spinen\ConnectWise\Clients\Finance\Model\BillingTermsReference',
-        'billing_terms_xref' => 'string',
-        'due_days' => 'int',
-        'due_date' => '\DateTime',
-        'email_delivery_flag' => 'bool',
-        'print_delivery_flag' => 'bool',
-        'agreement_pre_payment_flag' => 'bool',
-        'account_number' => 'string',
-        'billing_type' => 'string',
-        'gl_entry_ids' => 'string',
-        'purchase_order' => '\Spinen\ConnectWise\Clients\Finance\Model\PurchaseOrderReference',
-        'project' => '\Spinen\ConnectWise\Clients\Finance\Model\ProjectReference',
-        'currency' => '\Spinen\ConnectWise\Clients\Finance\Model\CurrencyReference',
-        'total' => 'double',
-        'sales_rep_id' => 'string',
-        'sales_rep_name' => 'string',
-        'taxable' => 'bool',
-        'taxable_total' => 'double',
-        'tax_code' => '\Spinen\ConnectWise\Clients\Finance\Model\TaxCodeReference',
-        'tax_group_rate' => 'double',
-        'piggy_back_flag' => 'bool',
-        'tax_account_number' => 'string',
-        'sales_tax' => 'double',
-        'state_tax' => 'double',
-        'county_tax' => 'double',
-        'city_tax' => 'double',
-        'taxable_amount1' => 'double',
-        'taxable_amount2' => 'double',
-        'taxable_amount3' => 'double',
-        'taxable_amount4' => 'double',
-        'taxable_amount5' => 'double',
-        'tax_agency_xref' => 'string',
-        'state_tax_xref' => 'string',
-        'county_tax_xref' => 'string',
-        'tax_id' => 'string',
-        'tax_dp_applied_flag' => 'bool',
-        'use_avalara_flag' => 'bool',
-        'send_avalara_tax_flag' => 'bool',
-        'ship_to_company' => '\Spinen\ConnectWise\Clients\Finance\Model\CompanyReference',
+        'id'                          => 'int',
+        'gl_class'                    => 'string',
+        'gl_type_id'                  => 'string',
+        'document_date'               => '\DateTime',
+        'document_number'             => 'string',
+        'document_type'               => 'string',
+        'memo'                        => 'string',
+        'description'                 => 'string',
+        'attention'                   => 'string',
+        'sales_territory'             => 'string',
+        'company'                     => '\Spinen\ConnectWise\Clients\Finance\Model\CompanyReference',
+        'company_type'                => '\Spinen\ConnectWise\Clients\Finance\Model\CompanyTypeReference',
+        'company_account_number'      => 'string',
+        'site'                        => '\Spinen\ConnectWise\Clients\Finance\Model\SiteReference',
+        'billing_terms'               => '\Spinen\ConnectWise\Clients\Finance\Model\BillingTermsReference',
+        'billing_terms_xref'          => 'string',
+        'due_days'                    => 'int',
+        'due_date'                    => '\DateTime',
+        'email_delivery_flag'         => 'bool',
+        'print_delivery_flag'         => 'bool',
+        'agreement_pre_payment_flag'  => 'bool',
+        'account_number'              => 'string',
+        'billing_type'                => 'string',
+        'gl_entry_ids'                => 'string',
+        'purchase_order'              => '\Spinen\ConnectWise\Clients\Finance\Model\PurchaseOrderReference',
+        'project'                     => '\Spinen\ConnectWise\Clients\Finance\Model\ProjectReference',
+        'currency'                    => '\Spinen\ConnectWise\Clients\Finance\Model\CurrencyReference',
+        'total'                       => 'double',
+        'sales_rep_id'                => 'string',
+        'sales_rep_name'              => 'string',
+        'taxable'                     => 'bool',
+        'taxable_total'               => 'double',
+        'tax_code'                    => '\Spinen\ConnectWise\Clients\Finance\Model\TaxCodeReference',
+        'tax_group_rate'              => 'double',
+        'piggy_back_flag'             => 'bool',
+        'tax_account_number'          => 'string',
+        'sales_tax'                   => 'double',
+        'state_tax'                   => 'double',
+        'county_tax'                  => 'double',
+        'city_tax'                    => 'double',
+        'taxable_amount1'             => 'double',
+        'taxable_amount2'             => 'double',
+        'taxable_amount3'             => 'double',
+        'taxable_amount4'             => 'double',
+        'taxable_amount5'             => 'double',
+        'tax_agency_xref'             => 'string',
+        'state_tax_xref'              => 'string',
+        'county_tax_xref'             => 'string',
+        'tax_id'                      => 'string',
+        'tax_dp_applied_flag'         => 'bool',
+        'use_avalara_flag'            => 'bool',
+        'send_avalara_tax_flag'       => 'bool',
+        'ship_to_company'             => '\Spinen\ConnectWise\Clients\Finance\Model\CompanyReference',
         'ship_company_account_number' => 'string',
-        'ship_company_type' => '\Spinen\ConnectWise\Clients\Finance\Model\CompanyTypeReference',
-        'ship_tax_id' => 'string',
-        'ship_site' => '\Spinen\ConnectWise\Clients\Finance\Model\SiteReference',
-        'ship_contact' => '\Spinen\ConnectWise\Clients\Finance\Model\ContactReference',
-        'detail' => '\Spinen\ConnectWise\Clients\Finance\Model\GLExportTransactionDetail[]'
+        'ship_company_type'           => '\Spinen\ConnectWise\Clients\Finance\Model\CompanyTypeReference',
+        'ship_tax_id'                 => 'string',
+        'ship_site'                   => '\Spinen\ConnectWise\Clients\Finance\Model\SiteReference',
+        'ship_contact'                => '\Spinen\ConnectWise\Clients\Finance\Model\ContactReference',
+        'detail'                      => '\Spinen\ConnectWise\Clients\Finance\Model\GLExportTransactionDetail[]'
     ];
 
     public static function swaggerTypes()
@@ -126,65 +128,65 @@ class GLExportTransaction implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'id' => 'id',
-        'gl_class' => 'glClass',
-        'gl_type_id' => 'glTypeId',
-        'document_date' => 'documentDate',
-        'document_number' => 'documentNumber',
-        'document_type' => 'documentType',
-        'memo' => 'memo',
-        'description' => 'description',
-        'attention' => 'attention',
-        'sales_territory' => 'salesTerritory',
-        'company' => 'company',
-        'company_type' => 'companyType',
-        'company_account_number' => 'companyAccountNumber',
-        'site' => 'site',
-        'billing_terms' => 'billingTerms',
-        'billing_terms_xref' => 'billingTermsXref',
-        'due_days' => 'dueDays',
-        'due_date' => 'dueDate',
-        'email_delivery_flag' => 'emailDeliveryFlag',
-        'print_delivery_flag' => 'printDeliveryFlag',
-        'agreement_pre_payment_flag' => 'agreementPrePaymentFlag',
-        'account_number' => 'accountNumber',
-        'billing_type' => 'billingType',
-        'gl_entry_ids' => 'glEntryIds',
-        'purchase_order' => 'purchaseOrder',
-        'project' => 'project',
-        'currency' => 'currency',
-        'total' => 'total',
-        'sales_rep_id' => 'salesRepId',
-        'sales_rep_name' => 'salesRepName',
-        'taxable' => 'taxable',
-        'taxable_total' => 'taxableTotal',
-        'tax_code' => 'taxCode',
-        'tax_group_rate' => 'taxGroupRate',
-        'piggy_back_flag' => 'piggyBackFlag',
-        'tax_account_number' => 'taxAccountNumber',
-        'sales_tax' => 'salesTax',
-        'state_tax' => 'stateTax',
-        'county_tax' => 'countyTax',
-        'city_tax' => 'cityTax',
-        'taxable_amount1' => 'taxableAmount1',
-        'taxable_amount2' => 'taxableAmount2',
-        'taxable_amount3' => 'taxableAmount3',
-        'taxable_amount4' => 'taxableAmount4',
-        'taxable_amount5' => 'taxableAmount5',
-        'tax_agency_xref' => 'taxAgencyXref',
-        'state_tax_xref' => 'stateTaxXref',
-        'county_tax_xref' => 'countyTaxXref',
-        'tax_id' => 'taxId',
-        'tax_dp_applied_flag' => 'taxDpAppliedFlag',
-        'use_avalara_flag' => 'useAvalaraFlag',
-        'send_avalara_tax_flag' => 'sendAvalaraTaxFlag',
-        'ship_to_company' => 'shipToCompany',
+        'id'                          => 'id',
+        'gl_class'                    => 'glClass',
+        'gl_type_id'                  => 'glTypeId',
+        'document_date'               => 'documentDate',
+        'document_number'             => 'documentNumber',
+        'document_type'               => 'documentType',
+        'memo'                        => 'memo',
+        'description'                 => 'description',
+        'attention'                   => 'attention',
+        'sales_territory'             => 'salesTerritory',
+        'company'                     => 'company',
+        'company_type'                => 'companyType',
+        'company_account_number'      => 'companyAccountNumber',
+        'site'                        => 'site',
+        'billing_terms'               => 'billingTerms',
+        'billing_terms_xref'          => 'billingTermsXref',
+        'due_days'                    => 'dueDays',
+        'due_date'                    => 'dueDate',
+        'email_delivery_flag'         => 'emailDeliveryFlag',
+        'print_delivery_flag'         => 'printDeliveryFlag',
+        'agreement_pre_payment_flag'  => 'agreementPrePaymentFlag',
+        'account_number'              => 'accountNumber',
+        'billing_type'                => 'billingType',
+        'gl_entry_ids'                => 'glEntryIds',
+        'purchase_order'              => 'purchaseOrder',
+        'project'                     => 'project',
+        'currency'                    => 'currency',
+        'total'                       => 'total',
+        'sales_rep_id'                => 'salesRepId',
+        'sales_rep_name'              => 'salesRepName',
+        'taxable'                     => 'taxable',
+        'taxable_total'               => 'taxableTotal',
+        'tax_code'                    => 'taxCode',
+        'tax_group_rate'              => 'taxGroupRate',
+        'piggy_back_flag'             => 'piggyBackFlag',
+        'tax_account_number'          => 'taxAccountNumber',
+        'sales_tax'                   => 'salesTax',
+        'state_tax'                   => 'stateTax',
+        'county_tax'                  => 'countyTax',
+        'city_tax'                    => 'cityTax',
+        'taxable_amount1'             => 'taxableAmount1',
+        'taxable_amount2'             => 'taxableAmount2',
+        'taxable_amount3'             => 'taxableAmount3',
+        'taxable_amount4'             => 'taxableAmount4',
+        'taxable_amount5'             => 'taxableAmount5',
+        'tax_agency_xref'             => 'taxAgencyXref',
+        'state_tax_xref'              => 'stateTaxXref',
+        'county_tax_xref'             => 'countyTaxXref',
+        'tax_id'                      => 'taxId',
+        'tax_dp_applied_flag'         => 'taxDpAppliedFlag',
+        'use_avalara_flag'            => 'useAvalaraFlag',
+        'send_avalara_tax_flag'       => 'sendAvalaraTaxFlag',
+        'ship_to_company'             => 'shipToCompany',
         'ship_company_account_number' => 'shipCompanyAccountNumber',
-        'ship_company_type' => 'shipCompanyType',
-        'ship_tax_id' => 'shipTaxId',
-        'ship_site' => 'shipSite',
-        'ship_contact' => 'shipContact',
-        'detail' => 'detail'
+        'ship_company_type'           => 'shipCompanyType',
+        'ship_tax_id'                 => 'shipTaxId',
+        'ship_site'                   => 'shipSite',
+        'ship_contact'                => 'shipContact',
+        'detail'                      => 'detail'
     ];
 
 
@@ -193,65 +195,65 @@ class GLExportTransaction implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'id' => 'setId',
-        'gl_class' => 'setGlClass',
-        'gl_type_id' => 'setGlTypeId',
-        'document_date' => 'setDocumentDate',
-        'document_number' => 'setDocumentNumber',
-        'document_type' => 'setDocumentType',
-        'memo' => 'setMemo',
-        'description' => 'setDescription',
-        'attention' => 'setAttention',
-        'sales_territory' => 'setSalesTerritory',
-        'company' => 'setCompany',
-        'company_type' => 'setCompanyType',
-        'company_account_number' => 'setCompanyAccountNumber',
-        'site' => 'setSite',
-        'billing_terms' => 'setBillingTerms',
-        'billing_terms_xref' => 'setBillingTermsXref',
-        'due_days' => 'setDueDays',
-        'due_date' => 'setDueDate',
-        'email_delivery_flag' => 'setEmailDeliveryFlag',
-        'print_delivery_flag' => 'setPrintDeliveryFlag',
-        'agreement_pre_payment_flag' => 'setAgreementPrePaymentFlag',
-        'account_number' => 'setAccountNumber',
-        'billing_type' => 'setBillingType',
-        'gl_entry_ids' => 'setGlEntryIds',
-        'purchase_order' => 'setPurchaseOrder',
-        'project' => 'setProject',
-        'currency' => 'setCurrency',
-        'total' => 'setTotal',
-        'sales_rep_id' => 'setSalesRepId',
-        'sales_rep_name' => 'setSalesRepName',
-        'taxable' => 'setTaxable',
-        'taxable_total' => 'setTaxableTotal',
-        'tax_code' => 'setTaxCode',
-        'tax_group_rate' => 'setTaxGroupRate',
-        'piggy_back_flag' => 'setPiggyBackFlag',
-        'tax_account_number' => 'setTaxAccountNumber',
-        'sales_tax' => 'setSalesTax',
-        'state_tax' => 'setStateTax',
-        'county_tax' => 'setCountyTax',
-        'city_tax' => 'setCityTax',
-        'taxable_amount1' => 'setTaxableAmount1',
-        'taxable_amount2' => 'setTaxableAmount2',
-        'taxable_amount3' => 'setTaxableAmount3',
-        'taxable_amount4' => 'setTaxableAmount4',
-        'taxable_amount5' => 'setTaxableAmount5',
-        'tax_agency_xref' => 'setTaxAgencyXref',
-        'state_tax_xref' => 'setStateTaxXref',
-        'county_tax_xref' => 'setCountyTaxXref',
-        'tax_id' => 'setTaxId',
-        'tax_dp_applied_flag' => 'setTaxDpAppliedFlag',
-        'use_avalara_flag' => 'setUseAvalaraFlag',
-        'send_avalara_tax_flag' => 'setSendAvalaraTaxFlag',
-        'ship_to_company' => 'setShipToCompany',
+        'id'                          => 'setId',
+        'gl_class'                    => 'setGlClass',
+        'gl_type_id'                  => 'setGlTypeId',
+        'document_date'               => 'setDocumentDate',
+        'document_number'             => 'setDocumentNumber',
+        'document_type'               => 'setDocumentType',
+        'memo'                        => 'setMemo',
+        'description'                 => 'setDescription',
+        'attention'                   => 'setAttention',
+        'sales_territory'             => 'setSalesTerritory',
+        'company'                     => 'setCompany',
+        'company_type'                => 'setCompanyType',
+        'company_account_number'      => 'setCompanyAccountNumber',
+        'site'                        => 'setSite',
+        'billing_terms'               => 'setBillingTerms',
+        'billing_terms_xref'          => 'setBillingTermsXref',
+        'due_days'                    => 'setDueDays',
+        'due_date'                    => 'setDueDate',
+        'email_delivery_flag'         => 'setEmailDeliveryFlag',
+        'print_delivery_flag'         => 'setPrintDeliveryFlag',
+        'agreement_pre_payment_flag'  => 'setAgreementPrePaymentFlag',
+        'account_number'              => 'setAccountNumber',
+        'billing_type'                => 'setBillingType',
+        'gl_entry_ids'                => 'setGlEntryIds',
+        'purchase_order'              => 'setPurchaseOrder',
+        'project'                     => 'setProject',
+        'currency'                    => 'setCurrency',
+        'total'                       => 'setTotal',
+        'sales_rep_id'                => 'setSalesRepId',
+        'sales_rep_name'              => 'setSalesRepName',
+        'taxable'                     => 'setTaxable',
+        'taxable_total'               => 'setTaxableTotal',
+        'tax_code'                    => 'setTaxCode',
+        'tax_group_rate'              => 'setTaxGroupRate',
+        'piggy_back_flag'             => 'setPiggyBackFlag',
+        'tax_account_number'          => 'setTaxAccountNumber',
+        'sales_tax'                   => 'setSalesTax',
+        'state_tax'                   => 'setStateTax',
+        'county_tax'                  => 'setCountyTax',
+        'city_tax'                    => 'setCityTax',
+        'taxable_amount1'             => 'setTaxableAmount1',
+        'taxable_amount2'             => 'setTaxableAmount2',
+        'taxable_amount3'             => 'setTaxableAmount3',
+        'taxable_amount4'             => 'setTaxableAmount4',
+        'taxable_amount5'             => 'setTaxableAmount5',
+        'tax_agency_xref'             => 'setTaxAgencyXref',
+        'state_tax_xref'              => 'setStateTaxXref',
+        'county_tax_xref'             => 'setCountyTaxXref',
+        'tax_id'                      => 'setTaxId',
+        'tax_dp_applied_flag'         => 'setTaxDpAppliedFlag',
+        'use_avalara_flag'            => 'setUseAvalaraFlag',
+        'send_avalara_tax_flag'       => 'setSendAvalaraTaxFlag',
+        'ship_to_company'             => 'setShipToCompany',
         'ship_company_account_number' => 'setShipCompanyAccountNumber',
-        'ship_company_type' => 'setShipCompanyType',
-        'ship_tax_id' => 'setShipTaxId',
-        'ship_site' => 'setShipSite',
-        'ship_contact' => 'setShipContact',
-        'detail' => 'setDetail'
+        'ship_company_type'           => 'setShipCompanyType',
+        'ship_tax_id'                 => 'setShipTaxId',
+        'ship_site'                   => 'setShipSite',
+        'ship_contact'                => 'setShipContact',
+        'detail'                      => 'setDetail'
     ];
 
 
@@ -260,65 +262,65 @@ class GLExportTransaction implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'id' => 'getId',
-        'gl_class' => 'getGlClass',
-        'gl_type_id' => 'getGlTypeId',
-        'document_date' => 'getDocumentDate',
-        'document_number' => 'getDocumentNumber',
-        'document_type' => 'getDocumentType',
-        'memo' => 'getMemo',
-        'description' => 'getDescription',
-        'attention' => 'getAttention',
-        'sales_territory' => 'getSalesTerritory',
-        'company' => 'getCompany',
-        'company_type' => 'getCompanyType',
-        'company_account_number' => 'getCompanyAccountNumber',
-        'site' => 'getSite',
-        'billing_terms' => 'getBillingTerms',
-        'billing_terms_xref' => 'getBillingTermsXref',
-        'due_days' => 'getDueDays',
-        'due_date' => 'getDueDate',
-        'email_delivery_flag' => 'getEmailDeliveryFlag',
-        'print_delivery_flag' => 'getPrintDeliveryFlag',
-        'agreement_pre_payment_flag' => 'getAgreementPrePaymentFlag',
-        'account_number' => 'getAccountNumber',
-        'billing_type' => 'getBillingType',
-        'gl_entry_ids' => 'getGlEntryIds',
-        'purchase_order' => 'getPurchaseOrder',
-        'project' => 'getProject',
-        'currency' => 'getCurrency',
-        'total' => 'getTotal',
-        'sales_rep_id' => 'getSalesRepId',
-        'sales_rep_name' => 'getSalesRepName',
-        'taxable' => 'getTaxable',
-        'taxable_total' => 'getTaxableTotal',
-        'tax_code' => 'getTaxCode',
-        'tax_group_rate' => 'getTaxGroupRate',
-        'piggy_back_flag' => 'getPiggyBackFlag',
-        'tax_account_number' => 'getTaxAccountNumber',
-        'sales_tax' => 'getSalesTax',
-        'state_tax' => 'getStateTax',
-        'county_tax' => 'getCountyTax',
-        'city_tax' => 'getCityTax',
-        'taxable_amount1' => 'getTaxableAmount1',
-        'taxable_amount2' => 'getTaxableAmount2',
-        'taxable_amount3' => 'getTaxableAmount3',
-        'taxable_amount4' => 'getTaxableAmount4',
-        'taxable_amount5' => 'getTaxableAmount5',
-        'tax_agency_xref' => 'getTaxAgencyXref',
-        'state_tax_xref' => 'getStateTaxXref',
-        'county_tax_xref' => 'getCountyTaxXref',
-        'tax_id' => 'getTaxId',
-        'tax_dp_applied_flag' => 'getTaxDpAppliedFlag',
-        'use_avalara_flag' => 'getUseAvalaraFlag',
-        'send_avalara_tax_flag' => 'getSendAvalaraTaxFlag',
-        'ship_to_company' => 'getShipToCompany',
+        'id'                          => 'getId',
+        'gl_class'                    => 'getGlClass',
+        'gl_type_id'                  => 'getGlTypeId',
+        'document_date'               => 'getDocumentDate',
+        'document_number'             => 'getDocumentNumber',
+        'document_type'               => 'getDocumentType',
+        'memo'                        => 'getMemo',
+        'description'                 => 'getDescription',
+        'attention'                   => 'getAttention',
+        'sales_territory'             => 'getSalesTerritory',
+        'company'                     => 'getCompany',
+        'company_type'                => 'getCompanyType',
+        'company_account_number'      => 'getCompanyAccountNumber',
+        'site'                        => 'getSite',
+        'billing_terms'               => 'getBillingTerms',
+        'billing_terms_xref'          => 'getBillingTermsXref',
+        'due_days'                    => 'getDueDays',
+        'due_date'                    => 'getDueDate',
+        'email_delivery_flag'         => 'getEmailDeliveryFlag',
+        'print_delivery_flag'         => 'getPrintDeliveryFlag',
+        'agreement_pre_payment_flag'  => 'getAgreementPrePaymentFlag',
+        'account_number'              => 'getAccountNumber',
+        'billing_type'                => 'getBillingType',
+        'gl_entry_ids'                => 'getGlEntryIds',
+        'purchase_order'              => 'getPurchaseOrder',
+        'project'                     => 'getProject',
+        'currency'                    => 'getCurrency',
+        'total'                       => 'getTotal',
+        'sales_rep_id'                => 'getSalesRepId',
+        'sales_rep_name'              => 'getSalesRepName',
+        'taxable'                     => 'getTaxable',
+        'taxable_total'               => 'getTaxableTotal',
+        'tax_code'                    => 'getTaxCode',
+        'tax_group_rate'              => 'getTaxGroupRate',
+        'piggy_back_flag'             => 'getPiggyBackFlag',
+        'tax_account_number'          => 'getTaxAccountNumber',
+        'sales_tax'                   => 'getSalesTax',
+        'state_tax'                   => 'getStateTax',
+        'county_tax'                  => 'getCountyTax',
+        'city_tax'                    => 'getCityTax',
+        'taxable_amount1'             => 'getTaxableAmount1',
+        'taxable_amount2'             => 'getTaxableAmount2',
+        'taxable_amount3'             => 'getTaxableAmount3',
+        'taxable_amount4'             => 'getTaxableAmount4',
+        'taxable_amount5'             => 'getTaxableAmount5',
+        'tax_agency_xref'             => 'getTaxAgencyXref',
+        'state_tax_xref'              => 'getStateTaxXref',
+        'county_tax_xref'             => 'getCountyTaxXref',
+        'tax_id'                      => 'getTaxId',
+        'tax_dp_applied_flag'         => 'getTaxDpAppliedFlag',
+        'use_avalara_flag'            => 'getUseAvalaraFlag',
+        'send_avalara_tax_flag'       => 'getSendAvalaraTaxFlag',
+        'ship_to_company'             => 'getShipToCompany',
         'ship_company_account_number' => 'getShipCompanyAccountNumber',
-        'ship_company_type' => 'getShipCompanyType',
-        'ship_tax_id' => 'getShipTaxId',
-        'ship_site' => 'getShipSite',
-        'ship_contact' => 'getShipContact',
-        'detail' => 'getDetail'
+        'ship_company_type'           => 'getShipCompanyType',
+        'ship_tax_id'                 => 'getShipTaxId',
+        'ship_site'                   => 'getShipSite',
+        'ship_contact'                => 'getShipContact',
+        'detail'                      => 'getDetail'
     ];
 
     public static function attributeMap()
@@ -336,9 +338,6 @@ class GLExportTransaction implements ArrayAccess
         return self::$getters;
     }
 
-    
-
-    
 
     /**
      * Associative array for storing property values
@@ -348,7 +347,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param  mixed[]  $data  Associated array of property values initializing the model
      */
     public function __construct(array $data = null)
     {
@@ -447,7 +446,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets id
-     * @param int $id
+     * @param  int  $id
      * @return $this
      */
     public function setId($id)
@@ -468,7 +467,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets gl_class
-     * @param string $gl_class
+     * @param  string  $gl_class
      * @return $this
      */
     public function setGlClass($gl_class)
@@ -489,7 +488,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets gl_type_id
-     * @param string $gl_type_id
+     * @param  string  $gl_type_id
      * @return $this
      */
     public function setGlTypeId($gl_type_id)
@@ -510,7 +509,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets document_date
-     * @param \DateTime $document_date
+     * @param  \DateTime  $document_date
      * @return $this
      */
     public function setDocumentDate($document_date)
@@ -531,7 +530,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets document_number
-     * @param string $document_number
+     * @param  string  $document_number
      * @return $this
      */
     public function setDocumentNumber($document_number)
@@ -552,7 +551,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets document_type
-     * @param string $document_type
+     * @param  string  $document_type
      * @return $this
      */
     public function setDocumentType($document_type)
@@ -573,7 +572,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets memo
-     * @param string $memo
+     * @param  string  $memo
      * @return $this
      */
     public function setMemo($memo)
@@ -594,7 +593,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets description
-     * @param string $description
+     * @param  string  $description
      * @return $this
      */
     public function setDescription($description)
@@ -615,7 +614,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets attention
-     * @param string $attention
+     * @param  string  $attention
      * @return $this
      */
     public function setAttention($attention)
@@ -636,7 +635,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets sales_territory
-     * @param string $sales_territory
+     * @param  string  $sales_territory
      * @return $this
      */
     public function setSalesTerritory($sales_territory)
@@ -657,7 +656,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets company
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\CompanyReference $company
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\CompanyReference  $company
      * @return $this
      */
     public function setCompany($company)
@@ -678,7 +677,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets company_type
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\CompanyTypeReference $company_type
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\CompanyTypeReference  $company_type
      * @return $this
      */
     public function setCompanyType($company_type)
@@ -699,7 +698,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets company_account_number
-     * @param string $company_account_number
+     * @param  string  $company_account_number
      * @return $this
      */
     public function setCompanyAccountNumber($company_account_number)
@@ -720,7 +719,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets site
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\SiteReference $site
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\SiteReference  $site
      * @return $this
      */
     public function setSite($site)
@@ -741,7 +740,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets billing_terms
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\BillingTermsReference $billing_terms
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\BillingTermsReference  $billing_terms
      * @return $this
      */
     public function setBillingTerms($billing_terms)
@@ -762,7 +761,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets billing_terms_xref
-     * @param string $billing_terms_xref
+     * @param  string  $billing_terms_xref
      * @return $this
      */
     public function setBillingTermsXref($billing_terms_xref)
@@ -783,7 +782,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets due_days
-     * @param int $due_days
+     * @param  int  $due_days
      * @return $this
      */
     public function setDueDays($due_days)
@@ -804,7 +803,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets due_date
-     * @param \DateTime $due_date
+     * @param  \DateTime  $due_date
      * @return $this
      */
     public function setDueDate($due_date)
@@ -825,7 +824,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets email_delivery_flag
-     * @param bool $email_delivery_flag
+     * @param  bool  $email_delivery_flag
      * @return $this
      */
     public function setEmailDeliveryFlag($email_delivery_flag)
@@ -846,7 +845,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets print_delivery_flag
-     * @param bool $print_delivery_flag
+     * @param  bool  $print_delivery_flag
      * @return $this
      */
     public function setPrintDeliveryFlag($print_delivery_flag)
@@ -867,7 +866,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets agreement_pre_payment_flag
-     * @param bool $agreement_pre_payment_flag
+     * @param  bool  $agreement_pre_payment_flag
      * @return $this
      */
     public function setAgreementPrePaymentFlag($agreement_pre_payment_flag)
@@ -888,7 +887,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets account_number
-     * @param string $account_number
+     * @param  string  $account_number
      * @return $this
      */
     public function setAccountNumber($account_number)
@@ -909,7 +908,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets billing_type
-     * @param string $billing_type
+     * @param  string  $billing_type
      * @return $this
      */
     public function setBillingType($billing_type)
@@ -930,7 +929,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets gl_entry_ids
-     * @param string $gl_entry_ids
+     * @param  string  $gl_entry_ids
      * @return $this
      */
     public function setGlEntryIds($gl_entry_ids)
@@ -951,7 +950,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets purchase_order
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\PurchaseOrderReference $purchase_order
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\PurchaseOrderReference  $purchase_order
      * @return $this
      */
     public function setPurchaseOrder($purchase_order)
@@ -972,7 +971,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets project
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\ProjectReference $project
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\ProjectReference  $project
      * @return $this
      */
     public function setProject($project)
@@ -993,7 +992,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets currency
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\CurrencyReference $currency
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\CurrencyReference  $currency
      * @return $this
      */
     public function setCurrency($currency)
@@ -1014,7 +1013,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets total
-     * @param double $total
+     * @param  double  $total
      * @return $this
      */
     public function setTotal($total)
@@ -1035,7 +1034,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets sales_rep_id
-     * @param string $sales_rep_id
+     * @param  string  $sales_rep_id
      * @return $this
      */
     public function setSalesRepId($sales_rep_id)
@@ -1056,7 +1055,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets sales_rep_name
-     * @param string $sales_rep_name
+     * @param  string  $sales_rep_name
      * @return $this
      */
     public function setSalesRepName($sales_rep_name)
@@ -1077,7 +1076,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets taxable
-     * @param bool $taxable
+     * @param  bool  $taxable
      * @return $this
      */
     public function setTaxable($taxable)
@@ -1098,7 +1097,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets taxable_total
-     * @param double $taxable_total
+     * @param  double  $taxable_total
      * @return $this
      */
     public function setTaxableTotal($taxable_total)
@@ -1119,7 +1118,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets tax_code
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\TaxCodeReference $tax_code
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\TaxCodeReference  $tax_code
      * @return $this
      */
     public function setTaxCode($tax_code)
@@ -1140,7 +1139,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets tax_group_rate
-     * @param double $tax_group_rate
+     * @param  double  $tax_group_rate
      * @return $this
      */
     public function setTaxGroupRate($tax_group_rate)
@@ -1161,7 +1160,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets piggy_back_flag
-     * @param bool $piggy_back_flag
+     * @param  bool  $piggy_back_flag
      * @return $this
      */
     public function setPiggyBackFlag($piggy_back_flag)
@@ -1182,7 +1181,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets tax_account_number
-     * @param string $tax_account_number
+     * @param  string  $tax_account_number
      * @return $this
      */
     public function setTaxAccountNumber($tax_account_number)
@@ -1203,7 +1202,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets sales_tax
-     * @param double $sales_tax
+     * @param  double  $sales_tax
      * @return $this
      */
     public function setSalesTax($sales_tax)
@@ -1224,7 +1223,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets state_tax
-     * @param double $state_tax
+     * @param  double  $state_tax
      * @return $this
      */
     public function setStateTax($state_tax)
@@ -1245,7 +1244,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets county_tax
-     * @param double $county_tax
+     * @param  double  $county_tax
      * @return $this
      */
     public function setCountyTax($county_tax)
@@ -1266,7 +1265,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets city_tax
-     * @param double $city_tax
+     * @param  double  $city_tax
      * @return $this
      */
     public function setCityTax($city_tax)
@@ -1287,7 +1286,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets taxable_amount1
-     * @param double $taxable_amount1
+     * @param  double  $taxable_amount1
      * @return $this
      */
     public function setTaxableAmount1($taxable_amount1)
@@ -1308,7 +1307,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets taxable_amount2
-     * @param double $taxable_amount2
+     * @param  double  $taxable_amount2
      * @return $this
      */
     public function setTaxableAmount2($taxable_amount2)
@@ -1329,7 +1328,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets taxable_amount3
-     * @param double $taxable_amount3
+     * @param  double  $taxable_amount3
      * @return $this
      */
     public function setTaxableAmount3($taxable_amount3)
@@ -1350,7 +1349,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets taxable_amount4
-     * @param double $taxable_amount4
+     * @param  double  $taxable_amount4
      * @return $this
      */
     public function setTaxableAmount4($taxable_amount4)
@@ -1371,7 +1370,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets taxable_amount5
-     * @param double $taxable_amount5
+     * @param  double  $taxable_amount5
      * @return $this
      */
     public function setTaxableAmount5($taxable_amount5)
@@ -1392,7 +1391,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets tax_agency_xref
-     * @param string $tax_agency_xref
+     * @param  string  $tax_agency_xref
      * @return $this
      */
     public function setTaxAgencyXref($tax_agency_xref)
@@ -1413,7 +1412,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets state_tax_xref
-     * @param string $state_tax_xref
+     * @param  string  $state_tax_xref
      * @return $this
      */
     public function setStateTaxXref($state_tax_xref)
@@ -1434,7 +1433,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets county_tax_xref
-     * @param string $county_tax_xref
+     * @param  string  $county_tax_xref
      * @return $this
      */
     public function setCountyTaxXref($county_tax_xref)
@@ -1455,7 +1454,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets tax_id
-     * @param string $tax_id
+     * @param  string  $tax_id
      * @return $this
      */
     public function setTaxId($tax_id)
@@ -1476,7 +1475,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets tax_dp_applied_flag
-     * @param bool $tax_dp_applied_flag
+     * @param  bool  $tax_dp_applied_flag
      * @return $this
      */
     public function setTaxDpAppliedFlag($tax_dp_applied_flag)
@@ -1497,7 +1496,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets use_avalara_flag
-     * @param bool $use_avalara_flag
+     * @param  bool  $use_avalara_flag
      * @return $this
      */
     public function setUseAvalaraFlag($use_avalara_flag)
@@ -1518,7 +1517,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets send_avalara_tax_flag
-     * @param bool $send_avalara_tax_flag
+     * @param  bool  $send_avalara_tax_flag
      * @return $this
      */
     public function setSendAvalaraTaxFlag($send_avalara_tax_flag)
@@ -1539,7 +1538,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets ship_to_company
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\CompanyReference $ship_to_company
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\CompanyReference  $ship_to_company
      * @return $this
      */
     public function setShipToCompany($ship_to_company)
@@ -1560,7 +1559,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets ship_company_account_number
-     * @param string $ship_company_account_number
+     * @param  string  $ship_company_account_number
      * @return $this
      */
     public function setShipCompanyAccountNumber($ship_company_account_number)
@@ -1581,7 +1580,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets ship_company_type
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\CompanyTypeReference $ship_company_type
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\CompanyTypeReference  $ship_company_type
      * @return $this
      */
     public function setShipCompanyType($ship_company_type)
@@ -1602,7 +1601,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets ship_tax_id
-     * @param string $ship_tax_id
+     * @param  string  $ship_tax_id
      * @return $this
      */
     public function setShipTaxId($ship_tax_id)
@@ -1623,7 +1622,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets ship_site
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\SiteReference $ship_site
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\SiteReference  $ship_site
      * @return $this
      */
     public function setShipSite($ship_site)
@@ -1644,7 +1643,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets ship_contact
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\ContactReference $ship_contact
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\ContactReference  $ship_contact
      * @return $this
      */
     public function setShipContact($ship_contact)
@@ -1665,7 +1664,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets detail
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\GLExportTransactionDetail[] $detail
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\GLExportTransactionDetail[]  $detail
      * @return $this
      */
     public function setDetail($detail)
@@ -1674,9 +1673,10 @@ class GLExportTransaction implements ArrayAccess
 
         return $this;
     }
+
     /**
      * Returns true if offset exists. False otherwise.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return boolean
      */
     public function offsetExists($offset)
@@ -1686,7 +1686,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Gets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return mixed
      */
     public function offsetGet($offset)
@@ -1696,8 +1696,8 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Sets value based on offset.
-     * @param  integer $offset Offset
-     * @param  mixed   $value  Value to be set
+     * @param  integer  $offset  Offset
+     * @param  mixed  $value  Value to be set
      * @return void
      */
     public function offsetSet($offset, $value)
@@ -1711,7 +1711,7 @@ class GLExportTransaction implements ArrayAccess
 
     /**
      * Unsets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return void
      */
     public function offsetUnset($offset)
@@ -1726,7 +1726,8 @@ class GLExportTransaction implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this),
+                JSON_PRETTY_PRINT);
         }
 
         return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this));

@@ -34,7 +34,9 @@ use \ArrayAccess;
 /**
  * AgreementWorkRole Class Doc Comment
  *
- * @category    Class */
+ * @category    Class
+ */
+
 /**
  * @package     Spinen\ConnectWise\Clients\Finance
  * @author      Swagger Codegen team
@@ -45,26 +47,26 @@ class AgreementWorkRole implements ArrayAccess
     const DISCRIMINATOR = null;
 
     /**
-      * The original name of the model.
-      * @var string
-      */
+     * The original name of the model.
+     * @var string
+     */
     protected static $swaggerModelName = 'AgreementWorkRole';
 
     /**
-      * Array of property to type mappings. Used for (de)serialization
-      * @var string[]
-      */
+     * Array of property to type mappings. Used for (de)serialization
+     * @var string[]
+     */
     protected static $swaggerTypes = [
-        'id' => 'int',
-        'work_role' => '\Spinen\ConnectWise\Clients\Finance\Model\WorkRoleReference',
-        'location_id' => 'int',
-        'rate_type' => 'string',
-        'rate' => 'double',
-        'limit_to' => 'double',
+        'id'             => 'int',
+        'work_role'      => '\Spinen\ConnectWise\Clients\Finance\Model\WorkRoleReference',
+        'location_id'    => 'int',
+        'rate_type'      => 'string',
+        'rate'           => 'double',
+        'limit_to'       => 'double',
         'effective_date' => '\DateTime',
-        'ending_date' => '\DateTime',
-        'agreement_id' => 'int',
-        '_info' => '\Spinen\ConnectWise\Clients\Finance\Model\Metadata'
+        'ending_date'    => '\DateTime',
+        'agreement_id'   => 'int',
+        '_info'          => '\Spinen\ConnectWise\Clients\Finance\Model\Metadata'
     ];
 
     public static function swaggerTypes()
@@ -77,16 +79,16 @@ class AgreementWorkRole implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'id' => 'id',
-        'work_role' => 'workRole',
-        'location_id' => 'locationId',
-        'rate_type' => 'rateType',
-        'rate' => 'rate',
-        'limit_to' => 'limitTo',
+        'id'             => 'id',
+        'work_role'      => 'workRole',
+        'location_id'    => 'locationId',
+        'rate_type'      => 'rateType',
+        'rate'           => 'rate',
+        'limit_to'       => 'limitTo',
         'effective_date' => 'effectiveDate',
-        'ending_date' => 'endingDate',
-        'agreement_id' => 'agreementId',
-        '_info' => '_info'
+        'ending_date'    => 'endingDate',
+        'agreement_id'   => 'agreementId',
+        '_info'          => '_info'
     ];
 
 
@@ -95,16 +97,16 @@ class AgreementWorkRole implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'id' => 'setId',
-        'work_role' => 'setWorkRole',
-        'location_id' => 'setLocationId',
-        'rate_type' => 'setRateType',
-        'rate' => 'setRate',
-        'limit_to' => 'setLimitTo',
+        'id'             => 'setId',
+        'work_role'      => 'setWorkRole',
+        'location_id'    => 'setLocationId',
+        'rate_type'      => 'setRateType',
+        'rate'           => 'setRate',
+        'limit_to'       => 'setLimitTo',
         'effective_date' => 'setEffectiveDate',
-        'ending_date' => 'setEndingDate',
-        'agreement_id' => 'setAgreementId',
-        '_info' => 'setInfo'
+        'ending_date'    => 'setEndingDate',
+        'agreement_id'   => 'setAgreementId',
+        '_info'          => 'setInfo'
     ];
 
 
@@ -113,16 +115,16 @@ class AgreementWorkRole implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'id' => 'getId',
-        'work_role' => 'getWorkRole',
-        'location_id' => 'getLocationId',
-        'rate_type' => 'getRateType',
-        'rate' => 'getRate',
-        'limit_to' => 'getLimitTo',
+        'id'             => 'getId',
+        'work_role'      => 'getWorkRole',
+        'location_id'    => 'getLocationId',
+        'rate_type'      => 'getRateType',
+        'rate'           => 'getRate',
+        'limit_to'       => 'getLimitTo',
         'effective_date' => 'getEffectiveDate',
-        'ending_date' => 'getEndingDate',
-        'agreement_id' => 'getAgreementId',
-        '_info' => 'getInfo'
+        'ending_date'    => 'getEndingDate',
+        'agreement_id'   => 'getAgreementId',
+        '_info'          => 'getInfo'
     ];
 
     public static function attributeMap()
@@ -143,9 +145,8 @@ class AgreementWorkRole implements ArrayAccess
     const RATE_TYPE_ADJ_AMOUNT = 'AdjAmount';
     const RATE_TYPE_CUSTOM = 'Custom';
     const RATE_TYPE_MULTIPLIER = 'Multiplier';
-    
 
-    
+
     /**
      * Gets allowable values of the enum
      * @return string[]
@@ -158,7 +159,7 @@ class AgreementWorkRole implements ArrayAccess
             self::RATE_TYPE_MULTIPLIER,
         ];
     }
-    
+
 
     /**
      * Associative array for storing property values
@@ -168,7 +169,7 @@ class AgreementWorkRole implements ArrayAccess
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param  mixed[]  $data  Associated array of property values initializing the model
      */
     public function __construct(array $data = null)
     {
@@ -233,7 +234,7 @@ class AgreementWorkRole implements ArrayAccess
 
     /**
      * Sets id
-     * @param int $id
+     * @param  int  $id
      * @return $this
      */
     public function setId($id)
@@ -254,7 +255,7 @@ class AgreementWorkRole implements ArrayAccess
 
     /**
      * Sets work_role
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\WorkRoleReference $work_role
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\WorkRoleReference  $work_role
      * @return $this
      */
     public function setWorkRole($work_role)
@@ -275,7 +276,7 @@ class AgreementWorkRole implements ArrayAccess
 
     /**
      * Sets location_id
-     * @param int $location_id
+     * @param  int  $location_id
      * @return $this
      */
     public function setLocationId($location_id)
@@ -296,7 +297,7 @@ class AgreementWorkRole implements ArrayAccess
 
     /**
      * Sets rate_type
-     * @param string $rate_type
+     * @param  string  $rate_type
      * @return $this
      */
     public function setRateType($rate_type)
@@ -321,7 +322,7 @@ class AgreementWorkRole implements ArrayAccess
 
     /**
      * Sets rate
-     * @param double $rate
+     * @param  double  $rate
      * @return $this
      */
     public function setRate($rate)
@@ -342,7 +343,7 @@ class AgreementWorkRole implements ArrayAccess
 
     /**
      * Sets limit_to
-     * @param double $limit_to
+     * @param  double  $limit_to
      * @return $this
      */
     public function setLimitTo($limit_to)
@@ -363,7 +364,7 @@ class AgreementWorkRole implements ArrayAccess
 
     /**
      * Sets effective_date
-     * @param \DateTime $effective_date
+     * @param  \DateTime  $effective_date
      * @return $this
      */
     public function setEffectiveDate($effective_date)
@@ -384,7 +385,7 @@ class AgreementWorkRole implements ArrayAccess
 
     /**
      * Sets ending_date
-     * @param \DateTime $ending_date
+     * @param  \DateTime  $ending_date
      * @return $this
      */
     public function setEndingDate($ending_date)
@@ -405,7 +406,7 @@ class AgreementWorkRole implements ArrayAccess
 
     /**
      * Sets agreement_id
-     * @param int $agreement_id
+     * @param  int  $agreement_id
      * @return $this
      */
     public function setAgreementId($agreement_id)
@@ -426,7 +427,7 @@ class AgreementWorkRole implements ArrayAccess
 
     /**
      * Sets _info
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\Metadata $_info Metadata of the entity
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\Metadata  $_info  Metadata of the entity
      * @return $this
      */
     public function setInfo($_info)
@@ -435,9 +436,10 @@ class AgreementWorkRole implements ArrayAccess
 
         return $this;
     }
+
     /**
      * Returns true if offset exists. False otherwise.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return boolean
      */
     public function offsetExists($offset)
@@ -447,7 +449,7 @@ class AgreementWorkRole implements ArrayAccess
 
     /**
      * Gets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return mixed
      */
     public function offsetGet($offset)
@@ -457,8 +459,8 @@ class AgreementWorkRole implements ArrayAccess
 
     /**
      * Sets value based on offset.
-     * @param  integer $offset Offset
-     * @param  mixed   $value  Value to be set
+     * @param  integer  $offset  Offset
+     * @param  mixed  $value  Value to be set
      * @return void
      */
     public function offsetSet($offset, $value)
@@ -472,7 +474,7 @@ class AgreementWorkRole implements ArrayAccess
 
     /**
      * Unsets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return void
      */
     public function offsetUnset($offset)
@@ -487,7 +489,8 @@ class AgreementWorkRole implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this),
+                JSON_PRETTY_PRINT);
         }
 
         return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this));

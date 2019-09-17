@@ -34,7 +34,9 @@ use \ArrayAccess;
 /**
  * ValidationError Class Doc Comment
  *
- * @category    Class */
+ * @category    Class
+ */
+
 /**
  * @package     Spinen\ConnectWise\Clients\Finance
  * @author      Swagger Codegen team
@@ -45,20 +47,20 @@ class ValidationError implements ArrayAccess
     const DISCRIMINATOR = null;
 
     /**
-      * The original name of the model.
-      * @var string
-      */
+     * The original name of the model.
+     * @var string
+     */
     protected static $swaggerModelName = 'ValidationError';
 
     /**
-      * Array of property to type mappings. Used for (de)serialization
-      * @var string[]
-      */
+     * Array of property to type mappings. Used for (de)serialization
+     * @var string[]
+     */
     protected static $swaggerTypes = [
-        'code' => 'string',
-        'message' => 'string',
+        'code'     => 'string',
+        'message'  => 'string',
         'resource' => 'string',
-        'field' => 'string'
+        'field'    => 'string'
     ];
 
     public static function swaggerTypes()
@@ -71,10 +73,10 @@ class ValidationError implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'code' => 'code',
-        'message' => 'message',
+        'code'     => 'code',
+        'message'  => 'message',
         'resource' => 'resource',
-        'field' => 'field'
+        'field'    => 'field'
     ];
 
 
@@ -83,10 +85,10 @@ class ValidationError implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'code' => 'setCode',
-        'message' => 'setMessage',
+        'code'     => 'setCode',
+        'message'  => 'setMessage',
         'resource' => 'setResource',
-        'field' => 'setField'
+        'field'    => 'setField'
     ];
 
 
@@ -95,10 +97,10 @@ class ValidationError implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'code' => 'getCode',
-        'message' => 'getMessage',
+        'code'     => 'getCode',
+        'message'  => 'getMessage',
         'resource' => 'getResource',
-        'field' => 'getField'
+        'field'    => 'getField'
     ];
 
     public static function attributeMap()
@@ -116,9 +118,6 @@ class ValidationError implements ArrayAccess
         return self::$getters;
     }
 
-    
-
-    
 
     /**
      * Associative array for storing property values
@@ -128,7 +127,7 @@ class ValidationError implements ArrayAccess
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param  mixed[]  $data  Associated array of property values initializing the model
      */
     public function __construct(array $data = null)
     {
@@ -172,7 +171,7 @@ class ValidationError implements ArrayAccess
 
     /**
      * Sets code
-     * @param string $code
+     * @param  string  $code
      * @return $this
      */
     public function setCode($code)
@@ -193,7 +192,7 @@ class ValidationError implements ArrayAccess
 
     /**
      * Sets message
-     * @param string $message
+     * @param  string  $message
      * @return $this
      */
     public function setMessage($message)
@@ -214,7 +213,7 @@ class ValidationError implements ArrayAccess
 
     /**
      * Sets resource
-     * @param string $resource
+     * @param  string  $resource
      * @return $this
      */
     public function setResource($resource)
@@ -235,7 +234,7 @@ class ValidationError implements ArrayAccess
 
     /**
      * Sets field
-     * @param string $field
+     * @param  string  $field
      * @return $this
      */
     public function setField($field)
@@ -244,9 +243,10 @@ class ValidationError implements ArrayAccess
 
         return $this;
     }
+
     /**
      * Returns true if offset exists. False otherwise.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return boolean
      */
     public function offsetExists($offset)
@@ -256,7 +256,7 @@ class ValidationError implements ArrayAccess
 
     /**
      * Gets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return mixed
      */
     public function offsetGet($offset)
@@ -266,8 +266,8 @@ class ValidationError implements ArrayAccess
 
     /**
      * Sets value based on offset.
-     * @param  integer $offset Offset
-     * @param  mixed   $value  Value to be set
+     * @param  integer  $offset  Offset
+     * @param  mixed  $value  Value to be set
      * @return void
      */
     public function offsetSet($offset, $value)
@@ -281,7 +281,7 @@ class ValidationError implements ArrayAccess
 
     /**
      * Unsets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return void
      */
     public function offsetUnset($offset)
@@ -296,7 +296,8 @@ class ValidationError implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this),
+                JSON_PRETTY_PRINT);
         }
 
         return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this));

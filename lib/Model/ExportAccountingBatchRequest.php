@@ -34,7 +34,9 @@ use \ArrayAccess;
 /**
  * ExportAccountingBatchRequest Class Doc Comment
  *
- * @category    Class */
+ * @category    Class
+ */
+
 /**
  * @package     Spinen\ConnectWise\Clients\Finance
  * @author      Swagger Codegen team
@@ -45,30 +47,30 @@ class ExportAccountingBatchRequest implements ArrayAccess
     const DISCRIMINATOR = null;
 
     /**
-      * The original name of the model.
-      * @var string
-      */
+     * The original name of the model.
+     * @var string
+     */
     protected static $swaggerModelName = 'ExportAccountingBatchRequest';
 
     /**
-      * Array of property to type mappings. Used for (de)serialization
-      * @var string[]
-      */
+     * Array of property to type mappings. Used for (de)serialization
+     * @var string[]
+     */
     protected static $swaggerTypes = [
-        'batch_identifier' => 'string',
+        'batch_identifier'        => 'string',
         'gl_interface_identifier' => 'string',
-        'thru_date' => '\DateTime',
-        'location_id' => 'int',
-        'summarize_invoices' => 'string',
-        'export_invoices_flag' => 'bool',
-        'included_invoice_ids' => 'int[]',
-        'excluded_invoice_ids' => 'int[]',
-        'export_expenses_flag' => 'bool',
-        'included_expense_ids' => 'int[]',
-        'excluded_expense_ids' => 'int[]',
-        'export_products_flag' => 'bool',
-        'included_product_ids' => 'string[]',
-        'excluded_product_ids' => 'string[]'
+        'thru_date'               => '\DateTime',
+        'location_id'             => 'int',
+        'summarize_invoices'      => 'string',
+        'export_invoices_flag'    => 'bool',
+        'included_invoice_ids'    => 'int[]',
+        'excluded_invoice_ids'    => 'int[]',
+        'export_expenses_flag'    => 'bool',
+        'included_expense_ids'    => 'int[]',
+        'excluded_expense_ids'    => 'int[]',
+        'export_products_flag'    => 'bool',
+        'included_product_ids'    => 'string[]',
+        'excluded_product_ids'    => 'string[]'
     ];
 
     public static function swaggerTypes()
@@ -81,20 +83,20 @@ class ExportAccountingBatchRequest implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'batch_identifier' => 'batchIdentifier',
+        'batch_identifier'        => 'batchIdentifier',
         'gl_interface_identifier' => 'glInterfaceIdentifier',
-        'thru_date' => 'thruDate',
-        'location_id' => 'locationId',
-        'summarize_invoices' => 'summarizeInvoices',
-        'export_invoices_flag' => 'exportInvoicesFlag',
-        'included_invoice_ids' => 'includedInvoiceIds',
-        'excluded_invoice_ids' => 'excludedInvoiceIds',
-        'export_expenses_flag' => 'exportExpensesFlag',
-        'included_expense_ids' => 'includedExpenseIds',
-        'excluded_expense_ids' => 'excludedExpenseIds',
-        'export_products_flag' => 'exportProductsFlag',
-        'included_product_ids' => 'includedProductIds',
-        'excluded_product_ids' => 'excludedProductIds'
+        'thru_date'               => 'thruDate',
+        'location_id'             => 'locationId',
+        'summarize_invoices'      => 'summarizeInvoices',
+        'export_invoices_flag'    => 'exportInvoicesFlag',
+        'included_invoice_ids'    => 'includedInvoiceIds',
+        'excluded_invoice_ids'    => 'excludedInvoiceIds',
+        'export_expenses_flag'    => 'exportExpensesFlag',
+        'included_expense_ids'    => 'includedExpenseIds',
+        'excluded_expense_ids'    => 'excludedExpenseIds',
+        'export_products_flag'    => 'exportProductsFlag',
+        'included_product_ids'    => 'includedProductIds',
+        'excluded_product_ids'    => 'excludedProductIds'
     ];
 
 
@@ -103,20 +105,20 @@ class ExportAccountingBatchRequest implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'batch_identifier' => 'setBatchIdentifier',
+        'batch_identifier'        => 'setBatchIdentifier',
         'gl_interface_identifier' => 'setGlInterfaceIdentifier',
-        'thru_date' => 'setThruDate',
-        'location_id' => 'setLocationId',
-        'summarize_invoices' => 'setSummarizeInvoices',
-        'export_invoices_flag' => 'setExportInvoicesFlag',
-        'included_invoice_ids' => 'setIncludedInvoiceIds',
-        'excluded_invoice_ids' => 'setExcludedInvoiceIds',
-        'export_expenses_flag' => 'setExportExpensesFlag',
-        'included_expense_ids' => 'setIncludedExpenseIds',
-        'excluded_expense_ids' => 'setExcludedExpenseIds',
-        'export_products_flag' => 'setExportProductsFlag',
-        'included_product_ids' => 'setIncludedProductIds',
-        'excluded_product_ids' => 'setExcludedProductIds'
+        'thru_date'               => 'setThruDate',
+        'location_id'             => 'setLocationId',
+        'summarize_invoices'      => 'setSummarizeInvoices',
+        'export_invoices_flag'    => 'setExportInvoicesFlag',
+        'included_invoice_ids'    => 'setIncludedInvoiceIds',
+        'excluded_invoice_ids'    => 'setExcludedInvoiceIds',
+        'export_expenses_flag'    => 'setExportExpensesFlag',
+        'included_expense_ids'    => 'setIncludedExpenseIds',
+        'excluded_expense_ids'    => 'setExcludedExpenseIds',
+        'export_products_flag'    => 'setExportProductsFlag',
+        'included_product_ids'    => 'setIncludedProductIds',
+        'excluded_product_ids'    => 'setExcludedProductIds'
     ];
 
 
@@ -125,20 +127,20 @@ class ExportAccountingBatchRequest implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'batch_identifier' => 'getBatchIdentifier',
+        'batch_identifier'        => 'getBatchIdentifier',
         'gl_interface_identifier' => 'getGlInterfaceIdentifier',
-        'thru_date' => 'getThruDate',
-        'location_id' => 'getLocationId',
-        'summarize_invoices' => 'getSummarizeInvoices',
-        'export_invoices_flag' => 'getExportInvoicesFlag',
-        'included_invoice_ids' => 'getIncludedInvoiceIds',
-        'excluded_invoice_ids' => 'getExcludedInvoiceIds',
-        'export_expenses_flag' => 'getExportExpensesFlag',
-        'included_expense_ids' => 'getIncludedExpenseIds',
-        'excluded_expense_ids' => 'getExcludedExpenseIds',
-        'export_products_flag' => 'getExportProductsFlag',
-        'included_product_ids' => 'getIncludedProductIds',
-        'excluded_product_ids' => 'getExcludedProductIds'
+        'thru_date'               => 'getThruDate',
+        'location_id'             => 'getLocationId',
+        'summarize_invoices'      => 'getSummarizeInvoices',
+        'export_invoices_flag'    => 'getExportInvoicesFlag',
+        'included_invoice_ids'    => 'getIncludedInvoiceIds',
+        'excluded_invoice_ids'    => 'getExcludedInvoiceIds',
+        'export_expenses_flag'    => 'getExportExpensesFlag',
+        'included_expense_ids'    => 'getIncludedExpenseIds',
+        'excluded_expense_ids'    => 'getExcludedExpenseIds',
+        'export_products_flag'    => 'getExportProductsFlag',
+        'included_product_ids'    => 'getIncludedProductIds',
+        'excluded_product_ids'    => 'getExcludedProductIds'
     ];
 
     public static function attributeMap()
@@ -159,9 +161,8 @@ class ExportAccountingBatchRequest implements ArrayAccess
     const SUMMARIZE_INVOICES__DEFAULT = 'Default';
     const SUMMARIZE_INVOICES_CONDENSED = 'Condensed';
     const SUMMARIZE_INVOICES_DETAILED = 'Detailed';
-    
 
-    
+
     /**
      * Gets allowable values of the enum
      * @return string[]
@@ -174,7 +175,7 @@ class ExportAccountingBatchRequest implements ArrayAccess
             self::SUMMARIZE_INVOICES_DETAILED,
         ];
     }
-    
+
 
     /**
      * Associative array for storing property values
@@ -184,7 +185,7 @@ class ExportAccountingBatchRequest implements ArrayAccess
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param  mixed[]  $data  Associated array of property values initializing the model
      */
     public function __construct(array $data = null)
     {
@@ -260,7 +261,7 @@ class ExportAccountingBatchRequest implements ArrayAccess
 
     /**
      * Sets batch_identifier
-     * @param string $batch_identifier
+     * @param  string  $batch_identifier
      * @return $this
      */
     public function setBatchIdentifier($batch_identifier)
@@ -285,7 +286,7 @@ class ExportAccountingBatchRequest implements ArrayAccess
 
     /**
      * Sets gl_interface_identifier
-     * @param string $gl_interface_identifier
+     * @param  string  $gl_interface_identifier
      * @return $this
      */
     public function setGlInterfaceIdentifier($gl_interface_identifier)
@@ -306,7 +307,7 @@ class ExportAccountingBatchRequest implements ArrayAccess
 
     /**
      * Sets thru_date
-     * @param \DateTime $thru_date
+     * @param  \DateTime  $thru_date
      * @return $this
      */
     public function setThruDate($thru_date)
@@ -327,7 +328,7 @@ class ExportAccountingBatchRequest implements ArrayAccess
 
     /**
      * Sets location_id
-     * @param int $location_id
+     * @param  int  $location_id
      * @return $this
      */
     public function setLocationId($location_id)
@@ -348,7 +349,7 @@ class ExportAccountingBatchRequest implements ArrayAccess
 
     /**
      * Sets summarize_invoices
-     * @param string $summarize_invoices
+     * @param  string  $summarize_invoices
      * @return $this
      */
     public function setSummarizeInvoices($summarize_invoices)
@@ -373,7 +374,7 @@ class ExportAccountingBatchRequest implements ArrayAccess
 
     /**
      * Sets export_invoices_flag
-     * @param bool $export_invoices_flag Batch export must include invoices, expenses, or products (procurement)
+     * @param  bool  $export_invoices_flag  Batch export must include invoices, expenses, or products (procurement)
      * @return $this
      */
     public function setExportInvoicesFlag($export_invoices_flag)
@@ -394,7 +395,7 @@ class ExportAccountingBatchRequest implements ArrayAccess
 
     /**
      * Sets included_invoice_ids
-     * @param int[] $included_invoice_ids
+     * @param  int[]  $included_invoice_ids
      * @return $this
      */
     public function setIncludedInvoiceIds($included_invoice_ids)
@@ -415,7 +416,7 @@ class ExportAccountingBatchRequest implements ArrayAccess
 
     /**
      * Sets excluded_invoice_ids
-     * @param int[] $excluded_invoice_ids
+     * @param  int[]  $excluded_invoice_ids
      * @return $this
      */
     public function setExcludedInvoiceIds($excluded_invoice_ids)
@@ -436,7 +437,7 @@ class ExportAccountingBatchRequest implements ArrayAccess
 
     /**
      * Sets export_expenses_flag
-     * @param bool $export_expenses_flag Batch export must include invoices, expenses, or products (procurement)
+     * @param  bool  $export_expenses_flag  Batch export must include invoices, expenses, or products (procurement)
      * @return $this
      */
     public function setExportExpensesFlag($export_expenses_flag)
@@ -457,7 +458,7 @@ class ExportAccountingBatchRequest implements ArrayAccess
 
     /**
      * Sets included_expense_ids
-     * @param int[] $included_expense_ids
+     * @param  int[]  $included_expense_ids
      * @return $this
      */
     public function setIncludedExpenseIds($included_expense_ids)
@@ -478,7 +479,7 @@ class ExportAccountingBatchRequest implements ArrayAccess
 
     /**
      * Sets excluded_expense_ids
-     * @param int[] $excluded_expense_ids
+     * @param  int[]  $excluded_expense_ids
      * @return $this
      */
     public function setExcludedExpenseIds($excluded_expense_ids)
@@ -499,7 +500,7 @@ class ExportAccountingBatchRequest implements ArrayAccess
 
     /**
      * Sets export_products_flag
-     * @param bool $export_products_flag Batch export must include invoices, expenses, or products (procurement)
+     * @param  bool  $export_products_flag  Batch export must include invoices, expenses, or products (procurement)
      * @return $this
      */
     public function setExportProductsFlag($export_products_flag)
@@ -520,7 +521,7 @@ class ExportAccountingBatchRequest implements ArrayAccess
 
     /**
      * Sets included_product_ids
-     * @param string[] $included_product_ids
+     * @param  string[]  $included_product_ids
      * @return $this
      */
     public function setIncludedProductIds($included_product_ids)
@@ -541,7 +542,7 @@ class ExportAccountingBatchRequest implements ArrayAccess
 
     /**
      * Sets excluded_product_ids
-     * @param string[] $excluded_product_ids
+     * @param  string[]  $excluded_product_ids
      * @return $this
      */
     public function setExcludedProductIds($excluded_product_ids)
@@ -550,9 +551,10 @@ class ExportAccountingBatchRequest implements ArrayAccess
 
         return $this;
     }
+
     /**
      * Returns true if offset exists. False otherwise.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return boolean
      */
     public function offsetExists($offset)
@@ -562,7 +564,7 @@ class ExportAccountingBatchRequest implements ArrayAccess
 
     /**
      * Gets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return mixed
      */
     public function offsetGet($offset)
@@ -572,8 +574,8 @@ class ExportAccountingBatchRequest implements ArrayAccess
 
     /**
      * Sets value based on offset.
-     * @param  integer $offset Offset
-     * @param  mixed   $value  Value to be set
+     * @param  integer  $offset  Offset
+     * @param  mixed  $value  Value to be set
      * @return void
      */
     public function offsetSet($offset, $value)
@@ -587,7 +589,7 @@ class ExportAccountingBatchRequest implements ArrayAccess
 
     /**
      * Unsets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return void
      */
     public function offsetUnset($offset)
@@ -602,7 +604,8 @@ class ExportAccountingBatchRequest implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this),
+                JSON_PRETTY_PRINT);
         }
 
         return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this));

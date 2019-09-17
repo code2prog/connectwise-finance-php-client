@@ -34,7 +34,9 @@ use \ArrayAccess;
 /**
  * GLExportInventoryTransferOffset Class Doc Comment
  *
- * @category    Class */
+ * @category    Class
+ */
+
 /**
  * @package     Spinen\ConnectWise\Clients\Finance
  * @author      Swagger Codegen team
@@ -45,25 +47,25 @@ class GLExportInventoryTransferOffset implements ArrayAccess
     const DISCRIMINATOR = null;
 
     /**
-      * The original name of the model.
-      * @var string
-      */
+     * The original name of the model.
+     * @var string
+     */
     protected static $swaggerModelName = 'GLExportInventoryTransferOffset';
 
     /**
-      * Array of property to type mappings. Used for (de)serialization
-      * @var string[]
-      */
+     * Array of property to type mappings. Used for (de)serialization
+     * @var string[]
+     */
     protected static $swaggerTypes = [
-        'id' => 'int',
-        'document_type' => 'string',
-        'document_date' => '\DateTime',
+        'id'             => 'int',
+        'document_type'  => 'string',
+        'document_date'  => '\DateTime',
         'account_number' => 'string',
-        'gl_class' => 'string',
-        'total' => 'double',
-        'memo' => 'string',
-        'description' => 'string',
-        'gl_type_id' => 'string'
+        'gl_class'       => 'string',
+        'total'          => 'double',
+        'memo'           => 'string',
+        'description'    => 'string',
+        'gl_type_id'     => 'string'
     ];
 
     public static function swaggerTypes()
@@ -76,15 +78,15 @@ class GLExportInventoryTransferOffset implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'id' => 'id',
-        'document_type' => 'documentType',
-        'document_date' => 'documentDate',
+        'id'             => 'id',
+        'document_type'  => 'documentType',
+        'document_date'  => 'documentDate',
         'account_number' => 'accountNumber',
-        'gl_class' => 'glClass',
-        'total' => 'total',
-        'memo' => 'memo',
-        'description' => 'description',
-        'gl_type_id' => 'glTypeId'
+        'gl_class'       => 'glClass',
+        'total'          => 'total',
+        'memo'           => 'memo',
+        'description'    => 'description',
+        'gl_type_id'     => 'glTypeId'
     ];
 
 
@@ -93,15 +95,15 @@ class GLExportInventoryTransferOffset implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'id' => 'setId',
-        'document_type' => 'setDocumentType',
-        'document_date' => 'setDocumentDate',
+        'id'             => 'setId',
+        'document_type'  => 'setDocumentType',
+        'document_date'  => 'setDocumentDate',
         'account_number' => 'setAccountNumber',
-        'gl_class' => 'setGlClass',
-        'total' => 'setTotal',
-        'memo' => 'setMemo',
-        'description' => 'setDescription',
-        'gl_type_id' => 'setGlTypeId'
+        'gl_class'       => 'setGlClass',
+        'total'          => 'setTotal',
+        'memo'           => 'setMemo',
+        'description'    => 'setDescription',
+        'gl_type_id'     => 'setGlTypeId'
     ];
 
 
@@ -110,15 +112,15 @@ class GLExportInventoryTransferOffset implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'id' => 'getId',
-        'document_type' => 'getDocumentType',
-        'document_date' => 'getDocumentDate',
+        'id'             => 'getId',
+        'document_type'  => 'getDocumentType',
+        'document_date'  => 'getDocumentDate',
         'account_number' => 'getAccountNumber',
-        'gl_class' => 'getGlClass',
-        'total' => 'getTotal',
-        'memo' => 'getMemo',
-        'description' => 'getDescription',
-        'gl_type_id' => 'getGlTypeId'
+        'gl_class'       => 'getGlClass',
+        'total'          => 'getTotal',
+        'memo'           => 'getMemo',
+        'description'    => 'getDescription',
+        'gl_type_id'     => 'getGlTypeId'
     ];
 
     public static function attributeMap()
@@ -136,9 +138,6 @@ class GLExportInventoryTransferOffset implements ArrayAccess
         return self::$getters;
     }
 
-    
-
-    
 
     /**
      * Associative array for storing property values
@@ -148,7 +147,7 @@ class GLExportInventoryTransferOffset implements ArrayAccess
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param  mixed[]  $data  Associated array of property values initializing the model
      */
     public function __construct(array $data = null)
     {
@@ -197,7 +196,7 @@ class GLExportInventoryTransferOffset implements ArrayAccess
 
     /**
      * Sets id
-     * @param int $id
+     * @param  int  $id
      * @return $this
      */
     public function setId($id)
@@ -218,7 +217,7 @@ class GLExportInventoryTransferOffset implements ArrayAccess
 
     /**
      * Sets document_type
-     * @param string $document_type
+     * @param  string  $document_type
      * @return $this
      */
     public function setDocumentType($document_type)
@@ -239,7 +238,7 @@ class GLExportInventoryTransferOffset implements ArrayAccess
 
     /**
      * Sets document_date
-     * @param \DateTime $document_date
+     * @param  \DateTime  $document_date
      * @return $this
      */
     public function setDocumentDate($document_date)
@@ -260,7 +259,7 @@ class GLExportInventoryTransferOffset implements ArrayAccess
 
     /**
      * Sets account_number
-     * @param string $account_number
+     * @param  string  $account_number
      * @return $this
      */
     public function setAccountNumber($account_number)
@@ -281,7 +280,7 @@ class GLExportInventoryTransferOffset implements ArrayAccess
 
     /**
      * Sets gl_class
-     * @param string $gl_class
+     * @param  string  $gl_class
      * @return $this
      */
     public function setGlClass($gl_class)
@@ -302,7 +301,7 @@ class GLExportInventoryTransferOffset implements ArrayAccess
 
     /**
      * Sets total
-     * @param double $total
+     * @param  double  $total
      * @return $this
      */
     public function setTotal($total)
@@ -323,7 +322,7 @@ class GLExportInventoryTransferOffset implements ArrayAccess
 
     /**
      * Sets memo
-     * @param string $memo
+     * @param  string  $memo
      * @return $this
      */
     public function setMemo($memo)
@@ -344,7 +343,7 @@ class GLExportInventoryTransferOffset implements ArrayAccess
 
     /**
      * Sets description
-     * @param string $description
+     * @param  string  $description
      * @return $this
      */
     public function setDescription($description)
@@ -365,7 +364,7 @@ class GLExportInventoryTransferOffset implements ArrayAccess
 
     /**
      * Sets gl_type_id
-     * @param string $gl_type_id
+     * @param  string  $gl_type_id
      * @return $this
      */
     public function setGlTypeId($gl_type_id)
@@ -374,9 +373,10 @@ class GLExportInventoryTransferOffset implements ArrayAccess
 
         return $this;
     }
+
     /**
      * Returns true if offset exists. False otherwise.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return boolean
      */
     public function offsetExists($offset)
@@ -386,7 +386,7 @@ class GLExportInventoryTransferOffset implements ArrayAccess
 
     /**
      * Gets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return mixed
      */
     public function offsetGet($offset)
@@ -396,8 +396,8 @@ class GLExportInventoryTransferOffset implements ArrayAccess
 
     /**
      * Sets value based on offset.
-     * @param  integer $offset Offset
-     * @param  mixed   $value  Value to be set
+     * @param  integer  $offset  Offset
+     * @param  mixed  $value  Value to be set
      * @return void
      */
     public function offsetSet($offset, $value)
@@ -411,7 +411,7 @@ class GLExportInventoryTransferOffset implements ArrayAccess
 
     /**
      * Unsets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return void
      */
     public function offsetUnset($offset)
@@ -426,7 +426,8 @@ class GLExportInventoryTransferOffset implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this),
+                JSON_PRETTY_PRINT);
         }
 
         return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this));

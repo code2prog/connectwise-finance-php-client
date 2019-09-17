@@ -34,7 +34,9 @@ use \ArrayAccess;
 /**
  * GLExport Class Doc Comment
  *
- * @category    Class */
+ * @category    Class
+ */
+
 /**
  * @package     Spinen\ConnectWise\Clients\Finance
  * @author      Swagger Codegen team
@@ -45,25 +47,25 @@ class GLExport implements ArrayAccess
     const DISCRIMINATOR = null;
 
     /**
-      * The original name of the model.
-      * @var string
-      */
+     * The original name of the model.
+     * @var string
+     */
     protected static $swaggerModelName = 'GLExport';
 
     /**
-      * Array of property to type mappings. Used for (de)serialization
-      * @var string[]
-      */
+     * Array of property to type mappings. Used for (de)serialization
+     * @var string[]
+     */
     protected static $swaggerTypes = [
-        'export_settings' => '\Spinen\ConnectWise\Clients\Finance\Model\GLExportSettings',
-        'vendors' => '\Spinen\ConnectWise\Clients\Finance\Model\GLExportVendor[]',
-        'customers' => '\Spinen\ConnectWise\Clients\Finance\Model\GLExportCustomer[]',
-        'transactions' => '\Spinen\ConnectWise\Clients\Finance\Model\GLExportTransaction[]',
-        'expenses' => '\Spinen\ConnectWise\Clients\Finance\Model\GLExportExpense[]',
-        'expense_bills' => '\Spinen\ConnectWise\Clients\Finance\Model\GLExportExpenseBill[]',
-        'purchase_transactions' => '\Spinen\ConnectWise\Clients\Finance\Model\GLExportPurchaseTransaction[]',
+        'export_settings'         => '\Spinen\ConnectWise\Clients\Finance\Model\GLExportSettings',
+        'vendors'                 => '\Spinen\ConnectWise\Clients\Finance\Model\GLExportVendor[]',
+        'customers'               => '\Spinen\ConnectWise\Clients\Finance\Model\GLExportCustomer[]',
+        'transactions'            => '\Spinen\ConnectWise\Clients\Finance\Model\GLExportTransaction[]',
+        'expenses'                => '\Spinen\ConnectWise\Clients\Finance\Model\GLExportExpense[]',
+        'expense_bills'           => '\Spinen\ConnectWise\Clients\Finance\Model\GLExportExpenseBill[]',
+        'purchase_transactions'   => '\Spinen\ConnectWise\Clients\Finance\Model\GLExportPurchaseTransaction[]',
         'adjustment_transactions' => '\Spinen\ConnectWise\Clients\Finance\Model\GLExportAdjustmentTransaction[]',
-        'inventory_transfers' => '\Spinen\ConnectWise\Clients\Finance\Model\GLExportInventoryTransfer[]'
+        'inventory_transfers'     => '\Spinen\ConnectWise\Clients\Finance\Model\GLExportInventoryTransfer[]'
     ];
 
     public static function swaggerTypes()
@@ -76,15 +78,15 @@ class GLExport implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'export_settings' => 'exportSettings',
-        'vendors' => 'vendors',
-        'customers' => 'customers',
-        'transactions' => 'transactions',
-        'expenses' => 'expenses',
-        'expense_bills' => 'expenseBills',
-        'purchase_transactions' => 'purchaseTransactions',
+        'export_settings'         => 'exportSettings',
+        'vendors'                 => 'vendors',
+        'customers'               => 'customers',
+        'transactions'            => 'transactions',
+        'expenses'                => 'expenses',
+        'expense_bills'           => 'expenseBills',
+        'purchase_transactions'   => 'purchaseTransactions',
         'adjustment_transactions' => 'adjustmentTransactions',
-        'inventory_transfers' => 'inventoryTransfers'
+        'inventory_transfers'     => 'inventoryTransfers'
     ];
 
 
@@ -93,15 +95,15 @@ class GLExport implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'export_settings' => 'setExportSettings',
-        'vendors' => 'setVendors',
-        'customers' => 'setCustomers',
-        'transactions' => 'setTransactions',
-        'expenses' => 'setExpenses',
-        'expense_bills' => 'setExpenseBills',
-        'purchase_transactions' => 'setPurchaseTransactions',
+        'export_settings'         => 'setExportSettings',
+        'vendors'                 => 'setVendors',
+        'customers'               => 'setCustomers',
+        'transactions'            => 'setTransactions',
+        'expenses'                => 'setExpenses',
+        'expense_bills'           => 'setExpenseBills',
+        'purchase_transactions'   => 'setPurchaseTransactions',
         'adjustment_transactions' => 'setAdjustmentTransactions',
-        'inventory_transfers' => 'setInventoryTransfers'
+        'inventory_transfers'     => 'setInventoryTransfers'
     ];
 
 
@@ -110,15 +112,15 @@ class GLExport implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'export_settings' => 'getExportSettings',
-        'vendors' => 'getVendors',
-        'customers' => 'getCustomers',
-        'transactions' => 'getTransactions',
-        'expenses' => 'getExpenses',
-        'expense_bills' => 'getExpenseBills',
-        'purchase_transactions' => 'getPurchaseTransactions',
+        'export_settings'         => 'getExportSettings',
+        'vendors'                 => 'getVendors',
+        'customers'               => 'getCustomers',
+        'transactions'            => 'getTransactions',
+        'expenses'                => 'getExpenses',
+        'expense_bills'           => 'getExpenseBills',
+        'purchase_transactions'   => 'getPurchaseTransactions',
         'adjustment_transactions' => 'getAdjustmentTransactions',
-        'inventory_transfers' => 'getInventoryTransfers'
+        'inventory_transfers'     => 'getInventoryTransfers'
     ];
 
     public static function attributeMap()
@@ -136,9 +138,6 @@ class GLExport implements ArrayAccess
         return self::$getters;
     }
 
-    
-
-    
 
     /**
      * Associative array for storing property values
@@ -148,7 +147,7 @@ class GLExport implements ArrayAccess
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param  mixed[]  $data  Associated array of property values initializing the model
      */
     public function __construct(array $data = null)
     {
@@ -197,7 +196,7 @@ class GLExport implements ArrayAccess
 
     /**
      * Sets export_settings
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\GLExportSettings $export_settings Mapped to GlPreferences Class
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\GLExportSettings  $export_settings  Mapped to GlPreferences Class
      * @return $this
      */
     public function setExportSettings($export_settings)
@@ -218,7 +217,7 @@ class GLExport implements ArrayAccess
 
     /**
      * Sets vendors
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\GLExportVendor[] $vendors
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\GLExportVendor[]  $vendors
      * @return $this
      */
     public function setVendors($vendors)
@@ -239,7 +238,7 @@ class GLExport implements ArrayAccess
 
     /**
      * Sets customers
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\GLExportCustomer[] $customers
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\GLExportCustomer[]  $customers
      * @return $this
      */
     public function setCustomers($customers)
@@ -260,7 +259,7 @@ class GLExport implements ArrayAccess
 
     /**
      * Sets transactions
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\GLExportTransaction[] $transactions
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\GLExportTransaction[]  $transactions
      * @return $this
      */
     public function setTransactions($transactions)
@@ -281,7 +280,7 @@ class GLExport implements ArrayAccess
 
     /**
      * Sets expenses
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\GLExportExpense[] $expenses
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\GLExportExpense[]  $expenses
      * @return $this
      */
     public function setExpenses($expenses)
@@ -302,7 +301,7 @@ class GLExport implements ArrayAccess
 
     /**
      * Sets expense_bills
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\GLExportExpenseBill[] $expense_bills
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\GLExportExpenseBill[]  $expense_bills
      * @return $this
      */
     public function setExpenseBills($expense_bills)
@@ -323,7 +322,7 @@ class GLExport implements ArrayAccess
 
     /**
      * Sets purchase_transactions
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\GLExportPurchaseTransaction[] $purchase_transactions
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\GLExportPurchaseTransaction[]  $purchase_transactions
      * @return $this
      */
     public function setPurchaseTransactions($purchase_transactions)
@@ -344,7 +343,7 @@ class GLExport implements ArrayAccess
 
     /**
      * Sets adjustment_transactions
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\GLExportAdjustmentTransaction[] $adjustment_transactions
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\GLExportAdjustmentTransaction[]  $adjustment_transactions
      * @return $this
      */
     public function setAdjustmentTransactions($adjustment_transactions)
@@ -365,7 +364,7 @@ class GLExport implements ArrayAccess
 
     /**
      * Sets inventory_transfers
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\GLExportInventoryTransfer[] $inventory_transfers
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\GLExportInventoryTransfer[]  $inventory_transfers
      * @return $this
      */
     public function setInventoryTransfers($inventory_transfers)
@@ -374,9 +373,10 @@ class GLExport implements ArrayAccess
 
         return $this;
     }
+
     /**
      * Returns true if offset exists. False otherwise.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return boolean
      */
     public function offsetExists($offset)
@@ -386,7 +386,7 @@ class GLExport implements ArrayAccess
 
     /**
      * Gets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return mixed
      */
     public function offsetGet($offset)
@@ -396,8 +396,8 @@ class GLExport implements ArrayAccess
 
     /**
      * Sets value based on offset.
-     * @param  integer $offset Offset
-     * @param  mixed   $value  Value to be set
+     * @param  integer  $offset  Offset
+     * @param  mixed  $value  Value to be set
      * @return void
      */
     public function offsetSet($offset, $value)
@@ -411,7 +411,7 @@ class GLExport implements ArrayAccess
 
     /**
      * Unsets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return void
      */
     public function offsetUnset($offset)
@@ -426,7 +426,8 @@ class GLExport implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this),
+                JSON_PRETTY_PRINT);
         }
 
         return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this));

@@ -34,7 +34,9 @@ use \ArrayAccess;
 /**
  * Payment Class Doc Comment
  *
- * @category    Class */
+ * @category    Class
+ */
+
 /**
  * @package     Spinen\ConnectWise\Clients\Finance
  * @author      Swagger Codegen team
@@ -45,23 +47,23 @@ class Payment implements ArrayAccess
     const DISCRIMINATOR = null;
 
     /**
-      * The original name of the model.
-      * @var string
-      */
+     * The original name of the model.
+     * @var string
+     */
     protected static $swaggerModelName = 'Payment';
 
     /**
-      * Array of property to type mappings. Used for (de)serialization
-      * @var string[]
-      */
+     * Array of property to type mappings. Used for (de)serialization
+     * @var string[]
+     */
     protected static $swaggerTypes = [
-        'id' => 'int',
-        'type' => 'string',
-        'invoice' => '\Spinen\ConnectWise\Clients\Finance\Model\InvoiceReference',
-        'amount' => 'double',
+        'id'           => 'int',
+        'type'         => 'string',
+        'invoice'      => '\Spinen\ConnectWise\Clients\Finance\Model\InvoiceReference',
+        'amount'       => 'double',
         'payment_date' => '\DateTime',
-        'applied_by' => 'string',
-        '_info' => '\Spinen\ConnectWise\Clients\Finance\Model\Metadata'
+        'applied_by'   => 'string',
+        '_info'        => '\Spinen\ConnectWise\Clients\Finance\Model\Metadata'
     ];
 
     public static function swaggerTypes()
@@ -74,13 +76,13 @@ class Payment implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'id' => 'id',
-        'type' => 'type',
-        'invoice' => 'invoice',
-        'amount' => 'amount',
+        'id'           => 'id',
+        'type'         => 'type',
+        'invoice'      => 'invoice',
+        'amount'       => 'amount',
         'payment_date' => 'paymentDate',
-        'applied_by' => 'appliedBy',
-        '_info' => '_info'
+        'applied_by'   => 'appliedBy',
+        '_info'        => '_info'
     ];
 
 
@@ -89,13 +91,13 @@ class Payment implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'id' => 'setId',
-        'type' => 'setType',
-        'invoice' => 'setInvoice',
-        'amount' => 'setAmount',
+        'id'           => 'setId',
+        'type'         => 'setType',
+        'invoice'      => 'setInvoice',
+        'amount'       => 'setAmount',
         'payment_date' => 'setPaymentDate',
-        'applied_by' => 'setAppliedBy',
-        '_info' => 'setInfo'
+        'applied_by'   => 'setAppliedBy',
+        '_info'        => 'setInfo'
     ];
 
 
@@ -104,13 +106,13 @@ class Payment implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'id' => 'getId',
-        'type' => 'getType',
-        'invoice' => 'getInvoice',
-        'amount' => 'getAmount',
+        'id'           => 'getId',
+        'type'         => 'getType',
+        'invoice'      => 'getInvoice',
+        'amount'       => 'getAmount',
         'payment_date' => 'getPaymentDate',
-        'applied_by' => 'getAppliedBy',
-        '_info' => 'getInfo'
+        'applied_by'   => 'getAppliedBy',
+        '_info'        => 'getInfo'
     ];
 
     public static function attributeMap()
@@ -128,9 +130,6 @@ class Payment implements ArrayAccess
         return self::$getters;
     }
 
-    
-
-    
 
     /**
      * Associative array for storing property values
@@ -140,7 +139,7 @@ class Payment implements ArrayAccess
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param  mixed[]  $data  Associated array of property values initializing the model
      */
     public function __construct(array $data = null)
     {
@@ -193,7 +192,7 @@ class Payment implements ArrayAccess
 
     /**
      * Sets id
-     * @param int $id
+     * @param  int  $id
      * @return $this
      */
     public function setId($id)
@@ -214,7 +213,7 @@ class Payment implements ArrayAccess
 
     /**
      * Sets type
-     * @param string $type
+     * @param  string  $type
      * @return $this
      */
     public function setType($type)
@@ -235,7 +234,7 @@ class Payment implements ArrayAccess
 
     /**
      * Sets invoice
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\InvoiceReference $invoice
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\InvoiceReference  $invoice
      * @return $this
      */
     public function setInvoice($invoice)
@@ -256,7 +255,7 @@ class Payment implements ArrayAccess
 
     /**
      * Sets amount
-     * @param double $amount
+     * @param  double  $amount
      * @return $this
      */
     public function setAmount($amount)
@@ -277,7 +276,7 @@ class Payment implements ArrayAccess
 
     /**
      * Sets payment_date
-     * @param \DateTime $payment_date
+     * @param  \DateTime  $payment_date
      * @return $this
      */
     public function setPaymentDate($payment_date)
@@ -298,7 +297,7 @@ class Payment implements ArrayAccess
 
     /**
      * Sets applied_by
-     * @param string $applied_by
+     * @param  string  $applied_by
      * @return $this
      */
     public function setAppliedBy($applied_by)
@@ -319,7 +318,7 @@ class Payment implements ArrayAccess
 
     /**
      * Sets _info
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\Metadata $_info Metadata of the entity
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\Metadata  $_info  Metadata of the entity
      * @return $this
      */
     public function setInfo($_info)
@@ -328,9 +327,10 @@ class Payment implements ArrayAccess
 
         return $this;
     }
+
     /**
      * Returns true if offset exists. False otherwise.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return boolean
      */
     public function offsetExists($offset)
@@ -340,7 +340,7 @@ class Payment implements ArrayAccess
 
     /**
      * Gets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return mixed
      */
     public function offsetGet($offset)
@@ -350,8 +350,8 @@ class Payment implements ArrayAccess
 
     /**
      * Sets value based on offset.
-     * @param  integer $offset Offset
-     * @param  mixed   $value  Value to be set
+     * @param  integer  $offset  Offset
+     * @param  mixed  $value  Value to be set
      * @return void
      */
     public function offsetSet($offset, $value)
@@ -365,7 +365,7 @@ class Payment implements ArrayAccess
 
     /**
      * Unsets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return void
      */
     public function offsetUnset($offset)
@@ -380,7 +380,8 @@ class Payment implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this),
+                JSON_PRETTY_PRINT);
         }
 
         return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this));

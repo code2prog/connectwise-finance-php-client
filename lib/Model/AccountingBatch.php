@@ -34,7 +34,9 @@ use \ArrayAccess;
 /**
  * AccountingBatch Class Doc Comment
  *
- * @category    Class */
+ * @category    Class
+ */
+
 /**
  * @package     Spinen\ConnectWise\Clients\Finance
  * @author      Swagger Codegen team
@@ -45,23 +47,23 @@ class AccountingBatch implements ArrayAccess
     const DISCRIMINATOR = null;
 
     /**
-      * The original name of the model.
-      * @var string
-      */
+     * The original name of the model.
+     * @var string
+     */
     protected static $swaggerModelName = 'AccountingBatch';
 
     /**
-      * Array of property to type mappings. Used for (de)serialization
-      * @var string[]
-      */
+     * Array of property to type mappings. Used for (de)serialization
+     * @var string[]
+     */
     protected static $swaggerTypes = [
-        'id' => 'int',
-        'batch_identifier' => 'string',
+        'id'                   => 'int',
+        'batch_identifier'     => 'string',
         'export_invoices_flag' => 'bool',
         'export_expenses_flag' => 'bool',
         'export_products_flag' => 'bool',
-        'closed_flag' => 'bool',
-        '_info' => '\Spinen\ConnectWise\Clients\Finance\Model\Metadata'
+        'closed_flag'          => 'bool',
+        '_info'                => '\Spinen\ConnectWise\Clients\Finance\Model\Metadata'
     ];
 
     public static function swaggerTypes()
@@ -74,13 +76,13 @@ class AccountingBatch implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'id' => 'id',
-        'batch_identifier' => 'batchIdentifier',
+        'id'                   => 'id',
+        'batch_identifier'     => 'batchIdentifier',
         'export_invoices_flag' => 'exportInvoicesFlag',
         'export_expenses_flag' => 'exportExpensesFlag',
         'export_products_flag' => 'exportProductsFlag',
-        'closed_flag' => 'closedFlag',
-        '_info' => '_info'
+        'closed_flag'          => 'closedFlag',
+        '_info'                => '_info'
     ];
 
 
@@ -89,13 +91,13 @@ class AccountingBatch implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'id' => 'setId',
-        'batch_identifier' => 'setBatchIdentifier',
+        'id'                   => 'setId',
+        'batch_identifier'     => 'setBatchIdentifier',
         'export_invoices_flag' => 'setExportInvoicesFlag',
         'export_expenses_flag' => 'setExportExpensesFlag',
         'export_products_flag' => 'setExportProductsFlag',
-        'closed_flag' => 'setClosedFlag',
-        '_info' => 'setInfo'
+        'closed_flag'          => 'setClosedFlag',
+        '_info'                => 'setInfo'
     ];
 
 
@@ -104,13 +106,13 @@ class AccountingBatch implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'id' => 'getId',
-        'batch_identifier' => 'getBatchIdentifier',
+        'id'                   => 'getId',
+        'batch_identifier'     => 'getBatchIdentifier',
         'export_invoices_flag' => 'getExportInvoicesFlag',
         'export_expenses_flag' => 'getExportExpensesFlag',
         'export_products_flag' => 'getExportProductsFlag',
-        'closed_flag' => 'getClosedFlag',
-        '_info' => 'getInfo'
+        'closed_flag'          => 'getClosedFlag',
+        '_info'                => 'getInfo'
     ];
 
     public static function attributeMap()
@@ -128,9 +130,6 @@ class AccountingBatch implements ArrayAccess
         return self::$getters;
     }
 
-    
-
-    
 
     /**
      * Associative array for storing property values
@@ -140,7 +139,7 @@ class AccountingBatch implements ArrayAccess
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param  mixed[]  $data  Associated array of property values initializing the model
      */
     public function __construct(array $data = null)
     {
@@ -200,7 +199,7 @@ class AccountingBatch implements ArrayAccess
 
     /**
      * Sets id
-     * @param int $id
+     * @param  int  $id
      * @return $this
      */
     public function setId($id)
@@ -221,7 +220,7 @@ class AccountingBatch implements ArrayAccess
 
     /**
      * Sets batch_identifier
-     * @param string $batch_identifier
+     * @param  string  $batch_identifier
      * @return $this
      */
     public function setBatchIdentifier($batch_identifier)
@@ -246,7 +245,7 @@ class AccountingBatch implements ArrayAccess
 
     /**
      * Sets export_invoices_flag
-     * @param bool $export_invoices_flag
+     * @param  bool  $export_invoices_flag
      * @return $this
      */
     public function setExportInvoicesFlag($export_invoices_flag)
@@ -267,7 +266,7 @@ class AccountingBatch implements ArrayAccess
 
     /**
      * Sets export_expenses_flag
-     * @param bool $export_expenses_flag
+     * @param  bool  $export_expenses_flag
      * @return $this
      */
     public function setExportExpensesFlag($export_expenses_flag)
@@ -288,7 +287,7 @@ class AccountingBatch implements ArrayAccess
 
     /**
      * Sets export_products_flag
-     * @param bool $export_products_flag
+     * @param  bool  $export_products_flag
      * @return $this
      */
     public function setExportProductsFlag($export_products_flag)
@@ -309,7 +308,7 @@ class AccountingBatch implements ArrayAccess
 
     /**
      * Sets closed_flag
-     * @param bool $closed_flag
+     * @param  bool  $closed_flag
      * @return $this
      */
     public function setClosedFlag($closed_flag)
@@ -330,7 +329,7 @@ class AccountingBatch implements ArrayAccess
 
     /**
      * Sets _info
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\Metadata $_info Metadata of the entity
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\Metadata  $_info  Metadata of the entity
      * @return $this
      */
     public function setInfo($_info)
@@ -339,9 +338,10 @@ class AccountingBatch implements ArrayAccess
 
         return $this;
     }
+
     /**
      * Returns true if offset exists. False otherwise.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return boolean
      */
     public function offsetExists($offset)
@@ -351,7 +351,7 @@ class AccountingBatch implements ArrayAccess
 
     /**
      * Gets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return mixed
      */
     public function offsetGet($offset)
@@ -361,8 +361,8 @@ class AccountingBatch implements ArrayAccess
 
     /**
      * Sets value based on offset.
-     * @param  integer $offset Offset
-     * @param  mixed   $value  Value to be set
+     * @param  integer  $offset  Offset
+     * @param  mixed  $value  Value to be set
      * @return void
      */
     public function offsetSet($offset, $value)
@@ -376,7 +376,7 @@ class AccountingBatch implements ArrayAccess
 
     /**
      * Unsets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return void
      */
     public function offsetUnset($offset)
@@ -391,7 +391,8 @@ class AccountingBatch implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this),
+                JSON_PRETTY_PRINT);
         }
 
         return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this));

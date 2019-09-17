@@ -34,7 +34,9 @@ use \ArrayAccess;
 /**
  * GLExportExpenseOffset Class Doc Comment
  *
- * @category    Class */
+ * @category    Class
+ */
+
 /**
  * @package     Spinen\ConnectWise\Clients\Finance
  * @author      Swagger Codegen team
@@ -45,26 +47,26 @@ class GLExportExpenseOffset implements ArrayAccess
     const DISCRIMINATOR = null;
 
     /**
-      * The original name of the model.
-      * @var string
-      */
+     * The original name of the model.
+     * @var string
+     */
     protected static $swaggerModelName = 'GLExportExpenseOffset';
 
     /**
-      * Array of property to type mappings. Used for (de)serialization
-      * @var string[]
-      */
+     * Array of property to type mappings. Used for (de)serialization
+     * @var string[]
+     */
     protected static $swaggerTypes = [
-        'id' => 'int',
-        'document_date' => '\DateTime',
-        'document_type' => 'string',
+        'id'             => 'int',
+        'document_date'  => '\DateTime',
+        'document_type'  => 'string',
         'account_number' => 'string',
-        'gl_type_id' => 'string',
-        'gl_class' => 'string',
-        'member' => '\Spinen\ConnectWise\Clients\Finance\Model\MemberReference',
-        'memo' => 'string',
-        'description' => 'string',
-        'total' => 'double'
+        'gl_type_id'     => 'string',
+        'gl_class'       => 'string',
+        'member'         => '\Spinen\ConnectWise\Clients\Finance\Model\MemberReference',
+        'memo'           => 'string',
+        'description'    => 'string',
+        'total'          => 'double'
     ];
 
     public static function swaggerTypes()
@@ -77,16 +79,16 @@ class GLExportExpenseOffset implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'id' => 'id',
-        'document_date' => 'documentDate',
-        'document_type' => 'documentType',
+        'id'             => 'id',
+        'document_date'  => 'documentDate',
+        'document_type'  => 'documentType',
         'account_number' => 'accountNumber',
-        'gl_type_id' => 'glTypeId',
-        'gl_class' => 'glClass',
-        'member' => 'member',
-        'memo' => 'memo',
-        'description' => 'description',
-        'total' => 'total'
+        'gl_type_id'     => 'glTypeId',
+        'gl_class'       => 'glClass',
+        'member'         => 'member',
+        'memo'           => 'memo',
+        'description'    => 'description',
+        'total'          => 'total'
     ];
 
 
@@ -95,16 +97,16 @@ class GLExportExpenseOffset implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'id' => 'setId',
-        'document_date' => 'setDocumentDate',
-        'document_type' => 'setDocumentType',
+        'id'             => 'setId',
+        'document_date'  => 'setDocumentDate',
+        'document_type'  => 'setDocumentType',
         'account_number' => 'setAccountNumber',
-        'gl_type_id' => 'setGlTypeId',
-        'gl_class' => 'setGlClass',
-        'member' => 'setMember',
-        'memo' => 'setMemo',
-        'description' => 'setDescription',
-        'total' => 'setTotal'
+        'gl_type_id'     => 'setGlTypeId',
+        'gl_class'       => 'setGlClass',
+        'member'         => 'setMember',
+        'memo'           => 'setMemo',
+        'description'    => 'setDescription',
+        'total'          => 'setTotal'
     ];
 
 
@@ -113,16 +115,16 @@ class GLExportExpenseOffset implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'id' => 'getId',
-        'document_date' => 'getDocumentDate',
-        'document_type' => 'getDocumentType',
+        'id'             => 'getId',
+        'document_date'  => 'getDocumentDate',
+        'document_type'  => 'getDocumentType',
         'account_number' => 'getAccountNumber',
-        'gl_type_id' => 'getGlTypeId',
-        'gl_class' => 'getGlClass',
-        'member' => 'getMember',
-        'memo' => 'getMemo',
-        'description' => 'getDescription',
-        'total' => 'getTotal'
+        'gl_type_id'     => 'getGlTypeId',
+        'gl_class'       => 'getGlClass',
+        'member'         => 'getMember',
+        'memo'           => 'getMemo',
+        'description'    => 'getDescription',
+        'total'          => 'getTotal'
     ];
 
     public static function attributeMap()
@@ -140,9 +142,6 @@ class GLExportExpenseOffset implements ArrayAccess
         return self::$getters;
     }
 
-    
-
-    
 
     /**
      * Associative array for storing property values
@@ -152,7 +151,7 @@ class GLExportExpenseOffset implements ArrayAccess
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param  mixed[]  $data  Associated array of property values initializing the model
      */
     public function __construct(array $data = null)
     {
@@ -202,7 +201,7 @@ class GLExportExpenseOffset implements ArrayAccess
 
     /**
      * Sets id
-     * @param int $id
+     * @param  int  $id
      * @return $this
      */
     public function setId($id)
@@ -223,7 +222,7 @@ class GLExportExpenseOffset implements ArrayAccess
 
     /**
      * Sets document_date
-     * @param \DateTime $document_date
+     * @param  \DateTime  $document_date
      * @return $this
      */
     public function setDocumentDate($document_date)
@@ -244,7 +243,7 @@ class GLExportExpenseOffset implements ArrayAccess
 
     /**
      * Sets document_type
-     * @param string $document_type
+     * @param  string  $document_type
      * @return $this
      */
     public function setDocumentType($document_type)
@@ -265,7 +264,7 @@ class GLExportExpenseOffset implements ArrayAccess
 
     /**
      * Sets account_number
-     * @param string $account_number
+     * @param  string  $account_number
      * @return $this
      */
     public function setAccountNumber($account_number)
@@ -286,7 +285,7 @@ class GLExportExpenseOffset implements ArrayAccess
 
     /**
      * Sets gl_type_id
-     * @param string $gl_type_id
+     * @param  string  $gl_type_id
      * @return $this
      */
     public function setGlTypeId($gl_type_id)
@@ -307,7 +306,7 @@ class GLExportExpenseOffset implements ArrayAccess
 
     /**
      * Sets gl_class
-     * @param string $gl_class
+     * @param  string  $gl_class
      * @return $this
      */
     public function setGlClass($gl_class)
@@ -328,7 +327,7 @@ class GLExportExpenseOffset implements ArrayAccess
 
     /**
      * Sets member
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\MemberReference $member
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\MemberReference  $member
      * @return $this
      */
     public function setMember($member)
@@ -349,7 +348,7 @@ class GLExportExpenseOffset implements ArrayAccess
 
     /**
      * Sets memo
-     * @param string $memo
+     * @param  string  $memo
      * @return $this
      */
     public function setMemo($memo)
@@ -370,7 +369,7 @@ class GLExportExpenseOffset implements ArrayAccess
 
     /**
      * Sets description
-     * @param string $description
+     * @param  string  $description
      * @return $this
      */
     public function setDescription($description)
@@ -391,7 +390,7 @@ class GLExportExpenseOffset implements ArrayAccess
 
     /**
      * Sets total
-     * @param double $total
+     * @param  double  $total
      * @return $this
      */
     public function setTotal($total)
@@ -400,9 +399,10 @@ class GLExportExpenseOffset implements ArrayAccess
 
         return $this;
     }
+
     /**
      * Returns true if offset exists. False otherwise.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return boolean
      */
     public function offsetExists($offset)
@@ -412,7 +412,7 @@ class GLExportExpenseOffset implements ArrayAccess
 
     /**
      * Gets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return mixed
      */
     public function offsetGet($offset)
@@ -422,8 +422,8 @@ class GLExportExpenseOffset implements ArrayAccess
 
     /**
      * Sets value based on offset.
-     * @param  integer $offset Offset
-     * @param  mixed   $value  Value to be set
+     * @param  integer  $offset  Offset
+     * @param  mixed  $value  Value to be set
      * @return void
      */
     public function offsetSet($offset, $value)
@@ -437,7 +437,7 @@ class GLExportExpenseOffset implements ArrayAccess
 
     /**
      * Unsets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return void
      */
     public function offsetUnset($offset)
@@ -452,7 +452,8 @@ class GLExportExpenseOffset implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this),
+                JSON_PRETTY_PRINT);
         }
 
         return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this));

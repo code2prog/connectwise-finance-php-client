@@ -34,7 +34,9 @@ use \ArrayAccess;
 /**
  * GLExportInventoryTransfer Class Doc Comment
  *
- * @category    Class */
+ * @category    Class
+ */
+
 /**
  * @package     Spinen\ConnectWise\Clients\Finance
  * @author      Swagger Codegen team
@@ -45,58 +47,58 @@ class GLExportInventoryTransfer implements ArrayAccess
     const DISCRIMINATOR = null;
 
     /**
-      * The original name of the model.
-      * @var string
-      */
+     * The original name of the model.
+     * @var string
+     */
     protected static $swaggerModelName = 'GLExportInventoryTransfer';
 
     /**
-      * Array of property to type mappings. Used for (de)serialization
-      * @var string[]
-      */
+     * Array of property to type mappings. Used for (de)serialization
+     * @var string[]
+     */
     protected static $swaggerTypes = [
-        'id' => 'string',
-        'document_type' => 'string',
-        'document_date' => '\DateTime',
-        'account_number' => 'string',
-        'gl_class' => 'string',
-        'gl_type_id' => 'string',
-        'description' => 'string',
-        'sales_code' => 'string',
-        'memo' => 'string',
-        'cost_acccount_number' => 'string',
-        'inventory_account_number' => 'string',
-        'transfer_id' => 'int',
-        'item' => '\Spinen\ConnectWise\Clients\Finance\Model\IvItemReference',
-        'gl_item_id' => 'string',
-        'sales_description' => 'string',
-        'item_description' => 'string',
-        'currency' => '\Spinen\ConnectWise\Clients\Finance\Model\CurrencyReference',
-        'item_price' => 'double',
-        'taxable' => 'bool',
-        'unit_of_measure' => '\Spinen\ConnectWise\Clients\Finance\Model\UnitOfMeasureReference',
-        'quantity' => 'double',
-        'cost' => 'double',
-        'total' => 'double',
-        'sub_category' => '\Spinen\ConnectWise\Clients\Finance\Model\ProductSubCategoryReference',
-        'serialized_flag' => 'bool',
-        'serial_numbers' => 'string',
-        'shipment_method' => '\Spinen\ConnectWise\Clients\Finance\Model\ShipmentMethodReference',
-        'bin' => '\Spinen\ConnectWise\Clients\Finance\Model\WarehouseBinReference',
-        'warehouse' => '\Spinen\ConnectWise\Clients\Finance\Model\WarehouseReference',
-        'transfer_from_bin' => '\Spinen\ConnectWise\Clients\Finance\Model\WarehouseBinReference',
+        'id'                          => 'string',
+        'document_type'               => 'string',
+        'document_date'               => '\DateTime',
+        'account_number'              => 'string',
+        'gl_class'                    => 'string',
+        'gl_type_id'                  => 'string',
+        'description'                 => 'string',
+        'sales_code'                  => 'string',
+        'memo'                        => 'string',
+        'cost_acccount_number'        => 'string',
+        'inventory_account_number'    => 'string',
+        'transfer_id'                 => 'int',
+        'item'                        => '\Spinen\ConnectWise\Clients\Finance\Model\IvItemReference',
+        'gl_item_id'                  => 'string',
+        'sales_description'           => 'string',
+        'item_description'            => 'string',
+        'currency'                    => '\Spinen\ConnectWise\Clients\Finance\Model\CurrencyReference',
+        'item_price'                  => 'double',
+        'taxable'                     => 'bool',
+        'unit_of_measure'             => '\Spinen\ConnectWise\Clients\Finance\Model\UnitOfMeasureReference',
+        'quantity'                    => 'double',
+        'cost'                        => 'double',
+        'total'                       => 'double',
+        'sub_category'                => '\Spinen\ConnectWise\Clients\Finance\Model\ProductSubCategoryReference',
+        'serialized_flag'             => 'bool',
+        'serial_numbers'              => 'string',
+        'shipment_method'             => '\Spinen\ConnectWise\Clients\Finance\Model\ShipmentMethodReference',
+        'bin'                         => '\Spinen\ConnectWise\Clients\Finance\Model\WarehouseBinReference',
+        'warehouse'                   => '\Spinen\ConnectWise\Clients\Finance\Model\WarehouseReference',
+        'transfer_from_bin'           => '\Spinen\ConnectWise\Clients\Finance\Model\WarehouseBinReference',
         'transfer_from_location_xref' => 'string',
-        'transfer_to_bin' => '\Spinen\ConnectWise\Clients\Finance\Model\WarehouseBinReference',
-        'transfer_to_location_xref' => 'string',
-        'location_xref' => 'string',
-        'price_level_xref' => 'string',
-        'uom_schedule_xref' => 'string',
-        'item_type_xref' => 'string',
-        'inventory_xref' => 'string',
-        'cogs_xref' => 'string',
-        'tax_note' => 'string',
-        'tax_code' => '\Spinen\ConnectWise\Clients\Finance\Model\TaxCodeReference',
-        'offset' => '\Spinen\ConnectWise\Clients\Finance\Model\GLExportInventoryTransferOffset'
+        'transfer_to_bin'             => '\Spinen\ConnectWise\Clients\Finance\Model\WarehouseBinReference',
+        'transfer_to_location_xref'   => 'string',
+        'location_xref'               => 'string',
+        'price_level_xref'            => 'string',
+        'uom_schedule_xref'           => 'string',
+        'item_type_xref'              => 'string',
+        'inventory_xref'              => 'string',
+        'cogs_xref'                   => 'string',
+        'tax_note'                    => 'string',
+        'tax_code'                    => '\Spinen\ConnectWise\Clients\Finance\Model\TaxCodeReference',
+        'offset'                      => '\Spinen\ConnectWise\Clients\Finance\Model\GLExportInventoryTransferOffset'
     ];
 
     public static function swaggerTypes()
@@ -109,48 +111,48 @@ class GLExportInventoryTransfer implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'id' => 'id',
-        'document_type' => 'documentType',
-        'document_date' => 'documentDate',
-        'account_number' => 'accountNumber',
-        'gl_class' => 'glClass',
-        'gl_type_id' => 'glTypeId',
-        'description' => 'description',
-        'sales_code' => 'salesCode',
-        'memo' => 'memo',
-        'cost_acccount_number' => 'costAcccountNumber',
-        'inventory_account_number' => 'inventoryAccountNumber',
-        'transfer_id' => 'transferId',
-        'item' => 'item',
-        'gl_item_id' => 'glItemId',
-        'sales_description' => 'salesDescription',
-        'item_description' => 'itemDescription',
-        'currency' => 'currency',
-        'item_price' => 'itemPrice',
-        'taxable' => 'taxable',
-        'unit_of_measure' => 'unitOfMeasure',
-        'quantity' => 'quantity',
-        'cost' => 'cost',
-        'total' => 'total',
-        'sub_category' => 'subCategory',
-        'serialized_flag' => 'serializedFlag',
-        'serial_numbers' => 'serialNumbers',
-        'shipment_method' => 'shipmentMethod',
-        'bin' => 'bin',
-        'warehouse' => 'warehouse',
-        'transfer_from_bin' => 'transferFromBin',
+        'id'                          => 'id',
+        'document_type'               => 'documentType',
+        'document_date'               => 'documentDate',
+        'account_number'              => 'accountNumber',
+        'gl_class'                    => 'glClass',
+        'gl_type_id'                  => 'glTypeId',
+        'description'                 => 'description',
+        'sales_code'                  => 'salesCode',
+        'memo'                        => 'memo',
+        'cost_acccount_number'        => 'costAcccountNumber',
+        'inventory_account_number'    => 'inventoryAccountNumber',
+        'transfer_id'                 => 'transferId',
+        'item'                        => 'item',
+        'gl_item_id'                  => 'glItemId',
+        'sales_description'           => 'salesDescription',
+        'item_description'            => 'itemDescription',
+        'currency'                    => 'currency',
+        'item_price'                  => 'itemPrice',
+        'taxable'                     => 'taxable',
+        'unit_of_measure'             => 'unitOfMeasure',
+        'quantity'                    => 'quantity',
+        'cost'                        => 'cost',
+        'total'                       => 'total',
+        'sub_category'                => 'subCategory',
+        'serialized_flag'             => 'serializedFlag',
+        'serial_numbers'              => 'serialNumbers',
+        'shipment_method'             => 'shipmentMethod',
+        'bin'                         => 'bin',
+        'warehouse'                   => 'warehouse',
+        'transfer_from_bin'           => 'transferFromBin',
         'transfer_from_location_xref' => 'transferFromLocationXref',
-        'transfer_to_bin' => 'transferToBin',
-        'transfer_to_location_xref' => 'transferToLocationXref',
-        'location_xref' => 'locationXref',
-        'price_level_xref' => 'priceLevelXref',
-        'uom_schedule_xref' => 'uomScheduleXref',
-        'item_type_xref' => 'itemTypeXref',
-        'inventory_xref' => 'inventoryXref',
-        'cogs_xref' => 'cogsXref',
-        'tax_note' => 'taxNote',
-        'tax_code' => 'taxCode',
-        'offset' => 'offset'
+        'transfer_to_bin'             => 'transferToBin',
+        'transfer_to_location_xref'   => 'transferToLocationXref',
+        'location_xref'               => 'locationXref',
+        'price_level_xref'            => 'priceLevelXref',
+        'uom_schedule_xref'           => 'uomScheduleXref',
+        'item_type_xref'              => 'itemTypeXref',
+        'inventory_xref'              => 'inventoryXref',
+        'cogs_xref'                   => 'cogsXref',
+        'tax_note'                    => 'taxNote',
+        'tax_code'                    => 'taxCode',
+        'offset'                      => 'offset'
     ];
 
 
@@ -159,48 +161,48 @@ class GLExportInventoryTransfer implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'id' => 'setId',
-        'document_type' => 'setDocumentType',
-        'document_date' => 'setDocumentDate',
-        'account_number' => 'setAccountNumber',
-        'gl_class' => 'setGlClass',
-        'gl_type_id' => 'setGlTypeId',
-        'description' => 'setDescription',
-        'sales_code' => 'setSalesCode',
-        'memo' => 'setMemo',
-        'cost_acccount_number' => 'setCostAcccountNumber',
-        'inventory_account_number' => 'setInventoryAccountNumber',
-        'transfer_id' => 'setTransferId',
-        'item' => 'setItem',
-        'gl_item_id' => 'setGlItemId',
-        'sales_description' => 'setSalesDescription',
-        'item_description' => 'setItemDescription',
-        'currency' => 'setCurrency',
-        'item_price' => 'setItemPrice',
-        'taxable' => 'setTaxable',
-        'unit_of_measure' => 'setUnitOfMeasure',
-        'quantity' => 'setQuantity',
-        'cost' => 'setCost',
-        'total' => 'setTotal',
-        'sub_category' => 'setSubCategory',
-        'serialized_flag' => 'setSerializedFlag',
-        'serial_numbers' => 'setSerialNumbers',
-        'shipment_method' => 'setShipmentMethod',
-        'bin' => 'setBin',
-        'warehouse' => 'setWarehouse',
-        'transfer_from_bin' => 'setTransferFromBin',
+        'id'                          => 'setId',
+        'document_type'               => 'setDocumentType',
+        'document_date'               => 'setDocumentDate',
+        'account_number'              => 'setAccountNumber',
+        'gl_class'                    => 'setGlClass',
+        'gl_type_id'                  => 'setGlTypeId',
+        'description'                 => 'setDescription',
+        'sales_code'                  => 'setSalesCode',
+        'memo'                        => 'setMemo',
+        'cost_acccount_number'        => 'setCostAcccountNumber',
+        'inventory_account_number'    => 'setInventoryAccountNumber',
+        'transfer_id'                 => 'setTransferId',
+        'item'                        => 'setItem',
+        'gl_item_id'                  => 'setGlItemId',
+        'sales_description'           => 'setSalesDescription',
+        'item_description'            => 'setItemDescription',
+        'currency'                    => 'setCurrency',
+        'item_price'                  => 'setItemPrice',
+        'taxable'                     => 'setTaxable',
+        'unit_of_measure'             => 'setUnitOfMeasure',
+        'quantity'                    => 'setQuantity',
+        'cost'                        => 'setCost',
+        'total'                       => 'setTotal',
+        'sub_category'                => 'setSubCategory',
+        'serialized_flag'             => 'setSerializedFlag',
+        'serial_numbers'              => 'setSerialNumbers',
+        'shipment_method'             => 'setShipmentMethod',
+        'bin'                         => 'setBin',
+        'warehouse'                   => 'setWarehouse',
+        'transfer_from_bin'           => 'setTransferFromBin',
         'transfer_from_location_xref' => 'setTransferFromLocationXref',
-        'transfer_to_bin' => 'setTransferToBin',
-        'transfer_to_location_xref' => 'setTransferToLocationXref',
-        'location_xref' => 'setLocationXref',
-        'price_level_xref' => 'setPriceLevelXref',
-        'uom_schedule_xref' => 'setUomScheduleXref',
-        'item_type_xref' => 'setItemTypeXref',
-        'inventory_xref' => 'setInventoryXref',
-        'cogs_xref' => 'setCogsXref',
-        'tax_note' => 'setTaxNote',
-        'tax_code' => 'setTaxCode',
-        'offset' => 'setOffset'
+        'transfer_to_bin'             => 'setTransferToBin',
+        'transfer_to_location_xref'   => 'setTransferToLocationXref',
+        'location_xref'               => 'setLocationXref',
+        'price_level_xref'            => 'setPriceLevelXref',
+        'uom_schedule_xref'           => 'setUomScheduleXref',
+        'item_type_xref'              => 'setItemTypeXref',
+        'inventory_xref'              => 'setInventoryXref',
+        'cogs_xref'                   => 'setCogsXref',
+        'tax_note'                    => 'setTaxNote',
+        'tax_code'                    => 'setTaxCode',
+        'offset'                      => 'setOffset'
     ];
 
 
@@ -209,48 +211,48 @@ class GLExportInventoryTransfer implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'id' => 'getId',
-        'document_type' => 'getDocumentType',
-        'document_date' => 'getDocumentDate',
-        'account_number' => 'getAccountNumber',
-        'gl_class' => 'getGlClass',
-        'gl_type_id' => 'getGlTypeId',
-        'description' => 'getDescription',
-        'sales_code' => 'getSalesCode',
-        'memo' => 'getMemo',
-        'cost_acccount_number' => 'getCostAcccountNumber',
-        'inventory_account_number' => 'getInventoryAccountNumber',
-        'transfer_id' => 'getTransferId',
-        'item' => 'getItem',
-        'gl_item_id' => 'getGlItemId',
-        'sales_description' => 'getSalesDescription',
-        'item_description' => 'getItemDescription',
-        'currency' => 'getCurrency',
-        'item_price' => 'getItemPrice',
-        'taxable' => 'getTaxable',
-        'unit_of_measure' => 'getUnitOfMeasure',
-        'quantity' => 'getQuantity',
-        'cost' => 'getCost',
-        'total' => 'getTotal',
-        'sub_category' => 'getSubCategory',
-        'serialized_flag' => 'getSerializedFlag',
-        'serial_numbers' => 'getSerialNumbers',
-        'shipment_method' => 'getShipmentMethod',
-        'bin' => 'getBin',
-        'warehouse' => 'getWarehouse',
-        'transfer_from_bin' => 'getTransferFromBin',
+        'id'                          => 'getId',
+        'document_type'               => 'getDocumentType',
+        'document_date'               => 'getDocumentDate',
+        'account_number'              => 'getAccountNumber',
+        'gl_class'                    => 'getGlClass',
+        'gl_type_id'                  => 'getGlTypeId',
+        'description'                 => 'getDescription',
+        'sales_code'                  => 'getSalesCode',
+        'memo'                        => 'getMemo',
+        'cost_acccount_number'        => 'getCostAcccountNumber',
+        'inventory_account_number'    => 'getInventoryAccountNumber',
+        'transfer_id'                 => 'getTransferId',
+        'item'                        => 'getItem',
+        'gl_item_id'                  => 'getGlItemId',
+        'sales_description'           => 'getSalesDescription',
+        'item_description'            => 'getItemDescription',
+        'currency'                    => 'getCurrency',
+        'item_price'                  => 'getItemPrice',
+        'taxable'                     => 'getTaxable',
+        'unit_of_measure'             => 'getUnitOfMeasure',
+        'quantity'                    => 'getQuantity',
+        'cost'                        => 'getCost',
+        'total'                       => 'getTotal',
+        'sub_category'                => 'getSubCategory',
+        'serialized_flag'             => 'getSerializedFlag',
+        'serial_numbers'              => 'getSerialNumbers',
+        'shipment_method'             => 'getShipmentMethod',
+        'bin'                         => 'getBin',
+        'warehouse'                   => 'getWarehouse',
+        'transfer_from_bin'           => 'getTransferFromBin',
         'transfer_from_location_xref' => 'getTransferFromLocationXref',
-        'transfer_to_bin' => 'getTransferToBin',
-        'transfer_to_location_xref' => 'getTransferToLocationXref',
-        'location_xref' => 'getLocationXref',
-        'price_level_xref' => 'getPriceLevelXref',
-        'uom_schedule_xref' => 'getUomScheduleXref',
-        'item_type_xref' => 'getItemTypeXref',
-        'inventory_xref' => 'getInventoryXref',
-        'cogs_xref' => 'getCogsXref',
-        'tax_note' => 'getTaxNote',
-        'tax_code' => 'getTaxCode',
-        'offset' => 'getOffset'
+        'transfer_to_bin'             => 'getTransferToBin',
+        'transfer_to_location_xref'   => 'getTransferToLocationXref',
+        'location_xref'               => 'getLocationXref',
+        'price_level_xref'            => 'getPriceLevelXref',
+        'uom_schedule_xref'           => 'getUomScheduleXref',
+        'item_type_xref'              => 'getItemTypeXref',
+        'inventory_xref'              => 'getInventoryXref',
+        'cogs_xref'                   => 'getCogsXref',
+        'tax_note'                    => 'getTaxNote',
+        'tax_code'                    => 'getTaxCode',
+        'offset'                      => 'getOffset'
     ];
 
     public static function attributeMap()
@@ -268,9 +270,6 @@ class GLExportInventoryTransfer implements ArrayAccess
         return self::$getters;
     }
 
-    
-
-    
 
     /**
      * Associative array for storing property values
@@ -280,7 +279,7 @@ class GLExportInventoryTransfer implements ArrayAccess
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param  mixed[]  $data  Associated array of property values initializing the model
      */
     public function __construct(array $data = null)
     {
@@ -362,7 +361,7 @@ class GLExportInventoryTransfer implements ArrayAccess
 
     /**
      * Sets id
-     * @param string $id
+     * @param  string  $id
      * @return $this
      */
     public function setId($id)
@@ -383,7 +382,7 @@ class GLExportInventoryTransfer implements ArrayAccess
 
     /**
      * Sets document_type
-     * @param string $document_type
+     * @param  string  $document_type
      * @return $this
      */
     public function setDocumentType($document_type)
@@ -404,7 +403,7 @@ class GLExportInventoryTransfer implements ArrayAccess
 
     /**
      * Sets document_date
-     * @param \DateTime $document_date
+     * @param  \DateTime  $document_date
      * @return $this
      */
     public function setDocumentDate($document_date)
@@ -425,7 +424,7 @@ class GLExportInventoryTransfer implements ArrayAccess
 
     /**
      * Sets account_number
-     * @param string $account_number
+     * @param  string  $account_number
      * @return $this
      */
     public function setAccountNumber($account_number)
@@ -446,7 +445,7 @@ class GLExportInventoryTransfer implements ArrayAccess
 
     /**
      * Sets gl_class
-     * @param string $gl_class
+     * @param  string  $gl_class
      * @return $this
      */
     public function setGlClass($gl_class)
@@ -467,7 +466,7 @@ class GLExportInventoryTransfer implements ArrayAccess
 
     /**
      * Sets gl_type_id
-     * @param string $gl_type_id
+     * @param  string  $gl_type_id
      * @return $this
      */
     public function setGlTypeId($gl_type_id)
@@ -488,7 +487,7 @@ class GLExportInventoryTransfer implements ArrayAccess
 
     /**
      * Sets description
-     * @param string $description
+     * @param  string  $description
      * @return $this
      */
     public function setDescription($description)
@@ -509,7 +508,7 @@ class GLExportInventoryTransfer implements ArrayAccess
 
     /**
      * Sets sales_code
-     * @param string $sales_code
+     * @param  string  $sales_code
      * @return $this
      */
     public function setSalesCode($sales_code)
@@ -530,7 +529,7 @@ class GLExportInventoryTransfer implements ArrayAccess
 
     /**
      * Sets memo
-     * @param string $memo
+     * @param  string  $memo
      * @return $this
      */
     public function setMemo($memo)
@@ -551,7 +550,7 @@ class GLExportInventoryTransfer implements ArrayAccess
 
     /**
      * Sets cost_acccount_number
-     * @param string $cost_acccount_number
+     * @param  string  $cost_acccount_number
      * @return $this
      */
     public function setCostAcccountNumber($cost_acccount_number)
@@ -572,7 +571,7 @@ class GLExportInventoryTransfer implements ArrayAccess
 
     /**
      * Sets inventory_account_number
-     * @param string $inventory_account_number
+     * @param  string  $inventory_account_number
      * @return $this
      */
     public function setInventoryAccountNumber($inventory_account_number)
@@ -593,7 +592,7 @@ class GLExportInventoryTransfer implements ArrayAccess
 
     /**
      * Sets transfer_id
-     * @param int $transfer_id
+     * @param  int  $transfer_id
      * @return $this
      */
     public function setTransferId($transfer_id)
@@ -614,7 +613,7 @@ class GLExportInventoryTransfer implements ArrayAccess
 
     /**
      * Sets item
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\IvItemReference $item
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\IvItemReference  $item
      * @return $this
      */
     public function setItem($item)
@@ -635,7 +634,7 @@ class GLExportInventoryTransfer implements ArrayAccess
 
     /**
      * Sets gl_item_id
-     * @param string $gl_item_id
+     * @param  string  $gl_item_id
      * @return $this
      */
     public function setGlItemId($gl_item_id)
@@ -656,7 +655,7 @@ class GLExportInventoryTransfer implements ArrayAccess
 
     /**
      * Sets sales_description
-     * @param string $sales_description
+     * @param  string  $sales_description
      * @return $this
      */
     public function setSalesDescription($sales_description)
@@ -677,7 +676,7 @@ class GLExportInventoryTransfer implements ArrayAccess
 
     /**
      * Sets item_description
-     * @param string $item_description
+     * @param  string  $item_description
      * @return $this
      */
     public function setItemDescription($item_description)
@@ -698,7 +697,7 @@ class GLExportInventoryTransfer implements ArrayAccess
 
     /**
      * Sets currency
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\CurrencyReference $currency
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\CurrencyReference  $currency
      * @return $this
      */
     public function setCurrency($currency)
@@ -719,7 +718,7 @@ class GLExportInventoryTransfer implements ArrayAccess
 
     /**
      * Sets item_price
-     * @param double $item_price
+     * @param  double  $item_price
      * @return $this
      */
     public function setItemPrice($item_price)
@@ -740,7 +739,7 @@ class GLExportInventoryTransfer implements ArrayAccess
 
     /**
      * Sets taxable
-     * @param bool $taxable
+     * @param  bool  $taxable
      * @return $this
      */
     public function setTaxable($taxable)
@@ -761,7 +760,7 @@ class GLExportInventoryTransfer implements ArrayAccess
 
     /**
      * Sets unit_of_measure
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\UnitOfMeasureReference $unit_of_measure
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\UnitOfMeasureReference  $unit_of_measure
      * @return $this
      */
     public function setUnitOfMeasure($unit_of_measure)
@@ -782,7 +781,7 @@ class GLExportInventoryTransfer implements ArrayAccess
 
     /**
      * Sets quantity
-     * @param double $quantity
+     * @param  double  $quantity
      * @return $this
      */
     public function setQuantity($quantity)
@@ -803,7 +802,7 @@ class GLExportInventoryTransfer implements ArrayAccess
 
     /**
      * Sets cost
-     * @param double $cost
+     * @param  double  $cost
      * @return $this
      */
     public function setCost($cost)
@@ -824,7 +823,7 @@ class GLExportInventoryTransfer implements ArrayAccess
 
     /**
      * Sets total
-     * @param double $total
+     * @param  double  $total
      * @return $this
      */
     public function setTotal($total)
@@ -845,7 +844,7 @@ class GLExportInventoryTransfer implements ArrayAccess
 
     /**
      * Sets sub_category
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\ProductSubCategoryReference $sub_category
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\ProductSubCategoryReference  $sub_category
      * @return $this
      */
     public function setSubCategory($sub_category)
@@ -866,7 +865,7 @@ class GLExportInventoryTransfer implements ArrayAccess
 
     /**
      * Sets serialized_flag
-     * @param bool $serialized_flag
+     * @param  bool  $serialized_flag
      * @return $this
      */
     public function setSerializedFlag($serialized_flag)
@@ -887,7 +886,7 @@ class GLExportInventoryTransfer implements ArrayAccess
 
     /**
      * Sets serial_numbers
-     * @param string $serial_numbers
+     * @param  string  $serial_numbers
      * @return $this
      */
     public function setSerialNumbers($serial_numbers)
@@ -908,7 +907,7 @@ class GLExportInventoryTransfer implements ArrayAccess
 
     /**
      * Sets shipment_method
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\ShipmentMethodReference $shipment_method
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\ShipmentMethodReference  $shipment_method
      * @return $this
      */
     public function setShipmentMethod($shipment_method)
@@ -929,7 +928,7 @@ class GLExportInventoryTransfer implements ArrayAccess
 
     /**
      * Sets bin
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\WarehouseBinReference $bin
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\WarehouseBinReference  $bin
      * @return $this
      */
     public function setBin($bin)
@@ -950,7 +949,7 @@ class GLExportInventoryTransfer implements ArrayAccess
 
     /**
      * Sets warehouse
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\WarehouseReference $warehouse
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\WarehouseReference  $warehouse
      * @return $this
      */
     public function setWarehouse($warehouse)
@@ -971,7 +970,7 @@ class GLExportInventoryTransfer implements ArrayAccess
 
     /**
      * Sets transfer_from_bin
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\WarehouseBinReference $transfer_from_bin
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\WarehouseBinReference  $transfer_from_bin
      * @return $this
      */
     public function setTransferFromBin($transfer_from_bin)
@@ -992,7 +991,7 @@ class GLExportInventoryTransfer implements ArrayAccess
 
     /**
      * Sets transfer_from_location_xref
-     * @param string $transfer_from_location_xref
+     * @param  string  $transfer_from_location_xref
      * @return $this
      */
     public function setTransferFromLocationXref($transfer_from_location_xref)
@@ -1013,7 +1012,7 @@ class GLExportInventoryTransfer implements ArrayAccess
 
     /**
      * Sets transfer_to_bin
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\WarehouseBinReference $transfer_to_bin
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\WarehouseBinReference  $transfer_to_bin
      * @return $this
      */
     public function setTransferToBin($transfer_to_bin)
@@ -1034,7 +1033,7 @@ class GLExportInventoryTransfer implements ArrayAccess
 
     /**
      * Sets transfer_to_location_xref
-     * @param string $transfer_to_location_xref
+     * @param  string  $transfer_to_location_xref
      * @return $this
      */
     public function setTransferToLocationXref($transfer_to_location_xref)
@@ -1055,7 +1054,7 @@ class GLExportInventoryTransfer implements ArrayAccess
 
     /**
      * Sets location_xref
-     * @param string $location_xref
+     * @param  string  $location_xref
      * @return $this
      */
     public function setLocationXref($location_xref)
@@ -1076,7 +1075,7 @@ class GLExportInventoryTransfer implements ArrayAccess
 
     /**
      * Sets price_level_xref
-     * @param string $price_level_xref
+     * @param  string  $price_level_xref
      * @return $this
      */
     public function setPriceLevelXref($price_level_xref)
@@ -1097,7 +1096,7 @@ class GLExportInventoryTransfer implements ArrayAccess
 
     /**
      * Sets uom_schedule_xref
-     * @param string $uom_schedule_xref
+     * @param  string  $uom_schedule_xref
      * @return $this
      */
     public function setUomScheduleXref($uom_schedule_xref)
@@ -1118,7 +1117,7 @@ class GLExportInventoryTransfer implements ArrayAccess
 
     /**
      * Sets item_type_xref
-     * @param string $item_type_xref
+     * @param  string  $item_type_xref
      * @return $this
      */
     public function setItemTypeXref($item_type_xref)
@@ -1139,7 +1138,7 @@ class GLExportInventoryTransfer implements ArrayAccess
 
     /**
      * Sets inventory_xref
-     * @param string $inventory_xref
+     * @param  string  $inventory_xref
      * @return $this
      */
     public function setInventoryXref($inventory_xref)
@@ -1160,7 +1159,7 @@ class GLExportInventoryTransfer implements ArrayAccess
 
     /**
      * Sets cogs_xref
-     * @param string $cogs_xref
+     * @param  string  $cogs_xref
      * @return $this
      */
     public function setCogsXref($cogs_xref)
@@ -1181,7 +1180,7 @@ class GLExportInventoryTransfer implements ArrayAccess
 
     /**
      * Sets tax_note
-     * @param string $tax_note
+     * @param  string  $tax_note
      * @return $this
      */
     public function setTaxNote($tax_note)
@@ -1202,7 +1201,7 @@ class GLExportInventoryTransfer implements ArrayAccess
 
     /**
      * Sets tax_code
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\TaxCodeReference $tax_code
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\TaxCodeReference  $tax_code
      * @return $this
      */
     public function setTaxCode($tax_code)
@@ -1223,7 +1222,7 @@ class GLExportInventoryTransfer implements ArrayAccess
 
     /**
      * Sets offset
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\GLExportInventoryTransferOffset $offset
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\GLExportInventoryTransferOffset  $offset
      * @return $this
      */
     public function setOffset($offset)
@@ -1232,9 +1231,10 @@ class GLExportInventoryTransfer implements ArrayAccess
 
         return $this;
     }
+
     /**
      * Returns true if offset exists. False otherwise.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return boolean
      */
     public function offsetExists($offset)
@@ -1244,7 +1244,7 @@ class GLExportInventoryTransfer implements ArrayAccess
 
     /**
      * Gets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return mixed
      */
     public function offsetGet($offset)
@@ -1254,8 +1254,8 @@ class GLExportInventoryTransfer implements ArrayAccess
 
     /**
      * Sets value based on offset.
-     * @param  integer $offset Offset
-     * @param  mixed   $value  Value to be set
+     * @param  integer  $offset  Offset
+     * @param  mixed  $value  Value to be set
      * @return void
      */
     public function offsetSet($offset, $value)
@@ -1269,7 +1269,7 @@ class GLExportInventoryTransfer implements ArrayAccess
 
     /**
      * Unsets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return void
      */
     public function offsetUnset($offset)
@@ -1284,7 +1284,8 @@ class GLExportInventoryTransfer implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this),
+                JSON_PRETTY_PRINT);
         }
 
         return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this));

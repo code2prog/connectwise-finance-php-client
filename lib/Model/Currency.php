@@ -34,7 +34,9 @@ use \ArrayAccess;
 /**
  * Currency Class Doc Comment
  *
- * @category    Class */
+ * @category    Class
+ */
+
 /**
  * @package     Spinen\ConnectWise\Clients\Finance
  * @author      Swagger Codegen team
@@ -45,24 +47,24 @@ class Currency implements ArrayAccess
     const DISCRIMINATOR = null;
 
     /**
-      * The original name of the model.
-      * @var string
-      */
+     * The original name of the model.
+     * @var string
+     */
     protected static $swaggerModelName = 'Currency';
 
     /**
-      * Array of property to type mappings. Used for (de)serialization
-      * @var string[]
-      */
+     * Array of property to type mappings. Used for (de)serialization
+     * @var string[]
+     */
     protected static $swaggerTypes = [
-        'id' => 'int',
+        'id'                  => 'int',
         'currency_identifier' => 'string',
-        'name' => 'string',
-        'symbol' => 'string',
-        'display_id_flag' => 'bool',
+        'name'                => 'string',
+        'symbol'              => 'string',
+        'display_id_flag'     => 'bool',
         'display_symbol_flag' => 'bool',
-        'iso_code' => 'string',
-        '_info' => '\Spinen\ConnectWise\Clients\Finance\Model\Metadata'
+        'iso_code'            => 'string',
+        '_info'               => '\Spinen\ConnectWise\Clients\Finance\Model\Metadata'
     ];
 
     public static function swaggerTypes()
@@ -75,14 +77,14 @@ class Currency implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'id' => 'id',
+        'id'                  => 'id',
         'currency_identifier' => 'currencyIdentifier',
-        'name' => 'name',
-        'symbol' => 'symbol',
-        'display_id_flag' => 'displayIdFlag',
+        'name'                => 'name',
+        'symbol'              => 'symbol',
+        'display_id_flag'     => 'displayIdFlag',
         'display_symbol_flag' => 'displaySymbolFlag',
-        'iso_code' => 'isoCode',
-        '_info' => '_info'
+        'iso_code'            => 'isoCode',
+        '_info'               => '_info'
     ];
 
 
@@ -91,14 +93,14 @@ class Currency implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'id' => 'setId',
+        'id'                  => 'setId',
         'currency_identifier' => 'setCurrencyIdentifier',
-        'name' => 'setName',
-        'symbol' => 'setSymbol',
-        'display_id_flag' => 'setDisplayIdFlag',
+        'name'                => 'setName',
+        'symbol'              => 'setSymbol',
+        'display_id_flag'     => 'setDisplayIdFlag',
         'display_symbol_flag' => 'setDisplaySymbolFlag',
-        'iso_code' => 'setIsoCode',
-        '_info' => 'setInfo'
+        'iso_code'            => 'setIsoCode',
+        '_info'               => 'setInfo'
     ];
 
 
@@ -107,14 +109,14 @@ class Currency implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'id' => 'getId',
+        'id'                  => 'getId',
         'currency_identifier' => 'getCurrencyIdentifier',
-        'name' => 'getName',
-        'symbol' => 'getSymbol',
-        'display_id_flag' => 'getDisplayIdFlag',
+        'name'                => 'getName',
+        'symbol'              => 'getSymbol',
+        'display_id_flag'     => 'getDisplayIdFlag',
         'display_symbol_flag' => 'getDisplaySymbolFlag',
-        'iso_code' => 'getIsoCode',
-        '_info' => 'getInfo'
+        'iso_code'            => 'getIsoCode',
+        '_info'               => 'getInfo'
     ];
 
     public static function attributeMap()
@@ -132,9 +134,6 @@ class Currency implements ArrayAccess
         return self::$getters;
     }
 
-    
-
-    
 
     /**
      * Associative array for storing property values
@@ -144,7 +143,7 @@ class Currency implements ArrayAccess
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param  mixed[]  $data  Associated array of property values initializing the model
      */
     public function __construct(array $data = null)
     {
@@ -226,7 +225,7 @@ class Currency implements ArrayAccess
 
     /**
      * Sets id
-     * @param int $id
+     * @param  int  $id
      * @return $this
      */
     public function setId($id)
@@ -247,7 +246,7 @@ class Currency implements ArrayAccess
 
     /**
      * Sets currency_identifier
-     * @param string $currency_identifier
+     * @param  string  $currency_identifier
      * @return $this
      */
     public function setCurrencyIdentifier($currency_identifier)
@@ -272,7 +271,7 @@ class Currency implements ArrayAccess
 
     /**
      * Sets name
-     * @param string $name
+     * @param  string  $name
      * @return $this
      */
     public function setName($name)
@@ -297,7 +296,7 @@ class Currency implements ArrayAccess
 
     /**
      * Sets symbol
-     * @param string $symbol
+     * @param  string  $symbol
      * @return $this
      */
     public function setSymbol($symbol)
@@ -322,7 +321,7 @@ class Currency implements ArrayAccess
 
     /**
      * Sets display_id_flag
-     * @param bool $display_id_flag
+     * @param  bool  $display_id_flag
      * @return $this
      */
     public function setDisplayIdFlag($display_id_flag)
@@ -343,7 +342,7 @@ class Currency implements ArrayAccess
 
     /**
      * Sets display_symbol_flag
-     * @param bool $display_symbol_flag
+     * @param  bool  $display_symbol_flag
      * @return $this
      */
     public function setDisplaySymbolFlag($display_symbol_flag)
@@ -364,7 +363,7 @@ class Currency implements ArrayAccess
 
     /**
      * Sets iso_code
-     * @param string $iso_code
+     * @param  string  $iso_code
      * @return $this
      */
     public function setIsoCode($iso_code)
@@ -389,7 +388,7 @@ class Currency implements ArrayAccess
 
     /**
      * Sets _info
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\Metadata $_info Metadata of the entity
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\Metadata  $_info  Metadata of the entity
      * @return $this
      */
     public function setInfo($_info)
@@ -398,9 +397,10 @@ class Currency implements ArrayAccess
 
         return $this;
     }
+
     /**
      * Returns true if offset exists. False otherwise.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return boolean
      */
     public function offsetExists($offset)
@@ -410,7 +410,7 @@ class Currency implements ArrayAccess
 
     /**
      * Gets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return mixed
      */
     public function offsetGet($offset)
@@ -420,8 +420,8 @@ class Currency implements ArrayAccess
 
     /**
      * Sets value based on offset.
-     * @param  integer $offset Offset
-     * @param  mixed   $value  Value to be set
+     * @param  integer  $offset  Offset
+     * @param  mixed  $value  Value to be set
      * @return void
      */
     public function offsetSet($offset, $value)
@@ -435,7 +435,7 @@ class Currency implements ArrayAccess
 
     /**
      * Unsets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return void
      */
     public function offsetUnset($offset)
@@ -450,7 +450,8 @@ class Currency implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this),
+                JSON_PRETTY_PRINT);
         }
 
         return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this));

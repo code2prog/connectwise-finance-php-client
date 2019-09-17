@@ -34,7 +34,9 @@ use \ArrayAccess;
 /**
  * GLExportPurchaseTransactionDetailTax Class Doc Comment
  *
- * @category    Class */
+ * @category    Class
+ */
+
 /**
  * @package     Spinen\ConnectWise\Clients\Finance
  * @author      Swagger Codegen team
@@ -45,58 +47,58 @@ class GLExportPurchaseTransactionDetailTax implements ArrayAccess
     const DISCRIMINATOR = null;
 
     /**
-      * The original name of the model.
-      * @var string
-      */
+     * The original name of the model.
+     * @var string
+     */
     protected static $swaggerModelName = 'GLExportPurchaseTransactionDetailTax';
 
     /**
-      * Array of property to type mappings. Used for (de)serialization
-      * @var string[]
-      */
+     * Array of property to type mappings. Used for (de)serialization
+     * @var string[]
+     */
     protected static $swaggerTypes = [
-        'id' => 'int',
-        'document_date' => '\DateTime',
-        'account_number' => 'string',
-        'gl_class' => 'string',
-        'cost' => 'double',
-        'sales_code' => 'string',
-        'gl_type_id' => 'string',
-        'gl_item_id' => 'string',
-        'memo' => 'string',
-        'vendor_number' => 'string',
-        'vendor_account_number' => 'string',
-        'cost_account_number' => 'string',
-        'inventory_account_number' => 'string',
-        'item_type_xref' => 'string',
-        'inventory_xref' => 'string',
-        'cogs_xref' => 'string',
-        'uom_schedule_xref' => 'string',
-        'price_level_xref' => 'string',
-        'location_xref' => 'string',
-        'item' => '\Spinen\ConnectWise\Clients\Finance\Model\IvItemReference',
-        'taxable_flag' => 'bool',
-        'sales_description' => 'string',
-        'item_description' => 'string',
-        'item_price' => 'double',
-        'item_cost' => 'double',
-        'unit_of_measure' => '\Spinen\ConnectWise\Clients\Finance\Model\UnitOfMeasureReference',
-        'quantity' => 'double',
-        'total' => 'double',
-        'currency' => '\Spinen\ConnectWise\Clients\Finance\Model\CurrencyReference',
-        'serialized_flag' => 'bool',
-        'serial_numbers' => 'string',
-        'drop_shipped_flag' => 'bool',
-        'line_number' => 'int',
-        'warehouse_site' => '\Spinen\ConnectWise\Clients\Finance\Model\SiteReference',
-        'warehouse_bin' => '\Spinen\ConnectWise\Clients\Finance\Model\WarehouseBinReference',
-        'shipment_method' => '\Spinen\ConnectWise\Clients\Finance\Model\ShipmentMethodReference',
-        'sub_category' => '\Spinen\ConnectWise\Clients\Finance\Model\ProductSubCategoryReference',
-        'tax_code' => '\Spinen\ConnectWise\Clients\Finance\Model\TaxCodeReference',
-        'tax_rate' => 'double',
-        'tax_rate_percent' => 'double',
-        'tax_agency_xref' => 'string',
-        'tax_note' => 'string',
+        'id'                        => 'int',
+        'document_date'             => '\DateTime',
+        'account_number'            => 'string',
+        'gl_class'                  => 'string',
+        'cost'                      => 'double',
+        'sales_code'                => 'string',
+        'gl_type_id'                => 'string',
+        'gl_item_id'                => 'string',
+        'memo'                      => 'string',
+        'vendor_number'             => 'string',
+        'vendor_account_number'     => 'string',
+        'cost_account_number'       => 'string',
+        'inventory_account_number'  => 'string',
+        'item_type_xref'            => 'string',
+        'inventory_xref'            => 'string',
+        'cogs_xref'                 => 'string',
+        'uom_schedule_xref'         => 'string',
+        'price_level_xref'          => 'string',
+        'location_xref'             => 'string',
+        'item'                      => '\Spinen\ConnectWise\Clients\Finance\Model\IvItemReference',
+        'taxable_flag'              => 'bool',
+        'sales_description'         => 'string',
+        'item_description'          => 'string',
+        'item_price'                => 'double',
+        'item_cost'                 => 'double',
+        'unit_of_measure'           => '\Spinen\ConnectWise\Clients\Finance\Model\UnitOfMeasureReference',
+        'quantity'                  => 'double',
+        'total'                     => 'double',
+        'currency'                  => '\Spinen\ConnectWise\Clients\Finance\Model\CurrencyReference',
+        'serialized_flag'           => 'bool',
+        'serial_numbers'            => 'string',
+        'drop_shipped_flag'         => 'bool',
+        'line_number'               => 'int',
+        'warehouse_site'            => '\Spinen\ConnectWise\Clients\Finance\Model\SiteReference',
+        'warehouse_bin'             => '\Spinen\ConnectWise\Clients\Finance\Model\WarehouseBinReference',
+        'shipment_method'           => '\Spinen\ConnectWise\Clients\Finance\Model\ShipmentMethodReference',
+        'sub_category'              => '\Spinen\ConnectWise\Clients\Finance\Model\ProductSubCategoryReference',
+        'tax_code'                  => '\Spinen\ConnectWise\Clients\Finance\Model\TaxCodeReference',
+        'tax_rate'                  => 'double',
+        'tax_rate_percent'          => 'double',
+        'tax_agency_xref'           => 'string',
+        'tax_note'                  => 'string',
         'purchase_header_tax_group' => 'string'
     ];
 
@@ -110,48 +112,48 @@ class GLExportPurchaseTransactionDetailTax implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'id' => 'id',
-        'document_date' => 'documentDate',
-        'account_number' => 'accountNumber',
-        'gl_class' => 'glClass',
-        'cost' => 'cost',
-        'sales_code' => 'salesCode',
-        'gl_type_id' => 'glTypeId',
-        'gl_item_id' => 'glItemId',
-        'memo' => 'memo',
-        'vendor_number' => 'vendorNumber',
-        'vendor_account_number' => 'vendorAccountNumber',
-        'cost_account_number' => 'costAccountNumber',
-        'inventory_account_number' => 'inventoryAccountNumber',
-        'item_type_xref' => 'itemTypeXref',
-        'inventory_xref' => 'inventoryXref',
-        'cogs_xref' => 'cogsXref',
-        'uom_schedule_xref' => 'uomScheduleXref',
-        'price_level_xref' => 'priceLevelXref',
-        'location_xref' => 'locationXref',
-        'item' => 'item',
-        'taxable_flag' => 'taxableFlag',
-        'sales_description' => 'salesDescription',
-        'item_description' => 'itemDescription',
-        'item_price' => 'itemPrice',
-        'item_cost' => 'itemCost',
-        'unit_of_measure' => 'unitOfMeasure',
-        'quantity' => 'quantity',
-        'total' => 'total',
-        'currency' => 'currency',
-        'serialized_flag' => 'serializedFlag',
-        'serial_numbers' => 'serialNumbers',
-        'drop_shipped_flag' => 'dropShippedFlag',
-        'line_number' => 'lineNumber',
-        'warehouse_site' => 'warehouseSite',
-        'warehouse_bin' => 'warehouseBin',
-        'shipment_method' => 'shipmentMethod',
-        'sub_category' => 'subCategory',
-        'tax_code' => 'taxCode',
-        'tax_rate' => 'taxRate',
-        'tax_rate_percent' => 'taxRatePercent',
-        'tax_agency_xref' => 'taxAgencyXref',
-        'tax_note' => 'taxNote',
+        'id'                        => 'id',
+        'document_date'             => 'documentDate',
+        'account_number'            => 'accountNumber',
+        'gl_class'                  => 'glClass',
+        'cost'                      => 'cost',
+        'sales_code'                => 'salesCode',
+        'gl_type_id'                => 'glTypeId',
+        'gl_item_id'                => 'glItemId',
+        'memo'                      => 'memo',
+        'vendor_number'             => 'vendorNumber',
+        'vendor_account_number'     => 'vendorAccountNumber',
+        'cost_account_number'       => 'costAccountNumber',
+        'inventory_account_number'  => 'inventoryAccountNumber',
+        'item_type_xref'            => 'itemTypeXref',
+        'inventory_xref'            => 'inventoryXref',
+        'cogs_xref'                 => 'cogsXref',
+        'uom_schedule_xref'         => 'uomScheduleXref',
+        'price_level_xref'          => 'priceLevelXref',
+        'location_xref'             => 'locationXref',
+        'item'                      => 'item',
+        'taxable_flag'              => 'taxableFlag',
+        'sales_description'         => 'salesDescription',
+        'item_description'          => 'itemDescription',
+        'item_price'                => 'itemPrice',
+        'item_cost'                 => 'itemCost',
+        'unit_of_measure'           => 'unitOfMeasure',
+        'quantity'                  => 'quantity',
+        'total'                     => 'total',
+        'currency'                  => 'currency',
+        'serialized_flag'           => 'serializedFlag',
+        'serial_numbers'            => 'serialNumbers',
+        'drop_shipped_flag'         => 'dropShippedFlag',
+        'line_number'               => 'lineNumber',
+        'warehouse_site'            => 'warehouseSite',
+        'warehouse_bin'             => 'warehouseBin',
+        'shipment_method'           => 'shipmentMethod',
+        'sub_category'              => 'subCategory',
+        'tax_code'                  => 'taxCode',
+        'tax_rate'                  => 'taxRate',
+        'tax_rate_percent'          => 'taxRatePercent',
+        'tax_agency_xref'           => 'taxAgencyXref',
+        'tax_note'                  => 'taxNote',
         'purchase_header_tax_group' => 'purchaseHeaderTaxGroup'
     ];
 
@@ -161,48 +163,48 @@ class GLExportPurchaseTransactionDetailTax implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'id' => 'setId',
-        'document_date' => 'setDocumentDate',
-        'account_number' => 'setAccountNumber',
-        'gl_class' => 'setGlClass',
-        'cost' => 'setCost',
-        'sales_code' => 'setSalesCode',
-        'gl_type_id' => 'setGlTypeId',
-        'gl_item_id' => 'setGlItemId',
-        'memo' => 'setMemo',
-        'vendor_number' => 'setVendorNumber',
-        'vendor_account_number' => 'setVendorAccountNumber',
-        'cost_account_number' => 'setCostAccountNumber',
-        'inventory_account_number' => 'setInventoryAccountNumber',
-        'item_type_xref' => 'setItemTypeXref',
-        'inventory_xref' => 'setInventoryXref',
-        'cogs_xref' => 'setCogsXref',
-        'uom_schedule_xref' => 'setUomScheduleXref',
-        'price_level_xref' => 'setPriceLevelXref',
-        'location_xref' => 'setLocationXref',
-        'item' => 'setItem',
-        'taxable_flag' => 'setTaxableFlag',
-        'sales_description' => 'setSalesDescription',
-        'item_description' => 'setItemDescription',
-        'item_price' => 'setItemPrice',
-        'item_cost' => 'setItemCost',
-        'unit_of_measure' => 'setUnitOfMeasure',
-        'quantity' => 'setQuantity',
-        'total' => 'setTotal',
-        'currency' => 'setCurrency',
-        'serialized_flag' => 'setSerializedFlag',
-        'serial_numbers' => 'setSerialNumbers',
-        'drop_shipped_flag' => 'setDropShippedFlag',
-        'line_number' => 'setLineNumber',
-        'warehouse_site' => 'setWarehouseSite',
-        'warehouse_bin' => 'setWarehouseBin',
-        'shipment_method' => 'setShipmentMethod',
-        'sub_category' => 'setSubCategory',
-        'tax_code' => 'setTaxCode',
-        'tax_rate' => 'setTaxRate',
-        'tax_rate_percent' => 'setTaxRatePercent',
-        'tax_agency_xref' => 'setTaxAgencyXref',
-        'tax_note' => 'setTaxNote',
+        'id'                        => 'setId',
+        'document_date'             => 'setDocumentDate',
+        'account_number'            => 'setAccountNumber',
+        'gl_class'                  => 'setGlClass',
+        'cost'                      => 'setCost',
+        'sales_code'                => 'setSalesCode',
+        'gl_type_id'                => 'setGlTypeId',
+        'gl_item_id'                => 'setGlItemId',
+        'memo'                      => 'setMemo',
+        'vendor_number'             => 'setVendorNumber',
+        'vendor_account_number'     => 'setVendorAccountNumber',
+        'cost_account_number'       => 'setCostAccountNumber',
+        'inventory_account_number'  => 'setInventoryAccountNumber',
+        'item_type_xref'            => 'setItemTypeXref',
+        'inventory_xref'            => 'setInventoryXref',
+        'cogs_xref'                 => 'setCogsXref',
+        'uom_schedule_xref'         => 'setUomScheduleXref',
+        'price_level_xref'          => 'setPriceLevelXref',
+        'location_xref'             => 'setLocationXref',
+        'item'                      => 'setItem',
+        'taxable_flag'              => 'setTaxableFlag',
+        'sales_description'         => 'setSalesDescription',
+        'item_description'          => 'setItemDescription',
+        'item_price'                => 'setItemPrice',
+        'item_cost'                 => 'setItemCost',
+        'unit_of_measure'           => 'setUnitOfMeasure',
+        'quantity'                  => 'setQuantity',
+        'total'                     => 'setTotal',
+        'currency'                  => 'setCurrency',
+        'serialized_flag'           => 'setSerializedFlag',
+        'serial_numbers'            => 'setSerialNumbers',
+        'drop_shipped_flag'         => 'setDropShippedFlag',
+        'line_number'               => 'setLineNumber',
+        'warehouse_site'            => 'setWarehouseSite',
+        'warehouse_bin'             => 'setWarehouseBin',
+        'shipment_method'           => 'setShipmentMethod',
+        'sub_category'              => 'setSubCategory',
+        'tax_code'                  => 'setTaxCode',
+        'tax_rate'                  => 'setTaxRate',
+        'tax_rate_percent'          => 'setTaxRatePercent',
+        'tax_agency_xref'           => 'setTaxAgencyXref',
+        'tax_note'                  => 'setTaxNote',
         'purchase_header_tax_group' => 'setPurchaseHeaderTaxGroup'
     ];
 
@@ -212,48 +214,48 @@ class GLExportPurchaseTransactionDetailTax implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'id' => 'getId',
-        'document_date' => 'getDocumentDate',
-        'account_number' => 'getAccountNumber',
-        'gl_class' => 'getGlClass',
-        'cost' => 'getCost',
-        'sales_code' => 'getSalesCode',
-        'gl_type_id' => 'getGlTypeId',
-        'gl_item_id' => 'getGlItemId',
-        'memo' => 'getMemo',
-        'vendor_number' => 'getVendorNumber',
-        'vendor_account_number' => 'getVendorAccountNumber',
-        'cost_account_number' => 'getCostAccountNumber',
-        'inventory_account_number' => 'getInventoryAccountNumber',
-        'item_type_xref' => 'getItemTypeXref',
-        'inventory_xref' => 'getInventoryXref',
-        'cogs_xref' => 'getCogsXref',
-        'uom_schedule_xref' => 'getUomScheduleXref',
-        'price_level_xref' => 'getPriceLevelXref',
-        'location_xref' => 'getLocationXref',
-        'item' => 'getItem',
-        'taxable_flag' => 'getTaxableFlag',
-        'sales_description' => 'getSalesDescription',
-        'item_description' => 'getItemDescription',
-        'item_price' => 'getItemPrice',
-        'item_cost' => 'getItemCost',
-        'unit_of_measure' => 'getUnitOfMeasure',
-        'quantity' => 'getQuantity',
-        'total' => 'getTotal',
-        'currency' => 'getCurrency',
-        'serialized_flag' => 'getSerializedFlag',
-        'serial_numbers' => 'getSerialNumbers',
-        'drop_shipped_flag' => 'getDropShippedFlag',
-        'line_number' => 'getLineNumber',
-        'warehouse_site' => 'getWarehouseSite',
-        'warehouse_bin' => 'getWarehouseBin',
-        'shipment_method' => 'getShipmentMethod',
-        'sub_category' => 'getSubCategory',
-        'tax_code' => 'getTaxCode',
-        'tax_rate' => 'getTaxRate',
-        'tax_rate_percent' => 'getTaxRatePercent',
-        'tax_agency_xref' => 'getTaxAgencyXref',
-        'tax_note' => 'getTaxNote',
+        'id'                        => 'getId',
+        'document_date'             => 'getDocumentDate',
+        'account_number'            => 'getAccountNumber',
+        'gl_class'                  => 'getGlClass',
+        'cost'                      => 'getCost',
+        'sales_code'                => 'getSalesCode',
+        'gl_type_id'                => 'getGlTypeId',
+        'gl_item_id'                => 'getGlItemId',
+        'memo'                      => 'getMemo',
+        'vendor_number'             => 'getVendorNumber',
+        'vendor_account_number'     => 'getVendorAccountNumber',
+        'cost_account_number'       => 'getCostAccountNumber',
+        'inventory_account_number'  => 'getInventoryAccountNumber',
+        'item_type_xref'            => 'getItemTypeXref',
+        'inventory_xref'            => 'getInventoryXref',
+        'cogs_xref'                 => 'getCogsXref',
+        'uom_schedule_xref'         => 'getUomScheduleXref',
+        'price_level_xref'          => 'getPriceLevelXref',
+        'location_xref'             => 'getLocationXref',
+        'item'                      => 'getItem',
+        'taxable_flag'              => 'getTaxableFlag',
+        'sales_description'         => 'getSalesDescription',
+        'item_description'          => 'getItemDescription',
+        'item_price'                => 'getItemPrice',
+        'item_cost'                 => 'getItemCost',
+        'unit_of_measure'           => 'getUnitOfMeasure',
+        'quantity'                  => 'getQuantity',
+        'total'                     => 'getTotal',
+        'currency'                  => 'getCurrency',
+        'serialized_flag'           => 'getSerializedFlag',
+        'serial_numbers'            => 'getSerialNumbers',
+        'drop_shipped_flag'         => 'getDropShippedFlag',
+        'line_number'               => 'getLineNumber',
+        'warehouse_site'            => 'getWarehouseSite',
+        'warehouse_bin'             => 'getWarehouseBin',
+        'shipment_method'           => 'getShipmentMethod',
+        'sub_category'              => 'getSubCategory',
+        'tax_code'                  => 'getTaxCode',
+        'tax_rate'                  => 'getTaxRate',
+        'tax_rate_percent'          => 'getTaxRatePercent',
+        'tax_agency_xref'           => 'getTaxAgencyXref',
+        'tax_note'                  => 'getTaxNote',
         'purchase_header_tax_group' => 'getPurchaseHeaderTaxGroup'
     ];
 
@@ -272,9 +274,6 @@ class GLExportPurchaseTransactionDetailTax implements ArrayAccess
         return self::$getters;
     }
 
-    
-
-    
 
     /**
      * Associative array for storing property values
@@ -284,7 +283,7 @@ class GLExportPurchaseTransactionDetailTax implements ArrayAccess
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param  mixed[]  $data  Associated array of property values initializing the model
      */
     public function __construct(array $data = null)
     {
@@ -367,7 +366,7 @@ class GLExportPurchaseTransactionDetailTax implements ArrayAccess
 
     /**
      * Sets id
-     * @param int $id
+     * @param  int  $id
      * @return $this
      */
     public function setId($id)
@@ -388,7 +387,7 @@ class GLExportPurchaseTransactionDetailTax implements ArrayAccess
 
     /**
      * Sets document_date
-     * @param \DateTime $document_date
+     * @param  \DateTime  $document_date
      * @return $this
      */
     public function setDocumentDate($document_date)
@@ -409,7 +408,7 @@ class GLExportPurchaseTransactionDetailTax implements ArrayAccess
 
     /**
      * Sets account_number
-     * @param string $account_number
+     * @param  string  $account_number
      * @return $this
      */
     public function setAccountNumber($account_number)
@@ -430,7 +429,7 @@ class GLExportPurchaseTransactionDetailTax implements ArrayAccess
 
     /**
      * Sets gl_class
-     * @param string $gl_class
+     * @param  string  $gl_class
      * @return $this
      */
     public function setGlClass($gl_class)
@@ -451,7 +450,7 @@ class GLExportPurchaseTransactionDetailTax implements ArrayAccess
 
     /**
      * Sets cost
-     * @param double $cost
+     * @param  double  $cost
      * @return $this
      */
     public function setCost($cost)
@@ -472,7 +471,7 @@ class GLExportPurchaseTransactionDetailTax implements ArrayAccess
 
     /**
      * Sets sales_code
-     * @param string $sales_code
+     * @param  string  $sales_code
      * @return $this
      */
     public function setSalesCode($sales_code)
@@ -493,7 +492,7 @@ class GLExportPurchaseTransactionDetailTax implements ArrayAccess
 
     /**
      * Sets gl_type_id
-     * @param string $gl_type_id
+     * @param  string  $gl_type_id
      * @return $this
      */
     public function setGlTypeId($gl_type_id)
@@ -514,7 +513,7 @@ class GLExportPurchaseTransactionDetailTax implements ArrayAccess
 
     /**
      * Sets gl_item_id
-     * @param string $gl_item_id
+     * @param  string  $gl_item_id
      * @return $this
      */
     public function setGlItemId($gl_item_id)
@@ -535,7 +534,7 @@ class GLExportPurchaseTransactionDetailTax implements ArrayAccess
 
     /**
      * Sets memo
-     * @param string $memo
+     * @param  string  $memo
      * @return $this
      */
     public function setMemo($memo)
@@ -556,7 +555,7 @@ class GLExportPurchaseTransactionDetailTax implements ArrayAccess
 
     /**
      * Sets vendor_number
-     * @param string $vendor_number
+     * @param  string  $vendor_number
      * @return $this
      */
     public function setVendorNumber($vendor_number)
@@ -577,7 +576,7 @@ class GLExportPurchaseTransactionDetailTax implements ArrayAccess
 
     /**
      * Sets vendor_account_number
-     * @param string $vendor_account_number
+     * @param  string  $vendor_account_number
      * @return $this
      */
     public function setVendorAccountNumber($vendor_account_number)
@@ -598,7 +597,7 @@ class GLExportPurchaseTransactionDetailTax implements ArrayAccess
 
     /**
      * Sets cost_account_number
-     * @param string $cost_account_number
+     * @param  string  $cost_account_number
      * @return $this
      */
     public function setCostAccountNumber($cost_account_number)
@@ -619,7 +618,7 @@ class GLExportPurchaseTransactionDetailTax implements ArrayAccess
 
     /**
      * Sets inventory_account_number
-     * @param string $inventory_account_number
+     * @param  string  $inventory_account_number
      * @return $this
      */
     public function setInventoryAccountNumber($inventory_account_number)
@@ -640,7 +639,7 @@ class GLExportPurchaseTransactionDetailTax implements ArrayAccess
 
     /**
      * Sets item_type_xref
-     * @param string $item_type_xref
+     * @param  string  $item_type_xref
      * @return $this
      */
     public function setItemTypeXref($item_type_xref)
@@ -661,7 +660,7 @@ class GLExportPurchaseTransactionDetailTax implements ArrayAccess
 
     /**
      * Sets inventory_xref
-     * @param string $inventory_xref
+     * @param  string  $inventory_xref
      * @return $this
      */
     public function setInventoryXref($inventory_xref)
@@ -682,7 +681,7 @@ class GLExportPurchaseTransactionDetailTax implements ArrayAccess
 
     /**
      * Sets cogs_xref
-     * @param string $cogs_xref
+     * @param  string  $cogs_xref
      * @return $this
      */
     public function setCogsXref($cogs_xref)
@@ -703,7 +702,7 @@ class GLExportPurchaseTransactionDetailTax implements ArrayAccess
 
     /**
      * Sets uom_schedule_xref
-     * @param string $uom_schedule_xref
+     * @param  string  $uom_schedule_xref
      * @return $this
      */
     public function setUomScheduleXref($uom_schedule_xref)
@@ -724,7 +723,7 @@ class GLExportPurchaseTransactionDetailTax implements ArrayAccess
 
     /**
      * Sets price_level_xref
-     * @param string $price_level_xref
+     * @param  string  $price_level_xref
      * @return $this
      */
     public function setPriceLevelXref($price_level_xref)
@@ -745,7 +744,7 @@ class GLExportPurchaseTransactionDetailTax implements ArrayAccess
 
     /**
      * Sets location_xref
-     * @param string $location_xref
+     * @param  string  $location_xref
      * @return $this
      */
     public function setLocationXref($location_xref)
@@ -766,7 +765,7 @@ class GLExportPurchaseTransactionDetailTax implements ArrayAccess
 
     /**
      * Sets item
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\IvItemReference $item
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\IvItemReference  $item
      * @return $this
      */
     public function setItem($item)
@@ -787,7 +786,7 @@ class GLExportPurchaseTransactionDetailTax implements ArrayAccess
 
     /**
      * Sets taxable_flag
-     * @param bool $taxable_flag
+     * @param  bool  $taxable_flag
      * @return $this
      */
     public function setTaxableFlag($taxable_flag)
@@ -808,7 +807,7 @@ class GLExportPurchaseTransactionDetailTax implements ArrayAccess
 
     /**
      * Sets sales_description
-     * @param string $sales_description
+     * @param  string  $sales_description
      * @return $this
      */
     public function setSalesDescription($sales_description)
@@ -829,7 +828,7 @@ class GLExportPurchaseTransactionDetailTax implements ArrayAccess
 
     /**
      * Sets item_description
-     * @param string $item_description
+     * @param  string  $item_description
      * @return $this
      */
     public function setItemDescription($item_description)
@@ -850,7 +849,7 @@ class GLExportPurchaseTransactionDetailTax implements ArrayAccess
 
     /**
      * Sets item_price
-     * @param double $item_price
+     * @param  double  $item_price
      * @return $this
      */
     public function setItemPrice($item_price)
@@ -871,7 +870,7 @@ class GLExportPurchaseTransactionDetailTax implements ArrayAccess
 
     /**
      * Sets item_cost
-     * @param double $item_cost
+     * @param  double  $item_cost
      * @return $this
      */
     public function setItemCost($item_cost)
@@ -892,7 +891,7 @@ class GLExportPurchaseTransactionDetailTax implements ArrayAccess
 
     /**
      * Sets unit_of_measure
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\UnitOfMeasureReference $unit_of_measure
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\UnitOfMeasureReference  $unit_of_measure
      * @return $this
      */
     public function setUnitOfMeasure($unit_of_measure)
@@ -913,7 +912,7 @@ class GLExportPurchaseTransactionDetailTax implements ArrayAccess
 
     /**
      * Sets quantity
-     * @param double $quantity
+     * @param  double  $quantity
      * @return $this
      */
     public function setQuantity($quantity)
@@ -934,7 +933,7 @@ class GLExportPurchaseTransactionDetailTax implements ArrayAccess
 
     /**
      * Sets total
-     * @param double $total
+     * @param  double  $total
      * @return $this
      */
     public function setTotal($total)
@@ -955,7 +954,7 @@ class GLExportPurchaseTransactionDetailTax implements ArrayAccess
 
     /**
      * Sets currency
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\CurrencyReference $currency
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\CurrencyReference  $currency
      * @return $this
      */
     public function setCurrency($currency)
@@ -976,7 +975,7 @@ class GLExportPurchaseTransactionDetailTax implements ArrayAccess
 
     /**
      * Sets serialized_flag
-     * @param bool $serialized_flag
+     * @param  bool  $serialized_flag
      * @return $this
      */
     public function setSerializedFlag($serialized_flag)
@@ -997,7 +996,7 @@ class GLExportPurchaseTransactionDetailTax implements ArrayAccess
 
     /**
      * Sets serial_numbers
-     * @param string $serial_numbers
+     * @param  string  $serial_numbers
      * @return $this
      */
     public function setSerialNumbers($serial_numbers)
@@ -1018,7 +1017,7 @@ class GLExportPurchaseTransactionDetailTax implements ArrayAccess
 
     /**
      * Sets drop_shipped_flag
-     * @param bool $drop_shipped_flag
+     * @param  bool  $drop_shipped_flag
      * @return $this
      */
     public function setDropShippedFlag($drop_shipped_flag)
@@ -1039,7 +1038,7 @@ class GLExportPurchaseTransactionDetailTax implements ArrayAccess
 
     /**
      * Sets line_number
-     * @param int $line_number
+     * @param  int  $line_number
      * @return $this
      */
     public function setLineNumber($line_number)
@@ -1060,7 +1059,7 @@ class GLExportPurchaseTransactionDetailTax implements ArrayAccess
 
     /**
      * Sets warehouse_site
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\SiteReference $warehouse_site
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\SiteReference  $warehouse_site
      * @return $this
      */
     public function setWarehouseSite($warehouse_site)
@@ -1081,7 +1080,7 @@ class GLExportPurchaseTransactionDetailTax implements ArrayAccess
 
     /**
      * Sets warehouse_bin
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\WarehouseBinReference $warehouse_bin
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\WarehouseBinReference  $warehouse_bin
      * @return $this
      */
     public function setWarehouseBin($warehouse_bin)
@@ -1102,7 +1101,7 @@ class GLExportPurchaseTransactionDetailTax implements ArrayAccess
 
     /**
      * Sets shipment_method
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\ShipmentMethodReference $shipment_method
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\ShipmentMethodReference  $shipment_method
      * @return $this
      */
     public function setShipmentMethod($shipment_method)
@@ -1123,7 +1122,7 @@ class GLExportPurchaseTransactionDetailTax implements ArrayAccess
 
     /**
      * Sets sub_category
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\ProductSubCategoryReference $sub_category
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\ProductSubCategoryReference  $sub_category
      * @return $this
      */
     public function setSubCategory($sub_category)
@@ -1144,7 +1143,7 @@ class GLExportPurchaseTransactionDetailTax implements ArrayAccess
 
     /**
      * Sets tax_code
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\TaxCodeReference $tax_code
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\TaxCodeReference  $tax_code
      * @return $this
      */
     public function setTaxCode($tax_code)
@@ -1165,7 +1164,7 @@ class GLExportPurchaseTransactionDetailTax implements ArrayAccess
 
     /**
      * Sets tax_rate
-     * @param double $tax_rate
+     * @param  double  $tax_rate
      * @return $this
      */
     public function setTaxRate($tax_rate)
@@ -1186,7 +1185,7 @@ class GLExportPurchaseTransactionDetailTax implements ArrayAccess
 
     /**
      * Sets tax_rate_percent
-     * @param double $tax_rate_percent
+     * @param  double  $tax_rate_percent
      * @return $this
      */
     public function setTaxRatePercent($tax_rate_percent)
@@ -1207,7 +1206,7 @@ class GLExportPurchaseTransactionDetailTax implements ArrayAccess
 
     /**
      * Sets tax_agency_xref
-     * @param string $tax_agency_xref
+     * @param  string  $tax_agency_xref
      * @return $this
      */
     public function setTaxAgencyXref($tax_agency_xref)
@@ -1228,7 +1227,7 @@ class GLExportPurchaseTransactionDetailTax implements ArrayAccess
 
     /**
      * Sets tax_note
-     * @param string $tax_note
+     * @param  string  $tax_note
      * @return $this
      */
     public function setTaxNote($tax_note)
@@ -1249,7 +1248,7 @@ class GLExportPurchaseTransactionDetailTax implements ArrayAccess
 
     /**
      * Sets purchase_header_tax_group
-     * @param string $purchase_header_tax_group
+     * @param  string  $purchase_header_tax_group
      * @return $this
      */
     public function setPurchaseHeaderTaxGroup($purchase_header_tax_group)
@@ -1258,9 +1257,10 @@ class GLExportPurchaseTransactionDetailTax implements ArrayAccess
 
         return $this;
     }
+
     /**
      * Returns true if offset exists. False otherwise.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return boolean
      */
     public function offsetExists($offset)
@@ -1270,7 +1270,7 @@ class GLExportPurchaseTransactionDetailTax implements ArrayAccess
 
     /**
      * Gets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return mixed
      */
     public function offsetGet($offset)
@@ -1280,8 +1280,8 @@ class GLExportPurchaseTransactionDetailTax implements ArrayAccess
 
     /**
      * Sets value based on offset.
-     * @param  integer $offset Offset
-     * @param  mixed   $value  Value to be set
+     * @param  integer  $offset  Offset
+     * @param  mixed  $value  Value to be set
      * @return void
      */
     public function offsetSet($offset, $value)
@@ -1295,7 +1295,7 @@ class GLExportPurchaseTransactionDetailTax implements ArrayAccess
 
     /**
      * Unsets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return void
      */
     public function offsetUnset($offset)
@@ -1310,7 +1310,8 @@ class GLExportPurchaseTransactionDetailTax implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this),
+                JSON_PRETTY_PRINT);
         }
 
         return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this));

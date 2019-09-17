@@ -34,7 +34,9 @@ use \ArrayAccess;
 /**
  * GLExportExpense Class Doc Comment
  *
- * @category    Class */
+ * @category    Class
+ */
+
 /**
  * @package     Spinen\ConnectWise\Clients\Finance
  * @author      Swagger Codegen team
@@ -45,36 +47,36 @@ class GLExportExpense implements ArrayAccess
     const DISCRIMINATOR = null;
 
     /**
-      * The original name of the model.
-      * @var string
-      */
+     * The original name of the model.
+     * @var string
+     */
     protected static $swaggerModelName = 'GLExportExpense';
 
     /**
-      * Array of property to type mappings. Used for (de)serialization
-      * @var string[]
-      */
+     * Array of property to type mappings. Used for (de)serialization
+     * @var string[]
+     */
     protected static $swaggerTypes = [
-        'id' => 'int',
-        'document_date' => '\DateTime',
-        'document_type' => 'string',
-        'ap_account_number' => 'string',
-        'ap_class' => 'string',
-        'account_number' => 'string',
-        'gl_class' => 'string',
-        'gl_type_id' => 'string',
-        'memo' => 'string',
-        'description' => 'string',
-        'period_start_date' => '\DateTime',
-        'period_end_date' => '\DateTime',
-        'member' => '\Spinen\ConnectWise\Clients\Finance\Model\MemberReference',
-        'vendor_number' => 'string',
-        'company' => '\Spinen\ConnectWise\Clients\Finance\Model\CompanyReference',
+        'id'                     => 'int',
+        'document_date'          => '\DateTime',
+        'document_type'          => 'string',
+        'ap_account_number'      => 'string',
+        'ap_class'               => 'string',
+        'account_number'         => 'string',
+        'gl_class'               => 'string',
+        'gl_type_id'             => 'string',
+        'memo'                   => 'string',
+        'description'            => 'string',
+        'period_start_date'      => '\DateTime',
+        'period_end_date'        => '\DateTime',
+        'member'                 => '\Spinen\ConnectWise\Clients\Finance\Model\MemberReference',
+        'vendor_number'          => 'string',
+        'company'                => '\Spinen\ConnectWise\Clients\Finance\Model\CompanyReference',
         'company_account_number' => 'string',
-        'project' => '\Spinen\ConnectWise\Clients\Finance\Model\ProjectReference',
-        'currency' => '\Spinen\ConnectWise\Clients\Finance\Model\CurrencyReference',
-        'total' => 'double',
-        'offset' => '\Spinen\ConnectWise\Clients\Finance\Model\GLExportExpenseOffset'
+        'project'                => '\Spinen\ConnectWise\Clients\Finance\Model\ProjectReference',
+        'currency'               => '\Spinen\ConnectWise\Clients\Finance\Model\CurrencyReference',
+        'total'                  => 'double',
+        'offset'                 => '\Spinen\ConnectWise\Clients\Finance\Model\GLExportExpenseOffset'
     ];
 
     public static function swaggerTypes()
@@ -87,26 +89,26 @@ class GLExportExpense implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'id' => 'id',
-        'document_date' => 'documentDate',
-        'document_type' => 'documentType',
-        'ap_account_number' => 'apAccountNumber',
-        'ap_class' => 'apClass',
-        'account_number' => 'accountNumber',
-        'gl_class' => 'glClass',
-        'gl_type_id' => 'glTypeId',
-        'memo' => 'memo',
-        'description' => 'description',
-        'period_start_date' => 'periodStartDate',
-        'period_end_date' => 'periodEndDate',
-        'member' => 'member',
-        'vendor_number' => 'vendorNumber',
-        'company' => 'company',
+        'id'                     => 'id',
+        'document_date'          => 'documentDate',
+        'document_type'          => 'documentType',
+        'ap_account_number'      => 'apAccountNumber',
+        'ap_class'               => 'apClass',
+        'account_number'         => 'accountNumber',
+        'gl_class'               => 'glClass',
+        'gl_type_id'             => 'glTypeId',
+        'memo'                   => 'memo',
+        'description'            => 'description',
+        'period_start_date'      => 'periodStartDate',
+        'period_end_date'        => 'periodEndDate',
+        'member'                 => 'member',
+        'vendor_number'          => 'vendorNumber',
+        'company'                => 'company',
         'company_account_number' => 'companyAccountNumber',
-        'project' => 'project',
-        'currency' => 'currency',
-        'total' => 'total',
-        'offset' => 'offset'
+        'project'                => 'project',
+        'currency'               => 'currency',
+        'total'                  => 'total',
+        'offset'                 => 'offset'
     ];
 
 
@@ -115,26 +117,26 @@ class GLExportExpense implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'id' => 'setId',
-        'document_date' => 'setDocumentDate',
-        'document_type' => 'setDocumentType',
-        'ap_account_number' => 'setApAccountNumber',
-        'ap_class' => 'setApClass',
-        'account_number' => 'setAccountNumber',
-        'gl_class' => 'setGlClass',
-        'gl_type_id' => 'setGlTypeId',
-        'memo' => 'setMemo',
-        'description' => 'setDescription',
-        'period_start_date' => 'setPeriodStartDate',
-        'period_end_date' => 'setPeriodEndDate',
-        'member' => 'setMember',
-        'vendor_number' => 'setVendorNumber',
-        'company' => 'setCompany',
+        'id'                     => 'setId',
+        'document_date'          => 'setDocumentDate',
+        'document_type'          => 'setDocumentType',
+        'ap_account_number'      => 'setApAccountNumber',
+        'ap_class'               => 'setApClass',
+        'account_number'         => 'setAccountNumber',
+        'gl_class'               => 'setGlClass',
+        'gl_type_id'             => 'setGlTypeId',
+        'memo'                   => 'setMemo',
+        'description'            => 'setDescription',
+        'period_start_date'      => 'setPeriodStartDate',
+        'period_end_date'        => 'setPeriodEndDate',
+        'member'                 => 'setMember',
+        'vendor_number'          => 'setVendorNumber',
+        'company'                => 'setCompany',
         'company_account_number' => 'setCompanyAccountNumber',
-        'project' => 'setProject',
-        'currency' => 'setCurrency',
-        'total' => 'setTotal',
-        'offset' => 'setOffset'
+        'project'                => 'setProject',
+        'currency'               => 'setCurrency',
+        'total'                  => 'setTotal',
+        'offset'                 => 'setOffset'
     ];
 
 
@@ -143,26 +145,26 @@ class GLExportExpense implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'id' => 'getId',
-        'document_date' => 'getDocumentDate',
-        'document_type' => 'getDocumentType',
-        'ap_account_number' => 'getApAccountNumber',
-        'ap_class' => 'getApClass',
-        'account_number' => 'getAccountNumber',
-        'gl_class' => 'getGlClass',
-        'gl_type_id' => 'getGlTypeId',
-        'memo' => 'getMemo',
-        'description' => 'getDescription',
-        'period_start_date' => 'getPeriodStartDate',
-        'period_end_date' => 'getPeriodEndDate',
-        'member' => 'getMember',
-        'vendor_number' => 'getVendorNumber',
-        'company' => 'getCompany',
+        'id'                     => 'getId',
+        'document_date'          => 'getDocumentDate',
+        'document_type'          => 'getDocumentType',
+        'ap_account_number'      => 'getApAccountNumber',
+        'ap_class'               => 'getApClass',
+        'account_number'         => 'getAccountNumber',
+        'gl_class'               => 'getGlClass',
+        'gl_type_id'             => 'getGlTypeId',
+        'memo'                   => 'getMemo',
+        'description'            => 'getDescription',
+        'period_start_date'      => 'getPeriodStartDate',
+        'period_end_date'        => 'getPeriodEndDate',
+        'member'                 => 'getMember',
+        'vendor_number'          => 'getVendorNumber',
+        'company'                => 'getCompany',
         'company_account_number' => 'getCompanyAccountNumber',
-        'project' => 'getProject',
-        'currency' => 'getCurrency',
-        'total' => 'getTotal',
-        'offset' => 'getOffset'
+        'project'                => 'getProject',
+        'currency'               => 'getCurrency',
+        'total'                  => 'getTotal',
+        'offset'                 => 'getOffset'
     ];
 
     public static function attributeMap()
@@ -180,9 +182,6 @@ class GLExportExpense implements ArrayAccess
         return self::$getters;
     }
 
-    
-
-    
 
     /**
      * Associative array for storing property values
@@ -192,7 +191,7 @@ class GLExportExpense implements ArrayAccess
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param  mixed[]  $data  Associated array of property values initializing the model
      */
     public function __construct(array $data = null)
     {
@@ -252,7 +251,7 @@ class GLExportExpense implements ArrayAccess
 
     /**
      * Sets id
-     * @param int $id
+     * @param  int  $id
      * @return $this
      */
     public function setId($id)
@@ -273,7 +272,7 @@ class GLExportExpense implements ArrayAccess
 
     /**
      * Sets document_date
-     * @param \DateTime $document_date
+     * @param  \DateTime  $document_date
      * @return $this
      */
     public function setDocumentDate($document_date)
@@ -294,7 +293,7 @@ class GLExportExpense implements ArrayAccess
 
     /**
      * Sets document_type
-     * @param string $document_type
+     * @param  string  $document_type
      * @return $this
      */
     public function setDocumentType($document_type)
@@ -315,7 +314,7 @@ class GLExportExpense implements ArrayAccess
 
     /**
      * Sets ap_account_number
-     * @param string $ap_account_number
+     * @param  string  $ap_account_number
      * @return $this
      */
     public function setApAccountNumber($ap_account_number)
@@ -336,7 +335,7 @@ class GLExportExpense implements ArrayAccess
 
     /**
      * Sets ap_class
-     * @param string $ap_class
+     * @param  string  $ap_class
      * @return $this
      */
     public function setApClass($ap_class)
@@ -357,7 +356,7 @@ class GLExportExpense implements ArrayAccess
 
     /**
      * Sets account_number
-     * @param string $account_number
+     * @param  string  $account_number
      * @return $this
      */
     public function setAccountNumber($account_number)
@@ -378,7 +377,7 @@ class GLExportExpense implements ArrayAccess
 
     /**
      * Sets gl_class
-     * @param string $gl_class
+     * @param  string  $gl_class
      * @return $this
      */
     public function setGlClass($gl_class)
@@ -399,7 +398,7 @@ class GLExportExpense implements ArrayAccess
 
     /**
      * Sets gl_type_id
-     * @param string $gl_type_id
+     * @param  string  $gl_type_id
      * @return $this
      */
     public function setGlTypeId($gl_type_id)
@@ -420,7 +419,7 @@ class GLExportExpense implements ArrayAccess
 
     /**
      * Sets memo
-     * @param string $memo
+     * @param  string  $memo
      * @return $this
      */
     public function setMemo($memo)
@@ -441,7 +440,7 @@ class GLExportExpense implements ArrayAccess
 
     /**
      * Sets description
-     * @param string $description
+     * @param  string  $description
      * @return $this
      */
     public function setDescription($description)
@@ -462,7 +461,7 @@ class GLExportExpense implements ArrayAccess
 
     /**
      * Sets period_start_date
-     * @param \DateTime $period_start_date
+     * @param  \DateTime  $period_start_date
      * @return $this
      */
     public function setPeriodStartDate($period_start_date)
@@ -483,7 +482,7 @@ class GLExportExpense implements ArrayAccess
 
     /**
      * Sets period_end_date
-     * @param \DateTime $period_end_date
+     * @param  \DateTime  $period_end_date
      * @return $this
      */
     public function setPeriodEndDate($period_end_date)
@@ -504,7 +503,7 @@ class GLExportExpense implements ArrayAccess
 
     /**
      * Sets member
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\MemberReference $member
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\MemberReference  $member
      * @return $this
      */
     public function setMember($member)
@@ -525,7 +524,7 @@ class GLExportExpense implements ArrayAccess
 
     /**
      * Sets vendor_number
-     * @param string $vendor_number
+     * @param  string  $vendor_number
      * @return $this
      */
     public function setVendorNumber($vendor_number)
@@ -546,7 +545,7 @@ class GLExportExpense implements ArrayAccess
 
     /**
      * Sets company
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\CompanyReference $company
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\CompanyReference  $company
      * @return $this
      */
     public function setCompany($company)
@@ -567,7 +566,7 @@ class GLExportExpense implements ArrayAccess
 
     /**
      * Sets company_account_number
-     * @param string $company_account_number
+     * @param  string  $company_account_number
      * @return $this
      */
     public function setCompanyAccountNumber($company_account_number)
@@ -588,7 +587,7 @@ class GLExportExpense implements ArrayAccess
 
     /**
      * Sets project
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\ProjectReference $project
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\ProjectReference  $project
      * @return $this
      */
     public function setProject($project)
@@ -609,7 +608,7 @@ class GLExportExpense implements ArrayAccess
 
     /**
      * Sets currency
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\CurrencyReference $currency
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\CurrencyReference  $currency
      * @return $this
      */
     public function setCurrency($currency)
@@ -630,7 +629,7 @@ class GLExportExpense implements ArrayAccess
 
     /**
      * Sets total
-     * @param double $total
+     * @param  double  $total
      * @return $this
      */
     public function setTotal($total)
@@ -651,7 +650,7 @@ class GLExportExpense implements ArrayAccess
 
     /**
      * Sets offset
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\GLExportExpenseOffset $offset
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\GLExportExpenseOffset  $offset
      * @return $this
      */
     public function setOffset($offset)
@@ -660,9 +659,10 @@ class GLExportExpense implements ArrayAccess
 
         return $this;
     }
+
     /**
      * Returns true if offset exists. False otherwise.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return boolean
      */
     public function offsetExists($offset)
@@ -672,7 +672,7 @@ class GLExportExpense implements ArrayAccess
 
     /**
      * Gets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return mixed
      */
     public function offsetGet($offset)
@@ -682,8 +682,8 @@ class GLExportExpense implements ArrayAccess
 
     /**
      * Sets value based on offset.
-     * @param  integer $offset Offset
-     * @param  mixed   $value  Value to be set
+     * @param  integer  $offset  Offset
+     * @param  mixed  $value  Value to be set
      * @return void
      */
     public function offsetSet($offset, $value)
@@ -697,7 +697,7 @@ class GLExportExpense implements ArrayAccess
 
     /**
      * Unsets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return void
      */
     public function offsetUnset($offset)
@@ -712,7 +712,8 @@ class GLExportExpense implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this),
+                JSON_PRETTY_PRINT);
         }
 
         return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this));

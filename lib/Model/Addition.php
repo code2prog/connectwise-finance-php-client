@@ -34,7 +34,9 @@ use \ArrayAccess;
 /**
  * Addition Class Doc Comment
  *
- * @category    Class */
+ * @category    Class
+ */
+
 /**
  * @package     Spinen\ConnectWise\Clients\Finance
  * @author      Swagger Codegen team
@@ -45,44 +47,44 @@ class Addition implements ArrayAccess
     const DISCRIMINATOR = null;
 
     /**
-      * The original name of the model.
-      * @var string
-      */
+     * The original name of the model.
+     * @var string
+     */
     protected static $swaggerModelName = 'Addition';
 
     /**
-      * Array of property to type mappings. Used for (de)serialization
-      * @var string[]
-      */
+     * Array of property to type mappings. Used for (de)serialization
+     * @var string[]
+     */
     protected static $swaggerTypes = [
-        'id' => 'int',
-        'product' => '\Spinen\ConnectWise\Clients\Finance\Model\IvItemReference',
-        'quantity' => 'double',
-        'less_included' => 'double',
-        'unit_price' => 'double',
-        'unit_cost' => 'double',
-        'bill_customer' => 'string',
-        'effective_date' => '\DateTime',
-        'cancelled_date' => '\DateTime',
-        'taxable_flag' => 'bool',
-        'serial_number' => 'string',
-        'invoice_description' => 'string',
-        'purchase_item_flag' => 'bool',
-        'special_order_flag' => 'bool',
-        'agreement_id' => 'int',
-        'description' => 'string',
-        'billed_quantity' => 'double',
-        'uom' => 'string',
-        'ext_price' => 'double',
-        'ext_cost' => 'double',
-        'sequence_number' => 'double',
-        'margin' => 'double',
-        'prorate_cost' => 'double',
-        'prorate_price' => 'double',
-        'extended_prorate_cost' => 'double',
-        'extended_prorate_price' => 'double',
+        'id'                          => 'int',
+        'product'                     => '\Spinen\ConnectWise\Clients\Finance\Model\IvItemReference',
+        'quantity'                    => 'double',
+        'less_included'               => 'double',
+        'unit_price'                  => 'double',
+        'unit_cost'                   => 'double',
+        'bill_customer'               => 'string',
+        'effective_date'              => '\DateTime',
+        'cancelled_date'              => '\DateTime',
+        'taxable_flag'                => 'bool',
+        'serial_number'               => 'string',
+        'invoice_description'         => 'string',
+        'purchase_item_flag'          => 'bool',
+        'special_order_flag'          => 'bool',
+        'agreement_id'                => 'int',
+        'description'                 => 'string',
+        'billed_quantity'             => 'double',
+        'uom'                         => 'string',
+        'ext_price'                   => 'double',
+        'ext_cost'                    => 'double',
+        'sequence_number'             => 'double',
+        'margin'                      => 'double',
+        'prorate_cost'                => 'double',
+        'prorate_price'               => 'double',
+        'extended_prorate_cost'       => 'double',
+        'extended_prorate_price'      => 'double',
         'prorate_current_period_flag' => 'bool',
-        '_info' => '\Spinen\ConnectWise\Clients\Finance\Model\Metadata'
+        '_info'                       => '\Spinen\ConnectWise\Clients\Finance\Model\Metadata'
     ];
 
     public static function swaggerTypes()
@@ -95,34 +97,34 @@ class Addition implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'id' => 'id',
-        'product' => 'product',
-        'quantity' => 'quantity',
-        'less_included' => 'lessIncluded',
-        'unit_price' => 'unitPrice',
-        'unit_cost' => 'unitCost',
-        'bill_customer' => 'billCustomer',
-        'effective_date' => 'effectiveDate',
-        'cancelled_date' => 'cancelledDate',
-        'taxable_flag' => 'taxableFlag',
-        'serial_number' => 'serialNumber',
-        'invoice_description' => 'invoiceDescription',
-        'purchase_item_flag' => 'purchaseItemFlag',
-        'special_order_flag' => 'specialOrderFlag',
-        'agreement_id' => 'agreementId',
-        'description' => 'description',
-        'billed_quantity' => 'billedQuantity',
-        'uom' => 'uom',
-        'ext_price' => 'extPrice',
-        'ext_cost' => 'extCost',
-        'sequence_number' => 'sequenceNumber',
-        'margin' => 'margin',
-        'prorate_cost' => 'prorateCost',
-        'prorate_price' => 'proratePrice',
-        'extended_prorate_cost' => 'extendedProrateCost',
-        'extended_prorate_price' => 'extendedProratePrice',
+        'id'                          => 'id',
+        'product'                     => 'product',
+        'quantity'                    => 'quantity',
+        'less_included'               => 'lessIncluded',
+        'unit_price'                  => 'unitPrice',
+        'unit_cost'                   => 'unitCost',
+        'bill_customer'               => 'billCustomer',
+        'effective_date'              => 'effectiveDate',
+        'cancelled_date'              => 'cancelledDate',
+        'taxable_flag'                => 'taxableFlag',
+        'serial_number'               => 'serialNumber',
+        'invoice_description'         => 'invoiceDescription',
+        'purchase_item_flag'          => 'purchaseItemFlag',
+        'special_order_flag'          => 'specialOrderFlag',
+        'agreement_id'                => 'agreementId',
+        'description'                 => 'description',
+        'billed_quantity'             => 'billedQuantity',
+        'uom'                         => 'uom',
+        'ext_price'                   => 'extPrice',
+        'ext_cost'                    => 'extCost',
+        'sequence_number'             => 'sequenceNumber',
+        'margin'                      => 'margin',
+        'prorate_cost'                => 'prorateCost',
+        'prorate_price'               => 'proratePrice',
+        'extended_prorate_cost'       => 'extendedProrateCost',
+        'extended_prorate_price'      => 'extendedProratePrice',
         'prorate_current_period_flag' => 'prorateCurrentPeriodFlag',
-        '_info' => '_info'
+        '_info'                       => '_info'
     ];
 
 
@@ -131,34 +133,34 @@ class Addition implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'id' => 'setId',
-        'product' => 'setProduct',
-        'quantity' => 'setQuantity',
-        'less_included' => 'setLessIncluded',
-        'unit_price' => 'setUnitPrice',
-        'unit_cost' => 'setUnitCost',
-        'bill_customer' => 'setBillCustomer',
-        'effective_date' => 'setEffectiveDate',
-        'cancelled_date' => 'setCancelledDate',
-        'taxable_flag' => 'setTaxableFlag',
-        'serial_number' => 'setSerialNumber',
-        'invoice_description' => 'setInvoiceDescription',
-        'purchase_item_flag' => 'setPurchaseItemFlag',
-        'special_order_flag' => 'setSpecialOrderFlag',
-        'agreement_id' => 'setAgreementId',
-        'description' => 'setDescription',
-        'billed_quantity' => 'setBilledQuantity',
-        'uom' => 'setUom',
-        'ext_price' => 'setExtPrice',
-        'ext_cost' => 'setExtCost',
-        'sequence_number' => 'setSequenceNumber',
-        'margin' => 'setMargin',
-        'prorate_cost' => 'setProrateCost',
-        'prorate_price' => 'setProratePrice',
-        'extended_prorate_cost' => 'setExtendedProrateCost',
-        'extended_prorate_price' => 'setExtendedProratePrice',
+        'id'                          => 'setId',
+        'product'                     => 'setProduct',
+        'quantity'                    => 'setQuantity',
+        'less_included'               => 'setLessIncluded',
+        'unit_price'                  => 'setUnitPrice',
+        'unit_cost'                   => 'setUnitCost',
+        'bill_customer'               => 'setBillCustomer',
+        'effective_date'              => 'setEffectiveDate',
+        'cancelled_date'              => 'setCancelledDate',
+        'taxable_flag'                => 'setTaxableFlag',
+        'serial_number'               => 'setSerialNumber',
+        'invoice_description'         => 'setInvoiceDescription',
+        'purchase_item_flag'          => 'setPurchaseItemFlag',
+        'special_order_flag'          => 'setSpecialOrderFlag',
+        'agreement_id'                => 'setAgreementId',
+        'description'                 => 'setDescription',
+        'billed_quantity'             => 'setBilledQuantity',
+        'uom'                         => 'setUom',
+        'ext_price'                   => 'setExtPrice',
+        'ext_cost'                    => 'setExtCost',
+        'sequence_number'             => 'setSequenceNumber',
+        'margin'                      => 'setMargin',
+        'prorate_cost'                => 'setProrateCost',
+        'prorate_price'               => 'setProratePrice',
+        'extended_prorate_cost'       => 'setExtendedProrateCost',
+        'extended_prorate_price'      => 'setExtendedProratePrice',
         'prorate_current_period_flag' => 'setProrateCurrentPeriodFlag',
-        '_info' => 'setInfo'
+        '_info'                       => 'setInfo'
     ];
 
 
@@ -167,34 +169,34 @@ class Addition implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'id' => 'getId',
-        'product' => 'getProduct',
-        'quantity' => 'getQuantity',
-        'less_included' => 'getLessIncluded',
-        'unit_price' => 'getUnitPrice',
-        'unit_cost' => 'getUnitCost',
-        'bill_customer' => 'getBillCustomer',
-        'effective_date' => 'getEffectiveDate',
-        'cancelled_date' => 'getCancelledDate',
-        'taxable_flag' => 'getTaxableFlag',
-        'serial_number' => 'getSerialNumber',
-        'invoice_description' => 'getInvoiceDescription',
-        'purchase_item_flag' => 'getPurchaseItemFlag',
-        'special_order_flag' => 'getSpecialOrderFlag',
-        'agreement_id' => 'getAgreementId',
-        'description' => 'getDescription',
-        'billed_quantity' => 'getBilledQuantity',
-        'uom' => 'getUom',
-        'ext_price' => 'getExtPrice',
-        'ext_cost' => 'getExtCost',
-        'sequence_number' => 'getSequenceNumber',
-        'margin' => 'getMargin',
-        'prorate_cost' => 'getProrateCost',
-        'prorate_price' => 'getProratePrice',
-        'extended_prorate_cost' => 'getExtendedProrateCost',
-        'extended_prorate_price' => 'getExtendedProratePrice',
+        'id'                          => 'getId',
+        'product'                     => 'getProduct',
+        'quantity'                    => 'getQuantity',
+        'less_included'               => 'getLessIncluded',
+        'unit_price'                  => 'getUnitPrice',
+        'unit_cost'                   => 'getUnitCost',
+        'bill_customer'               => 'getBillCustomer',
+        'effective_date'              => 'getEffectiveDate',
+        'cancelled_date'              => 'getCancelledDate',
+        'taxable_flag'                => 'getTaxableFlag',
+        'serial_number'               => 'getSerialNumber',
+        'invoice_description'         => 'getInvoiceDescription',
+        'purchase_item_flag'          => 'getPurchaseItemFlag',
+        'special_order_flag'          => 'getSpecialOrderFlag',
+        'agreement_id'                => 'getAgreementId',
+        'description'                 => 'getDescription',
+        'billed_quantity'             => 'getBilledQuantity',
+        'uom'                         => 'getUom',
+        'ext_price'                   => 'getExtPrice',
+        'ext_cost'                    => 'getExtCost',
+        'sequence_number'             => 'getSequenceNumber',
+        'margin'                      => 'getMargin',
+        'prorate_cost'                => 'getProrateCost',
+        'prorate_price'               => 'getProratePrice',
+        'extended_prorate_cost'       => 'getExtendedProrateCost',
+        'extended_prorate_price'      => 'getExtendedProratePrice',
         'prorate_current_period_flag' => 'getProrateCurrentPeriodFlag',
-        '_info' => 'getInfo'
+        '_info'                       => 'getInfo'
     ];
 
     public static function attributeMap()
@@ -215,9 +217,8 @@ class Addition implements ArrayAccess
     const BILL_CUSTOMER_BILLABLE = 'Billable';
     const BILL_CUSTOMER_DO_NOT_BILL = 'DoNotBill';
     const BILL_CUSTOMER_NO_CHARGE = 'NoCharge';
-    
 
-    
+
     /**
      * Gets allowable values of the enum
      * @return string[]
@@ -230,7 +231,7 @@ class Addition implements ArrayAccess
             self::BILL_CUSTOMER_NO_CHARGE,
         ];
     }
-    
+
 
     /**
      * Associative array for storing property values
@@ -240,7 +241,7 @@ class Addition implements ArrayAccess
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param  mixed[]  $data  Associated array of property values initializing the model
      */
     public function __construct(array $data = null)
     {
@@ -343,7 +344,7 @@ class Addition implements ArrayAccess
 
     /**
      * Sets id
-     * @param int $id
+     * @param  int  $id
      * @return $this
      */
     public function setId($id)
@@ -364,7 +365,7 @@ class Addition implements ArrayAccess
 
     /**
      * Sets product
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\IvItemReference $product
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\IvItemReference  $product
      * @return $this
      */
     public function setProduct($product)
@@ -385,7 +386,7 @@ class Addition implements ArrayAccess
 
     /**
      * Sets quantity
-     * @param double $quantity
+     * @param  double  $quantity
      * @return $this
      */
     public function setQuantity($quantity)
@@ -406,7 +407,7 @@ class Addition implements ArrayAccess
 
     /**
      * Sets less_included
-     * @param double $less_included
+     * @param  double  $less_included
      * @return $this
      */
     public function setLessIncluded($less_included)
@@ -427,7 +428,7 @@ class Addition implements ArrayAccess
 
     /**
      * Sets unit_price
-     * @param double $unit_price
+     * @param  double  $unit_price
      * @return $this
      */
     public function setUnitPrice($unit_price)
@@ -448,7 +449,7 @@ class Addition implements ArrayAccess
 
     /**
      * Sets unit_cost
-     * @param double $unit_cost
+     * @param  double  $unit_cost
      * @return $this
      */
     public function setUnitCost($unit_cost)
@@ -469,7 +470,7 @@ class Addition implements ArrayAccess
 
     /**
      * Sets bill_customer
-     * @param string $bill_customer
+     * @param  string  $bill_customer
      * @return $this
      */
     public function setBillCustomer($bill_customer)
@@ -494,7 +495,7 @@ class Addition implements ArrayAccess
 
     /**
      * Sets effective_date
-     * @param \DateTime $effective_date
+     * @param  \DateTime  $effective_date
      * @return $this
      */
     public function setEffectiveDate($effective_date)
@@ -515,7 +516,7 @@ class Addition implements ArrayAccess
 
     /**
      * Sets cancelled_date
-     * @param \DateTime $cancelled_date
+     * @param  \DateTime  $cancelled_date
      * @return $this
      */
     public function setCancelledDate($cancelled_date)
@@ -536,7 +537,7 @@ class Addition implements ArrayAccess
 
     /**
      * Sets taxable_flag
-     * @param bool $taxable_flag
+     * @param  bool  $taxable_flag
      * @return $this
      */
     public function setTaxableFlag($taxable_flag)
@@ -557,7 +558,7 @@ class Addition implements ArrayAccess
 
     /**
      * Sets serial_number
-     * @param string $serial_number
+     * @param  string  $serial_number
      * @return $this
      */
     public function setSerialNumber($serial_number)
@@ -582,7 +583,7 @@ class Addition implements ArrayAccess
 
     /**
      * Sets invoice_description
-     * @param string $invoice_description
+     * @param  string  $invoice_description
      * @return $this
      */
     public function setInvoiceDescription($invoice_description)
@@ -607,7 +608,7 @@ class Addition implements ArrayAccess
 
     /**
      * Sets purchase_item_flag
-     * @param bool $purchase_item_flag
+     * @param  bool  $purchase_item_flag
      * @return $this
      */
     public function setPurchaseItemFlag($purchase_item_flag)
@@ -628,7 +629,7 @@ class Addition implements ArrayAccess
 
     /**
      * Sets special_order_flag
-     * @param bool $special_order_flag
+     * @param  bool  $special_order_flag
      * @return $this
      */
     public function setSpecialOrderFlag($special_order_flag)
@@ -649,7 +650,7 @@ class Addition implements ArrayAccess
 
     /**
      * Sets agreement_id
-     * @param int $agreement_id
+     * @param  int  $agreement_id
      * @return $this
      */
     public function setAgreementId($agreement_id)
@@ -670,7 +671,7 @@ class Addition implements ArrayAccess
 
     /**
      * Sets description
-     * @param string $description
+     * @param  string  $description
      * @return $this
      */
     public function setDescription($description)
@@ -691,7 +692,7 @@ class Addition implements ArrayAccess
 
     /**
      * Sets billed_quantity
-     * @param double $billed_quantity
+     * @param  double  $billed_quantity
      * @return $this
      */
     public function setBilledQuantity($billed_quantity)
@@ -712,7 +713,7 @@ class Addition implements ArrayAccess
 
     /**
      * Sets uom
-     * @param string $uom
+     * @param  string  $uom
      * @return $this
      */
     public function setUom($uom)
@@ -733,7 +734,7 @@ class Addition implements ArrayAccess
 
     /**
      * Sets ext_price
-     * @param double $ext_price
+     * @param  double  $ext_price
      * @return $this
      */
     public function setExtPrice($ext_price)
@@ -754,7 +755,7 @@ class Addition implements ArrayAccess
 
     /**
      * Sets ext_cost
-     * @param double $ext_cost
+     * @param  double  $ext_cost
      * @return $this
      */
     public function setExtCost($ext_cost)
@@ -775,7 +776,7 @@ class Addition implements ArrayAccess
 
     /**
      * Sets sequence_number
-     * @param double $sequence_number
+     * @param  double  $sequence_number
      * @return $this
      */
     public function setSequenceNumber($sequence_number)
@@ -796,7 +797,7 @@ class Addition implements ArrayAccess
 
     /**
      * Sets margin
-     * @param double $margin
+     * @param  double  $margin
      * @return $this
      */
     public function setMargin($margin)
@@ -817,7 +818,7 @@ class Addition implements ArrayAccess
 
     /**
      * Sets prorate_cost
-     * @param double $prorate_cost
+     * @param  double  $prorate_cost
      * @return $this
      */
     public function setProrateCost($prorate_cost)
@@ -838,7 +839,7 @@ class Addition implements ArrayAccess
 
     /**
      * Sets prorate_price
-     * @param double $prorate_price
+     * @param  double  $prorate_price
      * @return $this
      */
     public function setProratePrice($prorate_price)
@@ -859,7 +860,7 @@ class Addition implements ArrayAccess
 
     /**
      * Sets extended_prorate_cost
-     * @param double $extended_prorate_cost
+     * @param  double  $extended_prorate_cost
      * @return $this
      */
     public function setExtendedProrateCost($extended_prorate_cost)
@@ -880,7 +881,7 @@ class Addition implements ArrayAccess
 
     /**
      * Sets extended_prorate_price
-     * @param double $extended_prorate_price
+     * @param  double  $extended_prorate_price
      * @return $this
      */
     public function setExtendedProratePrice($extended_prorate_price)
@@ -901,7 +902,7 @@ class Addition implements ArrayAccess
 
     /**
      * Sets prorate_current_period_flag
-     * @param bool $prorate_current_period_flag
+     * @param  bool  $prorate_current_period_flag
      * @return $this
      */
     public function setProrateCurrentPeriodFlag($prorate_current_period_flag)
@@ -922,7 +923,7 @@ class Addition implements ArrayAccess
 
     /**
      * Sets _info
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\Metadata $_info Metadata of the entity
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\Metadata  $_info  Metadata of the entity
      * @return $this
      */
     public function setInfo($_info)
@@ -931,9 +932,10 @@ class Addition implements ArrayAccess
 
         return $this;
     }
+
     /**
      * Returns true if offset exists. False otherwise.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return boolean
      */
     public function offsetExists($offset)
@@ -943,7 +945,7 @@ class Addition implements ArrayAccess
 
     /**
      * Gets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return mixed
      */
     public function offsetGet($offset)
@@ -953,8 +955,8 @@ class Addition implements ArrayAccess
 
     /**
      * Sets value based on offset.
-     * @param  integer $offset Offset
-     * @param  mixed   $value  Value to be set
+     * @param  integer  $offset  Offset
+     * @param  mixed  $value  Value to be set
      * @return void
      */
     public function offsetSet($offset, $value)
@@ -968,7 +970,7 @@ class Addition implements ArrayAccess
 
     /**
      * Unsets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return void
      */
     public function offsetUnset($offset)
@@ -983,7 +985,8 @@ class Addition implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this),
+                JSON_PRETTY_PRINT);
         }
 
         return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this));

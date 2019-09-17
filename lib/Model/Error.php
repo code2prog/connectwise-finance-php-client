@@ -34,7 +34,9 @@ use \ArrayAccess;
 /**
  * Error Class Doc Comment
  *
- * @category    Class */
+ * @category    Class
+ */
+
 /**
  * @package     Spinen\ConnectWise\Clients\Finance
  * @author      Swagger Codegen team
@@ -45,19 +47,19 @@ class Error implements ArrayAccess
     const DISCRIMINATOR = null;
 
     /**
-      * The original name of the model.
-      * @var string
-      */
+     * The original name of the model.
+     * @var string
+     */
     protected static $swaggerModelName = 'Error';
 
     /**
-      * Array of property to type mappings. Used for (de)serialization
-      * @var string[]
-      */
+     * Array of property to type mappings. Used for (de)serialization
+     * @var string[]
+     */
     protected static $swaggerTypes = [
-        'code' => 'string',
+        'code'    => 'string',
         'message' => 'string',
-        'errors' => '\Spinen\ConnectWise\Clients\Finance\Model\ValidationError[]'
+        'errors'  => '\Spinen\ConnectWise\Clients\Finance\Model\ValidationError[]'
     ];
 
     public static function swaggerTypes()
@@ -70,9 +72,9 @@ class Error implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'code' => 'code',
+        'code'    => 'code',
         'message' => 'message',
-        'errors' => 'errors'
+        'errors'  => 'errors'
     ];
 
 
@@ -81,9 +83,9 @@ class Error implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'code' => 'setCode',
+        'code'    => 'setCode',
         'message' => 'setMessage',
-        'errors' => 'setErrors'
+        'errors'  => 'setErrors'
     ];
 
 
@@ -92,9 +94,9 @@ class Error implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'code' => 'getCode',
+        'code'    => 'getCode',
         'message' => 'getMessage',
-        'errors' => 'getErrors'
+        'errors'  => 'getErrors'
     ];
 
     public static function attributeMap()
@@ -112,9 +114,6 @@ class Error implements ArrayAccess
         return self::$getters;
     }
 
-    
-
-    
 
     /**
      * Associative array for storing property values
@@ -124,7 +123,7 @@ class Error implements ArrayAccess
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param  mixed[]  $data  Associated array of property values initializing the model
      */
     public function __construct(array $data = null)
     {
@@ -167,7 +166,7 @@ class Error implements ArrayAccess
 
     /**
      * Sets code
-     * @param string $code
+     * @param  string  $code
      * @return $this
      */
     public function setCode($code)
@@ -188,7 +187,7 @@ class Error implements ArrayAccess
 
     /**
      * Sets message
-     * @param string $message
+     * @param  string  $message
      * @return $this
      */
     public function setMessage($message)
@@ -209,7 +208,7 @@ class Error implements ArrayAccess
 
     /**
      * Sets errors
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\ValidationError[] $errors
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\ValidationError[]  $errors
      * @return $this
      */
     public function setErrors($errors)
@@ -218,9 +217,10 @@ class Error implements ArrayAccess
 
         return $this;
     }
+
     /**
      * Returns true if offset exists. False otherwise.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return boolean
      */
     public function offsetExists($offset)
@@ -230,7 +230,7 @@ class Error implements ArrayAccess
 
     /**
      * Gets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return mixed
      */
     public function offsetGet($offset)
@@ -240,8 +240,8 @@ class Error implements ArrayAccess
 
     /**
      * Sets value based on offset.
-     * @param  integer $offset Offset
-     * @param  mixed   $value  Value to be set
+     * @param  integer  $offset  Offset
+     * @param  mixed  $value  Value to be set
      * @return void
      */
     public function offsetSet($offset, $value)
@@ -255,7 +255,7 @@ class Error implements ArrayAccess
 
     /**
      * Unsets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return void
      */
     public function offsetUnset($offset)
@@ -270,7 +270,8 @@ class Error implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this),
+                JSON_PRETTY_PRINT);
         }
 
         return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this));

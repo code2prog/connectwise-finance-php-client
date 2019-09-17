@@ -34,7 +34,9 @@ use \ArrayAccess;
 /**
  * Invoice Class Doc Comment
  *
- * @category    Class */
+ * @category    Class
+ */
+
 /**
  * @package     Spinen\ConnectWise\Clients\Finance
  * @author      Swagger Codegen team
@@ -45,64 +47,64 @@ class Invoice implements ArrayAccess
     const DISCRIMINATOR = null;
 
     /**
-      * The original name of the model.
-      * @var string
-      */
+     * The original name of the model.
+     * @var string
+     */
     protected static $swaggerModelName = 'Invoice';
 
     /**
-      * Array of property to type mappings. Used for (de)serialization
-      * @var string[]
-      */
+     * Array of property to type mappings. Used for (de)serialization
+     * @var string[]
+     */
     protected static $swaggerTypes = [
-        'id' => 'int',
-        'invoice_number' => 'string',
-        'type' => 'string',
-        'status' => '\Spinen\ConnectWise\Clients\Finance\Model\BillingStatusReference',
-        'company' => '\Spinen\ConnectWise\Clients\Finance\Model\CompanyReference',
-        'bill_to_company' => '\Spinen\ConnectWise\Clients\Finance\Model\CompanyReference',
-        'ship_to_company' => '\Spinen\ConnectWise\Clients\Finance\Model\CompanyReference',
-        'apply_to_type' => 'string',
-        'apply_to_id' => 'int',
-        'attention' => 'string',
-        'billing_site' => '\Spinen\ConnectWise\Clients\Finance\Model\SiteReference',
-        'shipping_site' => '\Spinen\ConnectWise\Clients\Finance\Model\SiteReference',
-        'billing_terms' => '\Spinen\ConnectWise\Clients\Finance\Model\BillingTermsReference',
-        'reference' => 'string',
-        'customer_po' => 'string',
-        'template_setup_id' => 'int',
-        'email_template_id' => 'int',
-        'add_to_batch_email_list' => 'bool',
-        'date' => '\DateTime',
-        'restrict_downpayment_flag' => 'bool',
-        'location_id' => 'int',
-        'department_id' => 'int',
-        'territory_id' => 'int',
-        'top_comment' => 'string',
-        'bottom_comment' => 'string',
-        'taxable_flag' => 'bool',
-        'tax_code' => '\Spinen\ConnectWise\Clients\Finance\Model\TaxCodeReference',
-        'internal_notes' => 'string',
+        'id'                                => 'int',
+        'invoice_number'                    => 'string',
+        'type'                              => 'string',
+        'status'                            => '\Spinen\ConnectWise\Clients\Finance\Model\BillingStatusReference',
+        'company'                           => '\Spinen\ConnectWise\Clients\Finance\Model\CompanyReference',
+        'bill_to_company'                   => '\Spinen\ConnectWise\Clients\Finance\Model\CompanyReference',
+        'ship_to_company'                   => '\Spinen\ConnectWise\Clients\Finance\Model\CompanyReference',
+        'apply_to_type'                     => 'string',
+        'apply_to_id'                       => 'int',
+        'attention'                         => 'string',
+        'billing_site'                      => '\Spinen\ConnectWise\Clients\Finance\Model\SiteReference',
+        'shipping_site'                     => '\Spinen\ConnectWise\Clients\Finance\Model\SiteReference',
+        'billing_terms'                     => '\Spinen\ConnectWise\Clients\Finance\Model\BillingTermsReference',
+        'reference'                         => 'string',
+        'customer_po'                       => 'string',
+        'template_setup_id'                 => 'int',
+        'email_template_id'                 => 'int',
+        'add_to_batch_email_list'           => 'bool',
+        'date'                              => '\DateTime',
+        'restrict_downpayment_flag'         => 'bool',
+        'location_id'                       => 'int',
+        'department_id'                     => 'int',
+        'territory_id'                      => 'int',
+        'top_comment'                       => 'string',
+        'bottom_comment'                    => 'string',
+        'taxable_flag'                      => 'bool',
+        'tax_code'                          => '\Spinen\ConnectWise\Clients\Finance\Model\TaxCodeReference',
+        'internal_notes'                    => 'string',
         'downpayment_previously_taxed_flag' => 'bool',
-        'service_total' => 'double',
-        'due_date' => '\DateTime',
-        'expense_total' => 'double',
-        'product_total' => 'double',
-        'previous_progress_applied' => 'double',
-        'service_adjustment_amount' => 'double',
-        'agreement_amount' => 'double',
-        'downpayment_applied' => 'double',
-        'subtotal' => 'double',
-        'total' => 'double',
-        'remaining_downpayment' => 'double',
-        'sales_tax' => 'double',
-        'adjustment_reason' => 'string',
-        'adjusted_by' => 'string',
-        'payments' => 'double',
-        'credits' => 'double',
-        'balance' => 'double',
-        'special_invoice_flag' => 'bool',
-        '_info' => '\Spinen\ConnectWise\Clients\Finance\Model\Metadata'
+        'service_total'                     => 'double',
+        'due_date'                          => '\DateTime',
+        'expense_total'                     => 'double',
+        'product_total'                     => 'double',
+        'previous_progress_applied'         => 'double',
+        'service_adjustment_amount'         => 'double',
+        'agreement_amount'                  => 'double',
+        'downpayment_applied'               => 'double',
+        'subtotal'                          => 'double',
+        'total'                             => 'double',
+        'remaining_downpayment'             => 'double',
+        'sales_tax'                         => 'double',
+        'adjustment_reason'                 => 'string',
+        'adjusted_by'                       => 'string',
+        'payments'                          => 'double',
+        'credits'                           => 'double',
+        'balance'                           => 'double',
+        'special_invoice_flag'              => 'bool',
+        '_info'                             => '\Spinen\ConnectWise\Clients\Finance\Model\Metadata'
     ];
 
     public static function swaggerTypes()
@@ -115,54 +117,54 @@ class Invoice implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'id' => 'id',
-        'invoice_number' => 'invoiceNumber',
-        'type' => 'type',
-        'status' => 'status',
-        'company' => 'company',
-        'bill_to_company' => 'billToCompany',
-        'ship_to_company' => 'shipToCompany',
-        'apply_to_type' => 'applyToType',
-        'apply_to_id' => 'applyToId',
-        'attention' => 'attention',
-        'billing_site' => 'billingSite',
-        'shipping_site' => 'shippingSite',
-        'billing_terms' => 'billingTerms',
-        'reference' => 'reference',
-        'customer_po' => 'customerPO',
-        'template_setup_id' => 'templateSetupId',
-        'email_template_id' => 'emailTemplateId',
-        'add_to_batch_email_list' => 'addToBatchEmailList',
-        'date' => 'date',
-        'restrict_downpayment_flag' => 'restrictDownpaymentFlag',
-        'location_id' => 'locationId',
-        'department_id' => 'departmentId',
-        'territory_id' => 'territoryId',
-        'top_comment' => 'topComment',
-        'bottom_comment' => 'bottomComment',
-        'taxable_flag' => 'taxableFlag',
-        'tax_code' => 'taxCode',
-        'internal_notes' => 'internalNotes',
+        'id'                                => 'id',
+        'invoice_number'                    => 'invoiceNumber',
+        'type'                              => 'type',
+        'status'                            => 'status',
+        'company'                           => 'company',
+        'bill_to_company'                   => 'billToCompany',
+        'ship_to_company'                   => 'shipToCompany',
+        'apply_to_type'                     => 'applyToType',
+        'apply_to_id'                       => 'applyToId',
+        'attention'                         => 'attention',
+        'billing_site'                      => 'billingSite',
+        'shipping_site'                     => 'shippingSite',
+        'billing_terms'                     => 'billingTerms',
+        'reference'                         => 'reference',
+        'customer_po'                       => 'customerPO',
+        'template_setup_id'                 => 'templateSetupId',
+        'email_template_id'                 => 'emailTemplateId',
+        'add_to_batch_email_list'           => 'addToBatchEmailList',
+        'date'                              => 'date',
+        'restrict_downpayment_flag'         => 'restrictDownpaymentFlag',
+        'location_id'                       => 'locationId',
+        'department_id'                     => 'departmentId',
+        'territory_id'                      => 'territoryId',
+        'top_comment'                       => 'topComment',
+        'bottom_comment'                    => 'bottomComment',
+        'taxable_flag'                      => 'taxableFlag',
+        'tax_code'                          => 'taxCode',
+        'internal_notes'                    => 'internalNotes',
         'downpayment_previously_taxed_flag' => 'downpaymentPreviouslyTaxedFlag',
-        'service_total' => 'serviceTotal',
-        'due_date' => 'dueDate',
-        'expense_total' => 'expenseTotal',
-        'product_total' => 'productTotal',
-        'previous_progress_applied' => 'previousProgressApplied',
-        'service_adjustment_amount' => 'serviceAdjustmentAmount',
-        'agreement_amount' => 'agreementAmount',
-        'downpayment_applied' => 'downpaymentApplied',
-        'subtotal' => 'subtotal',
-        'total' => 'total',
-        'remaining_downpayment' => 'remainingDownpayment',
-        'sales_tax' => 'salesTax',
-        'adjustment_reason' => 'adjustmentReason',
-        'adjusted_by' => 'adjustedBy',
-        'payments' => 'payments',
-        'credits' => 'credits',
-        'balance' => 'balance',
-        'special_invoice_flag' => 'specialInvoiceFlag',
-        '_info' => '_info'
+        'service_total'                     => 'serviceTotal',
+        'due_date'                          => 'dueDate',
+        'expense_total'                     => 'expenseTotal',
+        'product_total'                     => 'productTotal',
+        'previous_progress_applied'         => 'previousProgressApplied',
+        'service_adjustment_amount'         => 'serviceAdjustmentAmount',
+        'agreement_amount'                  => 'agreementAmount',
+        'downpayment_applied'               => 'downpaymentApplied',
+        'subtotal'                          => 'subtotal',
+        'total'                             => 'total',
+        'remaining_downpayment'             => 'remainingDownpayment',
+        'sales_tax'                         => 'salesTax',
+        'adjustment_reason'                 => 'adjustmentReason',
+        'adjusted_by'                       => 'adjustedBy',
+        'payments'                          => 'payments',
+        'credits'                           => 'credits',
+        'balance'                           => 'balance',
+        'special_invoice_flag'              => 'specialInvoiceFlag',
+        '_info'                             => '_info'
     ];
 
 
@@ -171,54 +173,54 @@ class Invoice implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'id' => 'setId',
-        'invoice_number' => 'setInvoiceNumber',
-        'type' => 'setType',
-        'status' => 'setStatus',
-        'company' => 'setCompany',
-        'bill_to_company' => 'setBillToCompany',
-        'ship_to_company' => 'setShipToCompany',
-        'apply_to_type' => 'setApplyToType',
-        'apply_to_id' => 'setApplyToId',
-        'attention' => 'setAttention',
-        'billing_site' => 'setBillingSite',
-        'shipping_site' => 'setShippingSite',
-        'billing_terms' => 'setBillingTerms',
-        'reference' => 'setReference',
-        'customer_po' => 'setCustomerPo',
-        'template_setup_id' => 'setTemplateSetupId',
-        'email_template_id' => 'setEmailTemplateId',
-        'add_to_batch_email_list' => 'setAddToBatchEmailList',
-        'date' => 'setDate',
-        'restrict_downpayment_flag' => 'setRestrictDownpaymentFlag',
-        'location_id' => 'setLocationId',
-        'department_id' => 'setDepartmentId',
-        'territory_id' => 'setTerritoryId',
-        'top_comment' => 'setTopComment',
-        'bottom_comment' => 'setBottomComment',
-        'taxable_flag' => 'setTaxableFlag',
-        'tax_code' => 'setTaxCode',
-        'internal_notes' => 'setInternalNotes',
+        'id'                                => 'setId',
+        'invoice_number'                    => 'setInvoiceNumber',
+        'type'                              => 'setType',
+        'status'                            => 'setStatus',
+        'company'                           => 'setCompany',
+        'bill_to_company'                   => 'setBillToCompany',
+        'ship_to_company'                   => 'setShipToCompany',
+        'apply_to_type'                     => 'setApplyToType',
+        'apply_to_id'                       => 'setApplyToId',
+        'attention'                         => 'setAttention',
+        'billing_site'                      => 'setBillingSite',
+        'shipping_site'                     => 'setShippingSite',
+        'billing_terms'                     => 'setBillingTerms',
+        'reference'                         => 'setReference',
+        'customer_po'                       => 'setCustomerPo',
+        'template_setup_id'                 => 'setTemplateSetupId',
+        'email_template_id'                 => 'setEmailTemplateId',
+        'add_to_batch_email_list'           => 'setAddToBatchEmailList',
+        'date'                              => 'setDate',
+        'restrict_downpayment_flag'         => 'setRestrictDownpaymentFlag',
+        'location_id'                       => 'setLocationId',
+        'department_id'                     => 'setDepartmentId',
+        'territory_id'                      => 'setTerritoryId',
+        'top_comment'                       => 'setTopComment',
+        'bottom_comment'                    => 'setBottomComment',
+        'taxable_flag'                      => 'setTaxableFlag',
+        'tax_code'                          => 'setTaxCode',
+        'internal_notes'                    => 'setInternalNotes',
         'downpayment_previously_taxed_flag' => 'setDownpaymentPreviouslyTaxedFlag',
-        'service_total' => 'setServiceTotal',
-        'due_date' => 'setDueDate',
-        'expense_total' => 'setExpenseTotal',
-        'product_total' => 'setProductTotal',
-        'previous_progress_applied' => 'setPreviousProgressApplied',
-        'service_adjustment_amount' => 'setServiceAdjustmentAmount',
-        'agreement_amount' => 'setAgreementAmount',
-        'downpayment_applied' => 'setDownpaymentApplied',
-        'subtotal' => 'setSubtotal',
-        'total' => 'setTotal',
-        'remaining_downpayment' => 'setRemainingDownpayment',
-        'sales_tax' => 'setSalesTax',
-        'adjustment_reason' => 'setAdjustmentReason',
-        'adjusted_by' => 'setAdjustedBy',
-        'payments' => 'setPayments',
-        'credits' => 'setCredits',
-        'balance' => 'setBalance',
-        'special_invoice_flag' => 'setSpecialInvoiceFlag',
-        '_info' => 'setInfo'
+        'service_total'                     => 'setServiceTotal',
+        'due_date'                          => 'setDueDate',
+        'expense_total'                     => 'setExpenseTotal',
+        'product_total'                     => 'setProductTotal',
+        'previous_progress_applied'         => 'setPreviousProgressApplied',
+        'service_adjustment_amount'         => 'setServiceAdjustmentAmount',
+        'agreement_amount'                  => 'setAgreementAmount',
+        'downpayment_applied'               => 'setDownpaymentApplied',
+        'subtotal'                          => 'setSubtotal',
+        'total'                             => 'setTotal',
+        'remaining_downpayment'             => 'setRemainingDownpayment',
+        'sales_tax'                         => 'setSalesTax',
+        'adjustment_reason'                 => 'setAdjustmentReason',
+        'adjusted_by'                       => 'setAdjustedBy',
+        'payments'                          => 'setPayments',
+        'credits'                           => 'setCredits',
+        'balance'                           => 'setBalance',
+        'special_invoice_flag'              => 'setSpecialInvoiceFlag',
+        '_info'                             => 'setInfo'
     ];
 
 
@@ -227,54 +229,54 @@ class Invoice implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'id' => 'getId',
-        'invoice_number' => 'getInvoiceNumber',
-        'type' => 'getType',
-        'status' => 'getStatus',
-        'company' => 'getCompany',
-        'bill_to_company' => 'getBillToCompany',
-        'ship_to_company' => 'getShipToCompany',
-        'apply_to_type' => 'getApplyToType',
-        'apply_to_id' => 'getApplyToId',
-        'attention' => 'getAttention',
-        'billing_site' => 'getBillingSite',
-        'shipping_site' => 'getShippingSite',
-        'billing_terms' => 'getBillingTerms',
-        'reference' => 'getReference',
-        'customer_po' => 'getCustomerPo',
-        'template_setup_id' => 'getTemplateSetupId',
-        'email_template_id' => 'getEmailTemplateId',
-        'add_to_batch_email_list' => 'getAddToBatchEmailList',
-        'date' => 'getDate',
-        'restrict_downpayment_flag' => 'getRestrictDownpaymentFlag',
-        'location_id' => 'getLocationId',
-        'department_id' => 'getDepartmentId',
-        'territory_id' => 'getTerritoryId',
-        'top_comment' => 'getTopComment',
-        'bottom_comment' => 'getBottomComment',
-        'taxable_flag' => 'getTaxableFlag',
-        'tax_code' => 'getTaxCode',
-        'internal_notes' => 'getInternalNotes',
+        'id'                                => 'getId',
+        'invoice_number'                    => 'getInvoiceNumber',
+        'type'                              => 'getType',
+        'status'                            => 'getStatus',
+        'company'                           => 'getCompany',
+        'bill_to_company'                   => 'getBillToCompany',
+        'ship_to_company'                   => 'getShipToCompany',
+        'apply_to_type'                     => 'getApplyToType',
+        'apply_to_id'                       => 'getApplyToId',
+        'attention'                         => 'getAttention',
+        'billing_site'                      => 'getBillingSite',
+        'shipping_site'                     => 'getShippingSite',
+        'billing_terms'                     => 'getBillingTerms',
+        'reference'                         => 'getReference',
+        'customer_po'                       => 'getCustomerPo',
+        'template_setup_id'                 => 'getTemplateSetupId',
+        'email_template_id'                 => 'getEmailTemplateId',
+        'add_to_batch_email_list'           => 'getAddToBatchEmailList',
+        'date'                              => 'getDate',
+        'restrict_downpayment_flag'         => 'getRestrictDownpaymentFlag',
+        'location_id'                       => 'getLocationId',
+        'department_id'                     => 'getDepartmentId',
+        'territory_id'                      => 'getTerritoryId',
+        'top_comment'                       => 'getTopComment',
+        'bottom_comment'                    => 'getBottomComment',
+        'taxable_flag'                      => 'getTaxableFlag',
+        'tax_code'                          => 'getTaxCode',
+        'internal_notes'                    => 'getInternalNotes',
         'downpayment_previously_taxed_flag' => 'getDownpaymentPreviouslyTaxedFlag',
-        'service_total' => 'getServiceTotal',
-        'due_date' => 'getDueDate',
-        'expense_total' => 'getExpenseTotal',
-        'product_total' => 'getProductTotal',
-        'previous_progress_applied' => 'getPreviousProgressApplied',
-        'service_adjustment_amount' => 'getServiceAdjustmentAmount',
-        'agreement_amount' => 'getAgreementAmount',
-        'downpayment_applied' => 'getDownpaymentApplied',
-        'subtotal' => 'getSubtotal',
-        'total' => 'getTotal',
-        'remaining_downpayment' => 'getRemainingDownpayment',
-        'sales_tax' => 'getSalesTax',
-        'adjustment_reason' => 'getAdjustmentReason',
-        'adjusted_by' => 'getAdjustedBy',
-        'payments' => 'getPayments',
-        'credits' => 'getCredits',
-        'balance' => 'getBalance',
-        'special_invoice_flag' => 'getSpecialInvoiceFlag',
-        '_info' => 'getInfo'
+        'service_total'                     => 'getServiceTotal',
+        'due_date'                          => 'getDueDate',
+        'expense_total'                     => 'getExpenseTotal',
+        'product_total'                     => 'getProductTotal',
+        'previous_progress_applied'         => 'getPreviousProgressApplied',
+        'service_adjustment_amount'         => 'getServiceAdjustmentAmount',
+        'agreement_amount'                  => 'getAgreementAmount',
+        'downpayment_applied'               => 'getDownpaymentApplied',
+        'subtotal'                          => 'getSubtotal',
+        'total'                             => 'getTotal',
+        'remaining_downpayment'             => 'getRemainingDownpayment',
+        'sales_tax'                         => 'getSalesTax',
+        'adjustment_reason'                 => 'getAdjustmentReason',
+        'adjusted_by'                       => 'getAdjustedBy',
+        'payments'                          => 'getPayments',
+        'credits'                           => 'getCredits',
+        'balance'                           => 'getBalance',
+        'special_invoice_flag'              => 'getSpecialInvoiceFlag',
+        '_info'                             => 'getInfo'
     ];
 
     public static function attributeMap()
@@ -304,9 +306,8 @@ class Invoice implements ArrayAccess
     const APPLY_TO_TYPE_PROJECT_PHASE = 'ProjectPhase';
     const APPLY_TO_TYPE_SALES_ORDER = 'SalesOrder';
     const APPLY_TO_TYPE_TICKET = 'Ticket';
-    
 
-    
+
     /**
      * Gets allowable values of the enum
      * @return string[]
@@ -322,7 +323,7 @@ class Invoice implements ArrayAccess
             self::TYPE_STANDARD,
         ];
     }
-    
+
     /**
      * Gets allowable values of the enum
      * @return string[]
@@ -338,7 +339,7 @@ class Invoice implements ArrayAccess
             self::APPLY_TO_TYPE_TICKET,
         ];
     }
-    
+
 
     /**
      * Associative array for storing property values
@@ -348,7 +349,7 @@ class Invoice implements ArrayAccess
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param  mixed[]  $data  Associated array of property values initializing the model
      */
     public function __construct(array $data = null)
     {
@@ -494,7 +495,7 @@ class Invoice implements ArrayAccess
 
     /**
      * Sets id
-     * @param int $id
+     * @param  int  $id
      * @return $this
      */
     public function setId($id)
@@ -515,7 +516,7 @@ class Invoice implements ArrayAccess
 
     /**
      * Sets invoice_number
-     * @param string $invoice_number
+     * @param  string  $invoice_number
      * @return $this
      */
     public function setInvoiceNumber($invoice_number)
@@ -540,7 +541,7 @@ class Invoice implements ArrayAccess
 
     /**
      * Sets type
-     * @param string $type
+     * @param  string  $type
      * @return $this
      */
     public function setType($type)
@@ -565,7 +566,7 @@ class Invoice implements ArrayAccess
 
     /**
      * Sets status
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\BillingStatusReference $status
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\BillingStatusReference  $status
      * @return $this
      */
     public function setStatus($status)
@@ -586,7 +587,7 @@ class Invoice implements ArrayAccess
 
     /**
      * Sets company
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\CompanyReference $company
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\CompanyReference  $company
      * @return $this
      */
     public function setCompany($company)
@@ -607,7 +608,7 @@ class Invoice implements ArrayAccess
 
     /**
      * Sets bill_to_company
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\CompanyReference $bill_to_company
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\CompanyReference  $bill_to_company
      * @return $this
      */
     public function setBillToCompany($bill_to_company)
@@ -628,7 +629,7 @@ class Invoice implements ArrayAccess
 
     /**
      * Sets ship_to_company
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\CompanyReference $ship_to_company
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\CompanyReference  $ship_to_company
      * @return $this
      */
     public function setShipToCompany($ship_to_company)
@@ -649,7 +650,7 @@ class Invoice implements ArrayAccess
 
     /**
      * Sets apply_to_type
-     * @param string $apply_to_type
+     * @param  string  $apply_to_type
      * @return $this
      */
     public function setApplyToType($apply_to_type)
@@ -674,7 +675,7 @@ class Invoice implements ArrayAccess
 
     /**
      * Sets apply_to_id
-     * @param int $apply_to_id
+     * @param  int  $apply_to_id
      * @return $this
      */
     public function setApplyToId($apply_to_id)
@@ -695,7 +696,7 @@ class Invoice implements ArrayAccess
 
     /**
      * Sets attention
-     * @param string $attention
+     * @param  string  $attention
      * @return $this
      */
     public function setAttention($attention)
@@ -720,7 +721,7 @@ class Invoice implements ArrayAccess
 
     /**
      * Sets billing_site
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\SiteReference $billing_site
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\SiteReference  $billing_site
      * @return $this
      */
     public function setBillingSite($billing_site)
@@ -741,7 +742,7 @@ class Invoice implements ArrayAccess
 
     /**
      * Sets shipping_site
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\SiteReference $shipping_site
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\SiteReference  $shipping_site
      * @return $this
      */
     public function setShippingSite($shipping_site)
@@ -762,7 +763,7 @@ class Invoice implements ArrayAccess
 
     /**
      * Sets billing_terms
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\BillingTermsReference $billing_terms
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\BillingTermsReference  $billing_terms
      * @return $this
      */
     public function setBillingTerms($billing_terms)
@@ -783,7 +784,7 @@ class Invoice implements ArrayAccess
 
     /**
      * Sets reference
-     * @param string $reference
+     * @param  string  $reference
      * @return $this
      */
     public function setReference($reference)
@@ -808,7 +809,7 @@ class Invoice implements ArrayAccess
 
     /**
      * Sets customer_po
-     * @param string $customer_po
+     * @param  string  $customer_po
      * @return $this
      */
     public function setCustomerPo($customer_po)
@@ -833,7 +834,7 @@ class Invoice implements ArrayAccess
 
     /**
      * Sets template_setup_id
-     * @param int $template_setup_id Can be obtained via InvoiceTemplate report
+     * @param  int  $template_setup_id  Can be obtained via InvoiceTemplate report
      * @return $this
      */
     public function setTemplateSetupId($template_setup_id)
@@ -854,7 +855,7 @@ class Invoice implements ArrayAccess
 
     /**
      * Sets email_template_id
-     * @param int $email_template_id Can be obtained via InvoiceEmailTemplate report
+     * @param  int  $email_template_id  Can be obtained via InvoiceEmailTemplate report
      * @return $this
      */
     public function setEmailTemplateId($email_template_id)
@@ -875,7 +876,7 @@ class Invoice implements ArrayAccess
 
     /**
      * Sets add_to_batch_email_list
-     * @param bool $add_to_batch_email_list
+     * @param  bool  $add_to_batch_email_list
      * @return $this
      */
     public function setAddToBatchEmailList($add_to_batch_email_list)
@@ -896,7 +897,7 @@ class Invoice implements ArrayAccess
 
     /**
      * Sets date
-     * @param \DateTime $date
+     * @param  \DateTime  $date
      * @return $this
      */
     public function setDate($date)
@@ -917,7 +918,7 @@ class Invoice implements ArrayAccess
 
     /**
      * Sets restrict_downpayment_flag
-     * @param bool $restrict_downpayment_flag
+     * @param  bool  $restrict_downpayment_flag
      * @return $this
      */
     public function setRestrictDownpaymentFlag($restrict_downpayment_flag)
@@ -938,7 +939,7 @@ class Invoice implements ArrayAccess
 
     /**
      * Sets location_id
-     * @param int $location_id
+     * @param  int  $location_id
      * @return $this
      */
     public function setLocationId($location_id)
@@ -959,7 +960,7 @@ class Invoice implements ArrayAccess
 
     /**
      * Sets department_id
-     * @param int $department_id
+     * @param  int  $department_id
      * @return $this
      */
     public function setDepartmentId($department_id)
@@ -980,7 +981,7 @@ class Invoice implements ArrayAccess
 
     /**
      * Sets territory_id
-     * @param int $territory_id
+     * @param  int  $territory_id
      * @return $this
      */
     public function setTerritoryId($territory_id)
@@ -1001,7 +1002,7 @@ class Invoice implements ArrayAccess
 
     /**
      * Sets top_comment
-     * @param string $top_comment
+     * @param  string  $top_comment
      * @return $this
      */
     public function setTopComment($top_comment)
@@ -1022,7 +1023,7 @@ class Invoice implements ArrayAccess
 
     /**
      * Sets bottom_comment
-     * @param string $bottom_comment
+     * @param  string  $bottom_comment
      * @return $this
      */
     public function setBottomComment($bottom_comment)
@@ -1043,7 +1044,7 @@ class Invoice implements ArrayAccess
 
     /**
      * Sets taxable_flag
-     * @param bool $taxable_flag
+     * @param  bool  $taxable_flag
      * @return $this
      */
     public function setTaxableFlag($taxable_flag)
@@ -1064,7 +1065,7 @@ class Invoice implements ArrayAccess
 
     /**
      * Sets tax_code
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\TaxCodeReference $tax_code
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\TaxCodeReference  $tax_code
      * @return $this
      */
     public function setTaxCode($tax_code)
@@ -1085,7 +1086,7 @@ class Invoice implements ArrayAccess
 
     /**
      * Sets internal_notes
-     * @param string $internal_notes
+     * @param  string  $internal_notes
      * @return $this
      */
     public function setInternalNotes($internal_notes)
@@ -1106,7 +1107,7 @@ class Invoice implements ArrayAccess
 
     /**
      * Sets downpayment_previously_taxed_flag
-     * @param bool $downpayment_previously_taxed_flag
+     * @param  bool  $downpayment_previously_taxed_flag
      * @return $this
      */
     public function setDownpaymentPreviouslyTaxedFlag($downpayment_previously_taxed_flag)
@@ -1127,7 +1128,7 @@ class Invoice implements ArrayAccess
 
     /**
      * Sets service_total
-     * @param double $service_total
+     * @param  double  $service_total
      * @return $this
      */
     public function setServiceTotal($service_total)
@@ -1148,7 +1149,7 @@ class Invoice implements ArrayAccess
 
     /**
      * Sets due_date
-     * @param \DateTime $due_date
+     * @param  \DateTime  $due_date
      * @return $this
      */
     public function setDueDate($due_date)
@@ -1169,7 +1170,7 @@ class Invoice implements ArrayAccess
 
     /**
      * Sets expense_total
-     * @param double $expense_total
+     * @param  double  $expense_total
      * @return $this
      */
     public function setExpenseTotal($expense_total)
@@ -1190,7 +1191,7 @@ class Invoice implements ArrayAccess
 
     /**
      * Sets product_total
-     * @param double $product_total
+     * @param  double  $product_total
      * @return $this
      */
     public function setProductTotal($product_total)
@@ -1211,7 +1212,7 @@ class Invoice implements ArrayAccess
 
     /**
      * Sets previous_progress_applied
-     * @param double $previous_progress_applied
+     * @param  double  $previous_progress_applied
      * @return $this
      */
     public function setPreviousProgressApplied($previous_progress_applied)
@@ -1232,7 +1233,7 @@ class Invoice implements ArrayAccess
 
     /**
      * Sets service_adjustment_amount
-     * @param double $service_adjustment_amount
+     * @param  double  $service_adjustment_amount
      * @return $this
      */
     public function setServiceAdjustmentAmount($service_adjustment_amount)
@@ -1253,7 +1254,7 @@ class Invoice implements ArrayAccess
 
     /**
      * Sets agreement_amount
-     * @param double $agreement_amount
+     * @param  double  $agreement_amount
      * @return $this
      */
     public function setAgreementAmount($agreement_amount)
@@ -1274,7 +1275,7 @@ class Invoice implements ArrayAccess
 
     /**
      * Sets downpayment_applied
-     * @param double $downpayment_applied
+     * @param  double  $downpayment_applied
      * @return $this
      */
     public function setDownpaymentApplied($downpayment_applied)
@@ -1295,7 +1296,7 @@ class Invoice implements ArrayAccess
 
     /**
      * Sets subtotal
-     * @param double $subtotal
+     * @param  double  $subtotal
      * @return $this
      */
     public function setSubtotal($subtotal)
@@ -1316,7 +1317,7 @@ class Invoice implements ArrayAccess
 
     /**
      * Sets total
-     * @param double $total
+     * @param  double  $total
      * @return $this
      */
     public function setTotal($total)
@@ -1337,7 +1338,7 @@ class Invoice implements ArrayAccess
 
     /**
      * Sets remaining_downpayment
-     * @param double $remaining_downpayment
+     * @param  double  $remaining_downpayment
      * @return $this
      */
     public function setRemainingDownpayment($remaining_downpayment)
@@ -1358,7 +1359,7 @@ class Invoice implements ArrayAccess
 
     /**
      * Sets sales_tax
-     * @param double $sales_tax
+     * @param  double  $sales_tax
      * @return $this
      */
     public function setSalesTax($sales_tax)
@@ -1379,7 +1380,7 @@ class Invoice implements ArrayAccess
 
     /**
      * Sets adjustment_reason
-     * @param string $adjustment_reason
+     * @param  string  $adjustment_reason
      * @return $this
      */
     public function setAdjustmentReason($adjustment_reason)
@@ -1400,7 +1401,7 @@ class Invoice implements ArrayAccess
 
     /**
      * Sets adjusted_by
-     * @param string $adjusted_by
+     * @param  string  $adjusted_by
      * @return $this
      */
     public function setAdjustedBy($adjusted_by)
@@ -1421,7 +1422,7 @@ class Invoice implements ArrayAccess
 
     /**
      * Sets payments
-     * @param double $payments
+     * @param  double  $payments
      * @return $this
      */
     public function setPayments($payments)
@@ -1442,7 +1443,7 @@ class Invoice implements ArrayAccess
 
     /**
      * Sets credits
-     * @param double $credits
+     * @param  double  $credits
      * @return $this
      */
     public function setCredits($credits)
@@ -1463,7 +1464,7 @@ class Invoice implements ArrayAccess
 
     /**
      * Sets balance
-     * @param double $balance
+     * @param  double  $balance
      * @return $this
      */
     public function setBalance($balance)
@@ -1484,7 +1485,7 @@ class Invoice implements ArrayAccess
 
     /**
      * Sets special_invoice_flag
-     * @param bool $special_invoice_flag
+     * @param  bool  $special_invoice_flag
      * @return $this
      */
     public function setSpecialInvoiceFlag($special_invoice_flag)
@@ -1505,7 +1506,7 @@ class Invoice implements ArrayAccess
 
     /**
      * Sets _info
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\Metadata $_info Metadata of the entity
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\Metadata  $_info  Metadata of the entity
      * @return $this
      */
     public function setInfo($_info)
@@ -1514,9 +1515,10 @@ class Invoice implements ArrayAccess
 
         return $this;
     }
+
     /**
      * Returns true if offset exists. False otherwise.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return boolean
      */
     public function offsetExists($offset)
@@ -1526,7 +1528,7 @@ class Invoice implements ArrayAccess
 
     /**
      * Gets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return mixed
      */
     public function offsetGet($offset)
@@ -1536,8 +1538,8 @@ class Invoice implements ArrayAccess
 
     /**
      * Sets value based on offset.
-     * @param  integer $offset Offset
-     * @param  mixed   $value  Value to be set
+     * @param  integer  $offset  Offset
+     * @param  mixed  $value  Value to be set
      * @return void
      */
     public function offsetSet($offset, $value)
@@ -1551,7 +1553,7 @@ class Invoice implements ArrayAccess
 
     /**
      * Unsets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return void
      */
     public function offsetUnset($offset)
@@ -1566,7 +1568,8 @@ class Invoice implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this),
+                JSON_PRETTY_PRINT);
         }
 
         return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this));

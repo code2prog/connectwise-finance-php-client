@@ -64,7 +64,7 @@ class ApiClient
     /**
      * Constructor of the class
      *
-     * @param Configuration $config config for this ApiClient
+     * @param  Configuration  $config  config for this ApiClient
      */
     public function __construct(\Spinen\ConnectWise\Clients\Finance\Configuration $config = null)
     {
@@ -99,7 +99,7 @@ class ApiClient
     /**
      * Get API key (with prefix if set)
      *
-     * @param  string $apiKeyIdentifier name of apikey
+     * @param  string  $apiKeyIdentifier  name of apikey
      *
      * @return string API key with the prefix
      */
@@ -124,25 +124,32 @@ class ApiClient
     /**
      * Make the HTTP call (Sync)
      *
-     * @param string $resourcePath path to method endpoint
-     * @param string $method       method to call
-     * @param array  $queryParams  parameters to be place in query URL
-     * @param array  $postData     parameters to be placed in POST body
-     * @param array  $headerParams parameters to be place in request header
-     * @param string $responseType expected response type of the endpoint
-     * @param string $endpointPath path to method endpoint before expanding parameters
+     * @param  string  $resourcePath  path to method endpoint
+     * @param  string  $method  method to call
+     * @param  array  $queryParams  parameters to be place in query URL
+     * @param  array  $postData  parameters to be placed in POST body
+     * @param  array  $headerParams  parameters to be place in request header
+     * @param  string  $responseType  expected response type of the endpoint
+     * @param  string  $endpointPath  path to method endpoint before expanding parameters
      *
-     * @throws \Spinen\ConnectWise\Clients\Finance\ApiException on a non 2xx response
      * @return mixed
+     * @throws \Spinen\ConnectWise\Clients\Finance\ApiException on a non 2xx response
      */
-    public function callApi($resourcePath, $method, $queryParams, $postData, $headerParams, $responseType = null, $endpointPath = null)
-    {
+    public function callApi(
+        $resourcePath,
+        $method,
+        $queryParams,
+        $postData,
+        $headerParams,
+        $responseType = null,
+        $endpointPath = null
+    ) {
         $headers = [];
 
         // construct the http header
         $headerParams = array_merge(
-            (array)$this->config->getDefaultHeaders(),
-            (array)$headerParams
+            (array) $this->config->getDefaultHeaders(),
+            (array) $headerParams
         );
 
         foreach ($headerParams as $key => $val) {
@@ -152,11 +159,12 @@ class ApiClient
         // form data
         if ($postData and in_array('Content-Type: application/x-www-form-urlencoded', $headers, true)) {
             $postData = http_build_query($postData);
-        } elseif ((is_object($postData) or is_array($postData)) and !in_array('Content-Type: multipart/form-data', $headers, true)) { // json model
+        } elseif ((is_object($postData) or is_array($postData)) and !in_array('Content-Type: multipart/form-data',
+                $headers, true)) { // json model
             $postData = json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($postData));
         }
 
-        $url = $this->config->getHost() . $resourcePath;
+        $url = $this->config->getHost().$resourcePath;
 
         $curl = curl_init();
         // set timeout, if needed
@@ -167,7 +175,7 @@ class ApiClient
         if ($this->config->getCurlConnectTimeout() != 0) {
             curl_setopt($curl, CURLOPT_CONNECTTIMEOUT, $this->config->getCurlConnectTimeout());
         }
-        
+
         // return the result on success, rather than just true
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 
@@ -180,7 +188,7 @@ class ApiClient
         }
 
         if (!empty($queryParams)) {
-            $url = ($url . '?' . http_build_query($queryParams));
+            $url = ($url.'?'.http_build_query($queryParams));
         }
 
         if ($method === self::$POST) {
@@ -201,7 +209,7 @@ class ApiClient
             curl_setopt($curl, CURLOPT_CUSTOMREQUEST, "DELETE");
             curl_setopt($curl, CURLOPT_POSTFIELDS, $postData);
         } elseif ($method !== self::$GET) {
-            throw new ApiException('Method ' . $method . ' is not recognized.');
+            throw new ApiException('Method '.$method.' is not recognized.');
         }
         curl_setopt($curl, CURLOPT_URL, $url);
 
@@ -210,7 +218,8 @@ class ApiClient
 
         // debugging for curl
         if ($this->config->getDebug()) {
-            error_log("[DEBUG] HTTP Request body  ~BEGIN~".PHP_EOL.print_r($postData, true).PHP_EOL."~END~".PHP_EOL, 3, $this->config->getDebugFile());
+            error_log("[DEBUG] HTTP Request body  ~BEGIN~".PHP_EOL.print_r($postData, true).PHP_EOL."~END~".PHP_EOL, 3,
+                $this->config->getDebugFile());
 
             curl_setopt($curl, CURLOPT_VERBOSE, 1);
             curl_setopt($curl, CURLOPT_STDERR, fopen($this->config->getDebugFile(), 'a'));
@@ -230,7 +239,8 @@ class ApiClient
 
         // debug HTTP response body
         if ($this->config->getDebug()) {
-            error_log("[DEBUG] HTTP Response body ~BEGIN~".PHP_EOL.print_r($http_body, true).PHP_EOL."~END~".PHP_EOL, 3, $this->config->getDebugFile());
+            error_log("[DEBUG] HTTP Response body ~BEGIN~".PHP_EOL.print_r($http_body, true).PHP_EOL."~END~".PHP_EOL, 3,
+                $this->config->getDebugFile());
         }
 
         // Handle the response
@@ -241,7 +251,7 @@ class ApiClient
             if (!empty($curl_error_message)) {
                 $error_message = "API call to $url failed: $curl_error_message";
             } else {
-                $error_message = "API call to $url failed, but for an unknown reason. " .
+                $error_message = "API call to $url failed, but for an unknown reason. ".
                     "This could happen if you are disconnected from the network.";
             }
 
@@ -277,7 +287,7 @@ class ApiClient
     /**
      * Return the header 'Accept' based on an array of Accept provided
      *
-     * @param string[] $accept Array of header
+     * @param  string[]  $accept  Array of header
      *
      * @return string Accept (e.g. application/json)
      */
@@ -295,7 +305,7 @@ class ApiClient
     /**
      * Return the content type based on an array of content-type provided
      *
-     * @param string[] $content_type Array fo content-type
+     * @param  string[]  $content_type  Array fo content-type
      *
      * @return string Content-Type (e.g. application/json)
      */
@@ -310,13 +320,13 @@ class ApiClient
         }
     }
 
-   /**
-    * Return an array of HTTP response headers
-    *
-    * @param string $raw_headers A string of raw HTTP response headers
-    *
-    * @return string[] Array of HTTP response heaers
-    */
+    /**
+     * Return an array of HTTP response headers
+     *
+     * @param  string  $raw_headers  A string of raw HTTP response headers
+     *
+     * @return string[] Array of HTTP response heaers
+     */
     protected function httpParseHeaders($raw_headers)
     {
         // ref/credit: http://php.net/manual/en/function.http-parse-headers.php#112986

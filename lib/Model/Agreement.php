@@ -34,7 +34,9 @@ use \ArrayAccess;
 /**
  * Agreement Class Doc Comment
  *
- * @category    Class */
+ * @category    Class
+ */
+
 /**
  * @package     Spinen\ConnectWise\Clients\Finance
  * @author      Swagger Codegen team
@@ -45,86 +47,86 @@ class Agreement implements ArrayAccess
     const DISCRIMINATOR = null;
 
     /**
-      * The original name of the model.
-      * @var string
-      */
+     * The original name of the model.
+     * @var string
+     */
     protected static $swaggerModelName = 'Agreement';
 
     /**
-      * Array of property to type mappings. Used for (de)serialization
-      * @var string[]
-      */
+     * Array of property to type mappings. Used for (de)serialization
+     * @var string[]
+     */
     protected static $swaggerTypes = [
-        'id' => 'int',
-        'name' => 'string',
-        'type' => '\Spinen\ConnectWise\Clients\Finance\Model\AgreementTypeReference',
-        'company' => '\Spinen\ConnectWise\Clients\Finance\Model\CompanyReference',
-        'contact' => '\Spinen\ConnectWise\Clients\Finance\Model\ContactReference',
-        'sub_contract_company' => '\Spinen\ConnectWise\Clients\Finance\Model\CompanyReference',
-        'sub_contract_contact' => '\Spinen\ConnectWise\Clients\Finance\Model\ContactReference',
-        'parent_agreement_id' => 'int',
-        'customer_po' => 'string',
-        'location_id' => 'int',
-        'business_unit_id' => 'int',
-        'restrict_location_flag' => 'bool',
-        'restrict_department_flag' => 'bool',
-        'start_date' => '\DateTime',
-        'end_date' => '\DateTime',
-        'no_ending_date_flag' => 'bool',
-        'opportunity' => '\Spinen\ConnectWise\Clients\Finance\Model\OpportunityReference',
-        'cancelled_flag' => 'bool',
-        'date_cancelled' => '\DateTime',
-        'reason_cancelled' => 'string',
-        'sla_id' => 'int',
-        'work_order' => 'string',
-        'internal_notes' => 'string',
-        'application_units' => 'string',
-        'application_limit' => 'double',
-        'application_cycle' => 'string',
+        'id'                         => 'int',
+        'name'                       => 'string',
+        'type'                       => '\Spinen\ConnectWise\Clients\Finance\Model\AgreementTypeReference',
+        'company'                    => '\Spinen\ConnectWise\Clients\Finance\Model\CompanyReference',
+        'contact'                    => '\Spinen\ConnectWise\Clients\Finance\Model\ContactReference',
+        'sub_contract_company'       => '\Spinen\ConnectWise\Clients\Finance\Model\CompanyReference',
+        'sub_contract_contact'       => '\Spinen\ConnectWise\Clients\Finance\Model\ContactReference',
+        'parent_agreement_id'        => 'int',
+        'customer_po'                => 'string',
+        'location_id'                => 'int',
+        'business_unit_id'           => 'int',
+        'restrict_location_flag'     => 'bool',
+        'restrict_department_flag'   => 'bool',
+        'start_date'                 => '\DateTime',
+        'end_date'                   => '\DateTime',
+        'no_ending_date_flag'        => 'bool',
+        'opportunity'                => '\Spinen\ConnectWise\Clients\Finance\Model\OpportunityReference',
+        'cancelled_flag'             => 'bool',
+        'date_cancelled'             => '\DateTime',
+        'reason_cancelled'           => 'string',
+        'sla_id'                     => 'int',
+        'work_order'                 => 'string',
+        'internal_notes'             => 'string',
+        'application_units'          => 'string',
+        'application_limit'          => 'double',
+        'application_cycle'          => 'string',
         'application_unlimited_flag' => 'bool',
-        'one_time_flag' => 'bool',
-        'cover_agreement_time' => 'bool',
-        'cover_agreement_product' => 'bool',
-        'cover_agreement_expense' => 'bool',
-        'cover_sales_tax' => 'bool',
-        'carry_over_unused' => 'bool',
-        'allow_overruns' => 'bool',
-        'expired_days' => 'int',
-        'limit' => 'int',
-        'expire_when_zero' => 'bool',
-        'charge_to_firm' => 'bool',
-        'employee_comp_rate' => 'string',
-        'employee_comp_not_exceed' => 'string',
-        'comp_hourly_rate' => 'double',
-        'comp_limit_amount' => 'double',
-        'bill_cycle_id' => 'int',
-        'bill_one_time_flag' => 'bool',
-        'bill_terms_id' => 'int',
-        'invoicing_cycle' => 'string',
-        'bill_to_company' => '\Spinen\ConnectWise\Clients\Finance\Model\CompanyReference',
-        'bill_to_site' => '\Spinen\ConnectWise\Clients\Finance\Model\SiteReference',
-        'bill_amount' => 'double',
-        'taxable' => 'bool',
-        'prorate_first_bill' => 'double',
-        'bill_start_date' => '\DateTime',
-        'tax_code_id' => 'int',
-        'restrict_down_payment' => 'bool',
-        'prorate_flag' => 'bool',
-        'invoice_description' => 'string',
-        'top_comment' => 'bool',
-        'bottom_comment' => 'bool',
-        'work_role' => '\Spinen\ConnectWise\Clients\Finance\Model\WorkRoleReference',
-        'work_type' => '\Spinen\ConnectWise\Clients\Finance\Model\WorkTypeReference',
-        'project_type_id' => 'int',
-        'invoice_template_setup_id' => 'int',
-        'bill_time' => 'string',
-        'bill_expenses' => 'string',
-        'bill_products' => 'string',
-        'billable_time_invoice' => 'bool',
-        'billable_expense_invoice' => 'bool',
-        'billable_product_invoice' => 'bool',
-        '_info' => '\Spinen\ConnectWise\Clients\Finance\Model\Metadata',
-        'period_type' => 'string'
+        'one_time_flag'              => 'bool',
+        'cover_agreement_time'       => 'bool',
+        'cover_agreement_product'    => 'bool',
+        'cover_agreement_expense'    => 'bool',
+        'cover_sales_tax'            => 'bool',
+        'carry_over_unused'          => 'bool',
+        'allow_overruns'             => 'bool',
+        'expired_days'               => 'int',
+        'limit'                      => 'int',
+        'expire_when_zero'           => 'bool',
+        'charge_to_firm'             => 'bool',
+        'employee_comp_rate'         => 'string',
+        'employee_comp_not_exceed'   => 'string',
+        'comp_hourly_rate'           => 'double',
+        'comp_limit_amount'          => 'double',
+        'bill_cycle_id'              => 'int',
+        'bill_one_time_flag'         => 'bool',
+        'bill_terms_id'              => 'int',
+        'invoicing_cycle'            => 'string',
+        'bill_to_company'            => '\Spinen\ConnectWise\Clients\Finance\Model\CompanyReference',
+        'bill_to_site'               => '\Spinen\ConnectWise\Clients\Finance\Model\SiteReference',
+        'bill_amount'                => 'double',
+        'taxable'                    => 'bool',
+        'prorate_first_bill'         => 'double',
+        'bill_start_date'            => '\DateTime',
+        'tax_code_id'                => 'int',
+        'restrict_down_payment'      => 'bool',
+        'prorate_flag'               => 'bool',
+        'invoice_description'        => 'string',
+        'top_comment'                => 'bool',
+        'bottom_comment'             => 'bool',
+        'work_role'                  => '\Spinen\ConnectWise\Clients\Finance\Model\WorkRoleReference',
+        'work_type'                  => '\Spinen\ConnectWise\Clients\Finance\Model\WorkTypeReference',
+        'project_type_id'            => 'int',
+        'invoice_template_setup_id'  => 'int',
+        'bill_time'                  => 'string',
+        'bill_expenses'              => 'string',
+        'bill_products'              => 'string',
+        'billable_time_invoice'      => 'bool',
+        'billable_expense_invoice'   => 'bool',
+        'billable_product_invoice'   => 'bool',
+        '_info'                      => '\Spinen\ConnectWise\Clients\Finance\Model\Metadata',
+        'period_type'                => 'string'
     ];
 
     public static function swaggerTypes()
@@ -137,76 +139,76 @@ class Agreement implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'id' => 'id',
-        'name' => 'name',
-        'type' => 'type',
-        'company' => 'company',
-        'contact' => 'contact',
-        'sub_contract_company' => 'subContractCompany',
-        'sub_contract_contact' => 'subContractContact',
-        'parent_agreement_id' => 'parentAgreementId',
-        'customer_po' => 'customerPO',
-        'location_id' => 'locationId',
-        'business_unit_id' => 'businessUnitId',
-        'restrict_location_flag' => 'restrictLocationFlag',
-        'restrict_department_flag' => 'restrictDepartmentFlag',
-        'start_date' => 'startDate',
-        'end_date' => 'endDate',
-        'no_ending_date_flag' => 'noEndingDateFlag',
-        'opportunity' => 'opportunity',
-        'cancelled_flag' => 'cancelledFlag',
-        'date_cancelled' => 'dateCancelled',
-        'reason_cancelled' => 'reasonCancelled',
-        'sla_id' => 'slaId',
-        'work_order' => 'workOrder',
-        'internal_notes' => 'internalNotes',
-        'application_units' => 'applicationUnits',
-        'application_limit' => 'applicationLimit',
-        'application_cycle' => 'applicationCycle',
+        'id'                         => 'id',
+        'name'                       => 'name',
+        'type'                       => 'type',
+        'company'                    => 'company',
+        'contact'                    => 'contact',
+        'sub_contract_company'       => 'subContractCompany',
+        'sub_contract_contact'       => 'subContractContact',
+        'parent_agreement_id'        => 'parentAgreementId',
+        'customer_po'                => 'customerPO',
+        'location_id'                => 'locationId',
+        'business_unit_id'           => 'businessUnitId',
+        'restrict_location_flag'     => 'restrictLocationFlag',
+        'restrict_department_flag'   => 'restrictDepartmentFlag',
+        'start_date'                 => 'startDate',
+        'end_date'                   => 'endDate',
+        'no_ending_date_flag'        => 'noEndingDateFlag',
+        'opportunity'                => 'opportunity',
+        'cancelled_flag'             => 'cancelledFlag',
+        'date_cancelled'             => 'dateCancelled',
+        'reason_cancelled'           => 'reasonCancelled',
+        'sla_id'                     => 'slaId',
+        'work_order'                 => 'workOrder',
+        'internal_notes'             => 'internalNotes',
+        'application_units'          => 'applicationUnits',
+        'application_limit'          => 'applicationLimit',
+        'application_cycle'          => 'applicationCycle',
         'application_unlimited_flag' => 'applicationUnlimitedFlag',
-        'one_time_flag' => 'oneTimeFlag',
-        'cover_agreement_time' => 'coverAgreementTime',
-        'cover_agreement_product' => 'coverAgreementProduct',
-        'cover_agreement_expense' => 'coverAgreementExpense',
-        'cover_sales_tax' => 'coverSalesTax',
-        'carry_over_unused' => 'carryOverUnused',
-        'allow_overruns' => 'allowOverruns',
-        'expired_days' => 'expiredDays',
-        'limit' => 'limit',
-        'expire_when_zero' => 'expireWhenZero',
-        'charge_to_firm' => 'chargeToFirm',
-        'employee_comp_rate' => 'employeeCompRate',
-        'employee_comp_not_exceed' => 'employeeCompNotExceed',
-        'comp_hourly_rate' => 'compHourlyRate',
-        'comp_limit_amount' => 'compLimitAmount',
-        'bill_cycle_id' => 'billCycleId',
-        'bill_one_time_flag' => 'billOneTimeFlag',
-        'bill_terms_id' => 'billTermsId',
-        'invoicing_cycle' => 'invoicingCycle',
-        'bill_to_company' => 'billToCompany',
-        'bill_to_site' => 'billToSite',
-        'bill_amount' => 'billAmount',
-        'taxable' => 'taxable',
-        'prorate_first_bill' => 'prorateFirstBill',
-        'bill_start_date' => 'billStartDate',
-        'tax_code_id' => 'taxCodeId',
-        'restrict_down_payment' => 'restrictDownPayment',
-        'prorate_flag' => 'prorateFlag',
-        'invoice_description' => 'invoiceDescription',
-        'top_comment' => 'topComment',
-        'bottom_comment' => 'bottomComment',
-        'work_role' => 'workRole',
-        'work_type' => 'workType',
-        'project_type_id' => 'projectTypeId',
-        'invoice_template_setup_id' => 'invoiceTemplateSetupId',
-        'bill_time' => 'billTime',
-        'bill_expenses' => 'billExpenses',
-        'bill_products' => 'billProducts',
-        'billable_time_invoice' => 'billableTimeInvoice',
-        'billable_expense_invoice' => 'billableExpenseInvoice',
-        'billable_product_invoice' => 'billableProductInvoice',
-        '_info' => '_info',
-        'period_type' => 'periodType'
+        'one_time_flag'              => 'oneTimeFlag',
+        'cover_agreement_time'       => 'coverAgreementTime',
+        'cover_agreement_product'    => 'coverAgreementProduct',
+        'cover_agreement_expense'    => 'coverAgreementExpense',
+        'cover_sales_tax'            => 'coverSalesTax',
+        'carry_over_unused'          => 'carryOverUnused',
+        'allow_overruns'             => 'allowOverruns',
+        'expired_days'               => 'expiredDays',
+        'limit'                      => 'limit',
+        'expire_when_zero'           => 'expireWhenZero',
+        'charge_to_firm'             => 'chargeToFirm',
+        'employee_comp_rate'         => 'employeeCompRate',
+        'employee_comp_not_exceed'   => 'employeeCompNotExceed',
+        'comp_hourly_rate'           => 'compHourlyRate',
+        'comp_limit_amount'          => 'compLimitAmount',
+        'bill_cycle_id'              => 'billCycleId',
+        'bill_one_time_flag'         => 'billOneTimeFlag',
+        'bill_terms_id'              => 'billTermsId',
+        'invoicing_cycle'            => 'invoicingCycle',
+        'bill_to_company'            => 'billToCompany',
+        'bill_to_site'               => 'billToSite',
+        'bill_amount'                => 'billAmount',
+        'taxable'                    => 'taxable',
+        'prorate_first_bill'         => 'prorateFirstBill',
+        'bill_start_date'            => 'billStartDate',
+        'tax_code_id'                => 'taxCodeId',
+        'restrict_down_payment'      => 'restrictDownPayment',
+        'prorate_flag'               => 'prorateFlag',
+        'invoice_description'        => 'invoiceDescription',
+        'top_comment'                => 'topComment',
+        'bottom_comment'             => 'bottomComment',
+        'work_role'                  => 'workRole',
+        'work_type'                  => 'workType',
+        'project_type_id'            => 'projectTypeId',
+        'invoice_template_setup_id'  => 'invoiceTemplateSetupId',
+        'bill_time'                  => 'billTime',
+        'bill_expenses'              => 'billExpenses',
+        'bill_products'              => 'billProducts',
+        'billable_time_invoice'      => 'billableTimeInvoice',
+        'billable_expense_invoice'   => 'billableExpenseInvoice',
+        'billable_product_invoice'   => 'billableProductInvoice',
+        '_info'                      => '_info',
+        'period_type'                => 'periodType'
     ];
 
 
@@ -215,76 +217,76 @@ class Agreement implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'id' => 'setId',
-        'name' => 'setName',
-        'type' => 'setType',
-        'company' => 'setCompany',
-        'contact' => 'setContact',
-        'sub_contract_company' => 'setSubContractCompany',
-        'sub_contract_contact' => 'setSubContractContact',
-        'parent_agreement_id' => 'setParentAgreementId',
-        'customer_po' => 'setCustomerPo',
-        'location_id' => 'setLocationId',
-        'business_unit_id' => 'setBusinessUnitId',
-        'restrict_location_flag' => 'setRestrictLocationFlag',
-        'restrict_department_flag' => 'setRestrictDepartmentFlag',
-        'start_date' => 'setStartDate',
-        'end_date' => 'setEndDate',
-        'no_ending_date_flag' => 'setNoEndingDateFlag',
-        'opportunity' => 'setOpportunity',
-        'cancelled_flag' => 'setCancelledFlag',
-        'date_cancelled' => 'setDateCancelled',
-        'reason_cancelled' => 'setReasonCancelled',
-        'sla_id' => 'setSlaId',
-        'work_order' => 'setWorkOrder',
-        'internal_notes' => 'setInternalNotes',
-        'application_units' => 'setApplicationUnits',
-        'application_limit' => 'setApplicationLimit',
-        'application_cycle' => 'setApplicationCycle',
+        'id'                         => 'setId',
+        'name'                       => 'setName',
+        'type'                       => 'setType',
+        'company'                    => 'setCompany',
+        'contact'                    => 'setContact',
+        'sub_contract_company'       => 'setSubContractCompany',
+        'sub_contract_contact'       => 'setSubContractContact',
+        'parent_agreement_id'        => 'setParentAgreementId',
+        'customer_po'                => 'setCustomerPo',
+        'location_id'                => 'setLocationId',
+        'business_unit_id'           => 'setBusinessUnitId',
+        'restrict_location_flag'     => 'setRestrictLocationFlag',
+        'restrict_department_flag'   => 'setRestrictDepartmentFlag',
+        'start_date'                 => 'setStartDate',
+        'end_date'                   => 'setEndDate',
+        'no_ending_date_flag'        => 'setNoEndingDateFlag',
+        'opportunity'                => 'setOpportunity',
+        'cancelled_flag'             => 'setCancelledFlag',
+        'date_cancelled'             => 'setDateCancelled',
+        'reason_cancelled'           => 'setReasonCancelled',
+        'sla_id'                     => 'setSlaId',
+        'work_order'                 => 'setWorkOrder',
+        'internal_notes'             => 'setInternalNotes',
+        'application_units'          => 'setApplicationUnits',
+        'application_limit'          => 'setApplicationLimit',
+        'application_cycle'          => 'setApplicationCycle',
         'application_unlimited_flag' => 'setApplicationUnlimitedFlag',
-        'one_time_flag' => 'setOneTimeFlag',
-        'cover_agreement_time' => 'setCoverAgreementTime',
-        'cover_agreement_product' => 'setCoverAgreementProduct',
-        'cover_agreement_expense' => 'setCoverAgreementExpense',
-        'cover_sales_tax' => 'setCoverSalesTax',
-        'carry_over_unused' => 'setCarryOverUnused',
-        'allow_overruns' => 'setAllowOverruns',
-        'expired_days' => 'setExpiredDays',
-        'limit' => 'setLimit',
-        'expire_when_zero' => 'setExpireWhenZero',
-        'charge_to_firm' => 'setChargeToFirm',
-        'employee_comp_rate' => 'setEmployeeCompRate',
-        'employee_comp_not_exceed' => 'setEmployeeCompNotExceed',
-        'comp_hourly_rate' => 'setCompHourlyRate',
-        'comp_limit_amount' => 'setCompLimitAmount',
-        'bill_cycle_id' => 'setBillCycleId',
-        'bill_one_time_flag' => 'setBillOneTimeFlag',
-        'bill_terms_id' => 'setBillTermsId',
-        'invoicing_cycle' => 'setInvoicingCycle',
-        'bill_to_company' => 'setBillToCompany',
-        'bill_to_site' => 'setBillToSite',
-        'bill_amount' => 'setBillAmount',
-        'taxable' => 'setTaxable',
-        'prorate_first_bill' => 'setProrateFirstBill',
-        'bill_start_date' => 'setBillStartDate',
-        'tax_code_id' => 'setTaxCodeId',
-        'restrict_down_payment' => 'setRestrictDownPayment',
-        'prorate_flag' => 'setProrateFlag',
-        'invoice_description' => 'setInvoiceDescription',
-        'top_comment' => 'setTopComment',
-        'bottom_comment' => 'setBottomComment',
-        'work_role' => 'setWorkRole',
-        'work_type' => 'setWorkType',
-        'project_type_id' => 'setProjectTypeId',
-        'invoice_template_setup_id' => 'setInvoiceTemplateSetupId',
-        'bill_time' => 'setBillTime',
-        'bill_expenses' => 'setBillExpenses',
-        'bill_products' => 'setBillProducts',
-        'billable_time_invoice' => 'setBillableTimeInvoice',
-        'billable_expense_invoice' => 'setBillableExpenseInvoice',
-        'billable_product_invoice' => 'setBillableProductInvoice',
-        '_info' => 'setInfo',
-        'period_type' => 'setPeriodType'
+        'one_time_flag'              => 'setOneTimeFlag',
+        'cover_agreement_time'       => 'setCoverAgreementTime',
+        'cover_agreement_product'    => 'setCoverAgreementProduct',
+        'cover_agreement_expense'    => 'setCoverAgreementExpense',
+        'cover_sales_tax'            => 'setCoverSalesTax',
+        'carry_over_unused'          => 'setCarryOverUnused',
+        'allow_overruns'             => 'setAllowOverruns',
+        'expired_days'               => 'setExpiredDays',
+        'limit'                      => 'setLimit',
+        'expire_when_zero'           => 'setExpireWhenZero',
+        'charge_to_firm'             => 'setChargeToFirm',
+        'employee_comp_rate'         => 'setEmployeeCompRate',
+        'employee_comp_not_exceed'   => 'setEmployeeCompNotExceed',
+        'comp_hourly_rate'           => 'setCompHourlyRate',
+        'comp_limit_amount'          => 'setCompLimitAmount',
+        'bill_cycle_id'              => 'setBillCycleId',
+        'bill_one_time_flag'         => 'setBillOneTimeFlag',
+        'bill_terms_id'              => 'setBillTermsId',
+        'invoicing_cycle'            => 'setInvoicingCycle',
+        'bill_to_company'            => 'setBillToCompany',
+        'bill_to_site'               => 'setBillToSite',
+        'bill_amount'                => 'setBillAmount',
+        'taxable'                    => 'setTaxable',
+        'prorate_first_bill'         => 'setProrateFirstBill',
+        'bill_start_date'            => 'setBillStartDate',
+        'tax_code_id'                => 'setTaxCodeId',
+        'restrict_down_payment'      => 'setRestrictDownPayment',
+        'prorate_flag'               => 'setProrateFlag',
+        'invoice_description'        => 'setInvoiceDescription',
+        'top_comment'                => 'setTopComment',
+        'bottom_comment'             => 'setBottomComment',
+        'work_role'                  => 'setWorkRole',
+        'work_type'                  => 'setWorkType',
+        'project_type_id'            => 'setProjectTypeId',
+        'invoice_template_setup_id'  => 'setInvoiceTemplateSetupId',
+        'bill_time'                  => 'setBillTime',
+        'bill_expenses'              => 'setBillExpenses',
+        'bill_products'              => 'setBillProducts',
+        'billable_time_invoice'      => 'setBillableTimeInvoice',
+        'billable_expense_invoice'   => 'setBillableExpenseInvoice',
+        'billable_product_invoice'   => 'setBillableProductInvoice',
+        '_info'                      => 'setInfo',
+        'period_type'                => 'setPeriodType'
     ];
 
 
@@ -293,76 +295,76 @@ class Agreement implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'id' => 'getId',
-        'name' => 'getName',
-        'type' => 'getType',
-        'company' => 'getCompany',
-        'contact' => 'getContact',
-        'sub_contract_company' => 'getSubContractCompany',
-        'sub_contract_contact' => 'getSubContractContact',
-        'parent_agreement_id' => 'getParentAgreementId',
-        'customer_po' => 'getCustomerPo',
-        'location_id' => 'getLocationId',
-        'business_unit_id' => 'getBusinessUnitId',
-        'restrict_location_flag' => 'getRestrictLocationFlag',
-        'restrict_department_flag' => 'getRestrictDepartmentFlag',
-        'start_date' => 'getStartDate',
-        'end_date' => 'getEndDate',
-        'no_ending_date_flag' => 'getNoEndingDateFlag',
-        'opportunity' => 'getOpportunity',
-        'cancelled_flag' => 'getCancelledFlag',
-        'date_cancelled' => 'getDateCancelled',
-        'reason_cancelled' => 'getReasonCancelled',
-        'sla_id' => 'getSlaId',
-        'work_order' => 'getWorkOrder',
-        'internal_notes' => 'getInternalNotes',
-        'application_units' => 'getApplicationUnits',
-        'application_limit' => 'getApplicationLimit',
-        'application_cycle' => 'getApplicationCycle',
+        'id'                         => 'getId',
+        'name'                       => 'getName',
+        'type'                       => 'getType',
+        'company'                    => 'getCompany',
+        'contact'                    => 'getContact',
+        'sub_contract_company'       => 'getSubContractCompany',
+        'sub_contract_contact'       => 'getSubContractContact',
+        'parent_agreement_id'        => 'getParentAgreementId',
+        'customer_po'                => 'getCustomerPo',
+        'location_id'                => 'getLocationId',
+        'business_unit_id'           => 'getBusinessUnitId',
+        'restrict_location_flag'     => 'getRestrictLocationFlag',
+        'restrict_department_flag'   => 'getRestrictDepartmentFlag',
+        'start_date'                 => 'getStartDate',
+        'end_date'                   => 'getEndDate',
+        'no_ending_date_flag'        => 'getNoEndingDateFlag',
+        'opportunity'                => 'getOpportunity',
+        'cancelled_flag'             => 'getCancelledFlag',
+        'date_cancelled'             => 'getDateCancelled',
+        'reason_cancelled'           => 'getReasonCancelled',
+        'sla_id'                     => 'getSlaId',
+        'work_order'                 => 'getWorkOrder',
+        'internal_notes'             => 'getInternalNotes',
+        'application_units'          => 'getApplicationUnits',
+        'application_limit'          => 'getApplicationLimit',
+        'application_cycle'          => 'getApplicationCycle',
         'application_unlimited_flag' => 'getApplicationUnlimitedFlag',
-        'one_time_flag' => 'getOneTimeFlag',
-        'cover_agreement_time' => 'getCoverAgreementTime',
-        'cover_agreement_product' => 'getCoverAgreementProduct',
-        'cover_agreement_expense' => 'getCoverAgreementExpense',
-        'cover_sales_tax' => 'getCoverSalesTax',
-        'carry_over_unused' => 'getCarryOverUnused',
-        'allow_overruns' => 'getAllowOverruns',
-        'expired_days' => 'getExpiredDays',
-        'limit' => 'getLimit',
-        'expire_when_zero' => 'getExpireWhenZero',
-        'charge_to_firm' => 'getChargeToFirm',
-        'employee_comp_rate' => 'getEmployeeCompRate',
-        'employee_comp_not_exceed' => 'getEmployeeCompNotExceed',
-        'comp_hourly_rate' => 'getCompHourlyRate',
-        'comp_limit_amount' => 'getCompLimitAmount',
-        'bill_cycle_id' => 'getBillCycleId',
-        'bill_one_time_flag' => 'getBillOneTimeFlag',
-        'bill_terms_id' => 'getBillTermsId',
-        'invoicing_cycle' => 'getInvoicingCycle',
-        'bill_to_company' => 'getBillToCompany',
-        'bill_to_site' => 'getBillToSite',
-        'bill_amount' => 'getBillAmount',
-        'taxable' => 'getTaxable',
-        'prorate_first_bill' => 'getProrateFirstBill',
-        'bill_start_date' => 'getBillStartDate',
-        'tax_code_id' => 'getTaxCodeId',
-        'restrict_down_payment' => 'getRestrictDownPayment',
-        'prorate_flag' => 'getProrateFlag',
-        'invoice_description' => 'getInvoiceDescription',
-        'top_comment' => 'getTopComment',
-        'bottom_comment' => 'getBottomComment',
-        'work_role' => 'getWorkRole',
-        'work_type' => 'getWorkType',
-        'project_type_id' => 'getProjectTypeId',
-        'invoice_template_setup_id' => 'getInvoiceTemplateSetupId',
-        'bill_time' => 'getBillTime',
-        'bill_expenses' => 'getBillExpenses',
-        'bill_products' => 'getBillProducts',
-        'billable_time_invoice' => 'getBillableTimeInvoice',
-        'billable_expense_invoice' => 'getBillableExpenseInvoice',
-        'billable_product_invoice' => 'getBillableProductInvoice',
-        '_info' => 'getInfo',
-        'period_type' => 'getPeriodType'
+        'one_time_flag'              => 'getOneTimeFlag',
+        'cover_agreement_time'       => 'getCoverAgreementTime',
+        'cover_agreement_product'    => 'getCoverAgreementProduct',
+        'cover_agreement_expense'    => 'getCoverAgreementExpense',
+        'cover_sales_tax'            => 'getCoverSalesTax',
+        'carry_over_unused'          => 'getCarryOverUnused',
+        'allow_overruns'             => 'getAllowOverruns',
+        'expired_days'               => 'getExpiredDays',
+        'limit'                      => 'getLimit',
+        'expire_when_zero'           => 'getExpireWhenZero',
+        'charge_to_firm'             => 'getChargeToFirm',
+        'employee_comp_rate'         => 'getEmployeeCompRate',
+        'employee_comp_not_exceed'   => 'getEmployeeCompNotExceed',
+        'comp_hourly_rate'           => 'getCompHourlyRate',
+        'comp_limit_amount'          => 'getCompLimitAmount',
+        'bill_cycle_id'              => 'getBillCycleId',
+        'bill_one_time_flag'         => 'getBillOneTimeFlag',
+        'bill_terms_id'              => 'getBillTermsId',
+        'invoicing_cycle'            => 'getInvoicingCycle',
+        'bill_to_company'            => 'getBillToCompany',
+        'bill_to_site'               => 'getBillToSite',
+        'bill_amount'                => 'getBillAmount',
+        'taxable'                    => 'getTaxable',
+        'prorate_first_bill'         => 'getProrateFirstBill',
+        'bill_start_date'            => 'getBillStartDate',
+        'tax_code_id'                => 'getTaxCodeId',
+        'restrict_down_payment'      => 'getRestrictDownPayment',
+        'prorate_flag'               => 'getProrateFlag',
+        'invoice_description'        => 'getInvoiceDescription',
+        'top_comment'                => 'getTopComment',
+        'bottom_comment'             => 'getBottomComment',
+        'work_role'                  => 'getWorkRole',
+        'work_type'                  => 'getWorkType',
+        'project_type_id'            => 'getProjectTypeId',
+        'invoice_template_setup_id'  => 'getInvoiceTemplateSetupId',
+        'bill_time'                  => 'getBillTime',
+        'bill_expenses'              => 'getBillExpenses',
+        'bill_products'              => 'getBillProducts',
+        'billable_time_invoice'      => 'getBillableTimeInvoice',
+        'billable_expense_invoice'   => 'getBillableExpenseInvoice',
+        'billable_product_invoice'   => 'getBillableProductInvoice',
+        '_info'                      => 'getInfo',
+        'period_type'                => 'getPeriodType'
     ];
 
     public static function attributeMap()
@@ -414,9 +416,8 @@ class Agreement implements ArrayAccess
     const PERIOD_TYPE_FUTURE = 'Future';
     const PERIOD_TYPE_BOTH = 'Both';
     const PERIOD_TYPE_UNDEFINED = 'Undefined';
-    
 
-    
+
     /**
      * Gets allowable values of the enum
      * @return string[]
@@ -429,7 +430,7 @@ class Agreement implements ArrayAccess
             self::APPLICATION_UNITS_INCIDENTS,
         ];
     }
-    
+
     /**
      * Gets allowable values of the enum
      * @return string[]
@@ -447,7 +448,7 @@ class Agreement implements ArrayAccess
             self::APPLICATION_CYCLE_CALENDAR_YEAR,
         ];
     }
-    
+
     /**
      * Gets allowable values of the enum
      * @return string[]
@@ -459,7 +460,7 @@ class Agreement implements ArrayAccess
             self::EMPLOYEE_COMP_RATE_HOURLY,
         ];
     }
-    
+
     /**
      * Gets allowable values of the enum
      * @return string[]
@@ -472,7 +473,7 @@ class Agreement implements ArrayAccess
             self::EMPLOYEE_COMP_NOT_EXCEED_AMOUNT,
         ];
     }
-    
+
     /**
      * Gets allowable values of the enum
      * @return string[]
@@ -484,7 +485,7 @@ class Agreement implements ArrayAccess
             self::INVOICING_CYCLE_CONTRACT_YEAR,
         ];
     }
-    
+
     /**
      * Gets allowable values of the enum
      * @return string[]
@@ -498,7 +499,7 @@ class Agreement implements ArrayAccess
             self::BILL_TIME_NO_DEFAULT,
         ];
     }
-    
+
     /**
      * Gets allowable values of the enum
      * @return string[]
@@ -512,7 +513,7 @@ class Agreement implements ArrayAccess
             self::BILL_EXPENSES_NO_DEFAULT,
         ];
     }
-    
+
     /**
      * Gets allowable values of the enum
      * @return string[]
@@ -526,7 +527,7 @@ class Agreement implements ArrayAccess
             self::BILL_PRODUCTS_NO_DEFAULT,
         ];
     }
-    
+
     /**
      * Gets allowable values of the enum
      * @return string[]
@@ -540,7 +541,7 @@ class Agreement implements ArrayAccess
             self::PERIOD_TYPE_UNDEFINED,
         ];
     }
-    
+
 
     /**
      * Associative array for storing property values
@@ -550,7 +551,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param  mixed[]  $data  Associated array of property values initializing the model
      */
     public function __construct(array $data = null)
     {
@@ -671,7 +672,10 @@ class Agreement implements ArrayAccess
             $invalid_properties[] = "invalid value for 'application_units', must be one of #{allowed_values}.";
         }
 
-        $allowed_values = ["Contract2Weeks", "Contract4Weeks", "ContractYear", "CalendarMonth", "CalendarQuarter", "CalendarWeek", "ContractQuarter", "CalendarYear"];
+        $allowed_values = [
+            "Contract2Weeks", "Contract4Weeks", "ContractYear", "CalendarMonth", "CalendarQuarter", "CalendarWeek",
+            "ContractQuarter", "CalendarYear"
+        ];
         if (!in_array($this->container['application_cycle'], $allowed_values)) {
             $invalid_properties[] = "invalid value for 'application_cycle', must be one of #{allowed_values}.";
         }
@@ -753,7 +757,10 @@ class Agreement implements ArrayAccess
         if (!in_array($this->container['application_units'], $allowed_values)) {
             return false;
         }
-        $allowed_values = ["Contract2Weeks", "Contract4Weeks", "ContractYear", "CalendarMonth", "CalendarQuarter", "CalendarWeek", "ContractQuarter", "CalendarYear"];
+        $allowed_values = [
+            "Contract2Weeks", "Contract4Weeks", "ContractYear", "CalendarMonth", "CalendarQuarter", "CalendarWeek",
+            "ContractQuarter", "CalendarYear"
+        ];
         if (!in_array($this->container['application_cycle'], $allowed_values)) {
             return false;
         }
@@ -800,7 +807,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets id
-     * @param int $id
+     * @param  int  $id
      * @return $this
      */
     public function setId($id)
@@ -821,7 +828,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets name
-     * @param string $name
+     * @param  string  $name
      * @return $this
      */
     public function setName($name)
@@ -846,7 +853,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets type
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\AgreementTypeReference $type
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\AgreementTypeReference  $type
      * @return $this
      */
     public function setType($type)
@@ -867,7 +874,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets company
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\CompanyReference $company
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\CompanyReference  $company
      * @return $this
      */
     public function setCompany($company)
@@ -888,7 +895,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets contact
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\ContactReference $contact
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\ContactReference  $contact
      * @return $this
      */
     public function setContact($contact)
@@ -909,7 +916,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets sub_contract_company
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\CompanyReference $sub_contract_company
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\CompanyReference  $sub_contract_company
      * @return $this
      */
     public function setSubContractCompany($sub_contract_company)
@@ -930,7 +937,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets sub_contract_contact
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\ContactReference $sub_contract_contact
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\ContactReference  $sub_contract_contact
      * @return $this
      */
     public function setSubContractContact($sub_contract_contact)
@@ -951,7 +958,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets parent_agreement_id
-     * @param int $parent_agreement_id
+     * @param  int  $parent_agreement_id
      * @return $this
      */
     public function setParentAgreementId($parent_agreement_id)
@@ -972,7 +979,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets customer_po
-     * @param string $customer_po
+     * @param  string  $customer_po
      * @return $this
      */
     public function setCustomerPo($customer_po)
@@ -997,7 +1004,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets location_id
-     * @param int $location_id
+     * @param  int  $location_id
      * @return $this
      */
     public function setLocationId($location_id)
@@ -1018,7 +1025,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets business_unit_id
-     * @param int $business_unit_id
+     * @param  int  $business_unit_id
      * @return $this
      */
     public function setBusinessUnitId($business_unit_id)
@@ -1039,7 +1046,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets restrict_location_flag
-     * @param bool $restrict_location_flag
+     * @param  bool  $restrict_location_flag
      * @return $this
      */
     public function setRestrictLocationFlag($restrict_location_flag)
@@ -1060,7 +1067,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets restrict_department_flag
-     * @param bool $restrict_department_flag
+     * @param  bool  $restrict_department_flag
      * @return $this
      */
     public function setRestrictDepartmentFlag($restrict_department_flag)
@@ -1081,7 +1088,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets start_date
-     * @param \DateTime $start_date
+     * @param  \DateTime  $start_date
      * @return $this
      */
     public function setStartDate($start_date)
@@ -1102,7 +1109,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets end_date
-     * @param \DateTime $end_date
+     * @param  \DateTime  $end_date
      * @return $this
      */
     public function setEndDate($end_date)
@@ -1123,7 +1130,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets no_ending_date_flag
-     * @param bool $no_ending_date_flag
+     * @param  bool  $no_ending_date_flag
      * @return $this
      */
     public function setNoEndingDateFlag($no_ending_date_flag)
@@ -1144,7 +1151,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets opportunity
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\OpportunityReference $opportunity
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\OpportunityReference  $opportunity
      * @return $this
      */
     public function setOpportunity($opportunity)
@@ -1165,7 +1172,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets cancelled_flag
-     * @param bool $cancelled_flag
+     * @param  bool  $cancelled_flag
      * @return $this
      */
     public function setCancelledFlag($cancelled_flag)
@@ -1186,7 +1193,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets date_cancelled
-     * @param \DateTime $date_cancelled
+     * @param  \DateTime  $date_cancelled
      * @return $this
      */
     public function setDateCancelled($date_cancelled)
@@ -1207,7 +1214,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets reason_cancelled
-     * @param string $reason_cancelled
+     * @param  string  $reason_cancelled
      * @return $this
      */
     public function setReasonCancelled($reason_cancelled)
@@ -1232,7 +1239,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets sla_id
-     * @param int $sla_id
+     * @param  int  $sla_id
      * @return $this
      */
     public function setSlaId($sla_id)
@@ -1253,7 +1260,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets work_order
-     * @param string $work_order
+     * @param  string  $work_order
      * @return $this
      */
     public function setWorkOrder($work_order)
@@ -1278,7 +1285,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets internal_notes
-     * @param string $internal_notes
+     * @param  string  $internal_notes
      * @return $this
      */
     public function setInternalNotes($internal_notes)
@@ -1303,7 +1310,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets application_units
-     * @param string $application_units
+     * @param  string  $application_units
      * @return $this
      */
     public function setApplicationUnits($application_units)
@@ -1328,7 +1335,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets application_limit
-     * @param double $application_limit
+     * @param  double  $application_limit
      * @return $this
      */
     public function setApplicationLimit($application_limit)
@@ -1349,12 +1356,15 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets application_cycle
-     * @param string $application_cycle
+     * @param  string  $application_cycle
      * @return $this
      */
     public function setApplicationCycle($application_cycle)
     {
-        $allowed_values = array('Contract2Weeks', 'Contract4Weeks', 'ContractYear', 'CalendarMonth', 'CalendarQuarter', 'CalendarWeek', 'ContractQuarter', 'CalendarYear');
+        $allowed_values = array(
+            'Contract2Weeks', 'Contract4Weeks', 'ContractYear', 'CalendarMonth', 'CalendarQuarter', 'CalendarWeek',
+            'ContractQuarter', 'CalendarYear'
+        );
         if (!is_null($application_cycle) && (!in_array($application_cycle, $allowed_values))) {
             throw new \InvalidArgumentException("Invalid value for 'application_cycle', must be one of 'Contract2Weeks', 'Contract4Weeks', 'ContractYear', 'CalendarMonth', 'CalendarQuarter', 'CalendarWeek', 'ContractQuarter', 'CalendarYear'");
         }
@@ -1374,7 +1384,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets application_unlimited_flag
-     * @param bool $application_unlimited_flag
+     * @param  bool  $application_unlimited_flag
      * @return $this
      */
     public function setApplicationUnlimitedFlag($application_unlimited_flag)
@@ -1395,7 +1405,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets one_time_flag
-     * @param bool $one_time_flag
+     * @param  bool  $one_time_flag
      * @return $this
      */
     public function setOneTimeFlag($one_time_flag)
@@ -1416,7 +1426,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets cover_agreement_time
-     * @param bool $cover_agreement_time
+     * @param  bool  $cover_agreement_time
      * @return $this
      */
     public function setCoverAgreementTime($cover_agreement_time)
@@ -1437,7 +1447,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets cover_agreement_product
-     * @param bool $cover_agreement_product
+     * @param  bool  $cover_agreement_product
      * @return $this
      */
     public function setCoverAgreementProduct($cover_agreement_product)
@@ -1458,7 +1468,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets cover_agreement_expense
-     * @param bool $cover_agreement_expense
+     * @param  bool  $cover_agreement_expense
      * @return $this
      */
     public function setCoverAgreementExpense($cover_agreement_expense)
@@ -1479,7 +1489,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets cover_sales_tax
-     * @param bool $cover_sales_tax
+     * @param  bool  $cover_sales_tax
      * @return $this
      */
     public function setCoverSalesTax($cover_sales_tax)
@@ -1500,7 +1510,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets carry_over_unused
-     * @param bool $carry_over_unused
+     * @param  bool  $carry_over_unused
      * @return $this
      */
     public function setCarryOverUnused($carry_over_unused)
@@ -1521,7 +1531,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets allow_overruns
-     * @param bool $allow_overruns
+     * @param  bool  $allow_overruns
      * @return $this
      */
     public function setAllowOverruns($allow_overruns)
@@ -1542,7 +1552,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets expired_days
-     * @param int $expired_days
+     * @param  int  $expired_days
      * @return $this
      */
     public function setExpiredDays($expired_days)
@@ -1563,7 +1573,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets limit
-     * @param int $limit
+     * @param  int  $limit
      * @return $this
      */
     public function setLimit($limit)
@@ -1584,7 +1594,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets expire_when_zero
-     * @param bool $expire_when_zero
+     * @param  bool  $expire_when_zero
      * @return $this
      */
     public function setExpireWhenZero($expire_when_zero)
@@ -1605,7 +1615,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets charge_to_firm
-     * @param bool $charge_to_firm
+     * @param  bool  $charge_to_firm
      * @return $this
      */
     public function setChargeToFirm($charge_to_firm)
@@ -1626,7 +1636,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets employee_comp_rate
-     * @param string $employee_comp_rate
+     * @param  string  $employee_comp_rate
      * @return $this
      */
     public function setEmployeeCompRate($employee_comp_rate)
@@ -1651,7 +1661,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets employee_comp_not_exceed
-     * @param string $employee_comp_not_exceed
+     * @param  string  $employee_comp_not_exceed
      * @return $this
      */
     public function setEmployeeCompNotExceed($employee_comp_not_exceed)
@@ -1676,7 +1686,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets comp_hourly_rate
-     * @param double $comp_hourly_rate
+     * @param  double  $comp_hourly_rate
      * @return $this
      */
     public function setCompHourlyRate($comp_hourly_rate)
@@ -1697,7 +1707,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets comp_limit_amount
-     * @param double $comp_limit_amount
+     * @param  double  $comp_limit_amount
      * @return $this
      */
     public function setCompLimitAmount($comp_limit_amount)
@@ -1718,7 +1728,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets bill_cycle_id
-     * @param int $bill_cycle_id
+     * @param  int  $bill_cycle_id
      * @return $this
      */
     public function setBillCycleId($bill_cycle_id)
@@ -1739,7 +1749,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets bill_one_time_flag
-     * @param bool $bill_one_time_flag
+     * @param  bool  $bill_one_time_flag
      * @return $this
      */
     public function setBillOneTimeFlag($bill_one_time_flag)
@@ -1760,7 +1770,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets bill_terms_id
-     * @param int $bill_terms_id
+     * @param  int  $bill_terms_id
      * @return $this
      */
     public function setBillTermsId($bill_terms_id)
@@ -1781,7 +1791,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets invoicing_cycle
-     * @param string $invoicing_cycle
+     * @param  string  $invoicing_cycle
      * @return $this
      */
     public function setInvoicingCycle($invoicing_cycle)
@@ -1806,7 +1816,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets bill_to_company
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\CompanyReference $bill_to_company
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\CompanyReference  $bill_to_company
      * @return $this
      */
     public function setBillToCompany($bill_to_company)
@@ -1827,7 +1837,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets bill_to_site
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\SiteReference $bill_to_site
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\SiteReference  $bill_to_site
      * @return $this
      */
     public function setBillToSite($bill_to_site)
@@ -1848,7 +1858,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets bill_amount
-     * @param double $bill_amount
+     * @param  double  $bill_amount
      * @return $this
      */
     public function setBillAmount($bill_amount)
@@ -1869,7 +1879,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets taxable
-     * @param bool $taxable
+     * @param  bool  $taxable
      * @return $this
      */
     public function setTaxable($taxable)
@@ -1890,7 +1900,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets prorate_first_bill
-     * @param double $prorate_first_bill
+     * @param  double  $prorate_first_bill
      * @return $this
      */
     public function setProrateFirstBill($prorate_first_bill)
@@ -1911,7 +1921,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets bill_start_date
-     * @param \DateTime $bill_start_date
+     * @param  \DateTime  $bill_start_date
      * @return $this
      */
     public function setBillStartDate($bill_start_date)
@@ -1932,7 +1942,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets tax_code_id
-     * @param int $tax_code_id
+     * @param  int  $tax_code_id
      * @return $this
      */
     public function setTaxCodeId($tax_code_id)
@@ -1953,7 +1963,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets restrict_down_payment
-     * @param bool $restrict_down_payment
+     * @param  bool  $restrict_down_payment
      * @return $this
      */
     public function setRestrictDownPayment($restrict_down_payment)
@@ -1974,7 +1984,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets prorate_flag
-     * @param bool $prorate_flag
+     * @param  bool  $prorate_flag
      * @return $this
      */
     public function setProrateFlag($prorate_flag)
@@ -1995,7 +2005,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets invoice_description
-     * @param string $invoice_description
+     * @param  string  $invoice_description
      * @return $this
      */
     public function setInvoiceDescription($invoice_description)
@@ -2016,7 +2026,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets top_comment
-     * @param bool $top_comment
+     * @param  bool  $top_comment
      * @return $this
      */
     public function setTopComment($top_comment)
@@ -2037,7 +2047,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets bottom_comment
-     * @param bool $bottom_comment
+     * @param  bool  $bottom_comment
      * @return $this
      */
     public function setBottomComment($bottom_comment)
@@ -2058,7 +2068,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets work_role
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\WorkRoleReference $work_role
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\WorkRoleReference  $work_role
      * @return $this
      */
     public function setWorkRole($work_role)
@@ -2079,7 +2089,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets work_type
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\WorkTypeReference $work_type
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\WorkTypeReference  $work_type
      * @return $this
      */
     public function setWorkType($work_type)
@@ -2100,7 +2110,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets project_type_id
-     * @param int $project_type_id
+     * @param  int  $project_type_id
      * @return $this
      */
     public function setProjectTypeId($project_type_id)
@@ -2121,7 +2131,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets invoice_template_setup_id
-     * @param int $invoice_template_setup_id
+     * @param  int  $invoice_template_setup_id
      * @return $this
      */
     public function setInvoiceTemplateSetupId($invoice_template_setup_id)
@@ -2142,7 +2152,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets bill_time
-     * @param string $bill_time
+     * @param  string  $bill_time
      * @return $this
      */
     public function setBillTime($bill_time)
@@ -2167,7 +2177,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets bill_expenses
-     * @param string $bill_expenses
+     * @param  string  $bill_expenses
      * @return $this
      */
     public function setBillExpenses($bill_expenses)
@@ -2192,7 +2202,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets bill_products
-     * @param string $bill_products
+     * @param  string  $bill_products
      * @return $this
      */
     public function setBillProducts($bill_products)
@@ -2217,7 +2227,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets billable_time_invoice
-     * @param bool $billable_time_invoice
+     * @param  bool  $billable_time_invoice
      * @return $this
      */
     public function setBillableTimeInvoice($billable_time_invoice)
@@ -2238,7 +2248,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets billable_expense_invoice
-     * @param bool $billable_expense_invoice
+     * @param  bool  $billable_expense_invoice
      * @return $this
      */
     public function setBillableExpenseInvoice($billable_expense_invoice)
@@ -2259,7 +2269,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets billable_product_invoice
-     * @param bool $billable_product_invoice
+     * @param  bool  $billable_product_invoice
      * @return $this
      */
     public function setBillableProductInvoice($billable_product_invoice)
@@ -2280,7 +2290,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets _info
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\Metadata $_info Metadata of the entity
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\Metadata  $_info  Metadata of the entity
      * @return $this
      */
     public function setInfo($_info)
@@ -2301,7 +2311,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets period_type
-     * @param string $period_type
+     * @param  string  $period_type
      * @return $this
      */
     public function setPeriodType($period_type)
@@ -2314,9 +2324,10 @@ class Agreement implements ArrayAccess
 
         return $this;
     }
+
     /**
      * Returns true if offset exists. False otherwise.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return boolean
      */
     public function offsetExists($offset)
@@ -2326,7 +2337,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Gets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return mixed
      */
     public function offsetGet($offset)
@@ -2336,8 +2347,8 @@ class Agreement implements ArrayAccess
 
     /**
      * Sets value based on offset.
-     * @param  integer $offset Offset
-     * @param  mixed   $value  Value to be set
+     * @param  integer  $offset  Offset
+     * @param  mixed  $value  Value to be set
      * @return void
      */
     public function offsetSet($offset, $value)
@@ -2351,7 +2362,7 @@ class Agreement implements ArrayAccess
 
     /**
      * Unsets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return void
      */
     public function offsetUnset($offset)
@@ -2366,7 +2377,8 @@ class Agreement implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this),
+                JSON_PRETTY_PRINT);
         }
 
         return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this));

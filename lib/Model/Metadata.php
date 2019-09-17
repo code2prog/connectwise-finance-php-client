@@ -34,8 +34,10 @@ use \ArrayAccess;
 /**
  * Metadata Class Doc Comment
  *
- * @category    Class */
- // @description Metadata of the entity
+ * @category    Class
+ */
+// @description Metadata of the entity
+
 /**
  * @package     Spinen\ConnectWise\Clients\Finance
  * @author      Swagger Codegen team
@@ -46,17 +48,17 @@ class Metadata implements ArrayAccess
     const DISCRIMINATOR = null;
 
     /**
-      * The original name of the model.
-      * @var string
-      */
+     * The original name of the model.
+     * @var string
+     */
     protected static $swaggerModelName = 'Metadata';
 
     /**
-      * Array of property to type mappings. Used for (de)serialization
-      * @var string[]
-      */
+     * Array of property to type mappings. Used for (de)serialization
+     * @var string[]
+     */
     protected static $swaggerTypes = [
-        
+
     ];
 
     public static function swaggerTypes()
@@ -69,7 +71,7 @@ class Metadata implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        
+
     ];
 
 
@@ -78,7 +80,7 @@ class Metadata implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        
+
     ];
 
 
@@ -87,7 +89,7 @@ class Metadata implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        
+
     ];
 
     public static function attributeMap()
@@ -105,9 +107,6 @@ class Metadata implements ArrayAccess
         return self::$getters;
     }
 
-    
-
-    
 
     /**
      * Associative array for storing property values
@@ -117,7 +116,7 @@ class Metadata implements ArrayAccess
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param  mixed[]  $data  Associated array of property values initializing the model
      */
     public function __construct(array $data = null)
     {
@@ -147,7 +146,7 @@ class Metadata implements ArrayAccess
 
     /**
      * Returns true if offset exists. False otherwise.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return boolean
      */
     public function offsetExists($offset)
@@ -157,7 +156,7 @@ class Metadata implements ArrayAccess
 
     /**
      * Gets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return mixed
      */
     public function offsetGet($offset)
@@ -167,8 +166,8 @@ class Metadata implements ArrayAccess
 
     /**
      * Sets value based on offset.
-     * @param  integer $offset Offset
-     * @param  mixed   $value  Value to be set
+     * @param  integer  $offset  Offset
+     * @param  mixed  $value  Value to be set
      * @return void
      */
     public function offsetSet($offset, $value)
@@ -182,7 +181,7 @@ class Metadata implements ArrayAccess
 
     /**
      * Unsets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return void
      */
     public function offsetUnset($offset)
@@ -197,7 +196,8 @@ class Metadata implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this),
+                JSON_PRETTY_PRINT);
         }
 
         return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this));

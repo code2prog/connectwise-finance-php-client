@@ -34,7 +34,9 @@ use \ArrayAccess;
 /**
  * CreateAccountingBatchRequest Class Doc Comment
  *
- * @category    Class */
+ * @category    Class
+ */
+
 /**
  * @package     Spinen\ConnectWise\Clients\Finance
  * @author      Swagger Codegen team
@@ -45,24 +47,24 @@ class CreateAccountingBatchRequest implements ArrayAccess
     const DISCRIMINATOR = null;
 
     /**
-      * The original name of the model.
-      * @var string
-      */
+     * The original name of the model.
+     * @var string
+     */
     protected static $swaggerModelName = 'CreateAccountingBatchRequest';
 
     /**
-      * Array of property to type mappings. Used for (de)serialization
-      * @var string[]
-      */
+     * Array of property to type mappings. Used for (de)serialization
+     * @var string[]
+     */
     protected static $swaggerTypes = [
-        'id' => 'int',
-        'batch_identifier' => 'string',
+        'id'                      => 'int',
+        'batch_identifier'        => 'string',
         'gl_interface_identifier' => 'string',
-        'export_invoices_flag' => 'bool',
-        'export_expenses_flag' => 'bool',
-        'export_products_flag' => 'bool',
-        'processed_record_ids' => 'int[]',
-        'summarize_expenses' => 'bool'
+        'export_invoices_flag'    => 'bool',
+        'export_expenses_flag'    => 'bool',
+        'export_products_flag'    => 'bool',
+        'processed_record_ids'    => 'int[]',
+        'summarize_expenses'      => 'bool'
     ];
 
     public static function swaggerTypes()
@@ -75,14 +77,14 @@ class CreateAccountingBatchRequest implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'id' => 'id',
-        'batch_identifier' => 'batchIdentifier',
+        'id'                      => 'id',
+        'batch_identifier'        => 'batchIdentifier',
         'gl_interface_identifier' => 'glInterfaceIdentifier',
-        'export_invoices_flag' => 'exportInvoicesFlag',
-        'export_expenses_flag' => 'exportExpensesFlag',
-        'export_products_flag' => 'exportProductsFlag',
-        'processed_record_ids' => 'processedRecordIds',
-        'summarize_expenses' => 'summarizeExpenses'
+        'export_invoices_flag'    => 'exportInvoicesFlag',
+        'export_expenses_flag'    => 'exportExpensesFlag',
+        'export_products_flag'    => 'exportProductsFlag',
+        'processed_record_ids'    => 'processedRecordIds',
+        'summarize_expenses'      => 'summarizeExpenses'
     ];
 
 
@@ -91,14 +93,14 @@ class CreateAccountingBatchRequest implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'id' => 'setId',
-        'batch_identifier' => 'setBatchIdentifier',
+        'id'                      => 'setId',
+        'batch_identifier'        => 'setBatchIdentifier',
         'gl_interface_identifier' => 'setGlInterfaceIdentifier',
-        'export_invoices_flag' => 'setExportInvoicesFlag',
-        'export_expenses_flag' => 'setExportExpensesFlag',
-        'export_products_flag' => 'setExportProductsFlag',
-        'processed_record_ids' => 'setProcessedRecordIds',
-        'summarize_expenses' => 'setSummarizeExpenses'
+        'export_invoices_flag'    => 'setExportInvoicesFlag',
+        'export_expenses_flag'    => 'setExportExpensesFlag',
+        'export_products_flag'    => 'setExportProductsFlag',
+        'processed_record_ids'    => 'setProcessedRecordIds',
+        'summarize_expenses'      => 'setSummarizeExpenses'
     ];
 
 
@@ -107,14 +109,14 @@ class CreateAccountingBatchRequest implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'id' => 'getId',
-        'batch_identifier' => 'getBatchIdentifier',
+        'id'                      => 'getId',
+        'batch_identifier'        => 'getBatchIdentifier',
         'gl_interface_identifier' => 'getGlInterfaceIdentifier',
-        'export_invoices_flag' => 'getExportInvoicesFlag',
-        'export_expenses_flag' => 'getExportExpensesFlag',
-        'export_products_flag' => 'getExportProductsFlag',
-        'processed_record_ids' => 'getProcessedRecordIds',
-        'summarize_expenses' => 'getSummarizeExpenses'
+        'export_invoices_flag'    => 'getExportInvoicesFlag',
+        'export_expenses_flag'    => 'getExportExpensesFlag',
+        'export_products_flag'    => 'getExportProductsFlag',
+        'processed_record_ids'    => 'getProcessedRecordIds',
+        'summarize_expenses'      => 'getSummarizeExpenses'
     ];
 
     public static function attributeMap()
@@ -132,9 +134,6 @@ class CreateAccountingBatchRequest implements ArrayAccess
         return self::$getters;
     }
 
-    
-
-    
 
     /**
      * Associative array for storing property values
@@ -144,7 +143,7 @@ class CreateAccountingBatchRequest implements ArrayAccess
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param  mixed[]  $data  Associated array of property values initializing the model
      */
     public function __construct(array $data = null)
     {
@@ -211,7 +210,7 @@ class CreateAccountingBatchRequest implements ArrayAccess
 
     /**
      * Sets id
-     * @param int $id
+     * @param  int  $id
      * @return $this
      */
     public function setId($id)
@@ -232,7 +231,7 @@ class CreateAccountingBatchRequest implements ArrayAccess
 
     /**
      * Sets batch_identifier
-     * @param string $batch_identifier
+     * @param  string  $batch_identifier
      * @return $this
      */
     public function setBatchIdentifier($batch_identifier)
@@ -257,7 +256,7 @@ class CreateAccountingBatchRequest implements ArrayAccess
 
     /**
      * Sets gl_interface_identifier
-     * @param string $gl_interface_identifier
+     * @param  string  $gl_interface_identifier
      * @return $this
      */
     public function setGlInterfaceIdentifier($gl_interface_identifier)
@@ -278,7 +277,7 @@ class CreateAccountingBatchRequest implements ArrayAccess
 
     /**
      * Sets export_invoices_flag
-     * @param bool $export_invoices_flag Batch must export Invoices, Expenses or Products
+     * @param  bool  $export_invoices_flag  Batch must export Invoices, Expenses or Products
      * @return $this
      */
     public function setExportInvoicesFlag($export_invoices_flag)
@@ -299,7 +298,7 @@ class CreateAccountingBatchRequest implements ArrayAccess
 
     /**
      * Sets export_expenses_flag
-     * @param bool $export_expenses_flag Batch must export Invoices, Expenses or Products
+     * @param  bool  $export_expenses_flag  Batch must export Invoices, Expenses or Products
      * @return $this
      */
     public function setExportExpensesFlag($export_expenses_flag)
@@ -320,7 +319,7 @@ class CreateAccountingBatchRequest implements ArrayAccess
 
     /**
      * Sets export_products_flag
-     * @param bool $export_products_flag Batch must export Invoices, Expenses or Products
+     * @param  bool  $export_products_flag  Batch must export Invoices, Expenses or Products
      * @return $this
      */
     public function setExportProductsFlag($export_products_flag)
@@ -341,7 +340,7 @@ class CreateAccountingBatchRequest implements ArrayAccess
 
     /**
      * Sets processed_record_ids
-     * @param int[] $processed_record_ids
+     * @param  int[]  $processed_record_ids
      * @return $this
      */
     public function setProcessedRecordIds($processed_record_ids)
@@ -362,7 +361,7 @@ class CreateAccountingBatchRequest implements ArrayAccess
 
     /**
      * Sets summarize_expenses
-     * @param bool $summarize_expenses
+     * @param  bool  $summarize_expenses
      * @return $this
      */
     public function setSummarizeExpenses($summarize_expenses)
@@ -371,9 +370,10 @@ class CreateAccountingBatchRequest implements ArrayAccess
 
         return $this;
     }
+
     /**
      * Returns true if offset exists. False otherwise.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return boolean
      */
     public function offsetExists($offset)
@@ -383,7 +383,7 @@ class CreateAccountingBatchRequest implements ArrayAccess
 
     /**
      * Gets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return mixed
      */
     public function offsetGet($offset)
@@ -393,8 +393,8 @@ class CreateAccountingBatchRequest implements ArrayAccess
 
     /**
      * Sets value based on offset.
-     * @param  integer $offset Offset
-     * @param  mixed   $value  Value to be set
+     * @param  integer  $offset  Offset
+     * @param  mixed  $value  Value to be set
      * @return void
      */
     public function offsetSet($offset, $value)
@@ -408,7 +408,7 @@ class CreateAccountingBatchRequest implements ArrayAccess
 
     /**
      * Unsets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return void
      */
     public function offsetUnset($offset)
@@ -423,7 +423,8 @@ class CreateAccountingBatchRequest implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this),
+                JSON_PRETTY_PRINT);
         }
 
         return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this));

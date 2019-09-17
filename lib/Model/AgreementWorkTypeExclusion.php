@@ -34,7 +34,9 @@ use \ArrayAccess;
 /**
  * AgreementWorkTypeExclusion Class Doc Comment
  *
- * @category    Class */
+ * @category    Class
+ */
+
 /**
  * @package     Spinen\ConnectWise\Clients\Finance
  * @author      Swagger Codegen team
@@ -45,20 +47,20 @@ class AgreementWorkTypeExclusion implements ArrayAccess
     const DISCRIMINATOR = null;
 
     /**
-      * The original name of the model.
-      * @var string
-      */
+     * The original name of the model.
+     * @var string
+     */
     protected static $swaggerModelName = 'AgreementWorkTypeExclusion';
 
     /**
-      * Array of property to type mappings. Used for (de)serialization
-      * @var string[]
-      */
+     * Array of property to type mappings. Used for (de)serialization
+     * @var string[]
+     */
     protected static $swaggerTypes = [
-        'id' => 'int',
-        'work_type' => '\Spinen\ConnectWise\Clients\Finance\Model\WorkTypeReference',
+        'id'           => 'int',
+        'work_type'    => '\Spinen\ConnectWise\Clients\Finance\Model\WorkTypeReference',
         'agreement_id' => 'int',
-        '_info' => '\Spinen\ConnectWise\Clients\Finance\Model\Metadata'
+        '_info'        => '\Spinen\ConnectWise\Clients\Finance\Model\Metadata'
     ];
 
     public static function swaggerTypes()
@@ -71,10 +73,10 @@ class AgreementWorkTypeExclusion implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'id' => 'id',
-        'work_type' => 'workType',
+        'id'           => 'id',
+        'work_type'    => 'workType',
         'agreement_id' => 'agreementId',
-        '_info' => '_info'
+        '_info'        => '_info'
     ];
 
 
@@ -83,10 +85,10 @@ class AgreementWorkTypeExclusion implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'id' => 'setId',
-        'work_type' => 'setWorkType',
+        'id'           => 'setId',
+        'work_type'    => 'setWorkType',
         'agreement_id' => 'setAgreementId',
-        '_info' => 'setInfo'
+        '_info'        => 'setInfo'
     ];
 
 
@@ -95,10 +97,10 @@ class AgreementWorkTypeExclusion implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'id' => 'getId',
-        'work_type' => 'getWorkType',
+        'id'           => 'getId',
+        'work_type'    => 'getWorkType',
         'agreement_id' => 'getAgreementId',
-        '_info' => 'getInfo'
+        '_info'        => 'getInfo'
     ];
 
     public static function attributeMap()
@@ -116,9 +118,6 @@ class AgreementWorkTypeExclusion implements ArrayAccess
         return self::$getters;
     }
 
-    
-
-    
 
     /**
      * Associative array for storing property values
@@ -128,7 +127,7 @@ class AgreementWorkTypeExclusion implements ArrayAccess
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param  mixed[]  $data  Associated array of property values initializing the model
      */
     public function __construct(array $data = null)
     {
@@ -178,7 +177,7 @@ class AgreementWorkTypeExclusion implements ArrayAccess
 
     /**
      * Sets id
-     * @param int $id
+     * @param  int  $id
      * @return $this
      */
     public function setId($id)
@@ -199,7 +198,7 @@ class AgreementWorkTypeExclusion implements ArrayAccess
 
     /**
      * Sets work_type
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\WorkTypeReference $work_type
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\WorkTypeReference  $work_type
      * @return $this
      */
     public function setWorkType($work_type)
@@ -220,7 +219,7 @@ class AgreementWorkTypeExclusion implements ArrayAccess
 
     /**
      * Sets agreement_id
-     * @param int $agreement_id
+     * @param  int  $agreement_id
      * @return $this
      */
     public function setAgreementId($agreement_id)
@@ -241,7 +240,7 @@ class AgreementWorkTypeExclusion implements ArrayAccess
 
     /**
      * Sets _info
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\Metadata $_info Metadata of the entity
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\Metadata  $_info  Metadata of the entity
      * @return $this
      */
     public function setInfo($_info)
@@ -250,9 +249,10 @@ class AgreementWorkTypeExclusion implements ArrayAccess
 
         return $this;
     }
+
     /**
      * Returns true if offset exists. False otherwise.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return boolean
      */
     public function offsetExists($offset)
@@ -262,7 +262,7 @@ class AgreementWorkTypeExclusion implements ArrayAccess
 
     /**
      * Gets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return mixed
      */
     public function offsetGet($offset)
@@ -272,8 +272,8 @@ class AgreementWorkTypeExclusion implements ArrayAccess
 
     /**
      * Sets value based on offset.
-     * @param  integer $offset Offset
-     * @param  mixed   $value  Value to be set
+     * @param  integer  $offset  Offset
+     * @param  mixed  $value  Value to be set
      * @return void
      */
     public function offsetSet($offset, $value)
@@ -287,7 +287,7 @@ class AgreementWorkTypeExclusion implements ArrayAccess
 
     /**
      * Unsets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return void
      */
     public function offsetUnset($offset)
@@ -302,7 +302,8 @@ class AgreementWorkTypeExclusion implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this),
+                JSON_PRETTY_PRINT);
         }
 
         return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this));

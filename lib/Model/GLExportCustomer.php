@@ -34,7 +34,9 @@ use \ArrayAccess;
 /**
  * GLExportCustomer Class Doc Comment
  *
- * @category    Class */
+ * @category    Class
+ */
+
 /**
  * @package     Spinen\ConnectWise\Clients\Finance
  * @author      Swagger Codegen team
@@ -45,43 +47,43 @@ class GLExportCustomer implements ArrayAccess
     const DISCRIMINATOR = null;
 
     /**
-      * The original name of the model.
-      * @var string
-      */
+     * The original name of the model.
+     * @var string
+     */
     protected static $swaggerModelName = 'GLExportCustomer';
 
     /**
-      * Array of property to type mappings. Used for (de)serialization
-      * @var string[]
-      */
+     * Array of property to type mappings. Used for (de)serialization
+     * @var string[]
+     */
     protected static $swaggerTypes = [
-        'company' => '\Spinen\ConnectWise\Clients\Finance\Model\CompanyReference',
-        'company_type' => '\Spinen\ConnectWise\Clients\Finance\Model\CompanyTypeReference',
-        'contact' => '\Spinen\ConnectWise\Clients\Finance\Model\ContactReference',
-        'site' => '\Spinen\ConnectWise\Clients\Finance\Model\SiteReference',
-        'account_number' => 'string',
-        'billing_terms' => '\Spinen\ConnectWise\Clients\Finance\Model\BillingTermsReference',
-        'billing_terms_xref' => 'string',
-        'due_days' => 'int',
-        'taxable' => 'bool',
-        'tax_code' => '\Spinen\ConnectWise\Clients\Finance\Model\TaxCodeReference',
-        'currency' => '\Spinen\ConnectWise\Clients\Finance\Model\CurrencyReference',
-        'state_tax_xref' => 'string',
-        'county_tax_xref' => 'string',
-        'city_tax_xref' => 'string',
-        'country_tax_xref' => 'string',
-        'composite_tax_xref' => 'string',
-        'state_tax_rate' => 'double',
-        'county_tax_rate' => 'double',
-        'city_tax_rate' => 'double',
-        'country_tax_rate' => 'double',
-        'composite_tax_rate' => 'double',
-        'tax_group_rate' => 'double',
-        'tax_agency_xref' => 'string',
-        'state_tax_agency_xref' => 'string',
-        'county_tax_agency_xref' => 'string',
-        'city_tax_agency_xref' => 'string',
-        'country_tax_agency_xref' => 'string',
+        'company'                   => '\Spinen\ConnectWise\Clients\Finance\Model\CompanyReference',
+        'company_type'              => '\Spinen\ConnectWise\Clients\Finance\Model\CompanyTypeReference',
+        'contact'                   => '\Spinen\ConnectWise\Clients\Finance\Model\ContactReference',
+        'site'                      => '\Spinen\ConnectWise\Clients\Finance\Model\SiteReference',
+        'account_number'            => 'string',
+        'billing_terms'             => '\Spinen\ConnectWise\Clients\Finance\Model\BillingTermsReference',
+        'billing_terms_xref'        => 'string',
+        'due_days'                  => 'int',
+        'taxable'                   => 'bool',
+        'tax_code'                  => '\Spinen\ConnectWise\Clients\Finance\Model\TaxCodeReference',
+        'currency'                  => '\Spinen\ConnectWise\Clients\Finance\Model\CurrencyReference',
+        'state_tax_xref'            => 'string',
+        'county_tax_xref'           => 'string',
+        'city_tax_xref'             => 'string',
+        'country_tax_xref'          => 'string',
+        'composite_tax_xref'        => 'string',
+        'state_tax_rate'            => 'double',
+        'county_tax_rate'           => 'double',
+        'city_tax_rate'             => 'double',
+        'country_tax_rate'          => 'double',
+        'composite_tax_rate'        => 'double',
+        'tax_group_rate'            => 'double',
+        'tax_agency_xref'           => 'string',
+        'state_tax_agency_xref'     => 'string',
+        'county_tax_agency_xref'    => 'string',
+        'city_tax_agency_xref'      => 'string',
+        'country_tax_agency_xref'   => 'string',
         'composite_tax_agency_xref' => 'string'
     ];
 
@@ -95,33 +97,33 @@ class GLExportCustomer implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'company' => 'company',
-        'company_type' => 'companyType',
-        'contact' => 'contact',
-        'site' => 'site',
-        'account_number' => 'accountNumber',
-        'billing_terms' => 'billingTerms',
-        'billing_terms_xref' => 'billingTermsXref',
-        'due_days' => 'dueDays',
-        'taxable' => 'taxable',
-        'tax_code' => 'taxCode',
-        'currency' => 'currency',
-        'state_tax_xref' => 'stateTaxXref',
-        'county_tax_xref' => 'countyTaxXref',
-        'city_tax_xref' => 'cityTaxXref',
-        'country_tax_xref' => 'countryTaxXref',
-        'composite_tax_xref' => 'compositeTaxXref',
-        'state_tax_rate' => 'stateTaxRate',
-        'county_tax_rate' => 'countyTaxRate',
-        'city_tax_rate' => 'cityTaxRate',
-        'country_tax_rate' => 'countryTaxRate',
-        'composite_tax_rate' => 'compositeTaxRate',
-        'tax_group_rate' => 'taxGroupRate',
-        'tax_agency_xref' => 'taxAgencyXref',
-        'state_tax_agency_xref' => 'stateTaxAgencyXref',
-        'county_tax_agency_xref' => 'countyTaxAgencyXref',
-        'city_tax_agency_xref' => 'cityTaxAgencyXref',
-        'country_tax_agency_xref' => 'countryTaxAgencyXref',
+        'company'                   => 'company',
+        'company_type'              => 'companyType',
+        'contact'                   => 'contact',
+        'site'                      => 'site',
+        'account_number'            => 'accountNumber',
+        'billing_terms'             => 'billingTerms',
+        'billing_terms_xref'        => 'billingTermsXref',
+        'due_days'                  => 'dueDays',
+        'taxable'                   => 'taxable',
+        'tax_code'                  => 'taxCode',
+        'currency'                  => 'currency',
+        'state_tax_xref'            => 'stateTaxXref',
+        'county_tax_xref'           => 'countyTaxXref',
+        'city_tax_xref'             => 'cityTaxXref',
+        'country_tax_xref'          => 'countryTaxXref',
+        'composite_tax_xref'        => 'compositeTaxXref',
+        'state_tax_rate'            => 'stateTaxRate',
+        'county_tax_rate'           => 'countyTaxRate',
+        'city_tax_rate'             => 'cityTaxRate',
+        'country_tax_rate'          => 'countryTaxRate',
+        'composite_tax_rate'        => 'compositeTaxRate',
+        'tax_group_rate'            => 'taxGroupRate',
+        'tax_agency_xref'           => 'taxAgencyXref',
+        'state_tax_agency_xref'     => 'stateTaxAgencyXref',
+        'county_tax_agency_xref'    => 'countyTaxAgencyXref',
+        'city_tax_agency_xref'      => 'cityTaxAgencyXref',
+        'country_tax_agency_xref'   => 'countryTaxAgencyXref',
         'composite_tax_agency_xref' => 'compositeTaxAgencyXref'
     ];
 
@@ -131,33 +133,33 @@ class GLExportCustomer implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'company' => 'setCompany',
-        'company_type' => 'setCompanyType',
-        'contact' => 'setContact',
-        'site' => 'setSite',
-        'account_number' => 'setAccountNumber',
-        'billing_terms' => 'setBillingTerms',
-        'billing_terms_xref' => 'setBillingTermsXref',
-        'due_days' => 'setDueDays',
-        'taxable' => 'setTaxable',
-        'tax_code' => 'setTaxCode',
-        'currency' => 'setCurrency',
-        'state_tax_xref' => 'setStateTaxXref',
-        'county_tax_xref' => 'setCountyTaxXref',
-        'city_tax_xref' => 'setCityTaxXref',
-        'country_tax_xref' => 'setCountryTaxXref',
-        'composite_tax_xref' => 'setCompositeTaxXref',
-        'state_tax_rate' => 'setStateTaxRate',
-        'county_tax_rate' => 'setCountyTaxRate',
-        'city_tax_rate' => 'setCityTaxRate',
-        'country_tax_rate' => 'setCountryTaxRate',
-        'composite_tax_rate' => 'setCompositeTaxRate',
-        'tax_group_rate' => 'setTaxGroupRate',
-        'tax_agency_xref' => 'setTaxAgencyXref',
-        'state_tax_agency_xref' => 'setStateTaxAgencyXref',
-        'county_tax_agency_xref' => 'setCountyTaxAgencyXref',
-        'city_tax_agency_xref' => 'setCityTaxAgencyXref',
-        'country_tax_agency_xref' => 'setCountryTaxAgencyXref',
+        'company'                   => 'setCompany',
+        'company_type'              => 'setCompanyType',
+        'contact'                   => 'setContact',
+        'site'                      => 'setSite',
+        'account_number'            => 'setAccountNumber',
+        'billing_terms'             => 'setBillingTerms',
+        'billing_terms_xref'        => 'setBillingTermsXref',
+        'due_days'                  => 'setDueDays',
+        'taxable'                   => 'setTaxable',
+        'tax_code'                  => 'setTaxCode',
+        'currency'                  => 'setCurrency',
+        'state_tax_xref'            => 'setStateTaxXref',
+        'county_tax_xref'           => 'setCountyTaxXref',
+        'city_tax_xref'             => 'setCityTaxXref',
+        'country_tax_xref'          => 'setCountryTaxXref',
+        'composite_tax_xref'        => 'setCompositeTaxXref',
+        'state_tax_rate'            => 'setStateTaxRate',
+        'county_tax_rate'           => 'setCountyTaxRate',
+        'city_tax_rate'             => 'setCityTaxRate',
+        'country_tax_rate'          => 'setCountryTaxRate',
+        'composite_tax_rate'        => 'setCompositeTaxRate',
+        'tax_group_rate'            => 'setTaxGroupRate',
+        'tax_agency_xref'           => 'setTaxAgencyXref',
+        'state_tax_agency_xref'     => 'setStateTaxAgencyXref',
+        'county_tax_agency_xref'    => 'setCountyTaxAgencyXref',
+        'city_tax_agency_xref'      => 'setCityTaxAgencyXref',
+        'country_tax_agency_xref'   => 'setCountryTaxAgencyXref',
         'composite_tax_agency_xref' => 'setCompositeTaxAgencyXref'
     ];
 
@@ -167,33 +169,33 @@ class GLExportCustomer implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'company' => 'getCompany',
-        'company_type' => 'getCompanyType',
-        'contact' => 'getContact',
-        'site' => 'getSite',
-        'account_number' => 'getAccountNumber',
-        'billing_terms' => 'getBillingTerms',
-        'billing_terms_xref' => 'getBillingTermsXref',
-        'due_days' => 'getDueDays',
-        'taxable' => 'getTaxable',
-        'tax_code' => 'getTaxCode',
-        'currency' => 'getCurrency',
-        'state_tax_xref' => 'getStateTaxXref',
-        'county_tax_xref' => 'getCountyTaxXref',
-        'city_tax_xref' => 'getCityTaxXref',
-        'country_tax_xref' => 'getCountryTaxXref',
-        'composite_tax_xref' => 'getCompositeTaxXref',
-        'state_tax_rate' => 'getStateTaxRate',
-        'county_tax_rate' => 'getCountyTaxRate',
-        'city_tax_rate' => 'getCityTaxRate',
-        'country_tax_rate' => 'getCountryTaxRate',
-        'composite_tax_rate' => 'getCompositeTaxRate',
-        'tax_group_rate' => 'getTaxGroupRate',
-        'tax_agency_xref' => 'getTaxAgencyXref',
-        'state_tax_agency_xref' => 'getStateTaxAgencyXref',
-        'county_tax_agency_xref' => 'getCountyTaxAgencyXref',
-        'city_tax_agency_xref' => 'getCityTaxAgencyXref',
-        'country_tax_agency_xref' => 'getCountryTaxAgencyXref',
+        'company'                   => 'getCompany',
+        'company_type'              => 'getCompanyType',
+        'contact'                   => 'getContact',
+        'site'                      => 'getSite',
+        'account_number'            => 'getAccountNumber',
+        'billing_terms'             => 'getBillingTerms',
+        'billing_terms_xref'        => 'getBillingTermsXref',
+        'due_days'                  => 'getDueDays',
+        'taxable'                   => 'getTaxable',
+        'tax_code'                  => 'getTaxCode',
+        'currency'                  => 'getCurrency',
+        'state_tax_xref'            => 'getStateTaxXref',
+        'county_tax_xref'           => 'getCountyTaxXref',
+        'city_tax_xref'             => 'getCityTaxXref',
+        'country_tax_xref'          => 'getCountryTaxXref',
+        'composite_tax_xref'        => 'getCompositeTaxXref',
+        'state_tax_rate'            => 'getStateTaxRate',
+        'county_tax_rate'           => 'getCountyTaxRate',
+        'city_tax_rate'             => 'getCityTaxRate',
+        'country_tax_rate'          => 'getCountryTaxRate',
+        'composite_tax_rate'        => 'getCompositeTaxRate',
+        'tax_group_rate'            => 'getTaxGroupRate',
+        'tax_agency_xref'           => 'getTaxAgencyXref',
+        'state_tax_agency_xref'     => 'getStateTaxAgencyXref',
+        'county_tax_agency_xref'    => 'getCountyTaxAgencyXref',
+        'city_tax_agency_xref'      => 'getCityTaxAgencyXref',
+        'country_tax_agency_xref'   => 'getCountryTaxAgencyXref',
         'composite_tax_agency_xref' => 'getCompositeTaxAgencyXref'
     ];
 
@@ -212,9 +214,6 @@ class GLExportCustomer implements ArrayAccess
         return self::$getters;
     }
 
-    
-
-    
 
     /**
      * Associative array for storing property values
@@ -224,7 +223,7 @@ class GLExportCustomer implements ArrayAccess
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param  mixed[]  $data  Associated array of property values initializing the model
      */
     public function __construct(array $data = null)
     {
@@ -292,7 +291,7 @@ class GLExportCustomer implements ArrayAccess
 
     /**
      * Sets company
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\CompanyReference $company
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\CompanyReference  $company
      * @return $this
      */
     public function setCompany($company)
@@ -313,7 +312,7 @@ class GLExportCustomer implements ArrayAccess
 
     /**
      * Sets company_type
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\CompanyTypeReference $company_type
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\CompanyTypeReference  $company_type
      * @return $this
      */
     public function setCompanyType($company_type)
@@ -334,7 +333,7 @@ class GLExportCustomer implements ArrayAccess
 
     /**
      * Sets contact
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\ContactReference $contact
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\ContactReference  $contact
      * @return $this
      */
     public function setContact($contact)
@@ -355,7 +354,7 @@ class GLExportCustomer implements ArrayAccess
 
     /**
      * Sets site
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\SiteReference $site
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\SiteReference  $site
      * @return $this
      */
     public function setSite($site)
@@ -376,7 +375,7 @@ class GLExportCustomer implements ArrayAccess
 
     /**
      * Sets account_number
-     * @param string $account_number
+     * @param  string  $account_number
      * @return $this
      */
     public function setAccountNumber($account_number)
@@ -397,7 +396,7 @@ class GLExportCustomer implements ArrayAccess
 
     /**
      * Sets billing_terms
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\BillingTermsReference $billing_terms
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\BillingTermsReference  $billing_terms
      * @return $this
      */
     public function setBillingTerms($billing_terms)
@@ -418,7 +417,7 @@ class GLExportCustomer implements ArrayAccess
 
     /**
      * Sets billing_terms_xref
-     * @param string $billing_terms_xref
+     * @param  string  $billing_terms_xref
      * @return $this
      */
     public function setBillingTermsXref($billing_terms_xref)
@@ -439,7 +438,7 @@ class GLExportCustomer implements ArrayAccess
 
     /**
      * Sets due_days
-     * @param int $due_days
+     * @param  int  $due_days
      * @return $this
      */
     public function setDueDays($due_days)
@@ -460,7 +459,7 @@ class GLExportCustomer implements ArrayAccess
 
     /**
      * Sets taxable
-     * @param bool $taxable
+     * @param  bool  $taxable
      * @return $this
      */
     public function setTaxable($taxable)
@@ -481,7 +480,7 @@ class GLExportCustomer implements ArrayAccess
 
     /**
      * Sets tax_code
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\TaxCodeReference $tax_code
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\TaxCodeReference  $tax_code
      * @return $this
      */
     public function setTaxCode($tax_code)
@@ -502,7 +501,7 @@ class GLExportCustomer implements ArrayAccess
 
     /**
      * Sets currency
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\CurrencyReference $currency
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\CurrencyReference  $currency
      * @return $this
      */
     public function setCurrency($currency)
@@ -523,7 +522,7 @@ class GLExportCustomer implements ArrayAccess
 
     /**
      * Sets state_tax_xref
-     * @param string $state_tax_xref
+     * @param  string  $state_tax_xref
      * @return $this
      */
     public function setStateTaxXref($state_tax_xref)
@@ -544,7 +543,7 @@ class GLExportCustomer implements ArrayAccess
 
     /**
      * Sets county_tax_xref
-     * @param string $county_tax_xref
+     * @param  string  $county_tax_xref
      * @return $this
      */
     public function setCountyTaxXref($county_tax_xref)
@@ -565,7 +564,7 @@ class GLExportCustomer implements ArrayAccess
 
     /**
      * Sets city_tax_xref
-     * @param string $city_tax_xref
+     * @param  string  $city_tax_xref
      * @return $this
      */
     public function setCityTaxXref($city_tax_xref)
@@ -586,7 +585,7 @@ class GLExportCustomer implements ArrayAccess
 
     /**
      * Sets country_tax_xref
-     * @param string $country_tax_xref
+     * @param  string  $country_tax_xref
      * @return $this
      */
     public function setCountryTaxXref($country_tax_xref)
@@ -607,7 +606,7 @@ class GLExportCustomer implements ArrayAccess
 
     /**
      * Sets composite_tax_xref
-     * @param string $composite_tax_xref
+     * @param  string  $composite_tax_xref
      * @return $this
      */
     public function setCompositeTaxXref($composite_tax_xref)
@@ -628,7 +627,7 @@ class GLExportCustomer implements ArrayAccess
 
     /**
      * Sets state_tax_rate
-     * @param double $state_tax_rate
+     * @param  double  $state_tax_rate
      * @return $this
      */
     public function setStateTaxRate($state_tax_rate)
@@ -649,7 +648,7 @@ class GLExportCustomer implements ArrayAccess
 
     /**
      * Sets county_tax_rate
-     * @param double $county_tax_rate
+     * @param  double  $county_tax_rate
      * @return $this
      */
     public function setCountyTaxRate($county_tax_rate)
@@ -670,7 +669,7 @@ class GLExportCustomer implements ArrayAccess
 
     /**
      * Sets city_tax_rate
-     * @param double $city_tax_rate
+     * @param  double  $city_tax_rate
      * @return $this
      */
     public function setCityTaxRate($city_tax_rate)
@@ -691,7 +690,7 @@ class GLExportCustomer implements ArrayAccess
 
     /**
      * Sets country_tax_rate
-     * @param double $country_tax_rate
+     * @param  double  $country_tax_rate
      * @return $this
      */
     public function setCountryTaxRate($country_tax_rate)
@@ -712,7 +711,7 @@ class GLExportCustomer implements ArrayAccess
 
     /**
      * Sets composite_tax_rate
-     * @param double $composite_tax_rate
+     * @param  double  $composite_tax_rate
      * @return $this
      */
     public function setCompositeTaxRate($composite_tax_rate)
@@ -733,7 +732,7 @@ class GLExportCustomer implements ArrayAccess
 
     /**
      * Sets tax_group_rate
-     * @param double $tax_group_rate
+     * @param  double  $tax_group_rate
      * @return $this
      */
     public function setTaxGroupRate($tax_group_rate)
@@ -754,7 +753,7 @@ class GLExportCustomer implements ArrayAccess
 
     /**
      * Sets tax_agency_xref
-     * @param string $tax_agency_xref
+     * @param  string  $tax_agency_xref
      * @return $this
      */
     public function setTaxAgencyXref($tax_agency_xref)
@@ -775,7 +774,7 @@ class GLExportCustomer implements ArrayAccess
 
     /**
      * Sets state_tax_agency_xref
-     * @param string $state_tax_agency_xref
+     * @param  string  $state_tax_agency_xref
      * @return $this
      */
     public function setStateTaxAgencyXref($state_tax_agency_xref)
@@ -796,7 +795,7 @@ class GLExportCustomer implements ArrayAccess
 
     /**
      * Sets county_tax_agency_xref
-     * @param string $county_tax_agency_xref
+     * @param  string  $county_tax_agency_xref
      * @return $this
      */
     public function setCountyTaxAgencyXref($county_tax_agency_xref)
@@ -817,7 +816,7 @@ class GLExportCustomer implements ArrayAccess
 
     /**
      * Sets city_tax_agency_xref
-     * @param string $city_tax_agency_xref
+     * @param  string  $city_tax_agency_xref
      * @return $this
      */
     public function setCityTaxAgencyXref($city_tax_agency_xref)
@@ -838,7 +837,7 @@ class GLExportCustomer implements ArrayAccess
 
     /**
      * Sets country_tax_agency_xref
-     * @param string $country_tax_agency_xref
+     * @param  string  $country_tax_agency_xref
      * @return $this
      */
     public function setCountryTaxAgencyXref($country_tax_agency_xref)
@@ -859,7 +858,7 @@ class GLExportCustomer implements ArrayAccess
 
     /**
      * Sets composite_tax_agency_xref
-     * @param string $composite_tax_agency_xref
+     * @param  string  $composite_tax_agency_xref
      * @return $this
      */
     public function setCompositeTaxAgencyXref($composite_tax_agency_xref)
@@ -868,9 +867,10 @@ class GLExportCustomer implements ArrayAccess
 
         return $this;
     }
+
     /**
      * Returns true if offset exists. False otherwise.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return boolean
      */
     public function offsetExists($offset)
@@ -880,7 +880,7 @@ class GLExportCustomer implements ArrayAccess
 
     /**
      * Gets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return mixed
      */
     public function offsetGet($offset)
@@ -890,8 +890,8 @@ class GLExportCustomer implements ArrayAccess
 
     /**
      * Sets value based on offset.
-     * @param  integer $offset Offset
-     * @param  mixed   $value  Value to be set
+     * @param  integer  $offset  Offset
+     * @param  mixed  $value  Value to be set
      * @return void
      */
     public function offsetSet($offset, $value)
@@ -905,7 +905,7 @@ class GLExportCustomer implements ArrayAccess
 
     /**
      * Unsets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return void
      */
     public function offsetUnset($offset)
@@ -920,7 +920,8 @@ class GLExportCustomer implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this),
+                JSON_PRETTY_PRINT);
         }
 
         return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this));

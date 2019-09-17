@@ -34,7 +34,9 @@ use \ArrayAccess;
 /**
  * AgreementWorkType Class Doc Comment
  *
- * @category    Class */
+ * @category    Class
+ */
+
 /**
  * @package     Spinen\ConnectWise\Clients\Finance
  * @author      Swagger Codegen team
@@ -45,34 +47,34 @@ class AgreementWorkType implements ArrayAccess
     const DISCRIMINATOR = null;
 
     /**
-      * The original name of the model.
-      * @var string
-      */
+     * The original name of the model.
+     * @var string
+     */
     protected static $swaggerModelName = 'AgreementWorkType';
 
     /**
-      * Array of property to type mappings. Used for (de)serialization
-      * @var string[]
-      */
+     * Array of property to type mappings. Used for (de)serialization
+     * @var string[]
+     */
     protected static $swaggerTypes = [
-        'id' => 'int',
-        'work_type' => '\Spinen\ConnectWise\Clients\Finance\Model\WorkTypeReference',
-        'location_id' => 'int',
-        'rate_type' => 'string',
-        'bill_time' => 'string',
-        'rate' => 'double',
-        'hours_max' => 'double',
-        'hours_min' => 'double',
-        'round_bill_hours' => 'double',
-        'overage_rate' => 'double',
+        'id'                => 'int',
+        'work_type'         => '\Spinen\ConnectWise\Clients\Finance\Model\WorkTypeReference',
+        'location_id'       => 'int',
+        'rate_type'         => 'string',
+        'bill_time'         => 'string',
+        'rate'              => 'double',
+        'hours_max'         => 'double',
+        'hours_min'         => 'double',
+        'round_bill_hours'  => 'double',
+        'overage_rate'      => 'double',
         'overage_rate_type' => 'string',
-        'agreement_limit' => 'double',
-        'site' => '\Spinen\ConnectWise\Clients\Finance\Model\SiteReference',
-        'effective_date' => '\DateTime',
-        'ending_date' => '\DateTime',
-        'agreement_id' => 'int',
-        'company' => '\Spinen\ConnectWise\Clients\Finance\Model\CompanyReference',
-        '_info' => '\Spinen\ConnectWise\Clients\Finance\Model\Metadata'
+        'agreement_limit'   => 'double',
+        'site'              => '\Spinen\ConnectWise\Clients\Finance\Model\SiteReference',
+        'effective_date'    => '\DateTime',
+        'ending_date'       => '\DateTime',
+        'agreement_id'      => 'int',
+        'company'           => '\Spinen\ConnectWise\Clients\Finance\Model\CompanyReference',
+        '_info'             => '\Spinen\ConnectWise\Clients\Finance\Model\Metadata'
     ];
 
     public static function swaggerTypes()
@@ -85,24 +87,24 @@ class AgreementWorkType implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'id' => 'id',
-        'work_type' => 'workType',
-        'location_id' => 'locationId',
-        'rate_type' => 'rateType',
-        'bill_time' => 'billTime',
-        'rate' => 'rate',
-        'hours_max' => 'hoursMax',
-        'hours_min' => 'hoursMin',
-        'round_bill_hours' => 'roundBillHours',
-        'overage_rate' => 'overageRate',
+        'id'                => 'id',
+        'work_type'         => 'workType',
+        'location_id'       => 'locationId',
+        'rate_type'         => 'rateType',
+        'bill_time'         => 'billTime',
+        'rate'              => 'rate',
+        'hours_max'         => 'hoursMax',
+        'hours_min'         => 'hoursMin',
+        'round_bill_hours'  => 'roundBillHours',
+        'overage_rate'      => 'overageRate',
         'overage_rate_type' => 'overageRateType',
-        'agreement_limit' => 'agreementLimit',
-        'site' => 'site',
-        'effective_date' => 'effectiveDate',
-        'ending_date' => 'endingDate',
-        'agreement_id' => 'agreementId',
-        'company' => 'company',
-        '_info' => '_info'
+        'agreement_limit'   => 'agreementLimit',
+        'site'              => 'site',
+        'effective_date'    => 'effectiveDate',
+        'ending_date'       => 'endingDate',
+        'agreement_id'      => 'agreementId',
+        'company'           => 'company',
+        '_info'             => '_info'
     ];
 
 
@@ -111,24 +113,24 @@ class AgreementWorkType implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'id' => 'setId',
-        'work_type' => 'setWorkType',
-        'location_id' => 'setLocationId',
-        'rate_type' => 'setRateType',
-        'bill_time' => 'setBillTime',
-        'rate' => 'setRate',
-        'hours_max' => 'setHoursMax',
-        'hours_min' => 'setHoursMin',
-        'round_bill_hours' => 'setRoundBillHours',
-        'overage_rate' => 'setOverageRate',
+        'id'                => 'setId',
+        'work_type'         => 'setWorkType',
+        'location_id'       => 'setLocationId',
+        'rate_type'         => 'setRateType',
+        'bill_time'         => 'setBillTime',
+        'rate'              => 'setRate',
+        'hours_max'         => 'setHoursMax',
+        'hours_min'         => 'setHoursMin',
+        'round_bill_hours'  => 'setRoundBillHours',
+        'overage_rate'      => 'setOverageRate',
         'overage_rate_type' => 'setOverageRateType',
-        'agreement_limit' => 'setAgreementLimit',
-        'site' => 'setSite',
-        'effective_date' => 'setEffectiveDate',
-        'ending_date' => 'setEndingDate',
-        'agreement_id' => 'setAgreementId',
-        'company' => 'setCompany',
-        '_info' => 'setInfo'
+        'agreement_limit'   => 'setAgreementLimit',
+        'site'              => 'setSite',
+        'effective_date'    => 'setEffectiveDate',
+        'ending_date'       => 'setEndingDate',
+        'agreement_id'      => 'setAgreementId',
+        'company'           => 'setCompany',
+        '_info'             => 'setInfo'
     ];
 
 
@@ -137,24 +139,24 @@ class AgreementWorkType implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'id' => 'getId',
-        'work_type' => 'getWorkType',
-        'location_id' => 'getLocationId',
-        'rate_type' => 'getRateType',
-        'bill_time' => 'getBillTime',
-        'rate' => 'getRate',
-        'hours_max' => 'getHoursMax',
-        'hours_min' => 'getHoursMin',
-        'round_bill_hours' => 'getRoundBillHours',
-        'overage_rate' => 'getOverageRate',
+        'id'                => 'getId',
+        'work_type'         => 'getWorkType',
+        'location_id'       => 'getLocationId',
+        'rate_type'         => 'getRateType',
+        'bill_time'         => 'getBillTime',
+        'rate'              => 'getRate',
+        'hours_max'         => 'getHoursMax',
+        'hours_min'         => 'getHoursMin',
+        'round_bill_hours'  => 'getRoundBillHours',
+        'overage_rate'      => 'getOverageRate',
         'overage_rate_type' => 'getOverageRateType',
-        'agreement_limit' => 'getAgreementLimit',
-        'site' => 'getSite',
-        'effective_date' => 'getEffectiveDate',
-        'ending_date' => 'getEndingDate',
-        'agreement_id' => 'getAgreementId',
-        'company' => 'getCompany',
-        '_info' => 'getInfo'
+        'agreement_limit'   => 'getAgreementLimit',
+        'site'              => 'getSite',
+        'effective_date'    => 'getEffectiveDate',
+        'ending_date'       => 'getEndingDate',
+        'agreement_id'      => 'getAgreementId',
+        'company'           => 'getCompany',
+        '_info'             => 'getInfo'
     ];
 
     public static function attributeMap()
@@ -182,9 +184,8 @@ class AgreementWorkType implements ArrayAccess
     const OVERAGE_RATE_TYPE_ADJ_AMOUNT = 'AdjAmount';
     const OVERAGE_RATE_TYPE_CUSTOM = 'Custom';
     const OVERAGE_RATE_TYPE_MULTIPLIER = 'Multiplier';
-    
 
-    
+
     /**
      * Gets allowable values of the enum
      * @return string[]
@@ -197,7 +198,7 @@ class AgreementWorkType implements ArrayAccess
             self::RATE_TYPE_MULTIPLIER,
         ];
     }
-    
+
     /**
      * Gets allowable values of the enum
      * @return string[]
@@ -211,7 +212,7 @@ class AgreementWorkType implements ArrayAccess
             self::BILL_TIME_NO_DEFAULT,
         ];
     }
-    
+
     /**
      * Gets allowable values of the enum
      * @return string[]
@@ -224,7 +225,7 @@ class AgreementWorkType implements ArrayAccess
             self::OVERAGE_RATE_TYPE_MULTIPLIER,
         ];
     }
-    
+
 
     /**
      * Associative array for storing property values
@@ -234,7 +235,7 @@ class AgreementWorkType implements ArrayAccess
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param  mixed[]  $data  Associated array of property values initializing the model
      */
     public function __construct(array $data = null)
     {
@@ -331,7 +332,7 @@ class AgreementWorkType implements ArrayAccess
 
     /**
      * Sets id
-     * @param int $id
+     * @param  int  $id
      * @return $this
      */
     public function setId($id)
@@ -352,7 +353,7 @@ class AgreementWorkType implements ArrayAccess
 
     /**
      * Sets work_type
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\WorkTypeReference $work_type
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\WorkTypeReference  $work_type
      * @return $this
      */
     public function setWorkType($work_type)
@@ -373,7 +374,7 @@ class AgreementWorkType implements ArrayAccess
 
     /**
      * Sets location_id
-     * @param int $location_id
+     * @param  int  $location_id
      * @return $this
      */
     public function setLocationId($location_id)
@@ -394,7 +395,7 @@ class AgreementWorkType implements ArrayAccess
 
     /**
      * Sets rate_type
-     * @param string $rate_type
+     * @param  string  $rate_type
      * @return $this
      */
     public function setRateType($rate_type)
@@ -419,7 +420,7 @@ class AgreementWorkType implements ArrayAccess
 
     /**
      * Sets bill_time
-     * @param string $bill_time
+     * @param  string  $bill_time
      * @return $this
      */
     public function setBillTime($bill_time)
@@ -444,7 +445,7 @@ class AgreementWorkType implements ArrayAccess
 
     /**
      * Sets rate
-     * @param double $rate
+     * @param  double  $rate
      * @return $this
      */
     public function setRate($rate)
@@ -465,7 +466,7 @@ class AgreementWorkType implements ArrayAccess
 
     /**
      * Sets hours_max
-     * @param double $hours_max
+     * @param  double  $hours_max
      * @return $this
      */
     public function setHoursMax($hours_max)
@@ -486,7 +487,7 @@ class AgreementWorkType implements ArrayAccess
 
     /**
      * Sets hours_min
-     * @param double $hours_min
+     * @param  double  $hours_min
      * @return $this
      */
     public function setHoursMin($hours_min)
@@ -507,7 +508,7 @@ class AgreementWorkType implements ArrayAccess
 
     /**
      * Sets round_bill_hours
-     * @param double $round_bill_hours
+     * @param  double  $round_bill_hours
      * @return $this
      */
     public function setRoundBillHours($round_bill_hours)
@@ -528,7 +529,7 @@ class AgreementWorkType implements ArrayAccess
 
     /**
      * Sets overage_rate
-     * @param double $overage_rate
+     * @param  double  $overage_rate
      * @return $this
      */
     public function setOverageRate($overage_rate)
@@ -549,7 +550,7 @@ class AgreementWorkType implements ArrayAccess
 
     /**
      * Sets overage_rate_type
-     * @param string $overage_rate_type
+     * @param  string  $overage_rate_type
      * @return $this
      */
     public function setOverageRateType($overage_rate_type)
@@ -574,7 +575,7 @@ class AgreementWorkType implements ArrayAccess
 
     /**
      * Sets agreement_limit
-     * @param double $agreement_limit
+     * @param  double  $agreement_limit
      * @return $this
      */
     public function setAgreementLimit($agreement_limit)
@@ -595,7 +596,7 @@ class AgreementWorkType implements ArrayAccess
 
     /**
      * Sets site
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\SiteReference $site
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\SiteReference  $site
      * @return $this
      */
     public function setSite($site)
@@ -616,7 +617,7 @@ class AgreementWorkType implements ArrayAccess
 
     /**
      * Sets effective_date
-     * @param \DateTime $effective_date
+     * @param  \DateTime  $effective_date
      * @return $this
      */
     public function setEffectiveDate($effective_date)
@@ -637,7 +638,7 @@ class AgreementWorkType implements ArrayAccess
 
     /**
      * Sets ending_date
-     * @param \DateTime $ending_date
+     * @param  \DateTime  $ending_date
      * @return $this
      */
     public function setEndingDate($ending_date)
@@ -658,7 +659,7 @@ class AgreementWorkType implements ArrayAccess
 
     /**
      * Sets agreement_id
-     * @param int $agreement_id
+     * @param  int  $agreement_id
      * @return $this
      */
     public function setAgreementId($agreement_id)
@@ -679,7 +680,7 @@ class AgreementWorkType implements ArrayAccess
 
     /**
      * Sets company
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\CompanyReference $company
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\CompanyReference  $company
      * @return $this
      */
     public function setCompany($company)
@@ -700,7 +701,7 @@ class AgreementWorkType implements ArrayAccess
 
     /**
      * Sets _info
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\Metadata $_info Metadata of the entity
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\Metadata  $_info  Metadata of the entity
      * @return $this
      */
     public function setInfo($_info)
@@ -709,9 +710,10 @@ class AgreementWorkType implements ArrayAccess
 
         return $this;
     }
+
     /**
      * Returns true if offset exists. False otherwise.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return boolean
      */
     public function offsetExists($offset)
@@ -721,7 +723,7 @@ class AgreementWorkType implements ArrayAccess
 
     /**
      * Gets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return mixed
      */
     public function offsetGet($offset)
@@ -731,8 +733,8 @@ class AgreementWorkType implements ArrayAccess
 
     /**
      * Sets value based on offset.
-     * @param  integer $offset Offset
-     * @param  mixed   $value  Value to be set
+     * @param  integer  $offset  Offset
+     * @param  mixed  $value  Value to be set
      * @return void
      */
     public function offsetSet($offset, $value)
@@ -746,7 +748,7 @@ class AgreementWorkType implements ArrayAccess
 
     /**
      * Unsets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return void
      */
     public function offsetUnset($offset)
@@ -761,7 +763,8 @@ class AgreementWorkType implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this),
+                JSON_PRETTY_PRINT);
         }
 
         return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this));

@@ -34,7 +34,9 @@ use \ArrayAccess;
 /**
  * TaxCodeXRef Class Doc Comment
  *
- * @category    Class */
+ * @category    Class
+ */
+
 /**
  * @package     Spinen\ConnectWise\Clients\Finance
  * @author      Swagger Codegen team
@@ -45,26 +47,26 @@ class TaxCodeXRef implements ArrayAccess
     const DISCRIMINATOR = null;
 
     /**
-      * The original name of the model.
-      * @var string
-      */
+     * The original name of the model.
+     * @var string
+     */
     protected static $swaggerModelName = 'TaxCodeXRef';
 
     /**
-      * Array of property to type mappings. Used for (de)serialization
-      * @var string[]
-      */
+     * Array of property to type mappings. Used for (de)serialization
+     * @var string[]
+     */
     protected static $swaggerTypes = [
-        'id' => 'int',
-        'description' => 'string',
+        'id'           => 'int',
+        'description'  => 'string',
         'default_flag' => 'bool',
-        'level_one' => 'string',
-        'level_two' => 'string',
-        'level_three' => 'string',
-        'level_four' => 'string',
-        'level_five' => 'string',
-        'tax_code' => '\Spinen\ConnectWise\Clients\Finance\Model\TaxCodeReference',
-        '_info' => '\Spinen\ConnectWise\Clients\Finance\Model\Metadata'
+        'level_one'    => 'string',
+        'level_two'    => 'string',
+        'level_three'  => 'string',
+        'level_four'   => 'string',
+        'level_five'   => 'string',
+        'tax_code'     => '\Spinen\ConnectWise\Clients\Finance\Model\TaxCodeReference',
+        '_info'        => '\Spinen\ConnectWise\Clients\Finance\Model\Metadata'
     ];
 
     public static function swaggerTypes()
@@ -77,16 +79,16 @@ class TaxCodeXRef implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'id' => 'id',
-        'description' => 'description',
+        'id'           => 'id',
+        'description'  => 'description',
         'default_flag' => 'defaultFlag',
-        'level_one' => 'levelOne',
-        'level_two' => 'levelTwo',
-        'level_three' => 'levelThree',
-        'level_four' => 'levelFour',
-        'level_five' => 'levelFive',
-        'tax_code' => 'taxCode',
-        '_info' => '_info'
+        'level_one'    => 'levelOne',
+        'level_two'    => 'levelTwo',
+        'level_three'  => 'levelThree',
+        'level_four'   => 'levelFour',
+        'level_five'   => 'levelFive',
+        'tax_code'     => 'taxCode',
+        '_info'        => '_info'
     ];
 
 
@@ -95,16 +97,16 @@ class TaxCodeXRef implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'id' => 'setId',
-        'description' => 'setDescription',
+        'id'           => 'setId',
+        'description'  => 'setDescription',
         'default_flag' => 'setDefaultFlag',
-        'level_one' => 'setLevelOne',
-        'level_two' => 'setLevelTwo',
-        'level_three' => 'setLevelThree',
-        'level_four' => 'setLevelFour',
-        'level_five' => 'setLevelFive',
-        'tax_code' => 'setTaxCode',
-        '_info' => 'setInfo'
+        'level_one'    => 'setLevelOne',
+        'level_two'    => 'setLevelTwo',
+        'level_three'  => 'setLevelThree',
+        'level_four'   => 'setLevelFour',
+        'level_five'   => 'setLevelFive',
+        'tax_code'     => 'setTaxCode',
+        '_info'        => 'setInfo'
     ];
 
 
@@ -113,16 +115,16 @@ class TaxCodeXRef implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'id' => 'getId',
-        'description' => 'getDescription',
+        'id'           => 'getId',
+        'description'  => 'getDescription',
         'default_flag' => 'getDefaultFlag',
-        'level_one' => 'getLevelOne',
-        'level_two' => 'getLevelTwo',
-        'level_three' => 'getLevelThree',
-        'level_four' => 'getLevelFour',
-        'level_five' => 'getLevelFive',
-        'tax_code' => 'getTaxCode',
-        '_info' => 'getInfo'
+        'level_one'    => 'getLevelOne',
+        'level_two'    => 'getLevelTwo',
+        'level_three'  => 'getLevelThree',
+        'level_four'   => 'getLevelFour',
+        'level_five'   => 'getLevelFive',
+        'tax_code'     => 'getTaxCode',
+        '_info'        => 'getInfo'
     ];
 
     public static function attributeMap()
@@ -150,9 +152,8 @@ class TaxCodeXRef implements ArrayAccess
     const LEVEL_FOUR_TAXABLE = 'Taxable';
     const LEVEL_FIVE_NON_TAXABLE = 'NonTaxable';
     const LEVEL_FIVE_TAXABLE = 'Taxable';
-    
 
-    
+
     /**
      * Gets allowable values of the enum
      * @return string[]
@@ -164,7 +165,7 @@ class TaxCodeXRef implements ArrayAccess
             self::LEVEL_ONE_TAXABLE,
         ];
     }
-    
+
     /**
      * Gets allowable values of the enum
      * @return string[]
@@ -176,7 +177,7 @@ class TaxCodeXRef implements ArrayAccess
             self::LEVEL_TWO_TAXABLE,
         ];
     }
-    
+
     /**
      * Gets allowable values of the enum
      * @return string[]
@@ -188,7 +189,7 @@ class TaxCodeXRef implements ArrayAccess
             self::LEVEL_THREE_TAXABLE,
         ];
     }
-    
+
     /**
      * Gets allowable values of the enum
      * @return string[]
@@ -200,7 +201,7 @@ class TaxCodeXRef implements ArrayAccess
             self::LEVEL_FOUR_TAXABLE,
         ];
     }
-    
+
     /**
      * Gets allowable values of the enum
      * @return string[]
@@ -212,7 +213,7 @@ class TaxCodeXRef implements ArrayAccess
             self::LEVEL_FIVE_TAXABLE,
         ];
     }
-    
+
 
     /**
      * Associative array for storing property values
@@ -222,7 +223,7 @@ class TaxCodeXRef implements ArrayAccess
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param  mixed[]  $data  Associated array of property values initializing the model
      */
     public function __construct(array $data = null)
     {
@@ -330,7 +331,7 @@ class TaxCodeXRef implements ArrayAccess
 
     /**
      * Sets id
-     * @param int $id
+     * @param  int  $id
      * @return $this
      */
     public function setId($id)
@@ -351,7 +352,7 @@ class TaxCodeXRef implements ArrayAccess
 
     /**
      * Sets description
-     * @param string $description
+     * @param  string  $description
      * @return $this
      */
     public function setDescription($description)
@@ -376,7 +377,7 @@ class TaxCodeXRef implements ArrayAccess
 
     /**
      * Sets default_flag
-     * @param bool $default_flag
+     * @param  bool  $default_flag
      * @return $this
      */
     public function setDefaultFlag($default_flag)
@@ -397,7 +398,7 @@ class TaxCodeXRef implements ArrayAccess
 
     /**
      * Sets level_one
-     * @param string $level_one
+     * @param  string  $level_one
      * @return $this
      */
     public function setLevelOne($level_one)
@@ -422,7 +423,7 @@ class TaxCodeXRef implements ArrayAccess
 
     /**
      * Sets level_two
-     * @param string $level_two
+     * @param  string  $level_two
      * @return $this
      */
     public function setLevelTwo($level_two)
@@ -447,7 +448,7 @@ class TaxCodeXRef implements ArrayAccess
 
     /**
      * Sets level_three
-     * @param string $level_three
+     * @param  string  $level_three
      * @return $this
      */
     public function setLevelThree($level_three)
@@ -472,7 +473,7 @@ class TaxCodeXRef implements ArrayAccess
 
     /**
      * Sets level_four
-     * @param string $level_four
+     * @param  string  $level_four
      * @return $this
      */
     public function setLevelFour($level_four)
@@ -497,7 +498,7 @@ class TaxCodeXRef implements ArrayAccess
 
     /**
      * Sets level_five
-     * @param string $level_five
+     * @param  string  $level_five
      * @return $this
      */
     public function setLevelFive($level_five)
@@ -522,7 +523,7 @@ class TaxCodeXRef implements ArrayAccess
 
     /**
      * Sets tax_code
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\TaxCodeReference $tax_code
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\TaxCodeReference  $tax_code
      * @return $this
      */
     public function setTaxCode($tax_code)
@@ -543,7 +544,7 @@ class TaxCodeXRef implements ArrayAccess
 
     /**
      * Sets _info
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\Metadata $_info Metadata of the entity
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\Metadata  $_info  Metadata of the entity
      * @return $this
      */
     public function setInfo($_info)
@@ -552,9 +553,10 @@ class TaxCodeXRef implements ArrayAccess
 
         return $this;
     }
+
     /**
      * Returns true if offset exists. False otherwise.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return boolean
      */
     public function offsetExists($offset)
@@ -564,7 +566,7 @@ class TaxCodeXRef implements ArrayAccess
 
     /**
      * Gets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return mixed
      */
     public function offsetGet($offset)
@@ -574,8 +576,8 @@ class TaxCodeXRef implements ArrayAccess
 
     /**
      * Sets value based on offset.
-     * @param  integer $offset Offset
-     * @param  mixed   $value  Value to be set
+     * @param  integer  $offset  Offset
+     * @param  mixed  $value  Value to be set
      * @return void
      */
     public function offsetSet($offset, $value)
@@ -589,7 +591,7 @@ class TaxCodeXRef implements ArrayAccess
 
     /**
      * Unsets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return void
      */
     public function offsetUnset($offset)
@@ -604,7 +606,8 @@ class TaxCodeXRef implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this),
+                JSON_PRETTY_PRINT);
         }
 
         return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this));

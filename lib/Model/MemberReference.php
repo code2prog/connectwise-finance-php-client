@@ -34,8 +34,10 @@ use \ArrayAccess;
 /**
  * MemberReference Class Doc Comment
  *
- * @category    Class */
- // @description Vendor Can be either Member or Company Reference
+ * @category    Class
+ */
+// @description Vendor Can be either Member or Company Reference
+
 /**
  * @package     Spinen\ConnectWise\Clients\Finance
  * @author      Swagger Codegen team
@@ -46,20 +48,20 @@ class MemberReference implements ArrayAccess
     const DISCRIMINATOR = null;
 
     /**
-      * The original name of the model.
-      * @var string
-      */
+     * The original name of the model.
+     * @var string
+     */
     protected static $swaggerModelName = 'MemberReference';
 
     /**
-      * Array of property to type mappings. Used for (de)serialization
-      * @var string[]
-      */
+     * Array of property to type mappings. Used for (de)serialization
+     * @var string[]
+     */
     protected static $swaggerTypes = [
-        'id' => 'int',
+        'id'         => 'int',
         'identifier' => 'string',
-        'name' => 'string',
-        '_info' => '\Spinen\ConnectWise\Clients\Finance\Model\Metadata'
+        'name'       => 'string',
+        '_info'      => '\Spinen\ConnectWise\Clients\Finance\Model\Metadata'
     ];
 
     public static function swaggerTypes()
@@ -72,10 +74,10 @@ class MemberReference implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'id' => 'id',
+        'id'         => 'id',
         'identifier' => 'identifier',
-        'name' => 'name',
-        '_info' => '_info'
+        'name'       => 'name',
+        '_info'      => '_info'
     ];
 
 
@@ -84,10 +86,10 @@ class MemberReference implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'id' => 'setId',
+        'id'         => 'setId',
         'identifier' => 'setIdentifier',
-        'name' => 'setName',
-        '_info' => 'setInfo'
+        'name'       => 'setName',
+        '_info'      => 'setInfo'
     ];
 
 
@@ -96,10 +98,10 @@ class MemberReference implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'id' => 'getId',
+        'id'         => 'getId',
         'identifier' => 'getIdentifier',
-        'name' => 'getName',
-        '_info' => 'getInfo'
+        'name'       => 'getName',
+        '_info'      => 'getInfo'
     ];
 
     public static function attributeMap()
@@ -117,9 +119,6 @@ class MemberReference implements ArrayAccess
         return self::$getters;
     }
 
-    
-
-    
 
     /**
      * Associative array for storing property values
@@ -129,7 +128,7 @@ class MemberReference implements ArrayAccess
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param  mixed[]  $data  Associated array of property values initializing the model
      */
     public function __construct(array $data = null)
     {
@@ -173,7 +172,7 @@ class MemberReference implements ArrayAccess
 
     /**
      * Sets id
-     * @param int $id
+     * @param  int  $id
      * @return $this
      */
     public function setId($id)
@@ -194,7 +193,7 @@ class MemberReference implements ArrayAccess
 
     /**
      * Sets identifier
-     * @param string $identifier
+     * @param  string  $identifier
      * @return $this
      */
     public function setIdentifier($identifier)
@@ -215,7 +214,7 @@ class MemberReference implements ArrayAccess
 
     /**
      * Sets name
-     * @param string $name
+     * @param  string  $name
      * @return $this
      */
     public function setName($name)
@@ -236,7 +235,7 @@ class MemberReference implements ArrayAccess
 
     /**
      * Sets _info
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\Metadata $_info Metadata of the entity
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\Metadata  $_info  Metadata of the entity
      * @return $this
      */
     public function setInfo($_info)
@@ -245,9 +244,10 @@ class MemberReference implements ArrayAccess
 
         return $this;
     }
+
     /**
      * Returns true if offset exists. False otherwise.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return boolean
      */
     public function offsetExists($offset)
@@ -257,7 +257,7 @@ class MemberReference implements ArrayAccess
 
     /**
      * Gets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return mixed
      */
     public function offsetGet($offset)
@@ -267,8 +267,8 @@ class MemberReference implements ArrayAccess
 
     /**
      * Sets value based on offset.
-     * @param  integer $offset Offset
-     * @param  mixed   $value  Value to be set
+     * @param  integer  $offset  Offset
+     * @param  mixed  $value  Value to be set
      * @return void
      */
     public function offsetSet($offset, $value)
@@ -282,7 +282,7 @@ class MemberReference implements ArrayAccess
 
     /**
      * Unsets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return void
      */
     public function offsetUnset($offset)
@@ -297,7 +297,8 @@ class MemberReference implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this),
+                JSON_PRETTY_PRINT);
         }
 
         return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this));

@@ -141,6 +141,8 @@ class Configuration
      */
     protected $sslVerification = true;
 
+    protected $userId = '';
+
     /**
      * Constructor
      */
@@ -152,8 +154,8 @@ class Configuration
     /**
      * Sets API key
      *
-     * @param string $apiKeyIdentifier API key identifier (authentication scheme)
-     * @param string $key              API key or token
+     * @param  string  $apiKeyIdentifier  API key identifier (authentication scheme)
+     * @param  string  $key  API key or token
      *
      * @return Configuration
      */
@@ -166,7 +168,7 @@ class Configuration
     /**
      * Gets API key
      *
-     * @param string $apiKeyIdentifier API key identifier (authentication scheme)
+     * @param  string  $apiKeyIdentifier  API key identifier (authentication scheme)
      *
      * @return string API key or token
      */
@@ -178,8 +180,8 @@ class Configuration
     /**
      * Sets the prefix for API key (e.g. Bearer)
      *
-     * @param string $apiKeyIdentifier API key identifier (authentication scheme)
-     * @param string $prefix           API key prefix, e.g. Bearer
+     * @param  string  $apiKeyIdentifier  API key identifier (authentication scheme)
+     * @param  string  $prefix  API key prefix, e.g. Bearer
      *
      * @return Configuration
      */
@@ -192,7 +194,7 @@ class Configuration
     /**
      * Gets API key prefix
      *
-     * @param string $apiKeyIdentifier API key identifier (authentication scheme)
+     * @param  string  $apiKeyIdentifier  API key identifier (authentication scheme)
      *
      * @return string
      */
@@ -204,7 +206,7 @@ class Configuration
     /**
      * Sets the access token for OAuth
      *
-     * @param string $accessToken Token for OAuth
+     * @param  string  $accessToken  Token for OAuth
      *
      * @return Configuration
      */
@@ -224,10 +226,22 @@ class Configuration
         return $this->accessToken;
     }
 
+    public function getUserId()
+    {
+        return $this->userId;
+    }
+
+    public function setUserId($userId)
+    {
+        $this->userId = $userId;
+        return $this;
+    }
+
+
     /**
      * Sets the username for HTTP basic authentication
      *
-     * @param string $username Username for HTTP basic authentication
+     * @param  string  $username  Username for HTTP basic authentication
      *
      * @return Configuration
      */
@@ -250,7 +264,7 @@ class Configuration
     /**
      * Sets the password for HTTP basic authentication
      *
-     * @param string $password Password for HTTP basic authentication
+     * @param  string  $password  Password for HTTP basic authentication
      *
      * @return Configuration
      */
@@ -273,8 +287,8 @@ class Configuration
     /**
      * Adds a default header
      *
-     * @param string $headerName  header name (e.g. Token)
-     * @param string $headerValue header value (e.g. 1z8wp3)
+     * @param  string  $headerName  header name (e.g. Token)
+     * @param  string  $headerValue  header value (e.g. 1z8wp3)
      *
      * @return Configuration
      */
@@ -284,7 +298,7 @@ class Configuration
             throw new \InvalidArgumentException('Header name must be a string.');
         }
 
-        $this->defaultHeaders[$headerName] =  $headerValue;
+        $this->defaultHeaders[$headerName] = $headerValue;
         return $this;
     }
 
@@ -301,7 +315,7 @@ class Configuration
     /**
      * Deletes a default header
      *
-     * @param string $headerName the header to delete
+     * @param  string  $headerName  the header to delete
      *
      * @return Configuration
      */
@@ -313,7 +327,7 @@ class Configuration
     /**
      * Sets the host
      *
-     * @param string $host Host
+     * @param  string  $host  Host
      *
      * @return Configuration
      */
@@ -336,7 +350,7 @@ class Configuration
     /**
      * Sets the user agent of the api client
      *
-     * @param string $userAgent the user agent of the api client
+     * @param  string  $userAgent  the user agent of the api client
      *
      * @return Configuration
      */
@@ -363,7 +377,7 @@ class Configuration
     /**
      * Sets the HTTP timeout value
      *
-     * @param integer $seconds Number of seconds before timing out [set to 0 for no timeout]
+     * @param  integer  $seconds  Number of seconds before timing out [set to 0 for no timeout]
      *
      * @return Configuration
      */
@@ -390,7 +404,7 @@ class Configuration
     /**
      * Sets the HTTP connect timeout value
      *
-     * @param integer $seconds Number of seconds before connection times out [set to 0 for no timeout]
+     * @param  integer  $seconds  Number of seconds before connection times out [set to 0 for no timeout]
      *
      * @return Configuration
      */
@@ -417,7 +431,7 @@ class Configuration
     /**
      * Sets debug flag
      *
-     * @param bool $debug Debug flag
+     * @param  bool  $debug  Debug flag
      *
      * @return Configuration
      */
@@ -440,7 +454,7 @@ class Configuration
     /**
      * Sets the debug file
      *
-     * @param string $debugFile Debug file
+     * @param  string  $debugFile  Debug file
      *
      * @return Configuration
      */
@@ -463,7 +477,7 @@ class Configuration
     /**
      * Sets the temp folder path
      *
-     * @param string $tempFolderPath Temp folder path
+     * @param  string  $tempFolderPath  Temp folder path
      *
      * @return Configuration
      */
@@ -486,7 +500,7 @@ class Configuration
     /**
      * Sets if SSL verification should be enabled or disabled
      *
-     * @param boolean $sslVerification True if the certificate should be validated, false otherwise
+     * @param  boolean  $sslVerification  True if the certificate should be validated, false otherwise
      *
      * @return Configuration
      */
@@ -523,7 +537,7 @@ class Configuration
     /**
      * Sets the detault configuration instance
      *
-     * @param Configuration $config An instance of the Configuration Object
+     * @param  Configuration  $config  An instance of the Configuration Object
      *
      * @return void
      */
@@ -539,12 +553,12 @@ class Configuration
      */
     public static function toDebugReport()
     {
-        $report  = 'PHP SDK (Spinen\ConnectWise\Clients\Finance) Debug Report:' . PHP_EOL;
-        $report .= '    OS: ' . php_uname() . PHP_EOL;
-        $report .= '    PHP Version: ' . phpversion() . PHP_EOL;
-        $report .= '    OpenAPI Spec Version: 1.0.0' . PHP_EOL;
-        $report .= '    SDK Package Version: 3.0.0-beta' . PHP_EOL;
-        $report .= '    Temp Folder Path: ' . self::getDefaultConfiguration()->getTempFolderPath() . PHP_EOL;
+        $report = 'PHP SDK (Spinen\ConnectWise\Clients\Finance) Debug Report:'.PHP_EOL;
+        $report .= '    OS: '.php_uname().PHP_EOL;
+        $report .= '    PHP Version: '.phpversion().PHP_EOL;
+        $report .= '    OpenAPI Spec Version: 1.0.0'.PHP_EOL;
+        $report .= '    SDK Package Version: 3.0.0-beta'.PHP_EOL;
+        $report .= '    Temp Folder Path: '.self::getDefaultConfiguration()->getTempFolderPath().PHP_EOL;
 
         return $report;
     }

@@ -34,7 +34,9 @@ use \ArrayAccess;
 /**
  * TaxCode Class Doc Comment
  *
- * @category    Class */
+ * @category    Class
+ */
+
 /**
  * @package     Spinen\ConnectWise\Clients\Finance
  * @author      Swagger Codegen team
@@ -45,87 +47,87 @@ class TaxCode implements ArrayAccess
     const DISCRIMINATOR = null;
 
     /**
-      * The original name of the model.
-      * @var string
-      */
+     * The original name of the model.
+     * @var string
+     */
     protected static $swaggerModelName = 'TaxCode';
 
     /**
-      * Array of property to type mappings. Used for (de)serialization
-      * @var string[]
-      */
+     * Array of property to type mappings. Used for (de)serialization
+     * @var string[]
+     */
     protected static $swaggerTypes = [
-        'id' => 'int',
-        'identifier' => 'string',
-        'description' => 'string',
-        'invoice_caption' => 'string',
-        'country' => '\Spinen\ConnectWise\Clients\Finance\Model\CountryReference',
-        'effective_date' => '\DateTime',
-        'default_flag' => 'bool',
-        'display_on_invoice_flag' => 'bool',
-        'canada_calculate_gst_flag' => 'bool',
-        'cancel_date' => '\DateTime',
-        'level_one_rate' => 'double',
-        'level_one_rate_type' => 'string',
-        'level_one_taxable_max' => 'double',
-        'level_one_caption' => 'string',
-        'level_one_tax_code_xref' => 'string',
-        'level_one_agency_xref' => 'string',
-        'level_one_services_flag' => 'bool',
-        'level_one_expenses_flag' => 'bool',
-        'level_one_products_flag' => 'bool',
-        'level_one_apply_single_unit_flag' => 'bool',
-        'level_one_apply_single_unit_min' => 'double',
-        'level_one_apply_single_unit_max' => 'double',
-        'level_two_rate' => 'double',
-        'level_two_rate_type' => 'string',
-        'level_two_taxable_max' => 'double',
-        'level_two_caption' => 'string',
-        'level_two_tax_code_xref' => 'string',
-        'level_two_agency_xref' => 'string',
-        'level_two_services_flag' => 'bool',
-        'level_two_expenses_flag' => 'bool',
-        'level_two_products_flag' => 'bool',
-        'level_two_apply_single_unit_flag' => 'bool',
-        'level_two_apply_single_unit_min' => 'double',
-        'level_two_apply_single_unit_max' => 'double',
-        'level_three_rate' => 'double',
-        'level_three_rate_type' => 'string',
-        'level_three_taxable_max' => 'double',
-        'level_three_caption' => 'string',
-        'level_three_tax_code_xref' => 'string',
-        'level_three_agency_xref' => 'string',
-        'level_three_services_flag' => 'bool',
-        'level_three_expenses_flag' => 'bool',
-        'level_three_products_flag' => 'bool',
+        'id'                                 => 'int',
+        'identifier'                         => 'string',
+        'description'                        => 'string',
+        'invoice_caption'                    => 'string',
+        'country'                            => '\Spinen\ConnectWise\Clients\Finance\Model\CountryReference',
+        'effective_date'                     => '\DateTime',
+        'default_flag'                       => 'bool',
+        'display_on_invoice_flag'            => 'bool',
+        'canada_calculate_gst_flag'          => 'bool',
+        'cancel_date'                        => '\DateTime',
+        'level_one_rate'                     => 'double',
+        'level_one_rate_type'                => 'string',
+        'level_one_taxable_max'              => 'double',
+        'level_one_caption'                  => 'string',
+        'level_one_tax_code_xref'            => 'string',
+        'level_one_agency_xref'              => 'string',
+        'level_one_services_flag'            => 'bool',
+        'level_one_expenses_flag'            => 'bool',
+        'level_one_products_flag'            => 'bool',
+        'level_one_apply_single_unit_flag'   => 'bool',
+        'level_one_apply_single_unit_min'    => 'double',
+        'level_one_apply_single_unit_max'    => 'double',
+        'level_two_rate'                     => 'double',
+        'level_two_rate_type'                => 'string',
+        'level_two_taxable_max'              => 'double',
+        'level_two_caption'                  => 'string',
+        'level_two_tax_code_xref'            => 'string',
+        'level_two_agency_xref'              => 'string',
+        'level_two_services_flag'            => 'bool',
+        'level_two_expenses_flag'            => 'bool',
+        'level_two_products_flag'            => 'bool',
+        'level_two_apply_single_unit_flag'   => 'bool',
+        'level_two_apply_single_unit_min'    => 'double',
+        'level_two_apply_single_unit_max'    => 'double',
+        'level_three_rate'                   => 'double',
+        'level_three_rate_type'              => 'string',
+        'level_three_taxable_max'            => 'double',
+        'level_three_caption'                => 'string',
+        'level_three_tax_code_xref'          => 'string',
+        'level_three_agency_xref'            => 'string',
+        'level_three_services_flag'          => 'bool',
+        'level_three_expenses_flag'          => 'bool',
+        'level_three_products_flag'          => 'bool',
         'level_three_apply_single_unit_flag' => 'bool',
-        'level_three_apply_single_unit_min' => 'double',
-        'level_three_apply_single_unit_max' => 'double',
-        'level_four_rate' => 'double',
-        'level_four_rate_type' => 'string',
-        'level_four_taxable_max' => 'double',
-        'level_four_caption' => 'string',
-        'level_four_tax_code_xref' => 'string',
-        'level_four_agency_xref' => 'string',
-        'level_four_services_flag' => 'bool',
-        'level_four_expenses_flag' => 'bool',
-        'level_four_products_flag' => 'bool',
-        'level_four_apply_single_unit_flag' => 'bool',
-        'level_four_apply_single_unit_min' => 'double',
-        'level_four_apply_single_unit_max' => 'double',
-        'level_five_rate' => 'double',
-        'level_five_rate_type' => 'string',
-        'level_five_taxable_max' => 'double',
-        'level_five_caption' => 'string',
-        'level_five_tax_code_xref' => 'string',
-        'level_five_agency_xref' => 'string',
-        'level_five_services_flag' => 'bool',
-        'level_five_expenses_flag' => 'bool',
-        'level_five_products_flag' => 'bool',
-        'level_five_apply_single_unit_flag' => 'bool',
-        'level_five_apply_single_unit_min' => 'double',
-        'level_five_apply_single_unit_max' => 'double',
-        '_info' => '\Spinen\ConnectWise\Clients\Finance\Model\Metadata'
+        'level_three_apply_single_unit_min'  => 'double',
+        'level_three_apply_single_unit_max'  => 'double',
+        'level_four_rate'                    => 'double',
+        'level_four_rate_type'               => 'string',
+        'level_four_taxable_max'             => 'double',
+        'level_four_caption'                 => 'string',
+        'level_four_tax_code_xref'           => 'string',
+        'level_four_agency_xref'             => 'string',
+        'level_four_services_flag'           => 'bool',
+        'level_four_expenses_flag'           => 'bool',
+        'level_four_products_flag'           => 'bool',
+        'level_four_apply_single_unit_flag'  => 'bool',
+        'level_four_apply_single_unit_min'   => 'double',
+        'level_four_apply_single_unit_max'   => 'double',
+        'level_five_rate'                    => 'double',
+        'level_five_rate_type'               => 'string',
+        'level_five_taxable_max'             => 'double',
+        'level_five_caption'                 => 'string',
+        'level_five_tax_code_xref'           => 'string',
+        'level_five_agency_xref'             => 'string',
+        'level_five_services_flag'           => 'bool',
+        'level_five_expenses_flag'           => 'bool',
+        'level_five_products_flag'           => 'bool',
+        'level_five_apply_single_unit_flag'  => 'bool',
+        'level_five_apply_single_unit_min'   => 'double',
+        'level_five_apply_single_unit_max'   => 'double',
+        '_info'                              => '\Spinen\ConnectWise\Clients\Finance\Model\Metadata'
     ];
 
     public static function swaggerTypes()
@@ -138,77 +140,77 @@ class TaxCode implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'id' => 'id',
-        'identifier' => 'identifier',
-        'description' => 'description',
-        'invoice_caption' => 'invoiceCaption',
-        'country' => 'country',
-        'effective_date' => 'effectiveDate',
-        'default_flag' => 'defaultFlag',
-        'display_on_invoice_flag' => 'displayOnInvoiceFlag',
-        'canada_calculate_gst_flag' => 'canadaCalculateGSTFlag',
-        'cancel_date' => 'cancelDate',
-        'level_one_rate' => 'levelOneRate',
-        'level_one_rate_type' => 'levelOneRateType',
-        'level_one_taxable_max' => 'levelOneTaxableMax',
-        'level_one_caption' => 'levelOneCaption',
-        'level_one_tax_code_xref' => 'levelOneTaxCodeXref',
-        'level_one_agency_xref' => 'levelOneAgencyXref',
-        'level_one_services_flag' => 'levelOneServicesFlag',
-        'level_one_expenses_flag' => 'levelOneExpensesFlag',
-        'level_one_products_flag' => 'levelOneProductsFlag',
-        'level_one_apply_single_unit_flag' => 'levelOneApplySingleUnitFlag',
-        'level_one_apply_single_unit_min' => 'levelOneApplySingleUnitMin',
-        'level_one_apply_single_unit_max' => 'levelOneApplySingleUnitMax',
-        'level_two_rate' => 'levelTwoRate',
-        'level_two_rate_type' => 'levelTwoRateType',
-        'level_two_taxable_max' => 'levelTwoTaxableMax',
-        'level_two_caption' => 'levelTwoCaption',
-        'level_two_tax_code_xref' => 'levelTwoTaxCodeXref',
-        'level_two_agency_xref' => 'levelTwoAgencyXref',
-        'level_two_services_flag' => 'levelTwoServicesFlag',
-        'level_two_expenses_flag' => 'levelTwoExpensesFlag',
-        'level_two_products_flag' => 'levelTwoProductsFlag',
-        'level_two_apply_single_unit_flag' => 'levelTwoApplySingleUnitFlag',
-        'level_two_apply_single_unit_min' => 'levelTwoApplySingleUnitMin',
-        'level_two_apply_single_unit_max' => 'levelTwoApplySingleUnitMax',
-        'level_three_rate' => 'levelThreeRate',
-        'level_three_rate_type' => 'levelThreeRateType',
-        'level_three_taxable_max' => 'levelThreeTaxableMax',
-        'level_three_caption' => 'levelThreeCaption',
-        'level_three_tax_code_xref' => 'levelThreeTaxCodeXref',
-        'level_three_agency_xref' => 'levelThreeAgencyXref',
-        'level_three_services_flag' => 'levelThreeServicesFlag',
-        'level_three_expenses_flag' => 'levelThreeExpensesFlag',
-        'level_three_products_flag' => 'levelThreeProductsFlag',
+        'id'                                 => 'id',
+        'identifier'                         => 'identifier',
+        'description'                        => 'description',
+        'invoice_caption'                    => 'invoiceCaption',
+        'country'                            => 'country',
+        'effective_date'                     => 'effectiveDate',
+        'default_flag'                       => 'defaultFlag',
+        'display_on_invoice_flag'            => 'displayOnInvoiceFlag',
+        'canada_calculate_gst_flag'          => 'canadaCalculateGSTFlag',
+        'cancel_date'                        => 'cancelDate',
+        'level_one_rate'                     => 'levelOneRate',
+        'level_one_rate_type'                => 'levelOneRateType',
+        'level_one_taxable_max'              => 'levelOneTaxableMax',
+        'level_one_caption'                  => 'levelOneCaption',
+        'level_one_tax_code_xref'            => 'levelOneTaxCodeXref',
+        'level_one_agency_xref'              => 'levelOneAgencyXref',
+        'level_one_services_flag'            => 'levelOneServicesFlag',
+        'level_one_expenses_flag'            => 'levelOneExpensesFlag',
+        'level_one_products_flag'            => 'levelOneProductsFlag',
+        'level_one_apply_single_unit_flag'   => 'levelOneApplySingleUnitFlag',
+        'level_one_apply_single_unit_min'    => 'levelOneApplySingleUnitMin',
+        'level_one_apply_single_unit_max'    => 'levelOneApplySingleUnitMax',
+        'level_two_rate'                     => 'levelTwoRate',
+        'level_two_rate_type'                => 'levelTwoRateType',
+        'level_two_taxable_max'              => 'levelTwoTaxableMax',
+        'level_two_caption'                  => 'levelTwoCaption',
+        'level_two_tax_code_xref'            => 'levelTwoTaxCodeXref',
+        'level_two_agency_xref'              => 'levelTwoAgencyXref',
+        'level_two_services_flag'            => 'levelTwoServicesFlag',
+        'level_two_expenses_flag'            => 'levelTwoExpensesFlag',
+        'level_two_products_flag'            => 'levelTwoProductsFlag',
+        'level_two_apply_single_unit_flag'   => 'levelTwoApplySingleUnitFlag',
+        'level_two_apply_single_unit_min'    => 'levelTwoApplySingleUnitMin',
+        'level_two_apply_single_unit_max'    => 'levelTwoApplySingleUnitMax',
+        'level_three_rate'                   => 'levelThreeRate',
+        'level_three_rate_type'              => 'levelThreeRateType',
+        'level_three_taxable_max'            => 'levelThreeTaxableMax',
+        'level_three_caption'                => 'levelThreeCaption',
+        'level_three_tax_code_xref'          => 'levelThreeTaxCodeXref',
+        'level_three_agency_xref'            => 'levelThreeAgencyXref',
+        'level_three_services_flag'          => 'levelThreeServicesFlag',
+        'level_three_expenses_flag'          => 'levelThreeExpensesFlag',
+        'level_three_products_flag'          => 'levelThreeProductsFlag',
         'level_three_apply_single_unit_flag' => 'levelThreeApplySingleUnitFlag',
-        'level_three_apply_single_unit_min' => 'levelThreeApplySingleUnitMin',
-        'level_three_apply_single_unit_max' => 'levelThreeApplySingleUnitMax',
-        'level_four_rate' => 'levelFourRate',
-        'level_four_rate_type' => 'levelFourRateType',
-        'level_four_taxable_max' => 'levelFourTaxableMax',
-        'level_four_caption' => 'levelFourCaption',
-        'level_four_tax_code_xref' => 'levelFourTaxCodeXref',
-        'level_four_agency_xref' => 'levelFourAgencyXref',
-        'level_four_services_flag' => 'levelFourServicesFlag',
-        'level_four_expenses_flag' => 'levelFourExpensesFlag',
-        'level_four_products_flag' => 'levelFourProductsFlag',
-        'level_four_apply_single_unit_flag' => 'levelFourApplySingleUnitFlag',
-        'level_four_apply_single_unit_min' => 'levelFourApplySingleUnitMin',
-        'level_four_apply_single_unit_max' => 'levelFourApplySingleUnitMax',
-        'level_five_rate' => 'levelFiveRate',
-        'level_five_rate_type' => 'levelFiveRateType',
-        'level_five_taxable_max' => 'levelFiveTaxableMax',
-        'level_five_caption' => 'levelFiveCaption',
-        'level_five_tax_code_xref' => 'levelFiveTaxCodeXref',
-        'level_five_agency_xref' => 'levelFiveAgencyXref',
-        'level_five_services_flag' => 'levelFiveServicesFlag',
-        'level_five_expenses_flag' => 'levelFiveExpensesFlag',
-        'level_five_products_flag' => 'levelFiveProductsFlag',
-        'level_five_apply_single_unit_flag' => 'levelFiveApplySingleUnitFlag',
-        'level_five_apply_single_unit_min' => 'levelFiveApplySingleUnitMin',
-        'level_five_apply_single_unit_max' => 'levelFiveApplySingleUnitMax',
-        '_info' => '_info'
+        'level_three_apply_single_unit_min'  => 'levelThreeApplySingleUnitMin',
+        'level_three_apply_single_unit_max'  => 'levelThreeApplySingleUnitMax',
+        'level_four_rate'                    => 'levelFourRate',
+        'level_four_rate_type'               => 'levelFourRateType',
+        'level_four_taxable_max'             => 'levelFourTaxableMax',
+        'level_four_caption'                 => 'levelFourCaption',
+        'level_four_tax_code_xref'           => 'levelFourTaxCodeXref',
+        'level_four_agency_xref'             => 'levelFourAgencyXref',
+        'level_four_services_flag'           => 'levelFourServicesFlag',
+        'level_four_expenses_flag'           => 'levelFourExpensesFlag',
+        'level_four_products_flag'           => 'levelFourProductsFlag',
+        'level_four_apply_single_unit_flag'  => 'levelFourApplySingleUnitFlag',
+        'level_four_apply_single_unit_min'   => 'levelFourApplySingleUnitMin',
+        'level_four_apply_single_unit_max'   => 'levelFourApplySingleUnitMax',
+        'level_five_rate'                    => 'levelFiveRate',
+        'level_five_rate_type'               => 'levelFiveRateType',
+        'level_five_taxable_max'             => 'levelFiveTaxableMax',
+        'level_five_caption'                 => 'levelFiveCaption',
+        'level_five_tax_code_xref'           => 'levelFiveTaxCodeXref',
+        'level_five_agency_xref'             => 'levelFiveAgencyXref',
+        'level_five_services_flag'           => 'levelFiveServicesFlag',
+        'level_five_expenses_flag'           => 'levelFiveExpensesFlag',
+        'level_five_products_flag'           => 'levelFiveProductsFlag',
+        'level_five_apply_single_unit_flag'  => 'levelFiveApplySingleUnitFlag',
+        'level_five_apply_single_unit_min'   => 'levelFiveApplySingleUnitMin',
+        'level_five_apply_single_unit_max'   => 'levelFiveApplySingleUnitMax',
+        '_info'                              => '_info'
     ];
 
 
@@ -217,77 +219,77 @@ class TaxCode implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'id' => 'setId',
-        'identifier' => 'setIdentifier',
-        'description' => 'setDescription',
-        'invoice_caption' => 'setInvoiceCaption',
-        'country' => 'setCountry',
-        'effective_date' => 'setEffectiveDate',
-        'default_flag' => 'setDefaultFlag',
-        'display_on_invoice_flag' => 'setDisplayOnInvoiceFlag',
-        'canada_calculate_gst_flag' => 'setCanadaCalculateGstFlag',
-        'cancel_date' => 'setCancelDate',
-        'level_one_rate' => 'setLevelOneRate',
-        'level_one_rate_type' => 'setLevelOneRateType',
-        'level_one_taxable_max' => 'setLevelOneTaxableMax',
-        'level_one_caption' => 'setLevelOneCaption',
-        'level_one_tax_code_xref' => 'setLevelOneTaxCodeXref',
-        'level_one_agency_xref' => 'setLevelOneAgencyXref',
-        'level_one_services_flag' => 'setLevelOneServicesFlag',
-        'level_one_expenses_flag' => 'setLevelOneExpensesFlag',
-        'level_one_products_flag' => 'setLevelOneProductsFlag',
-        'level_one_apply_single_unit_flag' => 'setLevelOneApplySingleUnitFlag',
-        'level_one_apply_single_unit_min' => 'setLevelOneApplySingleUnitMin',
-        'level_one_apply_single_unit_max' => 'setLevelOneApplySingleUnitMax',
-        'level_two_rate' => 'setLevelTwoRate',
-        'level_two_rate_type' => 'setLevelTwoRateType',
-        'level_two_taxable_max' => 'setLevelTwoTaxableMax',
-        'level_two_caption' => 'setLevelTwoCaption',
-        'level_two_tax_code_xref' => 'setLevelTwoTaxCodeXref',
-        'level_two_agency_xref' => 'setLevelTwoAgencyXref',
-        'level_two_services_flag' => 'setLevelTwoServicesFlag',
-        'level_two_expenses_flag' => 'setLevelTwoExpensesFlag',
-        'level_two_products_flag' => 'setLevelTwoProductsFlag',
-        'level_two_apply_single_unit_flag' => 'setLevelTwoApplySingleUnitFlag',
-        'level_two_apply_single_unit_min' => 'setLevelTwoApplySingleUnitMin',
-        'level_two_apply_single_unit_max' => 'setLevelTwoApplySingleUnitMax',
-        'level_three_rate' => 'setLevelThreeRate',
-        'level_three_rate_type' => 'setLevelThreeRateType',
-        'level_three_taxable_max' => 'setLevelThreeTaxableMax',
-        'level_three_caption' => 'setLevelThreeCaption',
-        'level_three_tax_code_xref' => 'setLevelThreeTaxCodeXref',
-        'level_three_agency_xref' => 'setLevelThreeAgencyXref',
-        'level_three_services_flag' => 'setLevelThreeServicesFlag',
-        'level_three_expenses_flag' => 'setLevelThreeExpensesFlag',
-        'level_three_products_flag' => 'setLevelThreeProductsFlag',
+        'id'                                 => 'setId',
+        'identifier'                         => 'setIdentifier',
+        'description'                        => 'setDescription',
+        'invoice_caption'                    => 'setInvoiceCaption',
+        'country'                            => 'setCountry',
+        'effective_date'                     => 'setEffectiveDate',
+        'default_flag'                       => 'setDefaultFlag',
+        'display_on_invoice_flag'            => 'setDisplayOnInvoiceFlag',
+        'canada_calculate_gst_flag'          => 'setCanadaCalculateGstFlag',
+        'cancel_date'                        => 'setCancelDate',
+        'level_one_rate'                     => 'setLevelOneRate',
+        'level_one_rate_type'                => 'setLevelOneRateType',
+        'level_one_taxable_max'              => 'setLevelOneTaxableMax',
+        'level_one_caption'                  => 'setLevelOneCaption',
+        'level_one_tax_code_xref'            => 'setLevelOneTaxCodeXref',
+        'level_one_agency_xref'              => 'setLevelOneAgencyXref',
+        'level_one_services_flag'            => 'setLevelOneServicesFlag',
+        'level_one_expenses_flag'            => 'setLevelOneExpensesFlag',
+        'level_one_products_flag'            => 'setLevelOneProductsFlag',
+        'level_one_apply_single_unit_flag'   => 'setLevelOneApplySingleUnitFlag',
+        'level_one_apply_single_unit_min'    => 'setLevelOneApplySingleUnitMin',
+        'level_one_apply_single_unit_max'    => 'setLevelOneApplySingleUnitMax',
+        'level_two_rate'                     => 'setLevelTwoRate',
+        'level_two_rate_type'                => 'setLevelTwoRateType',
+        'level_two_taxable_max'              => 'setLevelTwoTaxableMax',
+        'level_two_caption'                  => 'setLevelTwoCaption',
+        'level_two_tax_code_xref'            => 'setLevelTwoTaxCodeXref',
+        'level_two_agency_xref'              => 'setLevelTwoAgencyXref',
+        'level_two_services_flag'            => 'setLevelTwoServicesFlag',
+        'level_two_expenses_flag'            => 'setLevelTwoExpensesFlag',
+        'level_two_products_flag'            => 'setLevelTwoProductsFlag',
+        'level_two_apply_single_unit_flag'   => 'setLevelTwoApplySingleUnitFlag',
+        'level_two_apply_single_unit_min'    => 'setLevelTwoApplySingleUnitMin',
+        'level_two_apply_single_unit_max'    => 'setLevelTwoApplySingleUnitMax',
+        'level_three_rate'                   => 'setLevelThreeRate',
+        'level_three_rate_type'              => 'setLevelThreeRateType',
+        'level_three_taxable_max'            => 'setLevelThreeTaxableMax',
+        'level_three_caption'                => 'setLevelThreeCaption',
+        'level_three_tax_code_xref'          => 'setLevelThreeTaxCodeXref',
+        'level_three_agency_xref'            => 'setLevelThreeAgencyXref',
+        'level_three_services_flag'          => 'setLevelThreeServicesFlag',
+        'level_three_expenses_flag'          => 'setLevelThreeExpensesFlag',
+        'level_three_products_flag'          => 'setLevelThreeProductsFlag',
         'level_three_apply_single_unit_flag' => 'setLevelThreeApplySingleUnitFlag',
-        'level_three_apply_single_unit_min' => 'setLevelThreeApplySingleUnitMin',
-        'level_three_apply_single_unit_max' => 'setLevelThreeApplySingleUnitMax',
-        'level_four_rate' => 'setLevelFourRate',
-        'level_four_rate_type' => 'setLevelFourRateType',
-        'level_four_taxable_max' => 'setLevelFourTaxableMax',
-        'level_four_caption' => 'setLevelFourCaption',
-        'level_four_tax_code_xref' => 'setLevelFourTaxCodeXref',
-        'level_four_agency_xref' => 'setLevelFourAgencyXref',
-        'level_four_services_flag' => 'setLevelFourServicesFlag',
-        'level_four_expenses_flag' => 'setLevelFourExpensesFlag',
-        'level_four_products_flag' => 'setLevelFourProductsFlag',
-        'level_four_apply_single_unit_flag' => 'setLevelFourApplySingleUnitFlag',
-        'level_four_apply_single_unit_min' => 'setLevelFourApplySingleUnitMin',
-        'level_four_apply_single_unit_max' => 'setLevelFourApplySingleUnitMax',
-        'level_five_rate' => 'setLevelFiveRate',
-        'level_five_rate_type' => 'setLevelFiveRateType',
-        'level_five_taxable_max' => 'setLevelFiveTaxableMax',
-        'level_five_caption' => 'setLevelFiveCaption',
-        'level_five_tax_code_xref' => 'setLevelFiveTaxCodeXref',
-        'level_five_agency_xref' => 'setLevelFiveAgencyXref',
-        'level_five_services_flag' => 'setLevelFiveServicesFlag',
-        'level_five_expenses_flag' => 'setLevelFiveExpensesFlag',
-        'level_five_products_flag' => 'setLevelFiveProductsFlag',
-        'level_five_apply_single_unit_flag' => 'setLevelFiveApplySingleUnitFlag',
-        'level_five_apply_single_unit_min' => 'setLevelFiveApplySingleUnitMin',
-        'level_five_apply_single_unit_max' => 'setLevelFiveApplySingleUnitMax',
-        '_info' => 'setInfo'
+        'level_three_apply_single_unit_min'  => 'setLevelThreeApplySingleUnitMin',
+        'level_three_apply_single_unit_max'  => 'setLevelThreeApplySingleUnitMax',
+        'level_four_rate'                    => 'setLevelFourRate',
+        'level_four_rate_type'               => 'setLevelFourRateType',
+        'level_four_taxable_max'             => 'setLevelFourTaxableMax',
+        'level_four_caption'                 => 'setLevelFourCaption',
+        'level_four_tax_code_xref'           => 'setLevelFourTaxCodeXref',
+        'level_four_agency_xref'             => 'setLevelFourAgencyXref',
+        'level_four_services_flag'           => 'setLevelFourServicesFlag',
+        'level_four_expenses_flag'           => 'setLevelFourExpensesFlag',
+        'level_four_products_flag'           => 'setLevelFourProductsFlag',
+        'level_four_apply_single_unit_flag'  => 'setLevelFourApplySingleUnitFlag',
+        'level_four_apply_single_unit_min'   => 'setLevelFourApplySingleUnitMin',
+        'level_four_apply_single_unit_max'   => 'setLevelFourApplySingleUnitMax',
+        'level_five_rate'                    => 'setLevelFiveRate',
+        'level_five_rate_type'               => 'setLevelFiveRateType',
+        'level_five_taxable_max'             => 'setLevelFiveTaxableMax',
+        'level_five_caption'                 => 'setLevelFiveCaption',
+        'level_five_tax_code_xref'           => 'setLevelFiveTaxCodeXref',
+        'level_five_agency_xref'             => 'setLevelFiveAgencyXref',
+        'level_five_services_flag'           => 'setLevelFiveServicesFlag',
+        'level_five_expenses_flag'           => 'setLevelFiveExpensesFlag',
+        'level_five_products_flag'           => 'setLevelFiveProductsFlag',
+        'level_five_apply_single_unit_flag'  => 'setLevelFiveApplySingleUnitFlag',
+        'level_five_apply_single_unit_min'   => 'setLevelFiveApplySingleUnitMin',
+        'level_five_apply_single_unit_max'   => 'setLevelFiveApplySingleUnitMax',
+        '_info'                              => 'setInfo'
     ];
 
 
@@ -296,77 +298,77 @@ class TaxCode implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'id' => 'getId',
-        'identifier' => 'getIdentifier',
-        'description' => 'getDescription',
-        'invoice_caption' => 'getInvoiceCaption',
-        'country' => 'getCountry',
-        'effective_date' => 'getEffectiveDate',
-        'default_flag' => 'getDefaultFlag',
-        'display_on_invoice_flag' => 'getDisplayOnInvoiceFlag',
-        'canada_calculate_gst_flag' => 'getCanadaCalculateGstFlag',
-        'cancel_date' => 'getCancelDate',
-        'level_one_rate' => 'getLevelOneRate',
-        'level_one_rate_type' => 'getLevelOneRateType',
-        'level_one_taxable_max' => 'getLevelOneTaxableMax',
-        'level_one_caption' => 'getLevelOneCaption',
-        'level_one_tax_code_xref' => 'getLevelOneTaxCodeXref',
-        'level_one_agency_xref' => 'getLevelOneAgencyXref',
-        'level_one_services_flag' => 'getLevelOneServicesFlag',
-        'level_one_expenses_flag' => 'getLevelOneExpensesFlag',
-        'level_one_products_flag' => 'getLevelOneProductsFlag',
-        'level_one_apply_single_unit_flag' => 'getLevelOneApplySingleUnitFlag',
-        'level_one_apply_single_unit_min' => 'getLevelOneApplySingleUnitMin',
-        'level_one_apply_single_unit_max' => 'getLevelOneApplySingleUnitMax',
-        'level_two_rate' => 'getLevelTwoRate',
-        'level_two_rate_type' => 'getLevelTwoRateType',
-        'level_two_taxable_max' => 'getLevelTwoTaxableMax',
-        'level_two_caption' => 'getLevelTwoCaption',
-        'level_two_tax_code_xref' => 'getLevelTwoTaxCodeXref',
-        'level_two_agency_xref' => 'getLevelTwoAgencyXref',
-        'level_two_services_flag' => 'getLevelTwoServicesFlag',
-        'level_two_expenses_flag' => 'getLevelTwoExpensesFlag',
-        'level_two_products_flag' => 'getLevelTwoProductsFlag',
-        'level_two_apply_single_unit_flag' => 'getLevelTwoApplySingleUnitFlag',
-        'level_two_apply_single_unit_min' => 'getLevelTwoApplySingleUnitMin',
-        'level_two_apply_single_unit_max' => 'getLevelTwoApplySingleUnitMax',
-        'level_three_rate' => 'getLevelThreeRate',
-        'level_three_rate_type' => 'getLevelThreeRateType',
-        'level_three_taxable_max' => 'getLevelThreeTaxableMax',
-        'level_three_caption' => 'getLevelThreeCaption',
-        'level_three_tax_code_xref' => 'getLevelThreeTaxCodeXref',
-        'level_three_agency_xref' => 'getLevelThreeAgencyXref',
-        'level_three_services_flag' => 'getLevelThreeServicesFlag',
-        'level_three_expenses_flag' => 'getLevelThreeExpensesFlag',
-        'level_three_products_flag' => 'getLevelThreeProductsFlag',
+        'id'                                 => 'getId',
+        'identifier'                         => 'getIdentifier',
+        'description'                        => 'getDescription',
+        'invoice_caption'                    => 'getInvoiceCaption',
+        'country'                            => 'getCountry',
+        'effective_date'                     => 'getEffectiveDate',
+        'default_flag'                       => 'getDefaultFlag',
+        'display_on_invoice_flag'            => 'getDisplayOnInvoiceFlag',
+        'canada_calculate_gst_flag'          => 'getCanadaCalculateGstFlag',
+        'cancel_date'                        => 'getCancelDate',
+        'level_one_rate'                     => 'getLevelOneRate',
+        'level_one_rate_type'                => 'getLevelOneRateType',
+        'level_one_taxable_max'              => 'getLevelOneTaxableMax',
+        'level_one_caption'                  => 'getLevelOneCaption',
+        'level_one_tax_code_xref'            => 'getLevelOneTaxCodeXref',
+        'level_one_agency_xref'              => 'getLevelOneAgencyXref',
+        'level_one_services_flag'            => 'getLevelOneServicesFlag',
+        'level_one_expenses_flag'            => 'getLevelOneExpensesFlag',
+        'level_one_products_flag'            => 'getLevelOneProductsFlag',
+        'level_one_apply_single_unit_flag'   => 'getLevelOneApplySingleUnitFlag',
+        'level_one_apply_single_unit_min'    => 'getLevelOneApplySingleUnitMin',
+        'level_one_apply_single_unit_max'    => 'getLevelOneApplySingleUnitMax',
+        'level_two_rate'                     => 'getLevelTwoRate',
+        'level_two_rate_type'                => 'getLevelTwoRateType',
+        'level_two_taxable_max'              => 'getLevelTwoTaxableMax',
+        'level_two_caption'                  => 'getLevelTwoCaption',
+        'level_two_tax_code_xref'            => 'getLevelTwoTaxCodeXref',
+        'level_two_agency_xref'              => 'getLevelTwoAgencyXref',
+        'level_two_services_flag'            => 'getLevelTwoServicesFlag',
+        'level_two_expenses_flag'            => 'getLevelTwoExpensesFlag',
+        'level_two_products_flag'            => 'getLevelTwoProductsFlag',
+        'level_two_apply_single_unit_flag'   => 'getLevelTwoApplySingleUnitFlag',
+        'level_two_apply_single_unit_min'    => 'getLevelTwoApplySingleUnitMin',
+        'level_two_apply_single_unit_max'    => 'getLevelTwoApplySingleUnitMax',
+        'level_three_rate'                   => 'getLevelThreeRate',
+        'level_three_rate_type'              => 'getLevelThreeRateType',
+        'level_three_taxable_max'            => 'getLevelThreeTaxableMax',
+        'level_three_caption'                => 'getLevelThreeCaption',
+        'level_three_tax_code_xref'          => 'getLevelThreeTaxCodeXref',
+        'level_three_agency_xref'            => 'getLevelThreeAgencyXref',
+        'level_three_services_flag'          => 'getLevelThreeServicesFlag',
+        'level_three_expenses_flag'          => 'getLevelThreeExpensesFlag',
+        'level_three_products_flag'          => 'getLevelThreeProductsFlag',
         'level_three_apply_single_unit_flag' => 'getLevelThreeApplySingleUnitFlag',
-        'level_three_apply_single_unit_min' => 'getLevelThreeApplySingleUnitMin',
-        'level_three_apply_single_unit_max' => 'getLevelThreeApplySingleUnitMax',
-        'level_four_rate' => 'getLevelFourRate',
-        'level_four_rate_type' => 'getLevelFourRateType',
-        'level_four_taxable_max' => 'getLevelFourTaxableMax',
-        'level_four_caption' => 'getLevelFourCaption',
-        'level_four_tax_code_xref' => 'getLevelFourTaxCodeXref',
-        'level_four_agency_xref' => 'getLevelFourAgencyXref',
-        'level_four_services_flag' => 'getLevelFourServicesFlag',
-        'level_four_expenses_flag' => 'getLevelFourExpensesFlag',
-        'level_four_products_flag' => 'getLevelFourProductsFlag',
-        'level_four_apply_single_unit_flag' => 'getLevelFourApplySingleUnitFlag',
-        'level_four_apply_single_unit_min' => 'getLevelFourApplySingleUnitMin',
-        'level_four_apply_single_unit_max' => 'getLevelFourApplySingleUnitMax',
-        'level_five_rate' => 'getLevelFiveRate',
-        'level_five_rate_type' => 'getLevelFiveRateType',
-        'level_five_taxable_max' => 'getLevelFiveTaxableMax',
-        'level_five_caption' => 'getLevelFiveCaption',
-        'level_five_tax_code_xref' => 'getLevelFiveTaxCodeXref',
-        'level_five_agency_xref' => 'getLevelFiveAgencyXref',
-        'level_five_services_flag' => 'getLevelFiveServicesFlag',
-        'level_five_expenses_flag' => 'getLevelFiveExpensesFlag',
-        'level_five_products_flag' => 'getLevelFiveProductsFlag',
-        'level_five_apply_single_unit_flag' => 'getLevelFiveApplySingleUnitFlag',
-        'level_five_apply_single_unit_min' => 'getLevelFiveApplySingleUnitMin',
-        'level_five_apply_single_unit_max' => 'getLevelFiveApplySingleUnitMax',
-        '_info' => 'getInfo'
+        'level_three_apply_single_unit_min'  => 'getLevelThreeApplySingleUnitMin',
+        'level_three_apply_single_unit_max'  => 'getLevelThreeApplySingleUnitMax',
+        'level_four_rate'                    => 'getLevelFourRate',
+        'level_four_rate_type'               => 'getLevelFourRateType',
+        'level_four_taxable_max'             => 'getLevelFourTaxableMax',
+        'level_four_caption'                 => 'getLevelFourCaption',
+        'level_four_tax_code_xref'           => 'getLevelFourTaxCodeXref',
+        'level_four_agency_xref'             => 'getLevelFourAgencyXref',
+        'level_four_services_flag'           => 'getLevelFourServicesFlag',
+        'level_four_expenses_flag'           => 'getLevelFourExpensesFlag',
+        'level_four_products_flag'           => 'getLevelFourProductsFlag',
+        'level_four_apply_single_unit_flag'  => 'getLevelFourApplySingleUnitFlag',
+        'level_four_apply_single_unit_min'   => 'getLevelFourApplySingleUnitMin',
+        'level_four_apply_single_unit_max'   => 'getLevelFourApplySingleUnitMax',
+        'level_five_rate'                    => 'getLevelFiveRate',
+        'level_five_rate_type'               => 'getLevelFiveRateType',
+        'level_five_taxable_max'             => 'getLevelFiveTaxableMax',
+        'level_five_caption'                 => 'getLevelFiveCaption',
+        'level_five_tax_code_xref'           => 'getLevelFiveTaxCodeXref',
+        'level_five_agency_xref'             => 'getLevelFiveAgencyXref',
+        'level_five_services_flag'           => 'getLevelFiveServicesFlag',
+        'level_five_expenses_flag'           => 'getLevelFiveExpensesFlag',
+        'level_five_products_flag'           => 'getLevelFiveProductsFlag',
+        'level_five_apply_single_unit_flag'  => 'getLevelFiveApplySingleUnitFlag',
+        'level_five_apply_single_unit_min'   => 'getLevelFiveApplySingleUnitMin',
+        'level_five_apply_single_unit_max'   => 'getLevelFiveApplySingleUnitMax',
+        '_info'                              => 'getInfo'
     ];
 
     public static function attributeMap()
@@ -394,9 +396,8 @@ class TaxCode implements ArrayAccess
     const LEVEL_FOUR_RATE_TYPE_PERCENT = 'Percent';
     const LEVEL_FIVE_RATE_TYPE_AMOUNT = 'Amount';
     const LEVEL_FIVE_RATE_TYPE_PERCENT = 'Percent';
-    
 
-    
+
     /**
      * Gets allowable values of the enum
      * @return string[]
@@ -408,7 +409,7 @@ class TaxCode implements ArrayAccess
             self::LEVEL_ONE_RATE_TYPE_PERCENT,
         ];
     }
-    
+
     /**
      * Gets allowable values of the enum
      * @return string[]
@@ -420,7 +421,7 @@ class TaxCode implements ArrayAccess
             self::LEVEL_TWO_RATE_TYPE_PERCENT,
         ];
     }
-    
+
     /**
      * Gets allowable values of the enum
      * @return string[]
@@ -432,7 +433,7 @@ class TaxCode implements ArrayAccess
             self::LEVEL_THREE_RATE_TYPE_PERCENT,
         ];
     }
-    
+
     /**
      * Gets allowable values of the enum
      * @return string[]
@@ -444,7 +445,7 @@ class TaxCode implements ArrayAccess
             self::LEVEL_FOUR_RATE_TYPE_PERCENT,
         ];
     }
-    
+
     /**
      * Gets allowable values of the enum
      * @return string[]
@@ -456,7 +457,7 @@ class TaxCode implements ArrayAccess
             self::LEVEL_FIVE_RATE_TYPE_PERCENT,
         ];
     }
-    
+
 
     /**
      * Associative array for storing property values
@@ -466,7 +467,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param  mixed[]  $data  Associated array of property values initializing the model
      */
     public function __construct(array $data = null)
     {
@@ -772,7 +773,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets id
-     * @param int $id
+     * @param  int  $id
      * @return $this
      */
     public function setId($id)
@@ -793,7 +794,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets identifier
-     * @param string $identifier
+     * @param  string  $identifier
      * @return $this
      */
     public function setIdentifier($identifier)
@@ -818,7 +819,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets description
-     * @param string $description
+     * @param  string  $description
      * @return $this
      */
     public function setDescription($description)
@@ -843,7 +844,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets invoice_caption
-     * @param string $invoice_caption
+     * @param  string  $invoice_caption
      * @return $this
      */
     public function setInvoiceCaption($invoice_caption)
@@ -868,7 +869,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets country
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\CountryReference $country
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\CountryReference  $country
      * @return $this
      */
     public function setCountry($country)
@@ -889,7 +890,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets effective_date
-     * @param \DateTime $effective_date
+     * @param  \DateTime  $effective_date
      * @return $this
      */
     public function setEffectiveDate($effective_date)
@@ -910,7 +911,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets default_flag
-     * @param bool $default_flag
+     * @param  bool  $default_flag
      * @return $this
      */
     public function setDefaultFlag($default_flag)
@@ -931,7 +932,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets display_on_invoice_flag
-     * @param bool $display_on_invoice_flag
+     * @param  bool  $display_on_invoice_flag
      * @return $this
      */
     public function setDisplayOnInvoiceFlag($display_on_invoice_flag)
@@ -952,7 +953,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets canada_calculate_gst_flag
-     * @param bool $canada_calculate_gst_flag
+     * @param  bool  $canada_calculate_gst_flag
      * @return $this
      */
     public function setCanadaCalculateGstFlag($canada_calculate_gst_flag)
@@ -973,7 +974,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets cancel_date
-     * @param \DateTime $cancel_date
+     * @param  \DateTime  $cancel_date
      * @return $this
      */
     public function setCancelDate($cancel_date)
@@ -994,7 +995,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_one_rate
-     * @param double $level_one_rate
+     * @param  double  $level_one_rate
      * @return $this
      */
     public function setLevelOneRate($level_one_rate)
@@ -1015,7 +1016,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_one_rate_type
-     * @param string $level_one_rate_type
+     * @param  string  $level_one_rate_type
      * @return $this
      */
     public function setLevelOneRateType($level_one_rate_type)
@@ -1040,7 +1041,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_one_taxable_max
-     * @param double $level_one_taxable_max
+     * @param  double  $level_one_taxable_max
      * @return $this
      */
     public function setLevelOneTaxableMax($level_one_taxable_max)
@@ -1061,7 +1062,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_one_caption
-     * @param string $level_one_caption
+     * @param  string  $level_one_caption
      * @return $this
      */
     public function setLevelOneCaption($level_one_caption)
@@ -1086,7 +1087,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_one_tax_code_xref
-     * @param string $level_one_tax_code_xref
+     * @param  string  $level_one_tax_code_xref
      * @return $this
      */
     public function setLevelOneTaxCodeXref($level_one_tax_code_xref)
@@ -1111,7 +1112,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_one_agency_xref
-     * @param string $level_one_agency_xref
+     * @param  string  $level_one_agency_xref
      * @return $this
      */
     public function setLevelOneAgencyXref($level_one_agency_xref)
@@ -1136,7 +1137,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_one_services_flag
-     * @param bool $level_one_services_flag
+     * @param  bool  $level_one_services_flag
      * @return $this
      */
     public function setLevelOneServicesFlag($level_one_services_flag)
@@ -1157,7 +1158,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_one_expenses_flag
-     * @param bool $level_one_expenses_flag
+     * @param  bool  $level_one_expenses_flag
      * @return $this
      */
     public function setLevelOneExpensesFlag($level_one_expenses_flag)
@@ -1178,7 +1179,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_one_products_flag
-     * @param bool $level_one_products_flag
+     * @param  bool  $level_one_products_flag
      * @return $this
      */
     public function setLevelOneProductsFlag($level_one_products_flag)
@@ -1199,7 +1200,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_one_apply_single_unit_flag
-     * @param bool $level_one_apply_single_unit_flag
+     * @param  bool  $level_one_apply_single_unit_flag
      * @return $this
      */
     public function setLevelOneApplySingleUnitFlag($level_one_apply_single_unit_flag)
@@ -1220,7 +1221,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_one_apply_single_unit_min
-     * @param double $level_one_apply_single_unit_min
+     * @param  double  $level_one_apply_single_unit_min
      * @return $this
      */
     public function setLevelOneApplySingleUnitMin($level_one_apply_single_unit_min)
@@ -1241,7 +1242,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_one_apply_single_unit_max
-     * @param double $level_one_apply_single_unit_max
+     * @param  double  $level_one_apply_single_unit_max
      * @return $this
      */
     public function setLevelOneApplySingleUnitMax($level_one_apply_single_unit_max)
@@ -1262,7 +1263,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_two_rate
-     * @param double $level_two_rate
+     * @param  double  $level_two_rate
      * @return $this
      */
     public function setLevelTwoRate($level_two_rate)
@@ -1283,7 +1284,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_two_rate_type
-     * @param string $level_two_rate_type
+     * @param  string  $level_two_rate_type
      * @return $this
      */
     public function setLevelTwoRateType($level_two_rate_type)
@@ -1308,7 +1309,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_two_taxable_max
-     * @param double $level_two_taxable_max
+     * @param  double  $level_two_taxable_max
      * @return $this
      */
     public function setLevelTwoTaxableMax($level_two_taxable_max)
@@ -1329,7 +1330,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_two_caption
-     * @param string $level_two_caption
+     * @param  string  $level_two_caption
      * @return $this
      */
     public function setLevelTwoCaption($level_two_caption)
@@ -1354,7 +1355,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_two_tax_code_xref
-     * @param string $level_two_tax_code_xref
+     * @param  string  $level_two_tax_code_xref
      * @return $this
      */
     public function setLevelTwoTaxCodeXref($level_two_tax_code_xref)
@@ -1379,7 +1380,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_two_agency_xref
-     * @param string $level_two_agency_xref
+     * @param  string  $level_two_agency_xref
      * @return $this
      */
     public function setLevelTwoAgencyXref($level_two_agency_xref)
@@ -1404,7 +1405,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_two_services_flag
-     * @param bool $level_two_services_flag
+     * @param  bool  $level_two_services_flag
      * @return $this
      */
     public function setLevelTwoServicesFlag($level_two_services_flag)
@@ -1425,7 +1426,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_two_expenses_flag
-     * @param bool $level_two_expenses_flag
+     * @param  bool  $level_two_expenses_flag
      * @return $this
      */
     public function setLevelTwoExpensesFlag($level_two_expenses_flag)
@@ -1446,7 +1447,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_two_products_flag
-     * @param bool $level_two_products_flag
+     * @param  bool  $level_two_products_flag
      * @return $this
      */
     public function setLevelTwoProductsFlag($level_two_products_flag)
@@ -1467,7 +1468,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_two_apply_single_unit_flag
-     * @param bool $level_two_apply_single_unit_flag
+     * @param  bool  $level_two_apply_single_unit_flag
      * @return $this
      */
     public function setLevelTwoApplySingleUnitFlag($level_two_apply_single_unit_flag)
@@ -1488,7 +1489,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_two_apply_single_unit_min
-     * @param double $level_two_apply_single_unit_min
+     * @param  double  $level_two_apply_single_unit_min
      * @return $this
      */
     public function setLevelTwoApplySingleUnitMin($level_two_apply_single_unit_min)
@@ -1509,7 +1510,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_two_apply_single_unit_max
-     * @param double $level_two_apply_single_unit_max
+     * @param  double  $level_two_apply_single_unit_max
      * @return $this
      */
     public function setLevelTwoApplySingleUnitMax($level_two_apply_single_unit_max)
@@ -1530,7 +1531,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_three_rate
-     * @param double $level_three_rate
+     * @param  double  $level_three_rate
      * @return $this
      */
     public function setLevelThreeRate($level_three_rate)
@@ -1551,7 +1552,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_three_rate_type
-     * @param string $level_three_rate_type
+     * @param  string  $level_three_rate_type
      * @return $this
      */
     public function setLevelThreeRateType($level_three_rate_type)
@@ -1576,7 +1577,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_three_taxable_max
-     * @param double $level_three_taxable_max
+     * @param  double  $level_three_taxable_max
      * @return $this
      */
     public function setLevelThreeTaxableMax($level_three_taxable_max)
@@ -1597,7 +1598,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_three_caption
-     * @param string $level_three_caption
+     * @param  string  $level_three_caption
      * @return $this
      */
     public function setLevelThreeCaption($level_three_caption)
@@ -1622,7 +1623,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_three_tax_code_xref
-     * @param string $level_three_tax_code_xref
+     * @param  string  $level_three_tax_code_xref
      * @return $this
      */
     public function setLevelThreeTaxCodeXref($level_three_tax_code_xref)
@@ -1647,7 +1648,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_three_agency_xref
-     * @param string $level_three_agency_xref
+     * @param  string  $level_three_agency_xref
      * @return $this
      */
     public function setLevelThreeAgencyXref($level_three_agency_xref)
@@ -1672,7 +1673,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_three_services_flag
-     * @param bool $level_three_services_flag
+     * @param  bool  $level_three_services_flag
      * @return $this
      */
     public function setLevelThreeServicesFlag($level_three_services_flag)
@@ -1693,7 +1694,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_three_expenses_flag
-     * @param bool $level_three_expenses_flag
+     * @param  bool  $level_three_expenses_flag
      * @return $this
      */
     public function setLevelThreeExpensesFlag($level_three_expenses_flag)
@@ -1714,7 +1715,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_three_products_flag
-     * @param bool $level_three_products_flag
+     * @param  bool  $level_three_products_flag
      * @return $this
      */
     public function setLevelThreeProductsFlag($level_three_products_flag)
@@ -1735,7 +1736,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_three_apply_single_unit_flag
-     * @param bool $level_three_apply_single_unit_flag
+     * @param  bool  $level_three_apply_single_unit_flag
      * @return $this
      */
     public function setLevelThreeApplySingleUnitFlag($level_three_apply_single_unit_flag)
@@ -1756,7 +1757,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_three_apply_single_unit_min
-     * @param double $level_three_apply_single_unit_min
+     * @param  double  $level_three_apply_single_unit_min
      * @return $this
      */
     public function setLevelThreeApplySingleUnitMin($level_three_apply_single_unit_min)
@@ -1777,7 +1778,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_three_apply_single_unit_max
-     * @param double $level_three_apply_single_unit_max
+     * @param  double  $level_three_apply_single_unit_max
      * @return $this
      */
     public function setLevelThreeApplySingleUnitMax($level_three_apply_single_unit_max)
@@ -1798,7 +1799,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_four_rate
-     * @param double $level_four_rate
+     * @param  double  $level_four_rate
      * @return $this
      */
     public function setLevelFourRate($level_four_rate)
@@ -1819,7 +1820,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_four_rate_type
-     * @param string $level_four_rate_type
+     * @param  string  $level_four_rate_type
      * @return $this
      */
     public function setLevelFourRateType($level_four_rate_type)
@@ -1844,7 +1845,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_four_taxable_max
-     * @param double $level_four_taxable_max
+     * @param  double  $level_four_taxable_max
      * @return $this
      */
     public function setLevelFourTaxableMax($level_four_taxable_max)
@@ -1865,7 +1866,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_four_caption
-     * @param string $level_four_caption
+     * @param  string  $level_four_caption
      * @return $this
      */
     public function setLevelFourCaption($level_four_caption)
@@ -1890,7 +1891,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_four_tax_code_xref
-     * @param string $level_four_tax_code_xref
+     * @param  string  $level_four_tax_code_xref
      * @return $this
      */
     public function setLevelFourTaxCodeXref($level_four_tax_code_xref)
@@ -1915,7 +1916,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_four_agency_xref
-     * @param string $level_four_agency_xref
+     * @param  string  $level_four_agency_xref
      * @return $this
      */
     public function setLevelFourAgencyXref($level_four_agency_xref)
@@ -1940,7 +1941,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_four_services_flag
-     * @param bool $level_four_services_flag
+     * @param  bool  $level_four_services_flag
      * @return $this
      */
     public function setLevelFourServicesFlag($level_four_services_flag)
@@ -1961,7 +1962,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_four_expenses_flag
-     * @param bool $level_four_expenses_flag
+     * @param  bool  $level_four_expenses_flag
      * @return $this
      */
     public function setLevelFourExpensesFlag($level_four_expenses_flag)
@@ -1982,7 +1983,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_four_products_flag
-     * @param bool $level_four_products_flag
+     * @param  bool  $level_four_products_flag
      * @return $this
      */
     public function setLevelFourProductsFlag($level_four_products_flag)
@@ -2003,7 +2004,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_four_apply_single_unit_flag
-     * @param bool $level_four_apply_single_unit_flag
+     * @param  bool  $level_four_apply_single_unit_flag
      * @return $this
      */
     public function setLevelFourApplySingleUnitFlag($level_four_apply_single_unit_flag)
@@ -2024,7 +2025,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_four_apply_single_unit_min
-     * @param double $level_four_apply_single_unit_min
+     * @param  double  $level_four_apply_single_unit_min
      * @return $this
      */
     public function setLevelFourApplySingleUnitMin($level_four_apply_single_unit_min)
@@ -2045,7 +2046,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_four_apply_single_unit_max
-     * @param double $level_four_apply_single_unit_max
+     * @param  double  $level_four_apply_single_unit_max
      * @return $this
      */
     public function setLevelFourApplySingleUnitMax($level_four_apply_single_unit_max)
@@ -2066,7 +2067,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_five_rate
-     * @param double $level_five_rate
+     * @param  double  $level_five_rate
      * @return $this
      */
     public function setLevelFiveRate($level_five_rate)
@@ -2087,7 +2088,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_five_rate_type
-     * @param string $level_five_rate_type
+     * @param  string  $level_five_rate_type
      * @return $this
      */
     public function setLevelFiveRateType($level_five_rate_type)
@@ -2112,7 +2113,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_five_taxable_max
-     * @param double $level_five_taxable_max
+     * @param  double  $level_five_taxable_max
      * @return $this
      */
     public function setLevelFiveTaxableMax($level_five_taxable_max)
@@ -2133,7 +2134,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_five_caption
-     * @param string $level_five_caption
+     * @param  string  $level_five_caption
      * @return $this
      */
     public function setLevelFiveCaption($level_five_caption)
@@ -2158,7 +2159,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_five_tax_code_xref
-     * @param string $level_five_tax_code_xref
+     * @param  string  $level_five_tax_code_xref
      * @return $this
      */
     public function setLevelFiveTaxCodeXref($level_five_tax_code_xref)
@@ -2183,7 +2184,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_five_agency_xref
-     * @param string $level_five_agency_xref
+     * @param  string  $level_five_agency_xref
      * @return $this
      */
     public function setLevelFiveAgencyXref($level_five_agency_xref)
@@ -2208,7 +2209,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_five_services_flag
-     * @param bool $level_five_services_flag
+     * @param  bool  $level_five_services_flag
      * @return $this
      */
     public function setLevelFiveServicesFlag($level_five_services_flag)
@@ -2229,7 +2230,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_five_expenses_flag
-     * @param bool $level_five_expenses_flag
+     * @param  bool  $level_five_expenses_flag
      * @return $this
      */
     public function setLevelFiveExpensesFlag($level_five_expenses_flag)
@@ -2250,7 +2251,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_five_products_flag
-     * @param bool $level_five_products_flag
+     * @param  bool  $level_five_products_flag
      * @return $this
      */
     public function setLevelFiveProductsFlag($level_five_products_flag)
@@ -2271,7 +2272,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_five_apply_single_unit_flag
-     * @param bool $level_five_apply_single_unit_flag
+     * @param  bool  $level_five_apply_single_unit_flag
      * @return $this
      */
     public function setLevelFiveApplySingleUnitFlag($level_five_apply_single_unit_flag)
@@ -2292,7 +2293,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_five_apply_single_unit_min
-     * @param double $level_five_apply_single_unit_min
+     * @param  double  $level_five_apply_single_unit_min
      * @return $this
      */
     public function setLevelFiveApplySingleUnitMin($level_five_apply_single_unit_min)
@@ -2313,7 +2314,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets level_five_apply_single_unit_max
-     * @param double $level_five_apply_single_unit_max
+     * @param  double  $level_five_apply_single_unit_max
      * @return $this
      */
     public function setLevelFiveApplySingleUnitMax($level_five_apply_single_unit_max)
@@ -2334,7 +2335,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets _info
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\Metadata $_info Metadata of the entity
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\Metadata  $_info  Metadata of the entity
      * @return $this
      */
     public function setInfo($_info)
@@ -2343,9 +2344,10 @@ class TaxCode implements ArrayAccess
 
         return $this;
     }
+
     /**
      * Returns true if offset exists. False otherwise.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return boolean
      */
     public function offsetExists($offset)
@@ -2355,7 +2357,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Gets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return mixed
      */
     public function offsetGet($offset)
@@ -2365,8 +2367,8 @@ class TaxCode implements ArrayAccess
 
     /**
      * Sets value based on offset.
-     * @param  integer $offset Offset
-     * @param  mixed   $value  Value to be set
+     * @param  integer  $offset  Offset
+     * @param  mixed  $value  Value to be set
      * @return void
      */
     public function offsetSet($offset, $value)
@@ -2380,7 +2382,7 @@ class TaxCode implements ArrayAccess
 
     /**
      * Unsets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return void
      */
     public function offsetUnset($offset)
@@ -2395,7 +2397,8 @@ class TaxCode implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this),
+                JSON_PRETTY_PRINT);
         }
 
         return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this));

@@ -34,7 +34,9 @@ use \ArrayAccess;
 /**
  * GLExportExpenseBillDetail Class Doc Comment
  *
- * @category    Class */
+ * @category    Class
+ */
+
 /**
  * @package     Spinen\ConnectWise\Clients\Finance
  * @author      Swagger Codegen team
@@ -45,27 +47,27 @@ class GLExportExpenseBillDetail implements ArrayAccess
     const DISCRIMINATOR = null;
 
     /**
-      * The original name of the model.
-      * @var string
-      */
+     * The original name of the model.
+     * @var string
+     */
     protected static $swaggerModelName = 'GLExportExpenseBillDetail';
 
     /**
-      * Array of property to type mappings. Used for (de)serialization
-      * @var string[]
-      */
+     * Array of property to type mappings. Used for (de)serialization
+     * @var string[]
+     */
     protected static $swaggerTypes = [
-        'id' => 'int',
-        'document_date' => 'string',
-        'gl_type_id' => 'string',
-        'memo' => 'string',
-        'company' => '\Spinen\ConnectWise\Clients\Finance\Model\CompanyReference',
-        'account_number' => 'string',
-        'expense_class' => '\Spinen\ConnectWise\Clients\Finance\Model\ClassificationReference',
-        'currency' => '\Spinen\ConnectWise\Clients\Finance\Model\CurrencyReference',
-        'total' => 'double',
-        'billable' => 'bool',
-        'reimbursable' => 'bool',
+        'id'              => 'int',
+        'document_date'   => 'string',
+        'gl_type_id'      => 'string',
+        'memo'            => 'string',
+        'company'         => '\Spinen\ConnectWise\Clients\Finance\Model\CompanyReference',
+        'account_number'  => 'string',
+        'expense_class'   => '\Spinen\ConnectWise\Clients\Finance\Model\ClassificationReference',
+        'currency'        => '\Spinen\ConnectWise\Clients\Finance\Model\CurrencyReference',
+        'total'           => 'double',
+        'billable'        => 'bool',
+        'reimbursable'    => 'bool',
         'company_advance' => 'bool'
     ];
 
@@ -79,17 +81,17 @@ class GLExportExpenseBillDetail implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'id' => 'id',
-        'document_date' => 'documentDate',
-        'gl_type_id' => 'glTypeId',
-        'memo' => 'memo',
-        'company' => 'company',
-        'account_number' => 'accountNumber',
-        'expense_class' => 'expenseClass',
-        'currency' => 'currency',
-        'total' => 'total',
-        'billable' => 'billable',
-        'reimbursable' => 'reimbursable',
+        'id'              => 'id',
+        'document_date'   => 'documentDate',
+        'gl_type_id'      => 'glTypeId',
+        'memo'            => 'memo',
+        'company'         => 'company',
+        'account_number'  => 'accountNumber',
+        'expense_class'   => 'expenseClass',
+        'currency'        => 'currency',
+        'total'           => 'total',
+        'billable'        => 'billable',
+        'reimbursable'    => 'reimbursable',
         'company_advance' => 'companyAdvance'
     ];
 
@@ -99,17 +101,17 @@ class GLExportExpenseBillDetail implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'id' => 'setId',
-        'document_date' => 'setDocumentDate',
-        'gl_type_id' => 'setGlTypeId',
-        'memo' => 'setMemo',
-        'company' => 'setCompany',
-        'account_number' => 'setAccountNumber',
-        'expense_class' => 'setExpenseClass',
-        'currency' => 'setCurrency',
-        'total' => 'setTotal',
-        'billable' => 'setBillable',
-        'reimbursable' => 'setReimbursable',
+        'id'              => 'setId',
+        'document_date'   => 'setDocumentDate',
+        'gl_type_id'      => 'setGlTypeId',
+        'memo'            => 'setMemo',
+        'company'         => 'setCompany',
+        'account_number'  => 'setAccountNumber',
+        'expense_class'   => 'setExpenseClass',
+        'currency'        => 'setCurrency',
+        'total'           => 'setTotal',
+        'billable'        => 'setBillable',
+        'reimbursable'    => 'setReimbursable',
         'company_advance' => 'setCompanyAdvance'
     ];
 
@@ -119,17 +121,17 @@ class GLExportExpenseBillDetail implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'id' => 'getId',
-        'document_date' => 'getDocumentDate',
-        'gl_type_id' => 'getGlTypeId',
-        'memo' => 'getMemo',
-        'company' => 'getCompany',
-        'account_number' => 'getAccountNumber',
-        'expense_class' => 'getExpenseClass',
-        'currency' => 'getCurrency',
-        'total' => 'getTotal',
-        'billable' => 'getBillable',
-        'reimbursable' => 'getReimbursable',
+        'id'              => 'getId',
+        'document_date'   => 'getDocumentDate',
+        'gl_type_id'      => 'getGlTypeId',
+        'memo'            => 'getMemo',
+        'company'         => 'getCompany',
+        'account_number'  => 'getAccountNumber',
+        'expense_class'   => 'getExpenseClass',
+        'currency'        => 'getCurrency',
+        'total'           => 'getTotal',
+        'billable'        => 'getBillable',
+        'reimbursable'    => 'getReimbursable',
         'company_advance' => 'getCompanyAdvance'
     ];
 
@@ -148,9 +150,6 @@ class GLExportExpenseBillDetail implements ArrayAccess
         return self::$getters;
     }
 
-    
-
-    
 
     /**
      * Associative array for storing property values
@@ -160,7 +159,7 @@ class GLExportExpenseBillDetail implements ArrayAccess
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param  mixed[]  $data  Associated array of property values initializing the model
      */
     public function __construct(array $data = null)
     {
@@ -212,7 +211,7 @@ class GLExportExpenseBillDetail implements ArrayAccess
 
     /**
      * Sets id
-     * @param int $id
+     * @param  int  $id
      * @return $this
      */
     public function setId($id)
@@ -233,7 +232,7 @@ class GLExportExpenseBillDetail implements ArrayAccess
 
     /**
      * Sets document_date
-     * @param string $document_date
+     * @param  string  $document_date
      * @return $this
      */
     public function setDocumentDate($document_date)
@@ -254,7 +253,7 @@ class GLExportExpenseBillDetail implements ArrayAccess
 
     /**
      * Sets gl_type_id
-     * @param string $gl_type_id
+     * @param  string  $gl_type_id
      * @return $this
      */
     public function setGlTypeId($gl_type_id)
@@ -275,7 +274,7 @@ class GLExportExpenseBillDetail implements ArrayAccess
 
     /**
      * Sets memo
-     * @param string $memo
+     * @param  string  $memo
      * @return $this
      */
     public function setMemo($memo)
@@ -296,7 +295,7 @@ class GLExportExpenseBillDetail implements ArrayAccess
 
     /**
      * Sets company
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\CompanyReference $company
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\CompanyReference  $company
      * @return $this
      */
     public function setCompany($company)
@@ -317,7 +316,7 @@ class GLExportExpenseBillDetail implements ArrayAccess
 
     /**
      * Sets account_number
-     * @param string $account_number
+     * @param  string  $account_number
      * @return $this
      */
     public function setAccountNumber($account_number)
@@ -338,7 +337,7 @@ class GLExportExpenseBillDetail implements ArrayAccess
 
     /**
      * Sets expense_class
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\ClassificationReference $expense_class
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\ClassificationReference  $expense_class
      * @return $this
      */
     public function setExpenseClass($expense_class)
@@ -359,7 +358,7 @@ class GLExportExpenseBillDetail implements ArrayAccess
 
     /**
      * Sets currency
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\CurrencyReference $currency
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\CurrencyReference  $currency
      * @return $this
      */
     public function setCurrency($currency)
@@ -380,7 +379,7 @@ class GLExportExpenseBillDetail implements ArrayAccess
 
     /**
      * Sets total
-     * @param double $total
+     * @param  double  $total
      * @return $this
      */
     public function setTotal($total)
@@ -401,7 +400,7 @@ class GLExportExpenseBillDetail implements ArrayAccess
 
     /**
      * Sets billable
-     * @param bool $billable
+     * @param  bool  $billable
      * @return $this
      */
     public function setBillable($billable)
@@ -422,7 +421,7 @@ class GLExportExpenseBillDetail implements ArrayAccess
 
     /**
      * Sets reimbursable
-     * @param bool $reimbursable
+     * @param  bool  $reimbursable
      * @return $this
      */
     public function setReimbursable($reimbursable)
@@ -443,7 +442,7 @@ class GLExportExpenseBillDetail implements ArrayAccess
 
     /**
      * Sets company_advance
-     * @param bool $company_advance
+     * @param  bool  $company_advance
      * @return $this
      */
     public function setCompanyAdvance($company_advance)
@@ -452,9 +451,10 @@ class GLExportExpenseBillDetail implements ArrayAccess
 
         return $this;
     }
+
     /**
      * Returns true if offset exists. False otherwise.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return boolean
      */
     public function offsetExists($offset)
@@ -464,7 +464,7 @@ class GLExportExpenseBillDetail implements ArrayAccess
 
     /**
      * Gets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return mixed
      */
     public function offsetGet($offset)
@@ -474,8 +474,8 @@ class GLExportExpenseBillDetail implements ArrayAccess
 
     /**
      * Sets value based on offset.
-     * @param  integer $offset Offset
-     * @param  mixed   $value  Value to be set
+     * @param  integer  $offset  Offset
+     * @param  mixed  $value  Value to be set
      * @return void
      */
     public function offsetSet($offset, $value)
@@ -489,7 +489,7 @@ class GLExportExpenseBillDetail implements ArrayAccess
 
     /**
      * Unsets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return void
      */
     public function offsetUnset($offset)
@@ -504,7 +504,8 @@ class GLExportExpenseBillDetail implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this),
+                JSON_PRETTY_PRINT);
         }
 
         return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this));

@@ -42,7 +42,7 @@ class ObjectSerializer
     /**
      * Serialize data
      *
-     * @param mixed $data the data to serialize
+     * @param  mixed  $data  the data to serialize
      *
      * @return string|object serialized form of $data
      */
@@ -65,9 +65,9 @@ class ObjectSerializer
                     $values[$data::attributeMap()[$property]] = self::sanitizeForSerialization($data->$getter());
                 }
             }
-            return (object)$values;
+            return (object) $values;
         } else {
-            return (string)$data;
+            return (string) $data;
         }
     }
 
@@ -75,7 +75,7 @@ class ObjectSerializer
      * Sanitize filename by removing path.
      * e.g. ../../sun.gif becomes sun.gif
      *
-     * @param string $filename filename to be sanitized
+     * @param  string  $filename  filename to be sanitized
      *
      * @return string the sanitized filename
      */
@@ -92,7 +92,7 @@ class ObjectSerializer
      * Take value and turn it into a string suitable for inclusion in
      * the path, by url-encoding.
      *
-     * @param string $value a string which will be part of the path
+     * @param  string  $value  a string which will be part of the path
      *
      * @return string the serialized object
      */
@@ -107,7 +107,7 @@ class ObjectSerializer
      * If it's a string, pass through unchanged. It will be url-encoded
      * later.
      *
-     * @param string[]|string|\DateTime $object an object to be serialized to a string
+     * @param  string[]|string|\DateTime  $object  an object to be serialized to a string
      *
      * @return string the serialized object
      */
@@ -125,7 +125,7 @@ class ObjectSerializer
      * the header. If it's a string, pass through unchanged
      * If it's a datetime object, format it in ISO8601
      *
-     * @param string $value a string which will be part of the header
+     * @param  string  $value  a string which will be part of the header
      *
      * @return string the header string
      */
@@ -139,7 +139,7 @@ class ObjectSerializer
      * the http body (form parameter). If it's a string, pass through unchanged
      * If it's a datetime object, format it in ISO8601
      *
-     * @param string|\SplFileObject $value the value of the form parameter
+     * @param  string|\SplFileObject  $value  the value of the form parameter
      *
      * @return string the form string
      */
@@ -157,7 +157,7 @@ class ObjectSerializer
      * the parameter. If it's a string, pass through unchanged
      * If it's a datetime object, format it in ISO8601
      *
-     * @param string|\DateTime $value the value of the parameter
+     * @param  string|\DateTime  $value  the value of the parameter
      *
      * @return string the header string
      */
@@ -173,10 +173,10 @@ class ObjectSerializer
     /**
      * Serialize an array to a string.
      *
-     * @param array  $collection                 collection to serialize to a string
-     * @param string $collectionFormat           the format use for serialization (csv,
+     * @param  array  $collection  collection to serialize to a string
+     * @param  string  $collectionFormat  the format use for serialization (csv,
      * ssv, tsv, pipes, multi)
-     * @param bool   $allowCollectionFormatMulti allow collection format to be a multidimensional array
+     * @param  bool  $allowCollectionFormatMulti  allow collection format to be a multidimensional array
      *
      * @return string
      */
@@ -207,10 +207,10 @@ class ObjectSerializer
     /**
      * Deserialize a JSON string into an object
      *
-     * @param mixed    $data          object or primitive to be deserialized
-     * @param string   $class         class name is passed as a string
-     * @param string[] $httpHeaders   HTTP headers
-     * @param string   $discriminator discriminator if polymorphism is used
+     * @param  mixed  $data  object or primitive to be deserialized
+     * @param  string  $class  class name is passed as a string
+     * @param  string[]  $httpHeaders  HTTP headers
+     * @param  string  $discriminator  discriminator if polymorphism is used
      *
      * @return object|array|null an single or an array of $class instances
      */
@@ -251,21 +251,26 @@ class ObjectSerializer
             } else {
                 return null;
             }
-        } elseif (in_array($class, ['DateTime', 'bool', 'boolean', 'byte', 'double', 'float', 'int', 'integer', 'mixed', 'number', 'object', 'string', 'void'], true)) {
+        } elseif (in_array($class, [
+            'DateTime', 'bool', 'boolean', 'byte', 'double', 'float', 'int', 'integer', 'mixed', 'number', 'object',
+            'string', 'void'
+        ], true)) {
             settype($data, $class);
             return $data;
         } elseif ($class === '\SplFileObject') {
             // determine file name
             if (array_key_exists('Content-Disposition', $httpHeaders) &&
-                preg_match('/inline; filename=[\'"]?([^\'"\s]+)[\'"]?$/i', $httpHeaders['Content-Disposition'], $match)) {
-                $filename = Configuration::getDefaultConfiguration()->getTempFolderPath() . sanitizeFilename($match[1]);
+                preg_match('/inline; filename=[\'"]?([^\'"\s]+)[\'"]?$/i', $httpHeaders['Content-Disposition'],
+                    $match)) {
+                $filename = Configuration::getDefaultConfiguration()->getTempFolderPath().sanitizeFilename($match[1]);
             } else {
                 $filename = tempnam(Configuration::getDefaultConfiguration()->getTempFolderPath(), '');
             }
             $deserialized = new \SplFileObject($filename, "w");
             $byte_written = $deserialized->fwrite($data);
             if (Configuration::getDefaultConfiguration()->getDebug()) {
-                error_log("[DEBUG] Written $byte_written byte to $filename. Please move the file to a proper folder or delete the temp file after processing.".PHP_EOL, 3, Configuration::getDefaultConfiguration()->getDebugFile());
+                error_log("[DEBUG] Written $byte_written byte to $filename. Please move the file to a proper folder or delete the temp file after processing.".PHP_EOL,
+                    3, Configuration::getDefaultConfiguration()->getDebugFile());
             }
 
             return $deserialized;
@@ -273,7 +278,7 @@ class ObjectSerializer
             // If a discriminator is defined and points to a valid subclass, use it.
             $discriminator = $class::DISCRIMINATOR;
             if (!empty($discriminator) && isset($data->{$discriminator}) && is_string($data->{$discriminator})) {
-                $subclass = '\Spinen\ConnectWise\Clients\Finance\Model\\' . $data->{$discriminator};
+                $subclass = '\Spinen\ConnectWise\Clients\Finance\Model\\'.$data->{$discriminator};
                 if (is_subclass_of($subclass, $class)) {
                     $class = $subclass;
                 }

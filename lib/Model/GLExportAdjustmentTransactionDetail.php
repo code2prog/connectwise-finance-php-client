@@ -34,7 +34,9 @@ use \ArrayAccess;
 /**
  * GLExportAdjustmentTransactionDetail Class Doc Comment
  *
- * @category    Class */
+ * @category    Class
+ */
+
 /**
  * @package     Spinen\ConnectWise\Clients\Finance
  * @author      Swagger Codegen team
@@ -45,27 +47,27 @@ class GLExportAdjustmentTransactionDetail implements ArrayAccess
     const DISCRIMINATOR = null;
 
     /**
-      * The original name of the model.
-      * @var string
-      */
+     * The original name of the model.
+     * @var string
+     */
     protected static $swaggerModelName = 'GLExportAdjustmentTransactionDetail';
 
     /**
-      * Array of property to type mappings. Used for (de)serialization
-      * @var string[]
-      */
+     * Array of property to type mappings. Used for (de)serialization
+     * @var string[]
+     */
     protected static $swaggerTypes = [
-        'gl_class' => 'string',
-        'description' => 'string',
-        'memo' => 'string',
-        'item' => '\Spinen\ConnectWise\Clients\Finance\Model\IvItemReference',
-        'quantity' => 'int',
-        'total' => 'double',
-        'cost' => 'double',
-        'cost_account_number' => 'string',
+        'gl_class'                 => 'string',
+        'description'              => 'string',
+        'memo'                     => 'string',
+        'item'                     => '\Spinen\ConnectWise\Clients\Finance\Model\IvItemReference',
+        'quantity'                 => 'int',
+        'total'                    => 'double',
+        'cost'                     => 'double',
+        'cost_account_number'      => 'string',
         'inventory_account_number' => 'string',
-        'account_number' => 'string',
-        'product_account_number' => 'string'
+        'account_number'           => 'string',
+        'product_account_number'   => 'string'
     ];
 
     public static function swaggerTypes()
@@ -78,17 +80,17 @@ class GLExportAdjustmentTransactionDetail implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'gl_class' => 'glClass',
-        'description' => 'description',
-        'memo' => 'memo',
-        'item' => 'item',
-        'quantity' => 'quantity',
-        'total' => 'total',
-        'cost' => 'cost',
-        'cost_account_number' => 'costAccountNumber',
+        'gl_class'                 => 'glClass',
+        'description'              => 'description',
+        'memo'                     => 'memo',
+        'item'                     => 'item',
+        'quantity'                 => 'quantity',
+        'total'                    => 'total',
+        'cost'                     => 'cost',
+        'cost_account_number'      => 'costAccountNumber',
         'inventory_account_number' => 'inventoryAccountNumber',
-        'account_number' => 'accountNumber',
-        'product_account_number' => 'productAccountNumber'
+        'account_number'           => 'accountNumber',
+        'product_account_number'   => 'productAccountNumber'
     ];
 
 
@@ -97,17 +99,17 @@ class GLExportAdjustmentTransactionDetail implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'gl_class' => 'setGlClass',
-        'description' => 'setDescription',
-        'memo' => 'setMemo',
-        'item' => 'setItem',
-        'quantity' => 'setQuantity',
-        'total' => 'setTotal',
-        'cost' => 'setCost',
-        'cost_account_number' => 'setCostAccountNumber',
+        'gl_class'                 => 'setGlClass',
+        'description'              => 'setDescription',
+        'memo'                     => 'setMemo',
+        'item'                     => 'setItem',
+        'quantity'                 => 'setQuantity',
+        'total'                    => 'setTotal',
+        'cost'                     => 'setCost',
+        'cost_account_number'      => 'setCostAccountNumber',
         'inventory_account_number' => 'setInventoryAccountNumber',
-        'account_number' => 'setAccountNumber',
-        'product_account_number' => 'setProductAccountNumber'
+        'account_number'           => 'setAccountNumber',
+        'product_account_number'   => 'setProductAccountNumber'
     ];
 
 
@@ -116,17 +118,17 @@ class GLExportAdjustmentTransactionDetail implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'gl_class' => 'getGlClass',
-        'description' => 'getDescription',
-        'memo' => 'getMemo',
-        'item' => 'getItem',
-        'quantity' => 'getQuantity',
-        'total' => 'getTotal',
-        'cost' => 'getCost',
-        'cost_account_number' => 'getCostAccountNumber',
+        'gl_class'                 => 'getGlClass',
+        'description'              => 'getDescription',
+        'memo'                     => 'getMemo',
+        'item'                     => 'getItem',
+        'quantity'                 => 'getQuantity',
+        'total'                    => 'getTotal',
+        'cost'                     => 'getCost',
+        'cost_account_number'      => 'getCostAccountNumber',
         'inventory_account_number' => 'getInventoryAccountNumber',
-        'account_number' => 'getAccountNumber',
-        'product_account_number' => 'getProductAccountNumber'
+        'account_number'           => 'getAccountNumber',
+        'product_account_number'   => 'getProductAccountNumber'
     ];
 
     public static function attributeMap()
@@ -144,9 +146,6 @@ class GLExportAdjustmentTransactionDetail implements ArrayAccess
         return self::$getters;
     }
 
-    
-
-    
 
     /**
      * Associative array for storing property values
@@ -156,7 +155,7 @@ class GLExportAdjustmentTransactionDetail implements ArrayAccess
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param  mixed[]  $data  Associated array of property values initializing the model
      */
     public function __construct(array $data = null)
     {
@@ -207,7 +206,7 @@ class GLExportAdjustmentTransactionDetail implements ArrayAccess
 
     /**
      * Sets gl_class
-     * @param string $gl_class
+     * @param  string  $gl_class
      * @return $this
      */
     public function setGlClass($gl_class)
@@ -228,7 +227,7 @@ class GLExportAdjustmentTransactionDetail implements ArrayAccess
 
     /**
      * Sets description
-     * @param string $description
+     * @param  string  $description
      * @return $this
      */
     public function setDescription($description)
@@ -249,7 +248,7 @@ class GLExportAdjustmentTransactionDetail implements ArrayAccess
 
     /**
      * Sets memo
-     * @param string $memo
+     * @param  string  $memo
      * @return $this
      */
     public function setMemo($memo)
@@ -270,7 +269,7 @@ class GLExportAdjustmentTransactionDetail implements ArrayAccess
 
     /**
      * Sets item
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\IvItemReference $item
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\IvItemReference  $item
      * @return $this
      */
     public function setItem($item)
@@ -291,7 +290,7 @@ class GLExportAdjustmentTransactionDetail implements ArrayAccess
 
     /**
      * Sets quantity
-     * @param int $quantity
+     * @param  int  $quantity
      * @return $this
      */
     public function setQuantity($quantity)
@@ -312,7 +311,7 @@ class GLExportAdjustmentTransactionDetail implements ArrayAccess
 
     /**
      * Sets total
-     * @param double $total
+     * @param  double  $total
      * @return $this
      */
     public function setTotal($total)
@@ -333,7 +332,7 @@ class GLExportAdjustmentTransactionDetail implements ArrayAccess
 
     /**
      * Sets cost
-     * @param double $cost
+     * @param  double  $cost
      * @return $this
      */
     public function setCost($cost)
@@ -354,7 +353,7 @@ class GLExportAdjustmentTransactionDetail implements ArrayAccess
 
     /**
      * Sets cost_account_number
-     * @param string $cost_account_number
+     * @param  string  $cost_account_number
      * @return $this
      */
     public function setCostAccountNumber($cost_account_number)
@@ -375,7 +374,7 @@ class GLExportAdjustmentTransactionDetail implements ArrayAccess
 
     /**
      * Sets inventory_account_number
-     * @param string $inventory_account_number
+     * @param  string  $inventory_account_number
      * @return $this
      */
     public function setInventoryAccountNumber($inventory_account_number)
@@ -396,7 +395,7 @@ class GLExportAdjustmentTransactionDetail implements ArrayAccess
 
     /**
      * Sets account_number
-     * @param string $account_number
+     * @param  string  $account_number
      * @return $this
      */
     public function setAccountNumber($account_number)
@@ -417,7 +416,7 @@ class GLExportAdjustmentTransactionDetail implements ArrayAccess
 
     /**
      * Sets product_account_number
-     * @param string $product_account_number
+     * @param  string  $product_account_number
      * @return $this
      */
     public function setProductAccountNumber($product_account_number)
@@ -426,9 +425,10 @@ class GLExportAdjustmentTransactionDetail implements ArrayAccess
 
         return $this;
     }
+
     /**
      * Returns true if offset exists. False otherwise.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return boolean
      */
     public function offsetExists($offset)
@@ -438,7 +438,7 @@ class GLExportAdjustmentTransactionDetail implements ArrayAccess
 
     /**
      * Gets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return mixed
      */
     public function offsetGet($offset)
@@ -448,8 +448,8 @@ class GLExportAdjustmentTransactionDetail implements ArrayAccess
 
     /**
      * Sets value based on offset.
-     * @param  integer $offset Offset
-     * @param  mixed   $value  Value to be set
+     * @param  integer  $offset  Offset
+     * @param  mixed  $value  Value to be set
      * @return void
      */
     public function offsetSet($offset, $value)
@@ -463,7 +463,7 @@ class GLExportAdjustmentTransactionDetail implements ArrayAccess
 
     /**
      * Unsets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return void
      */
     public function offsetUnset($offset)
@@ -478,7 +478,8 @@ class GLExportAdjustmentTransactionDetail implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this),
+                JSON_PRETTY_PRINT);
         }
 
         return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this));

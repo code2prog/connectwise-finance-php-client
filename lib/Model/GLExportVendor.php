@@ -34,7 +34,9 @@ use \ArrayAccess;
 /**
  * GLExportVendor Class Doc Comment
  *
- * @category    Class */
+ * @category    Class
+ */
+
 /**
  * @package     Spinen\ConnectWise\Clients\Finance
  * @author      Swagger Codegen team
@@ -45,26 +47,26 @@ class GLExportVendor implements ArrayAccess
     const DISCRIMINATOR = null;
 
     /**
-      * The original name of the model.
-      * @var string
-      */
+     * The original name of the model.
+     * @var string
+     */
     protected static $swaggerModelName = 'GLExportVendor';
 
     /**
-      * Array of property to type mappings. Used for (de)serialization
-      * @var string[]
-      */
+     * Array of property to type mappings. Used for (de)serialization
+     * @var string[]
+     */
     protected static $swaggerTypes = [
-        'member' => '\Spinen\ConnectWise\Clients\Finance\Model\MemberReference',
-        'vendor' => '\Spinen\ConnectWise\Clients\Finance\Model\CompanyReference',
-        'vendor_number' => 'string',
-        'company' => '\Spinen\ConnectWise\Clients\Finance\Model\CompanyReference',
-        'contact' => '\Spinen\ConnectWise\Clients\Finance\Model\ContactReference',
+        'member'         => '\Spinen\ConnectWise\Clients\Finance\Model\MemberReference',
+        'vendor'         => '\Spinen\ConnectWise\Clients\Finance\Model\CompanyReference',
+        'vendor_number'  => 'string',
+        'company'        => '\Spinen\ConnectWise\Clients\Finance\Model\CompanyReference',
+        'contact'        => '\Spinen\ConnectWise\Clients\Finance\Model\ContactReference',
         'account_number' => 'string',
-        'billing_terms' => '\Spinen\ConnectWise\Clients\Finance\Model\BillingTermsReference',
-        'due_days' => 'int',
-        'site' => '\Spinen\ConnectWise\Clients\Finance\Model\SiteReference',
-        'tax_code' => '\Spinen\ConnectWise\Clients\Finance\Model\TaxCodeReference'
+        'billing_terms'  => '\Spinen\ConnectWise\Clients\Finance\Model\BillingTermsReference',
+        'due_days'       => 'int',
+        'site'           => '\Spinen\ConnectWise\Clients\Finance\Model\SiteReference',
+        'tax_code'       => '\Spinen\ConnectWise\Clients\Finance\Model\TaxCodeReference'
     ];
 
     public static function swaggerTypes()
@@ -77,16 +79,16 @@ class GLExportVendor implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'member' => 'member',
-        'vendor' => 'vendor',
-        'vendor_number' => 'vendorNumber',
-        'company' => 'company',
-        'contact' => 'contact',
+        'member'         => 'member',
+        'vendor'         => 'vendor',
+        'vendor_number'  => 'vendorNumber',
+        'company'        => 'company',
+        'contact'        => 'contact',
         'account_number' => 'accountNumber',
-        'billing_terms' => 'billingTerms',
-        'due_days' => 'dueDays',
-        'site' => 'site',
-        'tax_code' => 'taxCode'
+        'billing_terms'  => 'billingTerms',
+        'due_days'       => 'dueDays',
+        'site'           => 'site',
+        'tax_code'       => 'taxCode'
     ];
 
 
@@ -95,16 +97,16 @@ class GLExportVendor implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'member' => 'setMember',
-        'vendor' => 'setVendor',
-        'vendor_number' => 'setVendorNumber',
-        'company' => 'setCompany',
-        'contact' => 'setContact',
+        'member'         => 'setMember',
+        'vendor'         => 'setVendor',
+        'vendor_number'  => 'setVendorNumber',
+        'company'        => 'setCompany',
+        'contact'        => 'setContact',
         'account_number' => 'setAccountNumber',
-        'billing_terms' => 'setBillingTerms',
-        'due_days' => 'setDueDays',
-        'site' => 'setSite',
-        'tax_code' => 'setTaxCode'
+        'billing_terms'  => 'setBillingTerms',
+        'due_days'       => 'setDueDays',
+        'site'           => 'setSite',
+        'tax_code'       => 'setTaxCode'
     ];
 
 
@@ -113,16 +115,16 @@ class GLExportVendor implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'member' => 'getMember',
-        'vendor' => 'getVendor',
-        'vendor_number' => 'getVendorNumber',
-        'company' => 'getCompany',
-        'contact' => 'getContact',
+        'member'         => 'getMember',
+        'vendor'         => 'getVendor',
+        'vendor_number'  => 'getVendorNumber',
+        'company'        => 'getCompany',
+        'contact'        => 'getContact',
         'account_number' => 'getAccountNumber',
-        'billing_terms' => 'getBillingTerms',
-        'due_days' => 'getDueDays',
-        'site' => 'getSite',
-        'tax_code' => 'getTaxCode'
+        'billing_terms'  => 'getBillingTerms',
+        'due_days'       => 'getDueDays',
+        'site'           => 'getSite',
+        'tax_code'       => 'getTaxCode'
     ];
 
     public static function attributeMap()
@@ -140,9 +142,6 @@ class GLExportVendor implements ArrayAccess
         return self::$getters;
     }
 
-    
-
-    
 
     /**
      * Associative array for storing property values
@@ -152,7 +151,7 @@ class GLExportVendor implements ArrayAccess
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param  mixed[]  $data  Associated array of property values initializing the model
      */
     public function __construct(array $data = null)
     {
@@ -202,7 +201,7 @@ class GLExportVendor implements ArrayAccess
 
     /**
      * Sets member
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\MemberReference $member Vendor Can be either Member or Company Reference
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\MemberReference  $member  Vendor Can be either Member or Company Reference
      * @return $this
      */
     public function setMember($member)
@@ -223,7 +222,7 @@ class GLExportVendor implements ArrayAccess
 
     /**
      * Sets vendor
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\CompanyReference $vendor Vendor Can be either Member or Company Reference
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\CompanyReference  $vendor  Vendor Can be either Member or Company Reference
      * @return $this
      */
     public function setVendor($vendor)
@@ -244,7 +243,7 @@ class GLExportVendor implements ArrayAccess
 
     /**
      * Sets vendor_number
-     * @param string $vendor_number
+     * @param  string  $vendor_number
      * @return $this
      */
     public function setVendorNumber($vendor_number)
@@ -265,7 +264,7 @@ class GLExportVendor implements ArrayAccess
 
     /**
      * Sets company
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\CompanyReference $company
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\CompanyReference  $company
      * @return $this
      */
     public function setCompany($company)
@@ -286,7 +285,7 @@ class GLExportVendor implements ArrayAccess
 
     /**
      * Sets contact
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\ContactReference $contact
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\ContactReference  $contact
      * @return $this
      */
     public function setContact($contact)
@@ -307,7 +306,7 @@ class GLExportVendor implements ArrayAccess
 
     /**
      * Sets account_number
-     * @param string $account_number
+     * @param  string  $account_number
      * @return $this
      */
     public function setAccountNumber($account_number)
@@ -328,7 +327,7 @@ class GLExportVendor implements ArrayAccess
 
     /**
      * Sets billing_terms
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\BillingTermsReference $billing_terms
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\BillingTermsReference  $billing_terms
      * @return $this
      */
     public function setBillingTerms($billing_terms)
@@ -349,7 +348,7 @@ class GLExportVendor implements ArrayAccess
 
     /**
      * Sets due_days
-     * @param int $due_days
+     * @param  int  $due_days
      * @return $this
      */
     public function setDueDays($due_days)
@@ -370,7 +369,7 @@ class GLExportVendor implements ArrayAccess
 
     /**
      * Sets site
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\SiteReference $site
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\SiteReference  $site
      * @return $this
      */
     public function setSite($site)
@@ -391,7 +390,7 @@ class GLExportVendor implements ArrayAccess
 
     /**
      * Sets tax_code
-     * @param \Spinen\ConnectWise\Clients\Finance\Model\TaxCodeReference $tax_code
+     * @param  \Spinen\ConnectWise\Clients\Finance\Model\TaxCodeReference  $tax_code
      * @return $this
      */
     public function setTaxCode($tax_code)
@@ -400,9 +399,10 @@ class GLExportVendor implements ArrayAccess
 
         return $this;
     }
+
     /**
      * Returns true if offset exists. False otherwise.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return boolean
      */
     public function offsetExists($offset)
@@ -412,7 +412,7 @@ class GLExportVendor implements ArrayAccess
 
     /**
      * Gets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return mixed
      */
     public function offsetGet($offset)
@@ -422,8 +422,8 @@ class GLExportVendor implements ArrayAccess
 
     /**
      * Sets value based on offset.
-     * @param  integer $offset Offset
-     * @param  mixed   $value  Value to be set
+     * @param  integer  $offset  Offset
+     * @param  mixed  $value  Value to be set
      * @return void
      */
     public function offsetSet($offset, $value)
@@ -437,7 +437,7 @@ class GLExportVendor implements ArrayAccess
 
     /**
      * Unsets offset.
-     * @param  integer $offset Offset
+     * @param  integer  $offset  Offset
      * @return void
      */
     public function offsetUnset($offset)
@@ -452,7 +452,8 @@ class GLExportVendor implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this),
+                JSON_PRETTY_PRINT);
         }
 
         return json_encode(\Spinen\ConnectWise\Clients\Finance\ObjectSerializer::sanitizeForSerialization($this));
