@@ -146,7 +146,9 @@ class AccountingUnpostedinvoicesApi
         // this endpoint requires HTTP basic authentication
         if (strlen($this->apiClient->getConfig()->getUsername()) !== 0 or strlen($this->apiClient->getConfig()->getPassword()) !== 0) {
             $headerParams['Authorization'] = 'Basic '.base64_encode($this->apiClient->getConfig()->getUsername().":".$this->apiClient->getConfig()->getPassword());
-            $headerParams['clientId'] = $this->apiClient->getConfig()->getUserId();
+        }
+        if (strlen($this->apiClient->getConfig()->getClientId()) !== 0) {
+            $headerParams['clientId'] = $this->apiClient->getConfig()->getClientId();
         }
         // make the API Call
         try {
@@ -284,7 +286,9 @@ class AccountingUnpostedinvoicesApi
         // this endpoint requires HTTP basic authentication
         if (strlen($this->apiClient->getConfig()->getUsername()) !== 0 or strlen($this->apiClient->getConfig()->getPassword()) !== 0) {
             $headerParams['Authorization'] = 'Basic '.base64_encode($this->apiClient->getConfig()->getUsername().":".$this->apiClient->getConfig()->getPassword());
-            $headerParams['clientId'] = $this->apiClient->getConfig()->getUserId();
+        }
+        if (strlen($this->apiClient->getConfig()->getClientId()) !== 0) {
+            $headerParams['clientId'] = $this->apiClient->getConfig()->getClientId();
         }
         // make the API Call
         try {
@@ -388,7 +392,9 @@ class AccountingUnpostedinvoicesApi
         // this endpoint requires HTTP basic authentication
         if (strlen($this->apiClient->getConfig()->getUsername()) !== 0 or strlen($this->apiClient->getConfig()->getPassword()) !== 0) {
             $headerParams['Authorization'] = 'Basic '.base64_encode($this->apiClient->getConfig()->getUsername().":".$this->apiClient->getConfig()->getPassword());
-            $headerParams['clientId'] = $this->apiClient->getConfig()->getUserId();
+        }
+        if (strlen($this->apiClient->getConfig()->getClientId()) !== 0) {
+            $headerParams['clientId'] = $this->apiClient->getConfig()->getClientId();
         }
         // make the API Call
         try {

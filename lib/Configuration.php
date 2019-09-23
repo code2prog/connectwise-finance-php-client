@@ -226,12 +226,12 @@ class Configuration
         return $this->accessToken;
     }
 
-    public function getUserId()
+    public function getClientId()
     {
         return $this->userId;
     }
 
-    public function setUserId($userId)
+    public function setClientId($userId)
     {
         $this->userId = $userId;
         return $this;
